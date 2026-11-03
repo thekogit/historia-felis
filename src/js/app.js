@@ -12,6 +12,14 @@ try { (function() {
       const artworkSlugMap = new Map();
       artworks.forEach(w => artworkSlugMap.set(w.id, w));
 
+      // Artworks renamed in the editor keep their old IDs in `former_ids`. Old links still open
+      // them, and likes saved under an old ID are moved to the current one (see CuratorialStack).
+      const formerIdMap = new Map();
+      artworks.forEach(w => (Array.isArray(w.former_ids) ? w.former_ids : []).forEach(old => {
+        if (old && !artworkSlugMap.has(old)) formerIdMap.set(old, w.id);
+      }));
+      formerIdMap.forEach((id, old) => artworkSlugMap.set(old, artworkSlugMap.get(id)));
+
       // Shared motion values (mirror the CSS tokens in :root)
       const Motion = (() => {
         const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -804,8 +812,10 @@ try { (function() {
             const raw = localStorage.getItem(this.KEY);
             const arr = JSON.parse(raw || '[]');
             if (!Array.isArray(arr)) return [];
-            const unique = Array.from(new Set(arr));
-            if (unique.length !== arr.length) {
+            // Likes survive catalogue updates: IDs of renamed artworks move to the new ID, and IDs
+            // that aren't in the catalogue right now are kept (never pruned) in case they come back.
+            const unique = Array.from(new Set(arr.map(id => formerIdMap.get(id) || id)));
+            if (unique.length !== arr.length || unique.some((id, i) => id !== arr[i])) {
               try {
                 localStorage.setItem(this.KEY, JSON.stringify(unique));
               } catch (_) {}
