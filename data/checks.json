@@ -21608,38 +21608,28 @@
  },
  "chat-1930": {
   "sig": "29faf929",
-  "status": "problem",
-  "checkedAt": "2026-11-02T21:47:34.118Z",
-  "ms": 44415,
-  "source": {
-   "name": "Wikidata",
-   "kind": "Wikidata",
-   "url": "https://www.wikidata.org/wiki/Q14863671",
-   "title": "CHAT"
-  },
-  "sameWork": "unclear",
-  "imageDistance": 27,
+  "status": "unverified",
+  "checkedAt": "2026-11-03T11:47:59.126Z",
+  "ms": 55820,
+  "source": null,
+  "sameWork": null,
+  "imageDistance": null,
   "issues": [
    {
-    "level": "error",
-    "text": "Image differs from the one at Wikidata: possibly a different work, a detail, or a heavily cropped photo"
-   },
-   {
-    "level": "error",
-    "text": "Image: The catalogue image does not match the source image."
+    "level": "info",
+    "text": "Movement “Early Modernism, Ashcan & New Objectivity” is plausible, not confirmed by a source: Lalique is tied to Art Deco, which fits early modernism by date, place, and style, but the sources do not explicitly call it Early Modernism."
    },
    {
     "level": "info",
-    "text": "Movement “Early Modernism, Ashcan & New Objectivity” is plausible, not confirmed by a source: Art Deco glass from 1930 fits the broad early modernist period, but no source ties Lalique to that named school."
+    "text": "No trusted source found. Not proof of a problem: many folk objects and finds are not online."
    }
   ],
   "tried": [
    "web search",
-   "web search unavailable: web_search rate-limited for 7990s",
+   "skipped Google Arts & Culture: “Chat Assis (Sitting cat)” is a different work",
+   "skipped Musée d'Orsay: “Chat sur un fauteuil - René Lalique | Musée d'Orsay” is a different work",
    "museum APIs (Met, AIC, Cleveland)",
    "skipped Art Institute of Chicago: “At the Chat Noir” is a different work",
-   "skipped Cleveland Museum of Art: “Cat 1 (Chat 1)” is a different work",
-   "Wikidata",
    "movement attribution"
   ]
  },
