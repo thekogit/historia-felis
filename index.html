@@ -9844,8 +9844,8 @@ try { (function() {
           const isSaved = CuratorialStack.has('haiku:' + hId) || CuratorialStack.has(hId);
 
           cardsHtml += `
-            <article id="haiku-card-${hId}" class="dossier-specimen-card" style="border: 1px solid var(--border-hairline); background: var(--bg-surface); padding: clamp(20px, 3.5vw, 36px); margin-bottom: 32px; position: relative;">
-              <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border-hairline); padding-bottom: 12px; margin-bottom: 20px; gap: 8px; font-size: 11px;">
+            <article id="haiku-card-${hId}" class="dossier-specimen-card" style="border: 1px solid var(--border-hairline); background: var(--bg-surface); padding: clamp(14px, 3.5vw, 36px); margin-bottom: 32px; position: relative; box-sizing: border-box; max-width: 100%; min-width: 0; overflow: hidden;">
+              <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border-hairline); padding-bottom: 12px; margin-bottom: 20px; gap: 8px; font-size: 11px; min-width: 0;">
                 <div style="display: flex; align-items: center; gap: 8px;">
                   <span style="font-family: var(--font-archival-mono); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-main);">${authorDisplay}</span>
                   ${authorLifespan ? `<span style="font-family: var(--font-archival-mono); font-size: 11px; color: var(--text-muted);">${authorLifespan}</span>` : ''}
@@ -9858,15 +9858,15 @@ try { (function() {
                 </div>
               </div>
 
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; align-items: center;">
-                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid var(--border-hairline); background: var(--bg-neutral); padding: 24px 16px; min-height: 200px;">
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 24px; align-items: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid var(--border-hairline); background: var(--bg-neutral); padding: 24px 16px; min-height: 200px; min-width: 0; box-sizing: border-box; overflow-x: auto;">
                   <div style="writing-mode: vertical-rl; -webkit-writing-mode: vertical-rl; text-orientation: upright; font-family: var(--font-haiku-kanji); font-size: 22px; letter-spacing: 0.28em; line-height: 1.6; user-select: all;">
                     ${jpText}
                   </div>
                   ${authorJp ? `<div style="margin-top: 16px; padding-top: 8px; border-top: 1px solid var(--border-hairline); font-size: 11.5px; font-family: var(--font-haiku-kanji); letter-spacing: 0.15em; color: var(--accent-stamp);">${authorJp}</div>` : ''}
                 </div>
 
-                <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div style="display: flex; flex-direction: column; gap: 14px; min-width: 0; overflow-wrap: anywhere;">
                   ${romajiText ? `<p style="font-family: var(--font-archival-mono); font-style: italic; font-size: 12.5px; color: var(--text-muted); margin: 0;">"${romajiText}"</p>` : ''}
                   <blockquote style="border-left: 2px solid var(--accent-stamp); padding-left: 14px; margin: 0; font-family: var(--font-sans-body); font-weight: 700; font-size: 15px; line-height: 1.45; color: var(--text-main);">
                     “${translationText}”
@@ -9892,8 +9892,8 @@ try { (function() {
         });
 
         appRoot.innerHTML = `
-          <div class="dossier-page-container" style="max-width: 860px; margin: 0 auto; padding: clamp(24px, 4vw, 56px) 20px;">
-            <section style="border-left: 2px solid var(--accent-stamp); padding-left: 20px; margin-bottom: 40px;">
+          <div class="dossier-page-container" style="max-width: 860px; margin: 0 auto; padding: clamp(24px, 4vw, 56px) clamp(12px, 4vw, 20px); box-sizing: border-box; width: 100%; overflow-x: hidden;">
+            <section style="border-left: 2px solid var(--accent-stamp); padding-left: 14px; margin-bottom: 40px; overflow-wrap: anywhere;">
               <div style="font-family: var(--font-technical-mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent-stamp); margin-bottom: 6px;">ARCHIVAL DOSSIER · ${allDossierHaikus.length} HAIKUS</div>
               <h1 style="font-family: var(--font-period-rizoma); font-size: clamp(22px, 3.2vw, 32px); font-weight: 700; text-transform: uppercase; margin: 0 0 12px 0;">
                 On the Pathos of the Starving Stray (<span style="font-family: var(--font-haiku-kanji);">猫の恋</span>)
