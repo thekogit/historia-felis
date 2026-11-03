@@ -1516,43 +1516,47 @@
       .archive-search-input { font-size: 16px; } /* < 16px makes iOS zoom the page on focus */
     }
 
-    .categories-page.is-searching .era-catalogue-block { display: none; }
-    .archive-search-results:empty { display: none; }
-    .archive-search-results {
-      max-width: 1180px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
+    /* While searching, the results block (itself an .era-catalogue-block) replaces the eras */
+    .categories-page.is-searching .era-catalogue-block:not(.search-catalogue-block) { display: none; }
+    .archive-search-results[hidden],
+    .search-catalogue-block [hidden] { display: none !important; }
+
+    .search-catalogue-block .search-cat-name {
+      overflow-wrap: anywhere;           /* long queries wrap instead of pushing the page wide */
+      min-width: 0;
     }
-    .search-summary {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      flex-wrap: wrap;
-      padding-bottom: 10px;
-      border-bottom: 1px solid var(--border-hairline);
-      font-family: var(--font-mono);
-      font-size: 11px;
-      letter-spacing: 0.06em;
-      color: var(--text-secondary);
-    }
-    .search-summary strong { color: var(--text-main); }
-    .search-clear-btn,
-    .search-more-btn {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 0.08em;
-      color: var(--text-secondary);
-      background: var(--bg-surface);
+    .search-catalogue-block .era-title-left { min-width: 0; flex-wrap: wrap; }
+    .search-clear-link { cursor: pointer; font: inherit; font-family: var(--font-mono); font-size: 10px; }
+    .search-catalogue-block .search-correction { margin: 14px 0 0; }
+    .search-catalogue-block .search-artists { margin-top: 14px; }
+    .search-catalogue-block .era-catalogue-split-wrapper { margin-top: 22px; }
+    .search-catalogue-block .search-show-all {
       border: 1px solid var(--border-hairline);
-      padding: 6px 10px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
       cursor: pointer;
+      padding: 2px 8px;
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.08em;
     }
-    .search-clear-btn:hover,
-    .search-more-btn:hover { color: var(--text-main); border-color: var(--text-main); }
-    .search-more-wrap { display: flex; justify-content: center; }
+    .search-catalogue-block .search-show-all:hover { color: var(--text-main); border-color: var(--border-strong); }
+    /* Tiles are reordered with transforms (FLIP); keep their compositing cheap */
+    .search-tiles-grid > .cat-square-tile { contain: layout paint; }
+    .search-catalogue-block .specimen-thumb { content-visibility: auto; }
+
+    @media (max-width: 768px) {
+      /* Side by side like an era block, but the drawer keeps its natural length (no inner
+         scroll), so the short tile column sticks while the cards scroll past it */
+      .search-catalogue-block .era-catalogue-split-wrapper.has-active-filter .category-tiles-grid {
+        position: sticky;
+        top: calc(var(--sat) + 12px);
+      }
+      .search-catalogue-block .era-catalogue-split-wrapper.has-active-filter .filtered-specimens-strip.visible {
+        overflow-y: visible;
+      }
+    }
+
     .search-correction,
     .search-empty {
       font-family: var(--font-reading);
@@ -1578,12 +1582,14 @@
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
+      min-width: 0;
     }
     .search-chip {
       display: inline-flex;
       align-items: center;
       gap: 8px;
       min-height: 30px;
+      max-width: 100%;
       padding: 4px 10px;
       font-family: var(--font-ui);
       font-size: 11.5px;
@@ -1596,22 +1602,11 @@
       transition: border-color var(--dur-fast) var(--ease-standard), background-color var(--dur-fast) var(--ease-standard), color var(--dur-fast) var(--ease-standard);
     }
     .search-chip:hover { border-color: var(--text-main); }
-    .search-chip.active {
-      background: var(--text-main);
-      border-color: var(--text-main);
-      color: var(--bg-canvas);
-    }
     .search-chip-count {
       font-family: var(--font-mono);
       font-size: 10px;
       color: var(--text-muted);
     }
-    .search-chip.active .search-chip-count { color: inherit; opacity: 0.75; }
-    .search-chip-swatch {
-      width: 8px; height: 8px;
-      flex: none;
-    }
-    .search-artwork-grid { margin-top: 6px; }
     @media (max-width: 640px) {
       .search-group { grid-template-columns: 1fr; gap: 6px; }
       .search-group-title { padding-top: 0; }

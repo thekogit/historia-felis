@@ -60,6 +60,18 @@
     "introduction": "The medieval European imagination viewed the cat with intense ambivalence: cherished by monastic scribes for guarding precious manuscripts from rodents, yet occasionally demonized in theological folklore as nocturnally uncanny. Scribes and illuminators celebrated cats in bestiaries and illuminated margins (drolleries), capturing their absurd acrobatics, mouse-hunting heroics, and humorous subversions."
   },
   {
+    "id": "era-pre-columbian",
+    "name": "Indigenous Americas & Pre-Columbian Civilizations",
+    "level": "era",
+    "parent_id": null,
+    "start_year": -1500,
+    "end_year": 1532,
+    "color": "#b06d3b",
+    "color_name": "Ochre Clay",
+    "title_artwork_id": "paracas-flying-pampas-cats-mantle-200bce",
+    "introduction": "Across Mesoamerica, Central America, and the Andean highlands, pre-Columbian cultures (Olmec, Chavín, Paracas, Nazca, Moche, Tiwanaku, Wari, Chimú, Maya, and Inca) revered wild felines as sacred embodiments of shamanic transformation, celestial power, and underworld guardianship."
+  },
+  {
     "id": "era-east-asia",
     "name": "East Asian Traditions",
     "level": "era",
@@ -570,18 +582,6 @@
     "color_name": "Ming Vermilion",
     "title_artwork_id": "emperor-xuande-cat-and-bamboo-ming-1430",
     "introduction": "Imperial and scholar-official painting during the Ming dynasty, characterized by refined animalier studies and poetic garden observations."
-  },
-  {
-    "id": "era-pre-columbian",
-    "name": "Indigenous Americas & Pre-Columbian Civilizations",
-    "level": "era",
-    "parent_id": null,
-    "start_year": -1500,
-    "end_year": 1532,
-    "color": "#b06d3b",
-    "color_name": "Ochre Clay",
-    "title_artwork_id": "paracas-flying-pampas-cats-mantle-200bce",
-    "introduction": "Across Mesoamerica, Central America, and the Andean highlands, pre-Columbian cultures (Olmec, Chavín, Paracas, Nazca, Moche, Tiwanaku, Wari, Chimú, Maya, and Inca) revered wild felines as sacred embodiments of shamanic transformation, celestial power, and underworld guardianship."
   },
   {
     "id": "era-contemporary",
