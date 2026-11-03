@@ -3570,6 +3570,17 @@
         return;
       }
 
+      // Renamed ID: remember the old one, so visitors' likes (stored by ID in their browser)
+      // and shared #/work/<old-id> links follow the artwork to its new ID
+      if (data._originalId && data._originalId !== data.id) {
+        const prev = allArtworks.find(w => w.id === data._originalId);
+        if (prev) {
+          const former = new Set([...(prev.former_ids || []), ...(data.former_ids || []), data._originalId]);
+          former.delete(data.id);
+          data.former_ids = [...former];
+        }
+      }
+
       const cleanObj = { ...data };
       delete cleanObj._originalId;
       delete cleanObj._isNew;
