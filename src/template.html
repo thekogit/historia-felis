@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>HISTORIA FELIS — The Cat in Art History (Prehistory to 2026)</title>
+
+  <script>
+    (function() {
+      try {
+        var stored = localStorage.getItem('theme');
+        var theme = stored || 'light';
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+      // Prologue "day" rolls over at 21:37 Vatican (Europe/Rome) time, not midnight UTC.
+      // Shifting Rome wall-clock back 21h37m makes that moment 00:00, so the date is the key.
+      window.felisIntroDayKey = function() {
+        try {
+          var parts = new Intl.DateTimeFormat('en-GB', {
+            timeZone: 'Europe/Rome', hourCycle: 'h23',
+            year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit'
+          }).formatToParts(new Date());
+          var p = {};
+          parts.forEach(function(x) { p[x.type] = x.value; });
+          var wall = Date.UTC(+p.year, +p.month - 1, +p.day, +p.hour, +p.minute);
+          return new Date(wall - (21 * 60 + 37) * 60000).toISOString().slice(0, 10);
+        } catch (e) { return new Date().toISOString().slice(0, 10); }
+      };
+      try {
+        if (localStorage.getItem('felis_intro_day') === window.felisIntroDayKey()) {
+          document.documentElement.classList.add('skip-intro');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Typography Suite: Complete Haute-Couture System -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Geist+Mono:wght@400;500;600&family=Geist:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@300;400;600&family=Shippori+Mincho:wght@400;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Images are now mostly local; these hosts are fallback-only, so resolve DNS without opening idle connections -->
+  <link rel="dns-prefetch" href="https://wsrv.nl">
+  <link rel="dns-prefetch" href="https://upload.wikimedia.org">
+
+  <!-- PhotoSwipe: only the full-screen viewer uses it, so it never blocks first paint.
+       photoswipe-lightbox removed — app.js calls `new PhotoSwipe` directly. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.min.css" media="print" onload="this.media='all'">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/umd/photoswipe.umd.min.js"></script>
+
+  <!-- INJECT:STYLE -->
+  <link rel="stylesheet" href="src/css/style.css">
+
+</head>
+<body data-filter-style="ledger">
+
+  <!-- ==========================================================================
+       PROLOGUE — first-session title card that settles into the header mark
+       ========================================================================== -->
+  <div id="felis-cinema-intro" class="is-gated" role="dialog" aria-modal="true" aria-label="Historia Felis — title sequence">
+    <!-- Entry gate: the click is the user gesture that lets the prologue's music play -->
+    <button type="button" id="prologue-gate" class="prologue-gate" aria-label="Enter — click the paw">
+      <svg class="prologue-paw" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+        <ellipse cx="18" cy="42" rx="9" ry="12" transform="rotate(-20 18 42)"/>
+        <ellipse cx="38" cy="22" rx="9.5" ry="13"/>
+        <ellipse cx="62" cy="22" rx="9.5" ry="13"/>
+        <ellipse cx="82" cy="42" rx="9" ry="12" transform="rotate(20 82 42)"/>
+        <path d="M50 46c-13 0-26 14-26 27 0 9 7 14 15 14 5 0 7-2 11-2s6 2 11 2c8 0 15-5 15-14 0-13-13-27-26-27z"/>
+      </svg>
+      <span class="prologue-gate-label">Click the paw</span>
+    </button>
+    <div class="prologue-card">
+      <!-- Numerals are generated from the header era index so the two never drift -->
+      <ol class="prologue-index" aria-hidden="true"></ol>
+      <div class="prologue-title-slot"><span id="cinema-morph-logo">Historia Felis</span></div>
+      <div class="prologue-rule" aria-hidden="true"></div>
+      <div class="prologue-meta">
+        <span>The cat in art history</span>
+        <span class="prologue-year" id="prologue-year" aria-hidden="true">7500 BCE</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio Element for Intro -->
+  <audio id="felis-intro-audio" preload="auto">
+    <source src="assets/audio/intro_swell.mp3" type="audio/mpeg">
+  </audio>
+  <!-- Dynamic Atmospheric Tint Overlay -->
+  <div id="tint-overlay"></div>
+
+  <!-- Monochrome header with the 0–13 era numeric index -->
+  <header class="site-header">
+    <div class="brand-group">
+      <a href="#/timeline" class="brand-mark">
+        <span class="brand-title" id="header-brand-title">HISTORIA FELIS</span>
+      </a>
+    </div>
+    <div class="era-index-bar" id="era-index-bar" aria-label="Era index 0 to 13">
+          <a href="#/category/era-prehistory" class="era-num active" data-era-index="0" data-era-id="era-prehistory"><span class="num-val">0</span><span class="meta-drawer" data-label="PREHISTORY · 40K BCE"></span></a>
+          <a href="#/category/era-ancient-egypt" class="era-num" data-era-index="1" data-era-id="era-ancient-egypt"><span class="num-val">1</span><span class="meta-drawer" data-label="EGYPT · 3100 BCE"></span></a>
+          <a href="#/category/era-classical-antiquity" class="era-num" data-era-index="2" data-era-id="era-classical-antiquity"><span class="num-val">2</span><span class="meta-drawer" data-label="ANTIQUITY · 800 BCE"></span></a>
+          <a href="#/category/era-medieval" class="era-num" data-era-index="3" data-era-id="era-medieval"><span class="num-val">3</span><span class="meta-drawer" data-label="MEDIEVAL · 500 CE"></span></a>
+          <a href="#/category/era-east-asia" class="era-num" data-era-index="4" data-era-id="era-east-asia"><span class="num-val">4</span><span class="meta-drawer" data-label="EAST ASIA · 960 CE"></span></a>
+          <a href="#/category/era-islamic-world" class="era-num" data-era-index="5" data-era-id="era-islamic-world"><span class="num-val">5</span><span class="meta-drawer" data-label="ISLAMIC · 1200 CE"></span></a>
+          <a href="#/category/era-renaissance" class="era-num" data-era-index="6" data-era-id="era-renaissance"><span class="num-val">6</span><span class="meta-drawer" data-label="RENAISSANCE · 1400"></span></a>
+          <a href="#/category/era-baroque" class="era-num" data-era-index="7" data-era-id="era-baroque"><span class="num-val">7</span><span class="meta-drawer" data-label="BAROQUE · 1600 CE"></span></a>
+          <a href="#/category/era-18th-century" class="era-num" data-era-index="8" data-era-id="era-18th-century"><span class="num-val">8</span><span class="meta-drawer" data-label="18TH CENT · 1700"></span></a>
+          <a href="#/category/era-19th-century" class="era-num" data-era-index="9" data-era-id="era-19th-century"><span class="num-val">9</span><span class="meta-drawer" data-label="19TH CENT · 1800"></span></a>
+          <a href="#/category/era-early-20th-century" class="era-num" data-era-index="10" data-era-id="era-early-20th-century"><span class="num-val">10</span><span class="meta-drawer" data-label="EARLY 20TH · 1900"></span></a>
+          <a href="#/category/era-mid-20th-century" class="era-num" data-era-index="11" data-era-id="era-mid-20th-century"><span class="num-val">11</span><span class="meta-drawer" data-label="MODERNISM · 1930"></span></a>
+          <a href="#/category/era-pre-columbian" class="era-num" data-era-index="12" data-era-id="era-pre-columbian"><span class="num-val">12</span><span class="meta-drawer" data-label="AMERICAS · 1500 BCE"></span></a>
+          <a href="#/category/era-contemporary" class="era-num" data-era-index="13" data-era-id="era-contemporary"><span class="num-val">13</span><span class="meta-drawer" data-label="CONTEMPORARY · 1960–2026"></span></a>
+    </div>
+    <nav class="nav-links">
+      <button id="haiku-settings-btn" class="haiku-settings-trigger touch-target" type="button" title="Living Marginalia Settings" aria-label="Living Marginalia Settings" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+        </svg>
+      </button>
+      <button id="theme-toggle" class="theme-toggle touch-target" type="button" title="Toggle theme" aria-label="Toggle theme" aria-pressed="false">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="11" height="11" fill="currentColor" class="theme-toggle__within" viewBox="0 0 32 32">
+          <clipPath id="theme-toggle__within__clip">
+            <path d="M0 0h32v32h-32ZM6 16A1 1 0 0026 16 1 1 0 006 16" />
+          </clipPath>
+          <g clip-path="url(#theme-toggle__within__clip)">
+            <path class="theme-toggle__within__rays" d="M30.7 21.3 27.1 16l3.7-5.3c.4-.5.1-1.3-.6-1.4l-6.3-1.1-1.1-6.3c-.1-.6-.8-.9-1.4-.6L16 5l-5.4-3.7c-.5-.4-1.3-.1-1.4.6l-1 6.3-6.4 1.1c-.6.1-.9.9-.6 1.3L4.9 16l-3.7 5.3c-.4.5-.1 1.3.6 1.4l6.3 1.1 1.1 6.3c.1.6.8.9 1.4.6l5.3-3.7 5.3 3.7c.5.4 1.3.1 1.4-.6l1.1-6.3 6.3-1.1c.8-.1 1.1-.8.7-1.4zM16 25.1c-5.1 0-9.1-4.1-9.1-9.1 0-5.1 4.1-9.1 9.1-9.1s9.1 4.1 9.1 9.1c0 5.1-4 9.1-9.1 9.1z" />
+          </g>
+          <path class="theme-toggle__within__circle" d="M16 7.7c-4.6 0-8.2 3.7-8.2 8.2s3.6 8.4 8.2 8.4 8.2-3.7 8.2-8.2-3.6-8.4-8.2-8.4zm0 14.4c-3.4 0-6.1-2.9-6.1-6.2s2.7-6.1 6.1-6.1c3.4 0 6.1 2.9 6.1 6.2s-2.7 6.1-6.1 6.1z" />
+          <path class="theme-toggle__within__inner" d="M16 9.5c-3.6 0-6.4 2.9-6.4 6.4s2.8 6.5 6.4 6.5 6.4-2.9 6.4-6.4-2.8-6.5-6.4-6.5z" />
+        </svg>
+      </button>
+      <a href="#/timeline" id="nav-timeline" class="active">TIMELINE</a>
+      <a href="#/categories" id="nav-categories">CATEGORIES</a>
+      <a href="#/dossier" id="nav-haikus">HAIKUS</a>
+      <a href="#/stack" id="nav-stack">STACK <span id="stack-count-badge">[0]</span></a>
+    </nav>
+  </header>
+
+  <!-- Slim Mobile Era Strip under the header on Timeline (stays pinned when the header hides) -->
+  <div id="mobile-era-bar" class="mobile-era-bar" style="display: none;" aria-live="polite">
+    <div class="mobile-era-indicator">
+      <span class="mobile-era-swatch" id="mobile-era-swatch"></span>
+      <span id="mobile-era-title">PREHISTORY</span>
+    </div>
+    <div id="mobile-mov-title" style="font-family: var(--font-reading); font-size: 12px; font-style: italic; color: var(--text-secondary);">Ancient Cyprus</div>
+  </div>
+
+  <!-- Compact Living Margin Settings Drawer (Left: Buttons & Haikus Link | Right: Sliders) -->
+  <div id="haiku-settings-drawer" class="haiku-settings-drawer hidden" aria-hidden="true">
+    <div class="settings-drawer-inner">
+      <div class="drawer-buttons-col">
+        <div class="mode-buttons-group">
+          <button data-mode="still" class="mode-btn">STILL</button>
+          <button data-mode="calm" class="mode-btn active">CALM DRIFT</button>
+          <button data-mode="rain" class="mode-btn">AUTUMN RAIN</button>
+          <button data-mode="prowl" class="mode-btn">RESTLESS CAT</button>
+        </div>
+        <div class="drawer-aux-buttons">
+          <button id="close-settings-btn" class="drawer-close-btn" aria-label="Close settings">×</button>
+        </div>
+      </div>
+      <div class="drawer-sliders-row">
+        <div class="slider-field">
+          <label for="haiku-parallax-slider">PARALLAX</label>
+          <input id="haiku-parallax-slider" type="range" min="0" max="200" value="100" />
+          <span id="haiku-parallax-val">1.0x</span>
+        </div>
+        <div class="slider-field">
+          <label for="haiku-opacity-slider">OPACITY</label>
+          <input id="haiku-opacity-slider" type="range" min="15" max="100" value="78" />
+          <span id="haiku-opacity-val">78%</span>
+        </div>
+        <div class="slider-field">
+          <label for="haiku-mutation-slider">ACTIVITY</label>
+          <input id="haiku-mutation-slider" type="range" min="0" max="100" value="1" />
+          <span id="haiku-mutation-val">1%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Autonomous Living Margins (3 Vertical Ribbons each side) -->
+  <aside id="notepad-margin-left" class="notepad-margin notepad-margin-left living-margin-container left" aria-label="Left Living Margin">
+    <div id="ribbon-l-outer" class="tategaki-ribbon ascii-col" data-speed="0.11" data-side="left"></div>
+    <div id="ribbon-l-main" class="tategaki-ribbon" data-speed="0.18" data-side="left"></div>
+    <div id="ribbon-l-inner" class="tategaki-ribbon ascii-col" data-speed="0.24" data-side="left"></div>
+    <span id="haiku-stream-left" style="display:none;" aria-hidden="true"></span>
+  </aside>
+  <aside id="notepad-margin-right" class="notepad-margin notepad-margin-right living-margin-container right" aria-label="Right Living Margin">
+    <div id="ribbon-r-inner" class="tategaki-ribbon ascii-col" data-speed="0.22" data-side="right"></div>
+    <div id="ribbon-r-main" class="tategaki-ribbon" data-speed="0.14" data-side="right"></div>
+    <div id="ribbon-r-outer" class="tategaki-ribbon ascii-col" data-speed="0.09" data-side="right"></div>
+    <span id="haiku-stream-right" style="display:none;" aria-hidden="true"></span>
+  </aside>
+
+  <!-- Mobile Touch Backdrop to Dismiss Haiku Preview when Tapping Back to Main Body -->
+  <div id="haiku-touch-backdrop" class="haiku-touch-backdrop" aria-hidden="true"></div>
+
+  <!-- Minimalist Floating Translation Flashcard for Margin Hover & Mobile Touch -->
+  <div id="margin-tooltip" class="margin-tooltip hidden" aria-hidden="true">
+    <div id="tt-jp" class="tt-jp"></div>
+    <p id="tt-romaji" class="tt-romaji"></p>
+    <div id="tt-en" class="tt-en"></div>
+    <div class="tooltip-footer">
+      <div class="tt-author-block">
+        <span id="tt-author" class="tt-author"></span>
+        <span id="tt-lifespan" class="tt-lifespan"></span>
+      </div>
+      <span id="tt-year" class="tt-year"></span>
+    </div>
+  </div>
+
+  <!-- Fixed Side indicator on desktop timeline -->
+  <aside id="side-indicator" class="side-indicator" style="display: none;">
+    <div class="side-swatch" id="side-swatch"></div>
+    <div class="side-era-label" id="side-era-label">ERA</div>
+    <div class="side-mov-label" id="side-mov-label">Movement</div>
+  </aside>
+
+  <!-- Main View Container -->
+  <main id="app-root"></main>
+
+  <!-- Mobile Bottom Sheet for Filters -->
+  <div id="filter-bottom-sheet" class="bottom-sheet-backdrop" role="dialog" aria-modal="true" aria-label="Filter and sort archive">
+    <div class="bottom-sheet-content">
+      <div class="sheet-header">
+        <span class="sheet-title">CATALOGUE FILTERS &amp; SORT</span>
+        <button class="sheet-close-btn" id="close-filter-sheet" aria-label="Close filters">✕ CLOSE</button>
+      </div>
+      <div>
+        <div class="dossier-section-title">SEARCH ARCHIVE</div>
+        <input type="text" id="sheet-search" class="search-input" placeholder="SEARCH ARTIST, TITLE, TYPE, YEAR…">
+      </div>
+      <div>
+        <div class="dossier-section-title">ORDER BY</div>
+        <select id="sheet-sort" class="sort-select" style="width: 100%;">
+          <option value="year-asc">Chronological (Earliest first)</option>
+          <option value="year-desc">Chronological (Latest first)</option>
+          <option value="artist-asc">Artist (A — Z)</option>
+          <option value="title-asc">Title (A — Z)</option>
+        </select>
+      </div>
+      <button class="primary-archive-btn" id="apply-filter-sheet" style="width: 100%; justify-content: center;">
+        APPLY FILTERS &amp; VIEW
+      </button>
+    </div>
+  </div>
+
+  <!-- Minimalist Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left"></div>
+      <div class="footer-right">
+        <a href="https://instagram.com/eliaszpon" target="_blank" rel="noopener noreferrer" class="footer-instagram">instagram: @eliaszpon</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Full-Screen Archival Lightbox Modal (Fallback / Native) -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Artwork inspection view">
+    <div class="lightbox-header">
+      <div class="lightbox-title-meta" id="lightbox-meta">Nº 0000 — ARCHIVAL INSPECTION</div>
+      <div class="lightbox-actions">
+        <button class="lightbox-btn" id="lightbox-zoom-toggle">ZOOM: 100%</button>
+        <button class="lightbox-btn" id="lightbox-close-btn" aria-label="Close zoom viewer">CLOSE [ESC]</button>
+      </div>
+    </div>
+    <div class="lightbox-viewport" id="lightbox-viewport">
+      <img id="lightbox-img" src="" alt="Enlarged artwork">
+    </div>
+  </div>
+
+  <!-- Embedded Structured Datasets -->
+  <!-- INJECT:DATA_CATEGORIES -->
+  <script id="data-categories" type="application/json"></script>
+  <!-- INJECT:DATA_ARTWORKS -->
+  <script id="data-artworks" type="application/json"></script>
+
+  <!-- Application Logic -->
+  <!-- INJECT:SCRIPT -->
+  <script src="src/js/app.js"></script>
+
+  <!-- Persistent Curatorial Stack Toast -->
+  <div id="stack-toast" class="stack-toast" aria-live="polite"></div>
+</body>
+</html>

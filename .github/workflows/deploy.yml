@@ -1,0 +1,51 @@
+name: Deploy to GitHub Pages
+
+# The site is built locally (npm run build → index.html). This workflow only publishes
+# what the site needs: index.html, assets/ and _headers. Nothing else in the repo is served.
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Collect site files into dist/
+        run: |
+          test -s index.html || { echo "index.html is missing: run npm run build locally and commit it"; exit 1; }
+          mkdir -p dist
+          cp index.html dist/
+          cp -r assets dist/
+          if [ -f _headers ]; then cp _headers dist/; fi
+          du -sh dist
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
