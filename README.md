@@ -1,0 +1,126 @@
+# Historia Felis — The Cat in Art History
+
+*A collection of cats in art from cultures all over the world, from the earliest known depictions to today.*
+
+Presented as a single, self-contained, high-performance interactive reference library ([`index.html`](index.html)) with a quiet, monochrome editorial design.
+
+---
+
+## Curatorial Scope & Structure
+
+- **739 Catalogued Artworks**: Spanning from the earliest known feline burial at Shillourokambos, Cyprus (c. 7500 BCE) through ancient Egyptian tomb paintings, Greco-Roman mosaics, Medieval manuscript drolleries, Chinese Song/Ming scrolls, Korean Joseon paintings, Japanese ukiyo-e, Islamic miniatures, Renaissance and Baroque masterpieces, 18th-century still lifes, Victorian feline portraits, Impressionism, Symbolism, 20th-century Modernism, and contemporary art through 2026.
+- **100% Public Domain**: Every featured artwork is in the public domain (artists deceased > 70 years / US public domain pre-1929).
+- **Two Feline Roles**: Catalogs works where the cat is the **Main Subject** and where the cat appears as a **Secondary or Symbolic Element**.
+- **48 Categorized Eras & Movements**: Organized with a historical pigment colour palette (Red Ochre, Egyptian Blue, Terracotta, Lapis Lazuli, Cinnabar, Prussian Blue, Persian Turquoise, Verdigris, Raw Umber, Rose Madder, Chrome Yellow, Viridian, Tyrian Aubergine, Cadmium Red).
+- **100 Curated Archival Japanese Cat Haikus**: Featuring masterworks by Matsuo Bashō, Yosa Buson, Kobayashi Issa, Masaoka Shiki, Natsume Sōseki, and Kaga no Chiyo-ni.
+- **Search Everything**: The Categories page searches every field at once: artist, title, movement, era, type, culture, medium, museum, tags and descriptions. Accents are optional ("catalhoyuk", "mloda polska"), typos are corrected, and dates work as `1475`, `1800s`, `19th century`, `1500-1600` or `3000 bce`. Use `"quotes"` for phrases and qualifiers such as `artist:wain`, `type:print`, `era:egypt` or `museum:louvre`. Searches are shareable as `#/categories?q=…`.
+
+---
+
+## Architecture & Project Structure
+
+The project cleanly separates source code (`src/`) and canonical data (`data/`) from the production distribution bundle (`index.html`).
+
+```text
+art_cats/
+├── index.html                  # Standalone production distribution (zero-dependency release)
+├── editor.html                 # Visual in-browser catalog editor (GUI)
+├── package.json                # Standard npm tasks (edit, build, test, serve)
+├── README.md                   # Project documentation & maintainer guide
+├── DEPLOYMENT.md               # Production deployment guide (GitHub Pages, Docker, Nginx)
+├── .nojekyll                   # GitHub Pages Jekyll bypass
+│
+├── data/                       # Canonical structured datasets
+│   ├── artworks.json           # Catalog of all 739 artworks (metadata, dates, licenses, URLs)
+│   ├── categories.json         # Taxonomy of 48 eras and art movements
+│   └── haiku_pool.json         # Curated pool of 100 archival haikus with translations
+│
+├── src/                        # Modular human-maintainable source code
+│   ├── template.html           # Clean HTML skeleton & semantic layout
+│   ├── css/
+│   │   └── style.css           # Monochrome design system & responsive styles
+│   └── js/
+│       └── app.js              # Application logic, PhotoSwipe, loupe, router & audio intro
+│
+├── assets/                     # Media & audio assets
+│   └── audio/
+│       └── intro_swell.wav     # Cinematic first-session orchestral audio swell
+│
+└── scripts/                    # Core automation tooling
+    ├── editor_server.js        # Local backend server for the Visual Catalog Editor
+    ├── build.js                # Node.js bundler (compiles src/ + data/ -> index.html in ~20ms)
+    └── validate.js             # Automated schema, taxonomy & bundle health validator
+```
+
+---
+
+## Modifying Artworks: Visual In-Browser Catalog Editor
+
+You never have to manually edit JSON files. You can modify, add, or delete artworks using the visual GUI:
+
+### Starting the Editor
+```bash
+npm run edit
+```
+Open **[http://localhost:3000/editor.html](http://localhost:3000/editor.html)** in your browser.
+
+### Key Capabilities:
+- **Search & Filter**: Search instantaneously by title, artist name, accession number, or slug, and filter by historical era.
+- **Live Image Preview**: Visual thumbnail renders immediately as you paste or change image URLs.
+- **Taxonomy Dropdowns**: Era and Movement dropdowns are populated directly from `data/categories.json` to prevent typos or broken category links.
+- **Tag Editor**: Add and remove tags with interactive tag pills.
+- **One-Click Save**: Click **"Save Changes"** to update `data/artworks.json` and immediately regenerate `index.html`.
+- **Add Artworks from links**: Click **"+ Add Artworks"** and paste one or more links (museum pages, Google Arts & Culture, Wikipedia, Wikimedia Commons, WikiArt). Each link is read, searched on the web, and turned into a filled-in draft with short, museum-label-style texts. Drafts that might be duplicates, show no cat, or are low-confidence are flagged for review. Text after a link on the same line is used as a hint. The Met, the Art Institute of Chicago and Wikipedia are read through their open APIs. Web search uses the Ollama key in `.env` and falls back to Wikipedia search without one.
+- **Flags**: each artwork in the list shows small flags, and the flag filter lists every kind:
+  red = the red-flag check found a problem; orange = no image; yellow = two or more information fields missing;
+  grey = one missing. The information fields are title, artist, date, era, movement, medium, collection,
+  description (8+ words, not just the title), context and source link. Dimensions and feline symbolism don't count.
+- **Red-flag check**: finds one trusted source and stops at the first hit. It tries, in order, the entry's own link
+  (if on a site in `data/trusted_sources.json`), a web search kept to those sites, the Met / Art Institute of
+  Chicago / Cleveland search APIs, the image's own Commons record, and Wikidata. It then compares the image and asks
+  the configured model whether the source describes the same work. A search hit that turns out to be a different work
+  is skipped, not held against the entry. Red means a clear contradiction in artist, date, title, collection,
+  object type or image, or a broken or duplicated image.
+  Run it per artwork ("Red-flag check"), on the listed artworks ("Check shown"), or for the whole catalogue:
+  `npm run check` (new or edited entries), `npm run check -- --all`, `--status problem`, `--ids a,b`, `--concurrency 3`.
+  Results are stored in `data/checks.json` and stop counting once the entry is edited.
+- **Blank entries & Delete**: "Blank entry" in the same window starts an empty draft; **"Delete Artwork"** removes one.
+- **Standalone Mode**: Can also be opened directly via `file:///` without a server to browse and export/download `artworks.json`.
+
+---
+
+## Maintainer & Developer Guide
+
+### Commands
+
+| Task | Command | Description |
+| :--- | :--- | :--- |
+| **Launch Visual Editor** | `npm run edit` | Starts local visual editor server at `localhost:3000` |
+| **Build Release Bundle** | `npm run build` | Compiles `src/` and `data/` into `index.html` (~20ms) |
+| **Validate Catalog** | `npm test` | Checks schema, IDs, taxonomy relations, and bundle health |
+| **Local Preview Server** | `npm run serve` | Starts local HTTP server for testing `index.html` |
+
+### Making Code Modifications
+
+- **To edit UI styles**: Edit [`src/css/style.css`](src/css/style.css) with full CSS syntax highlighting and formatting.
+- **To edit application logic or routing**: Edit [`src/js/app.js`](src/js/app.js) with standard ES6+ features and IDE autocomplete.
+- **To edit HTML layout or meta tags**: Edit [`src/template.html`](src/template.html).
+- **To rebuild the site**: Run `npm run build`.
+
+---
+
+## Deployment (GitHub Pages)
+
+The repository includes [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) and [`.nojekyll`](.nojekyll) for turnkey GitHub Pages hosting.
+
+1. Push your repository to GitHub:
+   ```bash
+   git add .
+   git commit -m "feat: clean architecture and visual catalog editor"
+   git push origin master
+   ```
+2. In your GitHub repository, go to **Settings > Pages**.
+3. Under **Build and deployment > Source**, choose **GitHub Actions** (or select **Deploy from branch** $\rightarrow$ `master` / `/ (root)`).
+4. Your site will be published at `https://<username>.github.io/<repo-name>/`.
+
+For complete deployment details (Docker, Nginx, Cloudflare Pages, Netlify), see [DEPLOYMENT.md](DEPLOYMENT.md).

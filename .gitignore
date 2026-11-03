@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.npm/
+
+# Local-only tooling and working data (never published)
+scripts/
+.cache/
+.claude/
+data/backups/
+data/*_candidates.json
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# OS Artifacts
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# IDE & Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Secrets and environment
+.env
+.env.*
+
