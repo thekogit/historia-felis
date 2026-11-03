@@ -68,6 +68,58 @@ try { (function() {
         const headerHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) || 56;
         const offset = () => targetEl.getBoundingClientRect().top - headerHeight;
         const aim = behavior => window.scrollTo({ top: offset() + window.scrollY, behavior });
+
+        // Far jumps (e.g. 0 → 13) don't travel: a smooth scroll through hundreds of cards renders
+        // and loads every one on the way, and their real heights keep shoving the target down.
+        // Instead the timeline dips out, the target era and its neighbours are readied (images
+        // requested, cards pre-revealed), we jump in one step and it comes back in place.
+        // Cards above stay unrendered placeholders, and scroll anchoring keeps the era heading
+        // fixed while whatever is near it settles, so nothing visibly jumps.
+        const far = Math.abs(offset()) > window.innerHeight * 1.5;
+        if (far) {
+          const page = document.querySelector('.timeline-page') || appRoot;
+          const order = [...document.querySelectorAll('.era-heading-node')].map(n => n.dataset.eraId);
+          const at = order.indexOf(targetEraId);
+          const near = new Set([order[at - 1], targetEraId, order[at + 1]].filter(Boolean));
+          const dur = Motion.reduced ? 0 : 140;
+          cancelAnims(page);
+          const out = page.animate([{ opacity: 1 }, { opacity: 0 }], { duration: dur, easing: 'ease-in', fill: 'forwards' });
+          const land = () => {
+            document.querySelectorAll('[data-era-id]').forEach(el => {
+              if (!near.has(el.dataset.eraId) || el.classList.contains('era-num')) return;
+              if (el.dataset.eraId === targetEraId && el.classList.contains('timeline-item')) el.classList.add('revealed');
+              // Each card's first frame is enough; the slider loads the rest on demand
+              el.querySelectorAll('.card-thumb-wrap').forEach(w => {
+                const img = w.querySelector('img[loading="lazy"]');
+                if (img) img.loading = 'eager';
+              });
+            });
+            aim('instant');
+            // Cards around the landing spot render over the next few frames and their real
+            // heights push the heading down. While still hidden, keep re-aiming until it has
+            // stayed put for several frames, and only then fade the timeline back in.
+            const t0 = performance.now();
+            let still = 0;
+            const settle = () => {
+              if (Math.abs(offset()) > 2) { aim('instant'); still = 0; } else still++;
+              if (still < 6 && performance.now() - t0 < 900) { requestAnimationFrame(settle); return; }
+              cancelAnims(page);
+              if (dur) page.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 240, easing: Motion.ease.out });
+              setActiveEra(targetEraId);
+              // The side/mobile era labels follow scrolling, which an instant jump skips
+              const eraName = targetEl.dataset.eraName || '';
+              const movName = document.querySelector(`.timeline-item[data-era-id="${targetEraId}"], .timeline-spotlight-item[data-era-id="${targetEraId}"]`)?.dataset.movName || '';
+              [sideEraLabel, mobileEraTitle].forEach(el => { if (el) el.textContent = eraName; });
+              [sideMovLabel, mobileMovTitle].forEach(el => { if (el) el.textContent = movName; });
+              clearTimeout(eraScrollLockTimer);
+              eraScrollLockTimer = setTimeout(() => { isProgrammaticEraScroll = false; }, 250);
+            };
+            requestAnimationFrame(settle);
+          };
+          if (dur) out.finished.then(land, land); else land();
+          return;
+        }
+
         aim(Motion.scroll());
 
         // Images above the target load while we travel and push it further down, so a
@@ -2689,7 +2741,7 @@ try { (function() {
             .map(x => x.c);
         }
 
-        return { search, searchCategories, fold, isAnonymous };
+        return { search, searchCategories, fold, isAnonymous, warm: build };
       })();
 
       function renderCategoriesView(query = {}) {
@@ -2909,148 +2961,267 @@ try { (function() {
         });
 
         bindArchiveSearch(initialQ);
+        // Build the search index while the page is idle, so the first keystroke doesn't stall
+        (window.requestIdleCallback || (fn => setTimeout(fn, 200)))(() => ArchiveSearch.warm());
       }
 
-      // Categories page search: results replace the era blocks while a query is active
-      const SEARCH_PAGE_SIZE = 48;
+      // Categories page search. Results are drawn with the era blocks' own parts — typology
+      // contact strip, movement tiles, specimen drawer — and updated IN PLACE on each query:
+      // tiles are kept and FLIP-reordered, the drawer rolls to its new length. Nothing big
+      // is re-rendered per keystroke (that's what made the old card grid choppy on phones).
+      const SEARCH_CARD_CAP = 40;   // specimen cards before "Show all"
+      const SEARCH_TILE_CAP = 12;   // movement tiles shown (most matches first)
       function bindArchiveSearch(initialQ) {
         const page = appRoot.querySelector('.categories-page');
         const input = document.getElementById('archive-search-input');
         const panel = document.getElementById('archive-search-results');
         if (!page || !input || !panel) return;
 
-        const facet = { era: null, type: null };
-        let shown = SEARCH_PAGE_SIZE;
+        let activeType = 'all';
+        let showAll = false;
         let timer = null;
+        let seq = 0;
+        let ui = null;                 // skeleton elements, built on first query
+        const tilePool = new Map();    // movement id → tile element (reused across queries)
+        let lastCardsHTML = null;
+        let lastTypesSig = '';
 
-        function setQuery(q, { focus = false } = {}) {
-          input.value = q;
-          facet.era = facet.type = null;
-          shown = SEARCH_PAGE_SIZE;
-          run();
-          if (focus) input.focus();
-        }
-
-        function syncUrl(q) {
+        const syncUrl = q => {
           const hash = q ? `#/categories?q=${encodeURIComponent(q)}` : '#/categories';
           if (location.hash !== hash) history.replaceState(null, '', hash);
+        };
+
+        function buildSkeleton() {
+          panel.innerHTML = `
+            <section class="era-catalogue-block search-catalogue-block">
+              <div class="era-catalogue-header-group">
+                <div class="era-catalogue-title-row">
+                  <div class="era-title-left">
+                    <h2 class="era-cat-name search-cat-name"></h2>
+                    <button type="button" class="era-portal-link search-clear-link" data-search-clear><span>Clear search ×</span></button>
+                  </div>
+                  <div class="era-cat-dates tabular search-tally"></div>
+                </div>
+                <div class="era-typology-bar-zone">
+                  <div class="typology-strip-scroll-wrap">
+                    <button type="button" class="typo-scroll-arrow typo-scroll-left" aria-label="Previous types">
+                      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 1 1 6 7 11"/></svg>
+                    </button>
+                    <div class="typology-strip" role="toolbar" aria-label="Filter results by type"></div>
+                    <button type="button" class="typo-scroll-arrow typo-scroll-right" aria-label="More types">
+                      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 1 7 6 1 11"/></svg>
+                    </button>
+                  </div>
+                  <div class="typology-status-readout tabular"></div>
+                </div>
+              </div>
+              <p class="search-correction" hidden></p>
+              <div class="search-group search-artists" hidden>
+                <div class="search-group-title">ARTISTS</div>
+                <div class="search-chip-row"></div>
+              </div>
+              <div class="era-catalogue-split-wrapper has-active-filter">
+                <div class="category-tiles-grid search-tiles-grid"></div>
+                <div class="filtered-specimens-strip visible">
+                  <div class="specimens-strip-header">
+                    <span class="search-strip-title"></span>
+                    <button type="button" class="btn-micro search-show-all" data-search-more hidden>SHOW ALL</button>
+                  </div>
+                  <div class="specimens-mini-grid"></div>
+                </div>
+              </div>
+              <p class="search-empty" hidden>Nothing found. Try an artist's surname, a place (“Japan”), a material (“bronze”) or a period (“1800s”, “19th century”).</p>
+            </section>`;
+          const q = s => panel.querySelector(s);
+          ui = {
+            title: q('.search-cat-name'), tally: q('.search-tally'),
+            strip: q('.typology-strip'), readout: q('.typology-status-readout'),
+            note: q('.search-correction'), artists: q('.search-artists'), artistRow: q('.search-artists .search-chip-row'),
+            split: q('.era-catalogue-split-wrapper'), tiles: q('.search-tiles-grid'),
+            drawer: q('.filtered-specimens-strip'), drawerTitle: q('.search-strip-title'),
+            more: q('.search-show-all'), cards: q('.specimens-mini-grid'), empty: q('.search-empty'),
+          };
+          setupTypologyScrollIndicators(ui.strip);
+          tilePool.clear();
+          lastCardsHTML = null;
+          lastTypesSig = '';
         }
 
-        function chip(label, count, attrs, active = false) {
-          return `<button type="button" class="search-chip${active ? ' active' : ''}" ${attrs} aria-pressed="${active}">
-                    <span class="search-chip-label">${escapeAttr(label)}</span>${count != null ? `<span class="search-chip-count tabular">${count}</span>` : ''}
-                  </button>`;
+        function makeTile(m) {
+          const a = document.createElement('a');
+          a.className = 'cat-square-tile';
+          a.dataset.subId = m.id;
+          a.innerHTML = `
+            <div class="cat-tile-ghost-img"></div>
+            <div class="cat-tile-top"><div class="cat-tile-dates tabular">${formatEraOrMovementDates(m)}</div></div>
+            <div class="cat-tile-bottom">
+              <span class="cat-tile-active-pill"></span>
+              <h3 class="cat-tile-name">${m.name}</h3>
+              <div class="cat-tile-count tabular"></div>
+            </div>`;
+          return a;
         }
 
-        function run() {
+        function typoButtons(all, typeCounts) {
+          const buttons = [{ key: 'all', label: 'ALL', count: all.length }];
+          TYPOLOGY_ORDER.forEach(t => { if (typeCounts.get(t)) buttons.push({ key: t, label: t.toUpperCase(), count: typeCounts.get(t) }); });
+          typeCounts.forEach((n, t) => { if (!TYPOLOGY_ORDER.includes(t)) buttons.push({ key: t, label: t.toUpperCase(), count: n }); });
+          return buttons;
+        }
+
+        function renderTypes(buttons) {
+          const sig = buttons.map(b => b.key + ':' + b.count).join('|');
+          const rebuilt = sig !== lastTypesSig;
+          if (rebuilt) {
+            lastTypesSig = sig;
+            ui.strip.innerHTML = buttons.map((b, i) => `
+              <button type="button" class="typo-btn tabular" data-key="${escapeAttr(b.key)}" aria-pressed="false">
+                <span class="typo-idx">${String(i).padStart(2, '0')}</span>
+                <span class="typo-label">${escapeAttr(b.label)}</span>
+                <span class="typo-count">${b.count}</span>
+              </button>`).join('');
+            ui.strip.scrollLeft = 0;
+            ui.strip.dispatchEvent(new Event('scroll')); // refresh the chevrons
+          }
+          ui.strip.querySelectorAll('.typo-btn').forEach(b => {
+            const on = b.dataset.key === activeType;
+            b.classList.toggle('active', on);
+            b.setAttribute('aria-pressed', String(on));
+          });
+          positionTypoGlider(ui.strip, !rebuilt); // glide only between buttons that stayed put
+        }
+
+        function run({ roll = false } = {}) { // roll: full drawer roll (clicks); typing uses a cheap crossfade
           const q = input.value.trim();
+          const mySeq = ++seq;
+          const isStale = () => seq !== mySeq || !document.body.contains(panel);
           syncUrl(q);
           page.classList.toggle('is-searching', !!q);
-          if (!q) { panel.innerHTML = ''; return; }
+          // One Latin letter matches nearly everything: wait for a second one (CJK searches from one)
+          const tooShort = q.length < 2 && !/[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u.test(q);
+          if (!q || tooShort) { panel.hidden = true; page.classList.remove('is-searching'); return; }
+          panel.hidden = false;
+          if (!ui || !panel.contains(ui.title)) buildSkeleton();
 
           const { results, corrected } = ArchiveSearch.search(q);
           const all = results.map(r => r.w);
-          const cats = ArchiveSearch.searchCategories(q).slice(0, 8);
+          const typeCounts = new Map();
+          all.forEach(w => { const t = w.type || 'Painting'; typeCounts.set(t, (typeCounts.get(t) || 0) + 1); });
+          if (activeType !== 'all' && !typeCounts.has(activeType)) activeType = 'all';
+          const works = activeType === 'all' ? all : all.filter(w => (w.type || 'Painting') === activeType);
+          const typeLabel = activeType === 'all' ? '' : activeType.toUpperCase();
 
-          // Facet counts come from the full result set; the grid shows the faceted slice
-          const eraCounts = new Map(), typeCounts = new Map(), artistCounts = new Map();
-          all.forEach(w => {
-            eraCounts.set(w.era_id, (eraCounts.get(w.era_id) || 0) + 1);
-            const t = w.type || 'Painting';
-            typeCounts.set(t, (typeCounts.get(t) || 0) + 1);
-            if (!ArchiveSearch.isAnonymous(w.artist)) artistCounts.set(w.artist, (artistCounts.get(w.artist) || 0) + 1);
+          // Header: the query is the block's title, like an era name
+          ui.title.textContent = `“${q}”`;
+          const movIds = new Map();
+          works.forEach(w => movIds.set(w.movement_id, (movIds.get(w.movement_id) || 0) + 1));
+          swapText(ui.tally, `${works.length}${activeType === 'all' ? '' : '/' + all.length} ${works.length === 1 ? 'WORK' : 'WORKS'} · ${movIds.size} ${movIds.size === 1 ? 'MOVEMENT' : 'MOVEMENTS'}`);
+
+          const buttons = typoButtons(all, typeCounts);
+          renderTypes(buttons);
+          swapText(ui.readout, activeType === 'all'
+            ? `PRESENT TYPES: <strong>${buttons.length - 1}</strong>`
+            : `ACTIVE: <strong>${escapeAttr(typeLabel)}</strong> [${String(works.length).padStart(2, '0')}]`, true);
+
+          ui.note.hidden = !corrected.length;
+          if (corrected.length) ui.note.innerHTML = `No exact match. Showing results for ${corrected.map(([, to]) => `<em>${escapeAttr(to)}</em>`).join(', ')}.`;
+
+          // Artists: only the ones the query actually names
+          const qWords = ArchiveSearch.fold(q).split(' ').filter(t => t.length > 2);
+          const artistCounts = new Map();
+          all.forEach(w => { if (!ArchiveSearch.isAnonymous(w.artist)) artistCounts.set(w.artist, (artistCounts.get(w.artist) || 0) + 1); });
+          const artists = [...artistCounts.entries()]
+            .filter(([name]) => { const parts = ArchiveSearch.fold(name).split(' '); return qWords.some(t => parts.some(p => p.startsWith(t))); })
+            .sort((a, b) => b[1] - a[1]).slice(0, 8);
+          ui.artists.hidden = !artists.length || /^artist:/i.test(q);
+          ui.artistRow.innerHTML = artists.map(([name, n]) =>
+            `<button type="button" class="search-chip" data-search-artist="${escapeAttr(name)}"><span class="search-chip-label">${escapeAttr(name)}</span><span class="search-chip-count tabular">${n}</span></button>`).join('');
+
+          ui.empty.hidden = all.length > 0;
+          ui.split.hidden = all.length === 0;
+          if (!all.length) { lastCardsHTML = ''; ui.cards.innerHTML = ''; return; }
+
+          // Movement tiles: most matches first, reused + FLIP-reordered
+          const ranked = [...movIds.entries()]
+            .map(([id, n]) => ({ m: categoryMap.get(id), n }))
+            .filter(x => x.m)
+            .sort((a, b) => b.n - a.n || a.m.start_year - b.m.start_year)
+            .slice(0, SEARCH_TILE_CAP);
+          const qParam = `?q=${encodeURIComponent(q)}${activeType === 'all' ? '' : '&type=' + encodeURIComponent(activeType)}`;
+          const entering = [];
+          flipTiles(ui.tiles, () => {
+            const keep = new Set(ranked.map(x => x.m.id));
+            [...ui.tiles.children].forEach(t => { if (!keep.has(t.dataset.subId)) t.remove(); });
+            ranked.forEach(({ m, n }, i) => {
+              let tile = tilePool.get(m.id);
+              if (!tile) { tile = makeTile(m); tilePool.set(m.id, tile); }
+              if (!tile.isConnected) { ui.tiles.appendChild(tile); entering.push(tile); }
+              tile.style.order = String(i);
+              tile.href = `#/category/${m.id}${qParam}`;
+              const cover = works.find(w => w.movement_id === m.id);
+              const img = cover ? (localUrl(cover, cover.image_url, 400) || getOptimizedImageUrl(cover.thumb_url || cover.image_url, 400)) : '';
+              const ghost = tile.querySelector('.cat-tile-ghost-img');
+              if (ghost.dataset.src !== img) { ghost.dataset.src = img; ghost.style.backgroundImage = img ? `url('${img}')` : ''; }
+              const countEl = tile.querySelector('.cat-tile-count');
+              const countText = `[ ${n} ${n === 1 ? 'WORK' : 'WORKS'} MATCHING ]`;
+              if (entering.includes(tile)) countEl.textContent = countText; else swapText(countEl, countText);
+              setTileActivePill(tile, typeLabel);
+            });
           });
-          if (facet.era && !eraCounts.has(facet.era)) facet.era = null;
-          if (facet.type && !typeCounts.has(facet.type)) facet.type = null;
-          const works = all.filter(w => (!facet.era || w.era_id === facet.era) && (!facet.type || (w.type || 'Painting') === facet.type));
+          if (!Motion.reduced) entering.forEach((t, i) => t.animate(
+            [{ opacity: 0, transform: 'translateY(8px)' }, { opacity: 1, transform: 'none' }],
+            { duration: Motion.dur('base'), easing: Motion.ease.out, delay: Math.min(i, 8) * 24, fill: 'backwards' }));
 
-          // Artists whose own name matches the query come first; others are "also in results"
-          const qFold = ArchiveSearch.fold(q);
-          // Artists named by the query; otherwise only the recurring ones (one-off workshops are noise)
-          const artistList = [...artistCounts.entries()]
-            .map(([name, n]) => ({ name, n, direct: qFold.split(' ').some(t => t.length > 2 && ArchiveSearch.fold(name).split(' ').some(p => p.startsWith(t))) }))
-            .sort((a, b) => b.n - a.n);
-          const directArtists = artistList.filter(a => a.direct);
-          const artists = directArtists.length
-            ? directArtists.slice(0, 10)
-            : artistList.filter(a => a.n >= 2).slice(0, 5);
-
-          const eraOrder = categories.filter(c => c.level === 'era').map(c => c.id);
-          const eraChips = [...eraCounts.entries()].sort((a, b) => eraOrder.indexOf(a[0]) - eraOrder.indexOf(b[0]));
-          const typeChips = [...typeCounts.entries()].sort((a, b) => TYPOLOGY_ORDER.indexOf(a[0]) - TYPOLOGY_ORDER.indexOf(b[0]));
-
-          let out = `
-            <div class="search-summary tabular">
-              <span><strong>${all.length}</strong> ${all.length === 1 ? 'WORK' : 'WORKS'} MATCH “${escapeAttr(q)}”</span>
-              <button type="button" class="search-clear-btn" data-search-clear>CLEAR SEARCH [×]</button>
-            </div>
-            ${corrected.length ? `<p class="search-correction">No exact match — showing results for ${corrected.map(([, to]) => `<em>${escapeAttr(to)}</em>`).join(', ')}.</p>` : ''}
-          `;
-
-          if (cats.length) {
-            out += `<div class="search-group"><div class="search-group-title">ERAS &amp; MOVEMENTS</div><div class="search-chip-row">
-              ${cats.map(c => `<a class="search-chip search-chip-link" href="#/category/${c.id}">
-                  <span class="search-chip-swatch" style="background:${escapeAttr(c.color || 'transparent')}"></span>
-                  <span class="search-chip-label">${escapeAttr(c.name)}</span>
-                  <span class="search-chip-count tabular">${formatEraOrMovementDates(c)}</span>
-                </a>`).join('')}
-            </div></div>`;
+          // Specimen drawer
+          const cap = showAll ? works.length : SEARCH_CARD_CAP;
+          swapText(ui.drawerTitle, `MATCHING ARTWORKS${typeLabel ? ' → ' + typeLabel : ''} (${works.length})`);
+          ui.more.hidden = works.length <= cap;
+          if (!ui.more.hidden) ui.more.textContent = `SHOW ALL ${works.length}`;
+          const html = renderSpecimenCards(works.slice(0, cap));
+          if (html !== lastCardsHTML) {
+            const first = lastCardsHTML === null || lastCardsHTML === '';
+            lastCardsHTML = html;
+            if (first) { ui.cards.innerHTML = html; revealStrip(ui.drawer, ui.cards); }
+            else if (roll) swapMiniGrid(ui.drawer, ui.cards, html, isStale);
+            else { cancelAnims(ui.drawer); ui.drawer.classList.remove('is-rolling'); ui.cards.innerHTML = html; staggerCards(ui.cards, 8); }
           }
-          if (artists.length) {
-            out += `<div class="search-group"><div class="search-group-title">ARTISTS</div><div class="search-chip-row">
-              ${artists.map(a => chip(a.name, a.n, `data-search-artist="${escapeAttr(a.name)}"`)).join('')}
-            </div></div>`;
-          }
-          if (eraChips.length > 1) {
-            out += `<div class="search-group"><div class="search-group-title">ERA</div><div class="search-chip-row">
-              ${eraChips.map(([id, n]) => chip(categoryMap.get(id)?.name || id, n, `data-facet="era" data-value="${escapeAttr(id)}"`, facet.era === id)).join('')}
-            </div></div>`;
-          }
-          if (typeChips.length > 1) {
-            out += `<div class="search-group"><div class="search-group-title">TYPE</div><div class="search-chip-row">
-              ${typeChips.map(([t, n]) => chip(t, n, `data-facet="type" data-value="${escapeAttr(t)}"`, facet.type === t)).join('')}
-            </div></div>`;
-          }
+        }
 
-          if (!all.length && !cats.length) {
-            out += `<p class="search-empty">Nothing found. Try an artist's surname, a place (“Japan”), a material (“bronze”), or a period (“1800s”, “19th century”).</p>`;
-          } else if (works.length) {
-            out += `<div class="artwork-grid search-artwork-grid">${renderArtworkGridCards(works.slice(0, shown))}</div>`;
-            if (works.length > shown) {
-              out += `<div class="search-more-wrap"><button type="button" class="search-more-btn" data-search-more>SHOW ALL ${works.length} WORKS</button></div>`;
-            }
-          }
-
-          panel.innerHTML = out;
-          const grid = panel.querySelector('.search-artwork-grid');
-          if (grid) requestAnimationFrame(() => window.initCardSliders(grid));
+        const runNow = opts => { clearTimeout(timer); run(opts); };
+        function setQuery(q, { focus = false } = {}) {
+          input.value = q;
+          activeType = 'all';
+          showAll = false;
+          runNow();
+          if (focus) input.focus();
         }
 
         input.addEventListener('input', () => {
           clearTimeout(timer);
-          facet.era = facet.type = null;
-          shown = SEARCH_PAGE_SIZE;
-          timer = setTimeout(run, 140);
+          showAll = false;
+          timer = setTimeout(run, 180);
         });
         input.addEventListener('keydown', e => {
           if (e.key === 'Escape') { e.preventDefault(); setQuery(''); }
-          if (e.key === 'Enter') { clearTimeout(timer); run(); input.blur(); }
+          if (e.key === 'Enter') { runNow(); input.blur(); }
         });
 
         page.addEventListener('click', e => {
           const hint = e.target.closest('[data-q]');
           if (hint) { setQuery(hint.dataset.q); return; }
           const artist = e.target.closest('[data-search-artist]');
-          if (artist) { setQuery(`artist:"${artist.dataset.searchArtist.replace(/"/g, '')}"`); window.scrollTo({ top: 0, behavior: Motion.scroll() }); return; }
-          const f = e.target.closest('[data-facet]');
-          if (f) {
-            const key = f.dataset.facet;
-            facet[key] = facet[key] === f.dataset.value ? null : f.dataset.value;
-            shown = SEARCH_PAGE_SIZE;
-            run();
+          if (artist) { setQuery(`artist:"${artist.dataset.searchArtist.replace(/"/g, '')}"`); return; }
+          const typo = e.target.closest('.search-catalogue-block .typo-btn');
+          if (typo) {
+            if (typo.dataset.key === activeType) return;
+            activeType = typo.dataset.key;
+            showAll = false;
+            runNow({ roll: true });
+            positionTypoGlider(ui.strip, true);
+            typo.scrollIntoView({ behavior: Motion.scroll(), block: 'nearest', inline: 'nearest' });
             return;
           }
-          if (e.target.closest('[data-search-more]')) { shown = Infinity; run(); return; }
+          if (e.target.closest('[data-search-more]')) { showAll = true; runNow({ roll: true }); return; }
           if (e.target.closest('[data-search-clear]')) { setQuery('', { focus: true }); }
         });
 
@@ -3070,6 +3241,7 @@ try { (function() {
         };
         window.addEventListener('keydown', window.currentCategoriesKeyHandler);
 
+        panel.hidden = !initialQ;
         if (initialQ) run();
       }
 
@@ -3765,7 +3937,7 @@ try { (function() {
           setupTypologyScrollIndicators(strip);
         }
 
-        bindCategoryControls(category, allCategoryArtworks, activeFilter, buttons, typeCounts, subCategories);
+        bindCategoryControls(category, allCategoryArtworks, activeFilter, buttons, typeCounts, subCategories, (query && query.q) || "");
       }
 
       function renderArtworkGridCards(works) {
@@ -3804,9 +3976,9 @@ try { (function() {
         return w.title || '';
       }
 
-      function bindCategoryControls(category, allWorks, initialType, buttons, typeCounts, subCategories = []) {
+      function bindCategoryControls(category, allWorks, initialType, buttons, typeCounts, subCategories = [], initialQuery = "") {
         let activeType = initialType || 'all';
-        let searchQuery = '';
+        let searchQuery = initialQuery; // arrives pre-filled from a Categories search tile (?q=)
         let sortOption = 'year-asc';
 
         const searchInput = document.getElementById('cat-search');
@@ -3972,6 +4144,12 @@ try { (function() {
           sheet.addEventListener('click', e => {
             if (e.target === sheet) closeSheet();
           });
+        }
+
+        if (searchQuery) {
+          if (searchInput) searchInput.value = searchQuery;
+          if (sheetSearch) sheetSearch.value = searchQuery;
+          update();
         }
       }
 
