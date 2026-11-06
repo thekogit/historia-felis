@@ -36,5 +36,6 @@
   "https://images.metmuseum.org/CRDImages/as/original/49650.jpg": "HTTP 404 for https://images.metmuseum.org/CRDImages/as/original/49650.jpg",
   "https://upload.wikimedia.org/wikipedia/commons/6/66/Pierre_Bonnard_-_La_Femme_au_chat_(1912).jpg": "File not found on Wikimedia: Pierre_Bonnard_-_La_Femme_au_chat_(1912).jpg",
   "https://upload.wikimedia.org/wikipedia/commons/2/23/Self-Portrait_with_Cat_1927_Foujita.jpg": "File not found on Wikimedia: Self-Portrait_with_Cat_1927_Foujita.jpg",
-  "https://images.metmuseum.org/CRDImages/ma/original/DP213962.jpg": "HTTP 404 for https://images.metmuseum.org/CRDImages/ma/original/DP213962.jpg"
+  "https://images.metmuseum.org/CRDImages/ma/original/DP213962.jpg": "HTTP 404 for https://images.metmuseum.org/CRDImages/ma/original/DP213962.jpg",
+  "https://commons.wikimedia.org/wiki/Special:FilePath/Pablo_Picasso,_Chat_saisissant_un_oiseau,_1939.jpg": "File not found on Wikimedia: Pablo_Picasso,_Chat_saisissant_un_oiseau,_1939.jpg"
 }

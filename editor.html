@@ -236,6 +236,22 @@
       font-family: var(--font-mono);
     }
 
+    .timeline-badge {
+      display: inline-block;
+      font-size: 8.5px;
+      font-family: var(--font-mono);
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      padding: 1px 4px;
+      border-radius: 3px;
+      background: rgba(212, 160, 23, 0.15);
+      color: #d4a017;
+      border: 1px solid rgba(212, 160, 23, 0.35);
+      margin-left: 5px;
+      vertical-align: middle;
+      line-height: 1.2;
+    }
+
     /* Catalogue flags: red = problem found by the check, orange = no image,
        yellow = 2+ fields missing, grey = 1 field missing */
     :root { --flag-red:#ff5a5a; --flag-orange:#ff9a3c; --flag-yellow:#f2cc4b; --flag-grey:#8e8e93; }
@@ -633,7 +649,8 @@
     }
 
     .ai-settings input[type="text"],
-    .ai-settings input[type="password"] {
+    .ai-settings input[type="password"],
+    .ai-settings select {
       width: 100%;
       border-radius: 0;
       background: var(--surface);
@@ -644,7 +661,8 @@
       padding: 6px 8px;
     }
     .ai-settings input[type="text"]:focus,
-    .ai-settings input[type="password"]:focus {
+    .ai-settings input[type="password"]:focus,
+    .ai-settings select:focus {
       border-color: var(--text);
       outline: none;
     }
@@ -1121,18 +1139,25 @@
             <option value="Literature & Folklore">Literature & Folklore</option>
           </select>
         </div>
-        <select id="flag-filter" onchange="filterArtworks()" aria-label="Filter by flag">
-          <option value="">All flags &amp; checks</option>
-          <option value="any">Any flag</option>
-          <option value="red">Red: problem found by check</option>
-          <option value="orange">Orange: no image</option>
-          <option value="yellow">Yellow: 2+ fields missing</option>
-          <option value="grey">Grey: 1 field missing</option>
-          <option value="none">No flags</option>
-          <option value="verified">Check: confirmed</option>
-          <option value="unverified">Check: no source found</option>
-          <option value="unchecked">Check: not run, or changed since</option>
-        </select>
+        <div style="display:flex; gap:6px;">
+          <select id="timeline-filter" onchange="filterArtworks()" style="flex:1;" aria-label="Filter by timeline visibility">
+            <option value="">All Works</option>
+            <option value="timeline">Shown on Timeline</option>
+            <option value="catalog">Catalog Only</option>
+          </select>
+          <select id="flag-filter" onchange="filterArtworks()" style="flex:1;" aria-label="Filter by flag">
+            <option value="">All flags &amp; checks</option>
+            <option value="any">Any flag</option>
+            <option value="red">Red: problem</option>
+            <option value="orange">Orange: no image</option>
+            <option value="yellow">Yellow: 2+ missing</option>
+            <option value="grey">Grey: 1 missing</option>
+            <option value="none">No flags</option>
+            <option value="verified">Check: confirmed</option>
+            <option value="unverified">Check: unverified</option>
+            <option value="unchecked">Check: unchecked</option>
+          </select>
+        </div>
         <div style="display:flex; justify-content:space-between; font-size:11px; font-family:var(--font-mono); color:var(--text-muted); padding-top:4px;">
           <span><span id="count-label">0 artworks</span> · <button type="button" class="btn-micro" id="btn-check-shown" onclick="toggleBatchCheck()" title="Run the red-flag check on the artworks currently listed (skips ones already checked and unchanged)">Check shown</button></span>
           <span id="save-status">Ready</span>
@@ -1434,13 +1459,32 @@
           <input type="text" id="ai-model-name" value="beam:cloud" placeholder="beam:cloud" onchange="saveAiSettings()">
         </div>
 
+        <!-- Web Search Provider & SearXNG -->
+        <div class="ai-field-block">
+          <label class="ai-label">WEB SEARCH PROVIDER</label>
+          <select id="ai-search-provider" onchange="saveAiSettings()">
+            <option value="both">Both (SearXNG Server + Ollama Web)</option>
+            <option value="searxng">SearXNG Server (Connected via MCP / Localhost)</option>
+            <option value="ollama">Ollama Web Search (Cloud API)</option>
+          </select>
+        </div>
+
+        <div class="ai-field-block" id="searxng-config-block">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:3px;">
+            <label class="ai-label">SEARXNG SERVER URL</label>
+            <button type="button" class="btn-micro" onclick="testSearxngConnection()" id="btn-test-searxng">TEST</button>
+          </div>
+          <input type="text" id="ai-searxng-url" value="http://localhost:9883" placeholder="http://localhost:9883" onchange="saveAiSettings()">
+          <div id="searxng-status-note" style="font-size:10px; color:var(--text-muted); margin-top:3px; line-height:1.3;"></div>
+        </div>
+
         <!-- Options row -->
         <div class="ai-settings-footer">
           <label class="ai-checkbox-label">
             <input type="checkbox" id="ai-auto-apply" checked onchange="saveAiSettings()">
             <span>AUTO-APPLY PROPOSED CHANGES</span>
           </label>
-          <button type="button" class="btn-micro primary" onclick="testAiConnection()">TEST</button>
+          <button type="button" class="btn-micro primary" onclick="testAiConnection()">TEST LLM</button>
         </div>
       </div>
 
@@ -1454,6 +1498,7 @@
       <!-- Curatorial Quick Commands Bar (Chips) -->
       <div class="ai-quick-actions">
         <button class="ai-chip" onclick="promptFetchWebPage()" title="Ingest Wikipedia or museum URL">FETCH URL</button>
+        <button class="ai-chip" onclick="promptWebSearch()" title="Search web via SearXNG &amp; Ollama">SEARCH WEB</button>
         <button class="ai-chip" onclick="runAiQuickAction('narrative')" title="Write a short label-style description, context & feline symbolism">NARRATIVE</button>
         <button class="ai-chip" onclick="runAiQuickAction('shorten')" title="Trim the current texts to short museum-label length">SHORTEN</button>
         <button class="ai-chip" onclick="runAiQuickAction('audit')" title="Audit current entry for omissions">AUDIT</button>
@@ -2038,6 +2083,19 @@
       });
     }
 
+    function updateTimelineFilterCounts() {
+      const sel = document.getElementById('timeline-filter');
+      if (!sel) return;
+      const timelineCount = allArtworks.filter(w => Boolean(w.featured)).length;
+      const catalogCount = allArtworks.filter(w => !w.featured).length;
+      [...sel.options].forEach(o => {
+        if (!o.dataset.label) o.dataset.label = o.textContent.replace(/\s*\(\d+\)$/, '');
+        if (o.value === 'timeline') o.textContent = `${o.dataset.label} (${timelineCount})`;
+        else if (o.value === 'catalog') o.textContent = `${o.dataset.label} (${catalogCount})`;
+        else if (!o.value) o.textContent = `${o.dataset.label} (${allArtworks.length})`;
+      });
+    }
+
     function flagIcon(kind) {
       return `<span class="flag ${kind}" aria-hidden="true"><svg viewBox="0 0 11 13"><path d="M1.6 .8v11.6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M2.3 1.3h7.4L8 4l1.7 2.7H2.3z" fill="currentColor"/></svg></span>`;
     }
@@ -2186,11 +2244,15 @@
       const eraId = document.getElementById('era-filter').value;
       const typeVal = document.getElementById('type-filter') ? document.getElementById('type-filter').value : '';
       const flagVal = document.getElementById('flag-filter') ? document.getElementById('flag-filter').value : '';
+      const timelineVal = document.getElementById('timeline-filter') ? document.getElementById('timeline-filter').value : '';
 
+      updateTimelineFilterCounts();
       updateFlagFilterCounts();
       const filtered = allArtworks.filter(w => {
         if (eraId && w.era_id !== eraId) return false;
         if (typeVal && w.type !== typeVal) return false;
+        if (timelineVal === 'timeline' && !w.featured) return false;
+        if (timelineVal === 'catalog' && w.featured) return false;
         if (flagVal && !matchesFlagFilter(w, flagVal)) return false;
         if (!query) return true;
         const target = `${w.id} ${w.title || ''} ${w.artist || ''} ${w.type || ''} ${w.inv_number || ''}`.toLowerCase();
@@ -2277,6 +2339,13 @@
         const title = document.createElement('div');
         title.className = 'artwork-title';
         title.textContent = w.title || w.id;
+        if (w.featured) {
+          const badge = document.createElement('span');
+          badge.className = 'timeline-badge';
+          badge.textContent = 'TIMELINE';
+          badge.title = 'Featured on Timeline';
+          title.appendChild(badge);
+        }
 
         const sub = document.createElement('div');
         sub.className = 'artwork-sub';
@@ -3769,7 +3838,9 @@
         url: localStorage.getItem('fh_ai_endpoint_url') || 'https://ollama.com/v1',
         apiKey: localStorage.getItem('fh_ai_api_key') || '',
         model: localStorage.getItem('fh_ai_model_name') || 'beam:cloud',
-        autoApply: localStorage.getItem('fh_ai_auto_apply') !== 'false'
+        autoApply: localStorage.getItem('fh_ai_auto_apply') !== 'false',
+        searxngUrl: localStorage.getItem('fh_searxng_url') || 'http://localhost:9883',
+        searchProvider: localStorage.getItem('fh_ai_search_provider') || 'both'
       };
     }
 
@@ -3791,17 +3862,69 @@
       const apiKey = document.getElementById('ai-api-key')?.value.trim() || '';
       const model = document.getElementById('ai-model-name')?.value.trim() || 'beam:cloud';
       const autoApply = document.getElementById('ai-auto-apply') ? document.getElementById('ai-auto-apply').checked : true;
+      const searxngUrl = document.getElementById('ai-searxng-url')?.value.trim() || 'http://localhost:9883';
+      const searchProvider = document.getElementById('ai-search-provider')?.value || 'both';
 
       localStorage.setItem('fh_ai_endpoint_url', url);
       localStorage.setItem('fh_ai_api_key', apiKey);
       localStorage.setItem('fh_ai_model_name', model);
       localStorage.setItem('fh_ai_auto_apply', String(autoApply));
+      localStorage.setItem('fh_searxng_url', searxngUrl);
+      localStorage.setItem('fh_ai_search_provider', searchProvider);
 
       const badge = document.getElementById('ai-model-badge');
       if (badge) badge.textContent = (model || 'beam:cloud').toUpperCase();
 
       testAiConnection();
+      testSearxngConnection();
       showToast('Settings saved');
+    }
+
+    async function testSearxngConnection() {
+      const btn = document.getElementById('btn-test-searxng');
+      const note = document.getElementById('searxng-status-note');
+      const url = document.getElementById('ai-searxng-url')?.value.trim() || 'http://localhost:9883';
+      if (btn) btn.textContent = 'CHECKING...';
+      if (note) { note.textContent = 'Probing SearXNG instance...'; note.style.color = 'var(--text-muted)'; }
+      try {
+        let res = null;
+        if (isServerConnected) {
+          res = await safeFetchJson(`/api/ai/searxng-status?url=${encodeURIComponent(url)}`);
+        } else {
+          const direct = await fetch(`${url.replace(/\/+$/, '')}/search?q=ping&format=json`);
+          res = { ok: direct.ok, reachable: direct.ok };
+        }
+        if (res && res.reachable) {
+          if (btn) btn.textContent = 'ONLINE';
+          if (note) {
+            const engines = Array.isArray(res.engines) && res.engines.length ? ` · Engines: ${res.engines.slice(0, 4).join(', ')}` : '';
+            note.textContent = `✓ SearXNG online at ${url}${engines}`;
+            note.style.color = '#4caf50';
+          }
+        } else {
+          if (btn) btn.textContent = 'OFFLINE';
+          if (note) {
+            note.textContent = `✗ Unreachable: ${res ? res.error || 'Connection refused' : 'Check URL or port'}.`;
+            note.style.color = '#ff5a5a';
+          }
+        }
+      } catch (err) {
+        if (btn) btn.textContent = 'ERROR';
+        if (note) {
+          note.textContent = `✗ Connection failed: ${err.message}`;
+          note.style.color = '#ff5a5a';
+        }
+      }
+      setTimeout(() => { if (btn) btn.textContent = 'TEST'; }, 3000);
+    }
+
+    function promptWebSearch() {
+      const active = getFormData();
+      const defaultQ = [active?.title, active?.artist].filter(Boolean).join(' ').trim();
+      const q = prompt('Search web via SearXNG & Ollama (for active artwork or custom query):', defaultQ);
+      if (q !== null && q.trim()) {
+        sendAiMessage(`Please search the web for: ${q.trim()}\nAnalyze the findings, verify artwork facts and taxonomy, and propose curatorial updates or images.`);
+      }
     }
 
     async function initAiAssistant() {
@@ -3834,6 +3957,9 @@
             if (!localStorage.getItem('fh_ai_endpoint_url') && cfg.url) {
               localStorage.setItem('fh_ai_endpoint_url', cfg.url);
             }
+            if (!localStorage.getItem('fh_searxng_url') && cfg.searxngUrl) {
+              localStorage.setItem('fh_searxng_url', cfg.searxngUrl);
+            }
           }
         } catch (e) {
           // Non-critical background sync
@@ -3846,12 +3972,16 @@
       const keyInput = document.getElementById('ai-api-key');
       const modelInput = document.getElementById('ai-model-name');
       const autoApplyCheck = document.getElementById('ai-auto-apply');
+      const searxngInput = document.getElementById('ai-searxng-url');
+      const searchProviderSelect = document.getElementById('ai-search-provider');
       const badge = document.getElementById('ai-model-badge');
 
       if (urlInput) urlInput.value = settings.url;
       if (keyInput) keyInput.value = settings.apiKey;
       if (modelInput) modelInput.value = settings.model;
       if (autoApplyCheck) autoApplyCheck.checked = settings.autoApply;
+      if (searxngInput) searxngInput.value = settings.searxngUrl;
+      if (searchProviderSelect) searchProviderSelect.value = settings.searchProvider;
       if (badge) badge.textContent = (settings.model || 'beam:cloud').toUpperCase();
 
       if (currentArtwork) {
@@ -3862,14 +3992,15 @@
       if (aiChatHistory.length === 0) {
         aiChatHistory.push({
           role: 'assistant',
-          content: `CURATORIAL INTELLIGENCE CORE\nSYSTEM: BEAM:CLOUD // OLLAMA CLOUD\n\nArchival intelligence for 9,000 years of feline iconography.\n\nCOMMANDS:\n- AUDIT: Examine active entry for omissions or ambiguities\n- NARRATIVE: Synthesize visual description, context & feline symbolism\n- TAXONOMY: Align artwork with archival era and movement taxonomy\n- TAGS: Generate iconographic and physical feline descriptors\n- FETCH URL: Ingest live museum or Wikipedia pages and images\n- PASTE: Direct URLs or instructions in the command input below`,
+          content: `CURATORIAL INTELLIGENCE CORE\nSYSTEM: BEAM:CLOUD // OLLAMA CLOUD + SEARXNG\n\nArchival intelligence for 9,000 years of feline iconography.\n\nCOMMANDS:\n- SEARCH WEB: Query SearXNG & Ollama for artwork facts, sources & candidate images\n- AUDIT: Examine active entry for omissions or ambiguities\n- NARRATIVE: Synthesize visual description, context & feline symbolism\n- TAXONOMY: Align artwork with archival era and movement taxonomy\n- TAGS: Generate iconographic and physical feline descriptors\n- FETCH URL: Ingest live museum or Wikipedia pages and images\n- PASTE: Direct URLs, search queries, or instructions in the command input below`,
           time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
         });
         renderAiMessages();
       }
 
-      // Check connection
+      // Check connections
       testAiConnection();
+      testSearxngConnection();
     }
 
     function toggleAiDrawer() {
@@ -4161,6 +4292,19 @@ REQUIRED JSON FORMAT SPECIFICATION:
       const directImageUrls = extractUrlsFromText(text);
       const webpageUrls = extractWebPageUrls(text);
 
+      // Check for web search request (SearXNG + Ollama)
+      let searchQuery = null;
+      const searchMatch = text.match(/(?:(?:please\s+)?search(?:\s+the)?\s+web\s+(?:for|about)?|(?:\/search|search:))\s*(.+)/i);
+      if (searchMatch && searchMatch[1]) {
+        searchQuery = searchMatch[1].trim();
+      } else if (webpageUrls.length === 0 && /\b(search|look\s*up|research|find\s+sources|find\s+references|google|searxng)\b/i.test(text)) {
+        if (activeWorkData && (activeWorkData.title || activeWorkData.artist)) {
+          searchQuery = [activeWorkData.title, activeWorkData.artist, 'cat art'].filter(Boolean).join(' ');
+        } else {
+          searchQuery = text.replace(/\b(search|look\s*up|research|please|web|online|internet)\b/gi, '').trim();
+        }
+      }
+
       // If user asks to search or parse the web without pasting a URL, automatically fetch the active artwork's source_url
       const activeWorkData = getFormData();
       if (webpageUrls.length === 0 && /\b(parse|search|fetch|find|lookup|look up|research|browse)\b.*\b(web|internet|online|wikipedia|site|sources?)\b/i.test(text)) {
@@ -4174,6 +4318,7 @@ REQUIRED JSON FORMAT SPECIFICATION:
         content: text,
         extractedImages: directImageUrls,
         fetchedPages: [],
+        searchResults: null,
         time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       };
       aiChatHistory.push(userMsg);
@@ -4193,8 +4338,60 @@ REQUIRED JSON FORMAT SPECIFICATION:
       messagesContainer.appendChild(typingEl);
       messagesContainer.scrollTop = messagesContainer.scrollHeight;
 
-      // 1. Live Web Page Fetching: If webpage URLs detected in prompt, fetch contents in real-time
       const fetchedContexts = [];
+
+      // 1. Live Web Search (SearXNG + Ollama): Query configured search provider if search intent detected
+      if (searchQuery && isServerConnected) {
+        typingEl.innerHTML = `<span>SEARCHING SEARXNG &amp; WEB ENGINES ("${escapeHtml(searchQuery.slice(0, 30))}"${searchQuery.length > 30 ? '…' : ''})...</span>`;
+        try {
+          const searchData = await safeFetchJson('/api/ai/search', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              query: searchQuery,
+              searxngUrl: settings.searxngUrl,
+              provider: settings.searchProvider,
+              apiKey: settings.apiKey,
+              maxResults: 6
+            })
+          });
+
+          if (searchData && searchData.ok && Array.isArray(searchData.results) && searchData.results.length > 0) {
+            userMsg.searchResults = {
+              query: searchQuery,
+              engine: searchData.engine || 'searxng',
+              results: searchData.results
+            };
+
+            const searchSummaries = searchData.results.map((r, i) =>
+              `${i + 1}. TITLE: ${r.title}\n   URL: ${r.url}\n   ENGINE: ${r.engine || 'web'}\n   EXCERPT: ${r.content || ''}`
+            ).join('\n\n');
+
+            fetchedContexts.push(`[LIVE WEB SEARCH RESULTS (via ${searchData.engine || 'SearXNG/Ollama'}) FOR "${searchQuery}"]:
+${searchSummaries}`);
+
+            // Harvest candidate image URLs from search results
+            searchData.results.forEach(r => {
+              if (r.img_src && !directImageUrls.includes(r.img_src)) {
+                directImageUrls.push(r.img_src);
+              }
+            });
+
+            // If top result is a primary museum or Wikipedia page and no page was explicitly fetched, add it
+            const topHit = searchData.results[0];
+            if (topHit && topHit.url && webpageUrls.length === 0 &&
+                /wikipedia\.org|metmuseum\.org|artic\.edu|clevelandart\.org|rijksmuseum\.nl|louvre\.fr|britishmuseum\.org/i.test(topHit.url)) {
+              webpageUrls.push(topHit.url);
+            }
+
+            renderAiMessages();
+          }
+        } catch (searchErr) {
+          console.warn('Web search error:', searchErr);
+        }
+      }
+
+      // 2. Live Web Page Fetching: If webpage URLs detected in prompt, fetch contents in real-time
       if (webpageUrls.length > 0) {
         typingEl.innerHTML = `<span>INGESTING REMOTE WEB DATA (${webpageUrls.length} PAGES)...</span>`;
 
@@ -4328,6 +4525,13 @@ ${JSON.stringify(discoveredImgs.slice(0, 5))}`);
               p.images.forEach(img => {
                 if (!discoveredWebImages.includes(img)) discoveredWebImages.push(img);
               });
+            }
+          });
+        }
+        if (userMsg && userMsg.searchResults && Array.isArray(userMsg.searchResults.results)) {
+          userMsg.searchResults.results.forEach(r => {
+            if (r.img_src && !discoveredWebImages.includes(r.img_src)) {
+              discoveredWebImages.push(r.img_src);
             }
           });
         }
@@ -4824,6 +5028,28 @@ ${JSON.stringify(discoveredImgs.slice(0, 5))}`);
         const bubble = document.createElement('div');
         bubble.className = 'ai-msg-bubble';
         bubble.innerHTML = formatMarkdownText(msg.content);
+
+        // Render Live Web Search Results box if present
+        if (msg.searchResults && Array.isArray(msg.searchResults.results) && msg.searchResults.results.length > 0) {
+          const searchBox = document.createElement('div');
+          searchBox.className = 'ai-search-box';
+          searchBox.style.cssText = 'margin-top:6px; border:1px solid var(--border); background:var(--bg); padding:6px 8px; font-size:11px;';
+          const header = document.createElement('div');
+          header.style.cssText = 'font-size:10px; font-family:var(--font-mono); color:var(--accent); font-weight:600; text-transform:uppercase; margin-bottom:4px; display:flex; justify-content:space-between; align-items:center;';
+          header.innerHTML = `<span>🔍 WEB SEARCH [${escapeHtml((msg.searchResults.engine || 'SEARXNG').toUpperCase())}]: ${msg.searchResults.results.length} SOURCES</span><span style="font-size:9px; color:var(--text-muted); max-width:140px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${escapeHtml(msg.searchResults.query || '')}</span>`;
+          searchBox.appendChild(header);
+
+          const list = document.createElement('div');
+          list.style.cssText = 'display:flex; flex-direction:column; gap:4px;';
+          msg.searchResults.results.slice(0, 5).forEach(r => {
+            const item = document.createElement('div');
+            item.style.cssText = 'font-size:11px; line-height:1.3; border-top:1px dotted var(--border); padding-top:3px;';
+            item.innerHTML = `<div><a href="${escapeHtml(r.url)}" target="_blank" rel="noopener" style="font-weight:500; color:var(--text); text-decoration:underline;">${escapeHtml(r.title || r.url)}</a> <span style="font-size:9px; font-family:var(--font-mono); color:var(--text-muted);">[${escapeHtml(r.engine || 'web')}]</span></div><div style="font-size:10px; color:var(--text-muted);">${escapeHtml((r.content || '').slice(0, 160))}${r.content && r.content.length > 160 ? '…' : ''}</div>`;
+            list.appendChild(item);
+          });
+          searchBox.appendChild(list);
+          bubble.appendChild(searchBox);
+        }
 
         // Render Live Web Fetched Pages banner if present
         if (Array.isArray(msg.fetchedPages) && msg.fetchedPages.length > 0) {

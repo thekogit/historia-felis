@@ -10,6 +10,8 @@
     "test": "node scripts/validate.js",
     "serve": "npx serve .",
     "check": "node scripts/check_flags.js",
+    "verify:one": "node scripts/verify_agent.js",
+    "verify:swarm": "node scripts/verify_swarm.js",
     "deploy": "node scripts/deploy.js"
   },
   "keywords": [
