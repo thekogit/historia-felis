@@ -9138,5 +9138,326 @@
     "h": 3649,
     "hash": "e6f0d0dce4828aba",
     "hash2": "e6f0d0dce482893b"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ac/Henry_Wriothesley%2C_3rd_Earl_of_Southampton.jpg": {
+    "base": "assets/img/446c241eb19567aa",
+    "widths": [
+      449
+    ],
+    "w": 449,
+    "h": 648,
+    "hash": "c9cd8d0d89c78c39",
+    "hash2": "c9cd8d0d89c78c39"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4e/Femme_%C3%A0_la_puce%2C_Georges_de_la_Tour.jpg": {
+    "base": "assets/img/9fc67b343ee079df",
+    "widths": [
+      469
+    ],
+    "w": 469,
+    "h": 640,
+    "hash": "7b7f27274f7e2f57",
+    "hash2": "7b7f27274f7e2f57"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/11/The_cat_and_the_rat_Christ_Church_Cathedral_in_Dublin_02.JPG": {
+    "base": "assets/img/0be20160506fddc8",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2584,
+    "hash": "800f07070f2e3084",
+    "hash2": "0f07030f0f303080"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ec/Beverley_-_Minster_-_01.jpg": {
+    "base": "assets/img/1648a97ded603543",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2160,
+    "hash": "53334d6969b237be",
+    "hash2": "53334d6969b237be"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/36/Hortus_sanitatis_1491_%28111953214%29.jpg": {
+    "base": "assets/img/d33a8959efa8c225",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3336,
+    "h": 4820,
+    "hash": "59646c6c6c6c641b",
+    "hash2": "59646c6c6c6c641b"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/9f/Thomas_Gainsborough_-_The_Artist%27s_Daughters_with_a_Cat_-_WGA8404.jpg": {
+    "base": "assets/img/2bfa50cdba1c4c11",
+    "widths": [
+      480,
+      898
+    ],
+    "w": 898,
+    "h": 1100,
+    "hash": "0706061b090f250e",
+    "hash2": "0706061b090f250e"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/bd/Katers_Murr_1820.jpg": {
+    "base": "assets/img/8ad70b29b4cf5c7c",
+    "widths": [
+      428
+    ],
+    "w": 428,
+    "h": 762,
+    "hash": "533820707173f121",
+    "hash2": "533820707173f121"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/41/MET_DP141291.jpg": {
+    "base": "assets/img/f49d530a7d789f2f",
+    "widths": [
+      480,
+      960,
+      1299
+    ],
+    "w": 1299,
+    "h": 1931,
+    "hash": "f2f198b22e5ed6be",
+    "hash2": "f2f198b22e5ed6be"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/56/Gustave_Dor%C3%A9_Puss_in_Boots.jpg": {
+    "base": "assets/img/95e7ec43e5229ca7",
+    "widths": [
+      480,
+      500
+    ],
+    "w": 500,
+    "h": 658,
+    "hash": "e03507068c693db7",
+    "hash2": "e03507068c693db7"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/64/Edward_Lear_The_Owl_and_the_Pussy_Cat_1.jpg": {
+    "base": "assets/img/94050b5783c6f09b",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1827,
+    "h": 960,
+    "hash": "d6c6c8cce4c8c4fe",
+    "hash2": "d6ccccc4e4cac4dc"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ec/Tiger_and_Magpies%2C_Joseon_dynasty%2C_Honolulu_Museum_of_Art_9502.1.jpg": {
+    "base": "assets/img/3a1be9be8473af69",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2980,
+    "h": 5952,
+    "hash": "a7839703913533cb",
+    "hash2": "a7839703913533cb"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fc/Mineyama_Komaneko_2019-09_ac.jpg": {
+    "base": "assets/img/3f0275edec51e508",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2554,
+    "hash": "cdcd2d2d3d187c3e",
+    "hash2": "cdcd2d2d3d187c3e"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/21/Boxing_Cats_Dickson.jpg": {
+    "base": "assets/img/9d12c0bbf3b66aaf",
+    "widths": [
+      257
+    ],
+    "w": 257,
+    "h": 194,
+    "hash": "e09c1e6c4ec6c4cc",
+    "hash2": "e09c1e6c4ec6c4cc"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c9/%E5%AE%8B%E4%BA%BA%E6%88%8F%E7%8C%AB%E5%9B%BE%E8%BD%B4.%E7%BB%A2%E6%9C%AC%E8%AE%BE%E8%89%B2.%E5%8F%B0%E5%8C%97%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%E8%97%8F.jpg": {
+    "base": "assets/img/6c881cef90b6dc64",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 5592,
+    "hash": "ce2e36666e1e2683",
+    "hash2": "ce2e36666e1e2683"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2c/Compagnie_fran%C3%A7aise_des_Chocolats_et_des_th%C3%A9s.jpg": {
+    "base": "assets/img/0739d54c09d055b9",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 4999,
+    "hash": "b6c69696a4c28a8a",
+    "hash2": "b6c69696a4c28a8a"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5e/PankiewiczJozef_akwa_kot.jpg": {
+    "base": "assets/img/bc28306242de221a",
+    "widths": [
+      480,
+      628
+    ],
+    "w": 628,
+    "h": 768,
+    "hash": "8c9c98d69cb89a8e",
+    "hash2": "8e9c98d69eb89a8e"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3c/Woman_with_a_Cat_%28Fernand_L%C3%A9ger%29.jpg": {
+    "base": "assets/img/55c4fa36dc947fa1",
+    "widths": [
+      425
+    ],
+    "w": 425,
+    "h": 600,
+    "hash": "51c86b27a49687e5",
+    "hash2": "51c86b27a49687e5"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/95/Pierre_Bonnard_Woman_with_a_Cat_1912.jpg": {
+    "base": "assets/img/c7986a7992993d6f",
+    "widths": [
+      480,
+      960,
+      1000
+    ],
+    "w": 1000,
+    "h": 1046,
+    "hash": "ececbcb8bc1f0385",
+    "hash2": "ececbcb8bc1f0385"
+  },
+  "https://images.metmuseum.org/CRDImages/as/original/DT5300.jpg": {
+    "base": "assets/img/4523203d69d4d817",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2860,
+    "h": 3722,
+    "hash": "911584b9a5665381",
+    "hash2": "911584b9a5665381"
+  },
+  "https://uploads2.wikiart.org/images/pablo-picasso/cat-catching-a-bird-1939.jpg": {
+    "base": "assets/img/0d8f33a336f7fdb1",
+    "widths": [
+      480,
+      723
+    ],
+    "w": 723,
+    "h": 573,
+    "hash": "3d3bf8fcd2da9a7a",
+    "hash2": "3d3bf8fcd2da9a7a"
+  },
+  "https://images.metmuseum.org/CRDImages/es/original/DP-1143-006.jpg": {
+    "base": "assets/img/651f77862fc445b8",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3200,
+    "h": 4000,
+    "hash": "0261899f916464ac",
+    "hash2": "12a99f937164e429"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/59/Tom_and_Jerry_in_the_Hollywood_Bowl_title_card_000.png": {
+    "base": "assets/img/b05680b09a9c9660",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1440,
+    "h": 1080,
+    "hash": "411d234b67351907",
+    "hash2": "0319434b67371903"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3f/Krazy_Kat_8_Feb_1922_-_Bootleggers.jpg": {
+    "base": "assets/img/fe5b33b358a37e73",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 1019,
+    "hash": "7b593027a53199c7",
+    "hash2": "7b593027a53199c7"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/cd/Th%C3%A9ophile_Alexandre_Steinlen_-_Chat_sur_un_fauteuil_-_Piscine_Roubaix.jpg": {
+    "base": "assets/img/3d0312334d97e51b",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3348,
+    "h": 2816,
+    "hash": "41109ac7271390c3",
+    "hash2": "41109ac7271390c3"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e3/Audrey_Hepburn_in_Breakfast_at_Tiffanys.jpg": {
+    "base": "assets/img/7d857406d2c45611",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3556,
+    "h": 4268,
+    "hash": "105858ecbab2aa2e",
+    "hash2": "105858ecbab2aa2e"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f8/Hodge_in_Gough_Square_-_geograph.org.uk_-_1801662.jpg": {
+    "base": "assets/img/b6c74ee1a67ec91a",
+    "widths": [
+      480,
+      800
+    ],
+    "w": 800,
+    "h": 600,
+    "hash": "970516072d681c19",
+    "hash2": "970516072d681c19"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7b/Statue_of_Trim_the_cat_Mitchell_Library_21092012.jpg": {
+    "base": "assets/img/c85bc374d8ace35b",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2560,
+    "h": 1920,
+    "hash": "dddded9333ba6de5",
+    "hash2": "dddded9333ba6de5"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a4/Foujita_en_1927.png": {
+    "base": "assets/img/df8fff68d3e03b2f",
+    "widths": [
+      480,
+      960,
+      1003
+    ],
+    "w": 1003,
+    "h": 823,
+    "hash": "73b131b2b0998e8e",
+    "hash2": "73b131b2b0998e8e"
   }
 }
