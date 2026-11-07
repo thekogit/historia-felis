@@ -3246,17 +3246,17 @@
  },
  "ex-375-victorian-essex-crystal-reverse-intaglio-cat-cufflinks-and-s": {
   "sig": "94369a2c",
-  "status": "problem",
-  "checkedAt": "2026-11-07T12:11:17.419Z",
-  "ms": 73351,
+  "status": "verified",
+  "checkedAt": "2026-11-07T12:14:15.093Z",
+  "ms": 70748,
   "source": {
    "name": "The Met",
-   "kind": "museum API",
+   "kind": "source link",
    "url": "https://www.metmuseum.org/art/collection/search/54626",
    "title": "Cat Catching a Frog"
   },
   "sameWork": "yes",
-  "imageDistance": 2,
+  "imageDistance": 0,
   "issues": [
    {
     "level": "ok",
@@ -3264,25 +3264,19 @@
    },
    {
     "level": "warn",
-    "text": "Title: The catalogue title adds \"(Feline Album Leaf)\" not present in the source title."
-   },
-   {
-    "level": "error",
-    "text": "Type: The source classifies the work as Paintings, not Drawing & Watercolor."
+    "text": "Title: The catalogue title adds '(Feline Album Leaf)' not present in the source title."
    },
    {
     "level": "warn",
-    "text": "Medium: The catalogue medium omits \"Album leaf\" from the source medium."
+    "text": "Medium: The catalogue medium omits 'Album leaf' included in the source medium."
    },
    {
     "level": "info",
-    "text": "Movement “Symbolism, Posters & Art Nouveau” is plausible, not confirmed by a source: Kyōsai is a traditional Japanese painter, and while the 1887 date fits, no source ties this work to Symbolism or Art Nouveau."
+    "text": "Movement “Symbolism, Posters & Art Nouveau” is plausible, not confirmed by a source: The 1887 Japanese Meiji work fits the period, but no source ties Kyōsai to Symbolism or Art Nouveau."
    }
   ],
   "tried": [
-   "web search",
-   "web search unavailable: ai is not defined",
-   "museum APIs (Met, AIC, Cleveland)",
+   "source link (The Met)",
    "movement attribution"
   ]
  },
@@ -7931,49 +7925,57 @@
   ]
  },
  "ex-469-hodge-fl-1760s-1770s-london": {
-  "sig": "d20a02d5",
+  "sig": "26b530d0",
   "status": "verified",
-  "checkedAt": "2026-11-06T23:34:35.053Z",
+  "checkedAt": "2026-11-07T12:13:59.922Z",
+  "ms": 17662,
   "source": {
-   "name": "Master Artwork Verifier",
-   "kind": "agent curation",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Hodge_in_Gough_Square_-_geograph.org.uk_-_1801662.jpg",
-   "title": "Bronze Monument to Dr. Samuel Johnson's Cat Hodge"
+   "name": "Wikimedia Commons (the image’s own record)",
+   "kind": "image record",
+   "url": "https://commons.wikimedia.org/wiki/File:Hodge_in_Gough_Square_-_geograph.org.uk_-_1801662.jpg",
+   "title": "Hodge in Gough Square - geograph.org.uk - 1801662"
   },
   "sameWork": "yes",
+  "imageDistance": null,
   "issues": [
    {
-    "level": "ok",
-    "text": "Verified authentic feline artwork and metadata"
+    "level": "info",
+    "text": "Movement “Pop Art, Visionary Folk & Contemporary Art” is plausible, not confirmed by a source: The 1997 bronze is contemporary public sculpture fitting the broad era, but no source explicitly ties it to this movement."
    }
   ],
   "tried": [
-   "museum API",
-   "Commons API",
-   "verifier swarm"
+   "web search",
+   "web search unavailable: ai is not defined",
+   "museum APIs (Met, AIC, Cleveland)",
+   "image record (Commons)",
+   "movement attribution"
   ]
  },
  "ex-470-trim-1799-1804": {
-  "sig": "f327f51f",
+  "sig": "dfaadb68",
   "status": "verified",
-  "checkedAt": "2026-11-06T23:34:35.053Z",
+  "checkedAt": "2026-11-07T12:13:47.904Z",
+  "ms": 19355,
   "source": {
-   "name": "Master Artwork Verifier",
-   "kind": "agent curation",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Statue_of_Trim_the_cat_Mitchell_Library_21092012.jpg",
-   "title": "Bronze Statue of Matthew Flinders' Cat Trim"
+   "name": "Wikimedia Commons (the image’s own record)",
+   "kind": "image record",
+   "url": "https://commons.wikimedia.org/wiki/File:Statue_of_Trim_the_cat_Mitchell_Library_21092012.jpg",
+   "title": "Statue of Trim the cat Mitchell Library 21092012"
   },
   "sameWork": "yes",
+  "imageDistance": null,
   "issues": [
    {
     "level": "ok",
-    "text": "Verified authentic feline artwork and metadata"
+    "text": "Movement “Pop Art, Visionary Folk & Contemporary Art” is supported: The 1996 bronze public sculpture fits the broad contemporary-art umbrella of the filed movement."
    }
   ],
   "tried": [
-   "museum API",
-   "Commons API",
-   "verifier swarm"
+   "web search",
+   "web search unavailable: ai is not defined",
+   "museum APIs (Met, AIC, Cleveland)",
+   "image record (Commons)",
+   "movement attribution"
   ]
  },
  "ex-415-maneki-neko-art-museum-okayama-seto-aichi-prefecture-japan": {
@@ -8653,26 +8655,35 @@
   ]
  },
  "ex-498-krazy-kat-created-by-george-herriman-1913-1944": {
-  "sig": "fc9d1870",
+  "sig": "a8b2ad65",
   "status": "verified",
-  "checkedAt": "2026-11-06T23:34:35.053Z",
+  "checkedAt": "2026-11-07T12:12:59.184Z",
+  "ms": 75696,
   "source": {
-   "name": "Master Artwork Verifier",
-   "kind": "agent curation",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Krazy_Kat_8_Feb_1922_-_Bootleggers.jpg",
-   "title": "Krazy Kat Daily Comic Strip (Bootleggers)"
+   "name": "Wikimedia Commons (the image’s own record)",
+   "kind": "image record",
+   "url": "https://commons.wikimedia.org/wiki/File:Krazy_Kat_8_Feb_1922_-_Bootleggers.jpg",
+   "title": "Krazy Kat 8 Feb 1922 - Bootleggers"
   },
   "sameWork": "yes",
+  "imageDistance": null,
   "issues": [
    {
-    "level": "ok",
-    "text": "Verified authentic feline artwork and metadata"
+    "level": "warn",
+    "text": "Title: The source uses the date-inclusive file title “Krazy Kat 8 Feb 1922 - Bootleggers” rather than “Krazy Kat: Bootleggers”."
+   },
+   {
+    "level": "info",
+    "text": "Movement “Early Modernism, Ashcan & New Objectivity” is plausible, not confirmed by a source: It is a 1922 modernist comic, but the sources do not explicitly place it in Early Modernism, Ashcan & New Objectivity."
    }
   ],
   "tried": [
-   "museum API",
-   "Commons API",
-   "verifier swarm"
+   "web search",
+   "web search unavailable: ai is not defined",
+   "museum APIs (Met, AIC, Cleveland)",
+   "skipped Art Institute of Chicago: “Krazy Kat” is a different work",
+   "image record (Commons)",
+   "movement attribution"
   ]
  },
  "franz-marc-cat-on-a-yellow-cushion-1912": {
@@ -13897,33 +13908,42 @@
   ]
  },
  "ex-475-schr-dinger-s-cat-1935": {
-  "sig": "cec8838c",
-  "status": "verified",
-  "checkedAt": "2026-11-02T15:57:19.236Z",
-  "ms": 19751,
+  "sig": "7eccd925",
+  "status": "problem",
+  "checkedAt": "2026-11-07T12:13:28.509Z",
+  "ms": 80812,
   "source": {
    "name": "Wikimedia Commons (the image’s own record)",
    "kind": "image record",
    "url": "https://commons.wikimedia.org/wiki/File:Schrodingers_cat.svg",
    "title": "Schrodingers cat"
   },
-  "sameWork": "yes",
+  "sameWork": "no",
   "imageDistance": null,
   "issues": [
    {
-    "level": "warn",
-    "text": "Date: The catalogue date lists 1935, while the source records the image as 2008-06-26."
+    "level": "error",
+    "text": "The image appears to show a different work: its record describes “Schrodingers cat”"
+   },
+   {
+    "level": "error",
+    "text": "Artist: The image record attributes the diagram to Dhatfield, not Erwin Schrödinger."
+   },
+   {
+    "level": "error",
+    "text": "Date: The image is dated 2008, not 1935."
    },
    {
     "level": "warn",
-    "text": "Year: The catalogue year is 0 rather than 2008."
+    "text": "Movement: “Surrealism & Mid-Century Modernism” looks wrong. Schrödinger's cat is a scientific thought experiment, not a Surrealist or Expressionist artwork."
    }
   ],
   "tried": [
    "web search",
-   "web search unavailable: web search paused by rate limit (181s left)",
+   "web search unavailable: ai is not defined",
    "museum APIs (Met, AIC, Cleveland)",
-   "image record (Commons)"
+   "image record (Commons)",
+   "movement attribution"
   ]
  },
  "ex-500-figaro-pinocchio-walt-disney-productions-1940": {
@@ -13969,26 +13989,30 @@
   ]
  },
  "ex-501-tom-cat-tom-and-jerry-created-by-william-hanna-and-joseph-ba": {
-  "sig": "99c35781",
+  "sig": "c81cd4d1",
   "status": "verified",
-  "checkedAt": "2026-11-06T23:34:35.053Z",
+  "checkedAt": "2026-11-07T12:13:42.223Z",
+  "ms": 42990,
   "source": {
-   "name": "Master Artwork Verifier",
-   "kind": "agent curation",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Tom_and_Jerry_in_the_Hollywood_Bowl_title_card_000.png",
-   "title": "Tom and Jerry (MGM Animation Title Card)"
+   "name": "Wikimedia Commons (the image’s own record)",
+   "kind": "image record",
+   "url": "https://commons.wikimedia.org/wiki/File:Tom_and_Jerry_in_the_Hollywood_Bowl_title_card_000.png",
+   "title": "Tom and Jerry in the Hollywood Bowl title card 000"
   },
   "sameWork": "yes",
+  "imageDistance": null,
   "issues": [
    {
-    "level": "ok",
-    "text": "Verified authentic feline artwork and metadata"
+    "level": "info",
+    "text": "Movement “Surrealism & Mid-Century Modernism” is plausible, not confirmed by a source: No source ties it to the movement, but its 1950 studio-animation design fits the period and broad mid-century umbrella."
    }
   ],
   "tried": [
-   "museum API",
-   "Commons API",
-   "verifier swarm"
+   "web search",
+   "web search unavailable: ai is not defined",
+   "museum APIs (Met, AIC, Cleveland)",
+   "image record (Commons)",
+   "movement attribution"
   ]
  },
  "ex-503-lucifer-cinderella-1950-si-and-am-lady-and-the-tramp-1955-du": {

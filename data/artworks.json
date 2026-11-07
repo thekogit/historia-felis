@@ -11453,7 +11453,7 @@
   },
   {
     "id": "ex-375-victorian-essex-crystal-reverse-intaglio-cat-cufflinks-and-s",
-    "title": "Cat Catching a Frog (Feline Album Leaf)",
+    "title": "Cat Catching a Frog",
     "title_original": "猫捕蛙図 (Kyōsai Gadan)",
     "artist": "Kawanabe Kyōsai (河鍋暁斎)",
     "year": 1887,
@@ -11468,22 +11468,35 @@
     "tags": [
       "complete-cultural-history",
       "cats",
-      "example-375"
+      "example-375",
+      "cat",
+      "frog",
+      "predation",
+      "calico",
+      "album-leaf",
+      "nihonga",
+      "meiji",
+      "japonisme",
+      "kyosai"
     ],
     "description": "Painted with energetic calligraphic brushwork on fine silk, an alert calico cat crouches low in dynamic tension as it pins a writhing green frog beneath its paw. Kyōsai employs feathery ink washes to suggest the softness of the feline pelt while delineating the razor-sharp claws and dilated pupils with assertive, dark strokes. The diagonal thrust of the feline body against an unpainted background demonstrates the artist's consummate grasp of fleeting predatory kinetics.",
     "context": "Kawanabe Kyōsai, celebrated in late Edo and Meiji Tokyo for his irreverent wit and profound knowledge of traditional Kanō painting, kept numerous animals in his studio to study their spontaneous gestures. This album leaf was acquired by Western collectors during the height of the Japonisme craze that revolutionized European Symbolist drawing and Art Nouveau silhouettes.",
-    "inventory_id": "Nº 0628",
+    "inventory_id": "54.62.6",
     "thumb_url": "https://images.metmuseum.org/CRDImages/as/original/DT5300.jpg",
     "large_url": "https://images.metmuseum.org/CRDImages/as/original/DT5300.jpg",
     "title_eng": "Cat Catching a Frog",
     "type": "Drawing & Watercolor",
     "artist_dates": "1831–1889",
-    "medium": "Ink and color on silk",
+    "medium": "Album leaf; ink and color on silk",
     "collection": "The Metropolitan Museum of Art, New York",
     "culture": "Japanese (Meiji Period)",
     "dimensions": "26.7 × 38.1 cm",
     "submovement": "Late Meiji Nihonga & Western Japonisme",
-    "feline_symbolism": "In Japanese visual culture, the playful yet lethal confrontation between cat and amphibious prey reflects the Buddhist concept of natural instinct and the fleeting drama of the mortal world."
+    "feline_symbolism": "In Japanese visual culture, the playful yet lethal confrontation between cat and amphibious prey reflects the Buddhist concept of natural instinct and the fleeting drama of the mortal world.",
+    "year_sort": 1887,
+    "location": "The Metropolitan Museum of Art, New York",
+    "additional_images": [],
+    "source_url": "https://www.metmuseum.org/art/collection/search/54626"
   },
   {
     "id": "ex-197-kawanabe-ky-sai-cat-catching-a-mouse-in-front-of-a-bonsai-ca",
