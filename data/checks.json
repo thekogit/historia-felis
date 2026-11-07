@@ -3454,26 +3454,36 @@
   ]
  },
  "ex-431-giovanni-francesco-straparola-the-facetious-nights-1550-char": {
-  "sig": "02a15bb9",
+  "sig": "9b713cf7",
   "status": "verified",
-  "checkedAt": "2026-11-06T23:34:35.053Z",
+  "checkedAt": "2026-11-07T12:10:02.703Z",
+  "ms": 60347,
   "source": {
-   "name": "Master Artwork Verifier",
-   "kind": "agent curation",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Gustave_Dor%C3%A9_Puss_in_Boots.jpg",
-   "title": "Le Chat Botté (Puss in Boots)"
+   "name": "Wikimedia Commons (the image’s own record)",
+   "kind": "image record",
+   "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_Puss_in_Boots.jpg",
+   "title": "Gustave Doré Puss in Boots"
   },
   "sameWork": "yes",
+  "imageDistance": null,
   "issues": [
    {
+    "level": "warn",
+    "text": "Date: The source dates the illustration to 1862, while the catalogue gives 1867."
+   },
+   {
     "level": "ok",
-    "text": "Verified authentic feline artwork and metadata"
+    "text": "Movement “Romanticism & Realism” is supported: Sources tie Gustave Doré to Romanticism and the 1867 wood engraving fits the 1800–1870 Romanticism & Realism range."
    }
   ],
   "tried": [
-   "museum API",
-   "Commons API",
-   "verifier swarm"
+   "web search",
+   "web search unavailable: ai is not defined",
+   "museum APIs (Met, AIC, Cleveland)",
+   "skipped The Met: “Puss in Boots or General Junot Taken by Surprise” is a different work",
+   "skipped Cleveland Museum of Art: “Puss in Boots Goblet” is a different work",
+   "image record (Commons)",
+   "movement attribution"
   ]
  },
  "ex-386-tiffany-studios-cast-bronze-dora-cat-paperweight-desk-orname": {
@@ -3584,10 +3594,10 @@
   ]
  },
  "ex-438-lewis-carroll-charles-lutwidge-dodgson-the-cheshire-cat-and-": {
-  "sig": "f0fcf49b",
+  "sig": "46d4a68e",
   "status": "verified",
-  "checkedAt": "2026-11-02T15:16:16.974Z",
-  "ms": 25150,
+  "checkedAt": "2026-11-07T12:10:04.026Z",
+  "ms": 56779,
   "source": {
    "name": "Wikimedia Commons (the image’s own record)",
    "kind": "image record",
@@ -3599,15 +3609,16 @@
   "issues": [
    {
     "level": "warn",
-    "text": "Other: Catalogue year is 0 despite the source date 1865."
+    "text": "Movement: “Victorian & Academic Cat Portraiture” looks wrong. Tenniel's 1865 wood engraving is a book illustration, not Victorian academic cat portraiture. Suggested: Nineteenth-Century Book Illustration."
    }
   ],
   "tried": [
    "web search",
-   "web search unavailable: web search paused by rate limit (2650s left)",
+   "web search unavailable: ai is not defined",
    "museum APIs (Met, AIC, Cleveland)",
    "skipped Art Institute of Chicago: “Alice” is a different work",
-   "image record (Commons)"
+   "image record (Commons)",
+   "movement attribution"
   ]
  },
  "ex-440-th-ophile-gautier-m-nagerie-intime-my-private-menagerie-1869": {
@@ -3674,26 +3685,30 @@
   ]
  },
  "ex-439-edward-lear-the-owl-and-the-pussy-cat-1871-his-drawings-of-h": {
-  "sig": "992ef1fc",
+  "sig": "faa71276",
   "status": "verified",
-  "checkedAt": "2026-11-06T23:34:35.053Z",
+  "checkedAt": "2026-11-07T12:10:22.962Z",
+  "ms": 20188,
   "source": {
-   "name": "Master Artwork Verifier",
-   "kind": "agent curation",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Edward_Lear_The_Owl_and_the_Pussy_Cat_1.jpg",
-   "title": "The Owl and the Pussy-Cat"
+   "name": "Wikimedia Commons (the image’s own record)",
+   "kind": "image record",
+   "url": "https://commons.wikimedia.org/wiki/File:Edward_Lear_The_Owl_and_the_Pussy_Cat_1.jpg",
+   "title": "Edward Lear The Owl and the Pussy Cat 1"
   },
   "sameWork": "yes",
+  "imageDistance": null,
   "issues": [
    {
-    "level": "ok",
-    "text": "Verified authentic feline artwork and metadata"
+    "level": "warn",
+    "text": "Movement: “Victorian & Academic Cat Portraiture” looks wrong. It is a book illustration for nonsense poetry, not Victorian cat portraiture. Suggested: Nineteenth-Century Book Illustration."
    }
   ],
   "tried": [
-   "museum API",
-   "Commons API",
-   "verifier swarm"
+   "web search",
+   "web search unavailable: ai is not defined",
+   "museum APIs (Met, AIC, Cleveland)",
+   "image record (Commons)",
+   "movement attribution"
   ]
  },
  "ex-472-tabby-and-dixie-1861-1865-white-house-washington-d-c": {
