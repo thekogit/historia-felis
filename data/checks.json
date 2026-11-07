@@ -7915,8 +7915,8 @@
  "ex-469-hodge-fl-1760s-1770s-london": {
   "sig": "26b530d0",
   "status": "verified",
-  "checkedAt": "2026-11-07T12:13:59.922Z",
-  "ms": 17662,
+  "checkedAt": "2026-11-07T12:30:10.429Z",
+  "ms": 32258,
   "source": {
    "name": "Wikimedia Commons (the image’s own record)",
    "kind": "image record",
@@ -7928,7 +7928,7 @@
   "issues": [
    {
     "level": "info",
-    "text": "Movement “Pop Art, Visionary Folk & Contemporary Art” is plausible, not confirmed by a source: The 1997 bronze is contemporary public sculpture fitting the broad era, but no source explicitly ties it to this movement."
+    "text": "Movement “Pop Art, Visionary Folk & Contemporary Art” is plausible, not confirmed by a source: The 1997 bronze public sculpture fits the broad contemporary-art umbrella by date and type, but no source explicitly ties it to that movement."
    }
   ],
   "tried": [
