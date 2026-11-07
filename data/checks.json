@@ -3245,10 +3245,10 @@
   ]
  },
  "ex-375-victorian-essex-crystal-reverse-intaglio-cat-cufflinks-and-s": {
-  "sig": "94369a2c",
+  "sig": "13eb06cb",
   "status": "verified",
-  "checkedAt": "2026-11-07T12:14:15.093Z",
-  "ms": 70748,
+  "checkedAt": "2026-11-07T12:16:32.885Z",
+  "ms": 57390,
   "source": {
    "name": "The Met",
    "kind": "source link",
@@ -3264,15 +3264,7 @@
    },
    {
     "level": "warn",
-    "text": "Title: The catalogue title adds '(Feline Album Leaf)' not present in the source title."
-   },
-   {
-    "level": "warn",
-    "text": "Medium: The catalogue medium omits 'Album leaf' included in the source medium."
-   },
-   {
-    "level": "info",
-    "text": "Movement “Symbolism, Posters & Art Nouveau” is plausible, not confirmed by a source: The 1887 Japanese Meiji work fits the period, but no source ties Kyōsai to Symbolism or Art Nouveau."
+    "text": "Movement: “Symbolism, Posters & Art Nouveau” looks wrong. Kyōsai was a traditional Japanese painter noted for realism and naturalism, not Symbolism or Art Nouveau. Suggested: Romanticism & Realism."
    }
   ],
   "tried": [
