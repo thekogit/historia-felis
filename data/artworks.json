@@ -1133,7 +1133,7 @@
     "collection": "Vorderasiatisches Museum, Pergamonmuseum, Berlin, Germany",
     "inv_number": "VAG 4060",
     "role": "main subject",
-    "featured": true,
+    "featured": false,
     "license": "CC BY-SA 4.0",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Lion_-_Processional_Way_of_Babylon_-_Pergamonmuseum_-_Berlin_-_Germany_2017.jpg",
     "source_url": "https://commons.wikimedia.org/wiki/File:Lion_-_Processional_Way_of_Babylon_-_Pergamonmuseum_-_Berlin_-_Germany_2017.jpg",
@@ -1149,12 +1149,15 @@
     "description": "Constructed from individually molded baked bricks coated with vibrant vitreous glazes, a muscular lion strides majestically toward the left with gaping jaws, bared canines, and raised tail. The animal's leonine musculature, rippling mane, and sinewy shoulders are modeled in sculptural relief against a deep cobalt-blue glazed background. Ochre and white glazes delineate the fur texture, creating a luminous chromatic frieze that lined the ceremonial approach to the Ishtar Gate.",
     "context": "Commissioned by King Nebuchadnezzar II for the grand Processional Way connecting the Euphrates riverfront to the temple of Marduk in Babylon, this lion formed part of a sequence of 120 identical heraldic predators. German archaeologist Robert Koldewey excavated the collapsed glazed brick fragments between 1899 and 1917, painstakingly reassembling them in Berlin.",
     "feline_symbolism": "Sacred beast of Ishtar, goddess of war, love, and imperial dominion, the striding lion projected invincible divine protection over the sacred capital while warning foreign visitors of imperial military supremacy.",
-    "inventory_id": "Nº 0015",
+    "inventory_id": "VAG 4060",
     "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Lion_-_Processional_Way_of_Babylon_-_Pergamonmuseum_-_Berlin_-_Germany_2017.jpg",
     "large_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Lion_-_Processional_Way_of_Babylon_-_Pergamonmuseum_-_Berlin_-_Germany_2017.jpg",
     "title_eng": "The Striding Lion of Babylon (Processional Way of Ishtar)",
     "type": "Ceramic",
-    "submovement": "Neo-Babylonian Monumental Glazed Architectural Relief"
+    "submovement": "Neo-Babylonian Monumental Glazed Architectural Relief",
+    "year_sort": -600,
+    "location": "Vorderasiatisches Museum, Pergamonmuseum, Berlin, Germany",
+    "additional_images": []
   },
   {
     "id": "brooklyn-museum-bronze-cat-78243",
