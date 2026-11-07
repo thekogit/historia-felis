@@ -2034,7 +2034,7 @@
         const why = (redChecks[w.id].issues || []).filter(i => i.level === 'error').map(i => i.text);
         flags.push({ kind: 'red', text: 'Problem: ' + (why.join('; ') || 'see the check report') });
       }
-      if (!String(w.image_url || '').trim()) flags.push({ kind: 'orange', text: 'No image' });
+      if (!cleanImageUrl(w.image_url || w.thumb_url || '')) flags.push({ kind: 'orange', text: 'No image' });
       const m = missingInfo(w);
       if (m.length >= 2) flags.push({ kind: 'yellow', text: `Missing ${m.length} fields: ${m.join(', ')}` });
       else if (m.length === 1) flags.push({ kind: 'grey', text: `Missing ${m[0]}` });
@@ -2077,8 +2077,11 @@
       const sel = document.getElementById('flag-filter');
       if (!sel) return;
       [...sel.options].forEach(o => {
-        if (!o.value) return;
-        if (!o.dataset.label) o.dataset.label = o.textContent;
+        if (!o.dataset.label) o.dataset.label = o.textContent.replace(/\s*\(\d+\)$/, '');
+        if (!o.value) {
+          o.textContent = `${o.dataset.label} (${allArtworks.length})`;
+          return;
+        }
         o.textContent = `${o.dataset.label} (${allArtworks.filter(w => matchesFlagFilter(w, o.value)).length})`;
       });
     }
