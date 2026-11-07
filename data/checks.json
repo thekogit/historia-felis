@@ -6092,14 +6092,18 @@
   ]
  },
  "ostracon-cat-minding-geese-cairo-je63801": {
-  "sig": "730fa4dc",
+  "sig": "ef8190d1",
   "status": "unverified",
-  "checkedAt": "2026-11-02T15:26:40.240Z",
-  "ms": 1856,
+  "checkedAt": "2026-11-07T11:43:15.257Z",
+  "ms": 21655,
   "source": null,
   "sameWork": null,
   "imageDistance": null,
   "issues": [
+   {
+    "level": "ok",
+    "text": "Movement “New Kingdom Daily Life & Tomb Murals” is supported: The work is a New Kingdom Deir el-Medina ostracon, fitting the broad New Kingdom movement."
+   },
    {
     "level": "info",
     "text": "No trusted source found. Not proof of a problem: many folk objects and finds are not online."
@@ -6107,9 +6111,10 @@
   ],
   "tried": [
    "web search",
-   "web search unavailable: web search paused by rate limit (2003s left)",
+   "web search unavailable: ai is not defined",
    "museum APIs (Met, AIC, Cleveland)",
-   "Wikidata"
+   "Wikidata",
+   "movement attribution"
   ]
  },
  "tomb-of-nakht-cat-under-chair-1400bce": {

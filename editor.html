@@ -1104,6 +1104,7 @@
       </button>
       <button id="btn-theme-toggle" onclick="toggleTheme()">Theme</button>
       <button class="primary" onclick="openIntake()">+ Add Artworks <span id="intake-badge" class="ai-badge" hidden></span></button>
+      <button onclick="reloadCatalog()" title="Reload artworks from disk">Reload</button>
       <button onclick="rebuildCatalog()">Rebuild Site</button>
       <button class="primary" onclick="saveActiveArtwork()">Save Changes</button>
     </div>
@@ -1779,19 +1780,25 @@
 
       // Local image copies (optional file; written by the editor server and scripts/images.js)
       try {
-        const mRes = await fetch('data/image_manifest.json', { cache: 'no-store' });
+        const mRes = await fetch('data/image_manifest.json?t=' + Date.now(), { cache: 'no-store' });
         if (mRes.ok) imageManifest = await mRes.json();
       } catch (e) {}
 
       // Stored red-flag check results (written by the editor server and scripts/check_flags.js)
       try {
-        const cRes = await fetch('data/checks.json', { cache: 'no-store' });
+        const cRes = await fetch('data/checks.json?t=' + Date.now(), { cache: 'no-store' });
         if (cRes.ok) redChecks = await cRes.json();
       } catch (e) {}
 
       // 2. Load Categories
       try {
-        const catRes = await fetch('data/categories.json');
+        let catRes;
+        if (isServerConnected) {
+          catRes = await fetch(apiUrl('/api/categories?t=' + Date.now()), { cache: 'no-store' }).catch(() => null);
+        }
+        if (!catRes || !catRes.ok) {
+          catRes = await fetch('data/categories.json?t=' + Date.now(), { cache: 'no-store' });
+        }
         allCategories = await catRes.json();
       } catch (e) {
         console.error('Failed to load categories', e);
@@ -1816,7 +1823,13 @@
 
       // 3. Load Artworks
       try {
-        const artRes = await fetch('data/artworks.json');
+        let artRes;
+        if (isServerConnected) {
+          artRes = await fetch(apiUrl('/api/artworks?t=' + Date.now()), { cache: 'no-store' }).catch(() => null);
+        }
+        if (!artRes || !artRes.ok) {
+          artRes = await fetch('data/artworks.json?t=' + Date.now(), { cache: 'no-store' });
+        }
         allArtworks = await artRes.json();
       } catch (e) {
         console.error('Failed to load artworks', e);
@@ -1825,6 +1838,8 @@
       filterArtworks();
       if (allArtworks.length > 0) {
         selectArtwork(allArtworks[0]);
+      } else if (window.location.protocol === 'file:') {
+        renderFileModePrompt();
       }
       if (typeof initAiAssistant === 'function') {
         await initAiAssistant();
@@ -3792,6 +3807,60 @@
       a.href = URL.createObjectURL(blob);
       a.download = 'artworks.json';
       a.click();
+    }
+
+    async function reloadCatalog() {
+      showToast('Reloading catalogue from disk...');
+      try {
+        let artRes;
+        if (isServerConnected) {
+          artRes = await fetch(apiUrl('/api/artworks?t=' + Date.now()), { cache: 'no-store' }).catch(() => null);
+        }
+        if (!artRes || !artRes.ok) {
+          artRes = await fetch('data/artworks.json?t=' + Date.now(), { cache: 'no-store' });
+        }
+        if (artRes && artRes.ok) {
+          allArtworks = await artRes.json();
+          filterArtworks();
+          if (allArtworks.length > 0) {
+            selectArtwork(allArtworks[0], true);
+          }
+          showToast(`Loaded ${allArtworks.length} artworks from data/artworks.json`);
+        } else {
+          showToast('Failed to load data/artworks.json: HTTP ' + (artRes ? artRes.status : 'error'));
+        }
+      } catch (e) {
+        showToast('Error reloading catalog: ' + e.message);
+      }
+    }
+
+    function renderFileModePrompt() {
+      const listEl = document.getElementById('artwork-list');
+      if (!listEl) return;
+      listEl.innerHTML = `<li style="padding:24px 16px; color:#aaa; text-align:center; line-height:1.6; font-size:12px;">
+        <p style="margin-bottom:12px; color:#eee; font-weight:600;">Opened in File Mode</p>
+        <p>Browsers block local <code>fetch()</code> on <code>file://</code> URLs.<br>For full live editing with auto-save, run in your terminal:</p>
+        <code style="display:block; margin:10px 0; padding:8px; background:#1e1e24; border:1px solid #333; border-radius:4px; color:#4ade80; font-family:monospace;">npm run edit</code>
+        <p style="margin-top:14px;">Or browse offline by selecting <code>data/artworks.json</code>:</p>
+        <input type="file" id="local-file-picker" accept=".json" style="margin-top:8px; font-size:11px;" onchange="loadArtworksFromFile(event)">
+      </li>`;
+    }
+
+    function loadArtworksFromFile(e) {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (evt) => {
+        try {
+          allArtworks = JSON.parse(evt.target.result);
+          filterArtworks();
+          if (allArtworks.length > 0) selectArtwork(allArtworks[0], true);
+          showToast(`Loaded ${allArtworks.length} artworks from ${file.name}`);
+        } catch (err) {
+          alert('Invalid JSON file: ' + err.message);
+        }
+      };
+      reader.readAsText(file);
     }
 
     async function rebuildCatalog() {
