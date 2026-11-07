@@ -936,6 +936,24 @@ try { (function() {
       };
       window.CuratorialStack = CuratorialStack;
 
+      function pulseEl(el) {
+        if (!el) return;
+        el.classList.remove('motion-pulse');
+        void el.offsetWidth;
+        el.classList.add('motion-pulse');
+        el.addEventListener('animationend', () => el.classList.remove('motion-pulse'), { once: true });
+      }
+
+      function swapStackIcon(btn, inStack) {
+        const svg = btn.querySelector('svg');
+        if (!svg) return;
+        svg.setAttribute('fill', inStack ? 'currentColor' : 'none');
+        svg.classList.remove('icon-swap-in');
+        void svg.getBoundingClientRect();
+        svg.classList.add('icon-swap-in');
+        svg.addEventListener('animationend', () => svg.classList.remove('icon-swap-in'), { once: true });
+      }
+
       function showStackToast(msg) {
         const t = document.getElementById('stack-toast');
         if (!t) return;
@@ -947,25 +965,36 @@ try { (function() {
         }, 3500);
       }
 
+      ['pointerdown'].forEach(ev => document.addEventListener(ev, e => {
+        const r = e.target;
+        if (r && r.matches && r.matches('input[type="range"]')) r.classList.add('is-dragging');
+      }, true));
+      ['pointerup', 'pointercancel'].forEach(ev => document.addEventListener(ev, () => {
+        document.querySelectorAll('input[type="range"].is-dragging').forEach(r => r.classList.remove('is-dragging'));
+      }, true));
+      document.addEventListener('blur', e => {
+        if (e.target && e.target.classList) e.target.classList.remove('is-dragging');
+      }, true);
+
       window.toggleWorkStack = function(workId, btnEl) {
         const state = CuratorialStack.toggle(workId);
         const inStack = state === 'added';
         if (btnEl) {
           btnEl.classList.toggle('active', inStack);
-          const svg = btnEl.querySelector('svg');
-          if (svg) svg.setAttribute('fill', inStack ? 'currentColor' : 'none');
+          swapStackIcon(btnEl, inStack);
+          if (inStack) pulseEl(btnEl);
         }
         const dossierBtn = document.getElementById('artwork-stack-btn');
         if (dossierBtn) {
           dossierBtn.classList.toggle('active', inStack);
+          if (inStack) pulseEl(dossierBtn);
           dossierBtn.innerHTML = inStack
-            ? `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span>✓ IN STACK [CLICK TO REMOVE]</span>`
-            : `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span>+ ADD TO CURATORIAL STACK</span>`;
+            ? `<svg class="icon-swap-in" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span>✓ IN STACK [CLICK TO REMOVE]</span>`
+            : `<svg class="icon-swap-in" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span>+ ADD TO CURATORIAL STACK</span>`;
         }
         document.querySelectorAll(`.card-stack-btn[data-work-id="${workId}"]`).forEach(b => {
           b.classList.toggle('active', inStack);
-          const svg = b.querySelector('svg');
-          if (svg) svg.setAttribute('fill', inStack ? 'currentColor' : 'none');
+          swapStackIcon(b, inStack);
         });
         showStackToast(inStack ? 'Added to your curatorial stack' : 'Removed from curatorial stack');
       };
@@ -1027,13 +1056,12 @@ try { (function() {
         const inStack = state === 'added';
         if (btnEl) {
           btnEl.classList.toggle('active', inStack);
-          const svg = btnEl.querySelector('svg');
-          if (svg) svg.setAttribute('fill', inStack ? 'currentColor' : 'none');
+          swapStackIcon(btnEl, inStack);
+          if (inStack) pulseEl(btnEl);
         }
         document.querySelectorAll(`.card-stack-btn[data-haiku-id="${haikuId}"], .card-stack-btn[data-haiku-id="${fullKey}"], .card-stack-btn[data-haiku-id="${cleanId}"]`).forEach(b => {
           b.classList.toggle('active', inStack);
-          const svg = b.querySelector('svg');
-          if (svg) svg.setAttribute('fill', inStack ? 'currentColor' : 'none');
+          swapStackIcon(b, inStack);
         });
         showStackToast(inStack ? 'Haiku saved to curatorial stack' : 'Haiku removed from curatorial stack');
       };
@@ -2058,7 +2086,7 @@ try { (function() {
                 const aspect = getArtworkAspect(work);
                 html += `
                   <div class="timeline-spotlight-item" data-era-id="${era.id}" data-era-name="${era.name}" data-mov-name="${mov.name}">
-                    <article class="timeline-card timeline-spotlight-card" onclick="window.location.hash='#/work/${work.id}'">
+                    <article class="timeline-card timeline-spotlight-card stagger-in" style="--stagger-i:${Math.min(itemIndex, 10)}" onclick="window.location.hash='#/work/${work.id}'">
                       <div class="timeline-card-header">
                         <span class="inv-stamp">${work.inv_number} · WATERSHED SPOTLIGHT</span>
                         <div class="timeline-card-header-right">
@@ -2073,9 +2101,9 @@ try { (function() {
                       </div>
                       <h3 class="card-title-eng" style="font-size: clamp(20px, 2.5vw, 28px);">${work.title_eng || work.title}</h3>
                       ${work.title_eng && work.title_eng !== work.title ? `<div class="card-title-orig">${work.title}</div>` : ''}
-                      <div class="card-artist-meta">${work.artist} (${work.artist_dates || work.culture})</div>
+                      <div class="card-artist-meta settle-detail" style="--stagger-i:${Math.min(itemIndex, 10)}">${work.artist} (${work.artist_dates || work.culture})</div>
                       <p class="card-desc-snippet" style="font-size: 14px; max-width: 760px;">${work.description}</p>
-                      <div class="card-tags-row">
+                      <div class="card-tags-row settle-detail" style="--stagger-i:${Math.min(itemIndex, 10)}">
                         <span class="fabric-tag">${mov.name}</span>
                         <span class="fabric-tag">${work.culture}</span>
                       </div>
@@ -2090,7 +2118,7 @@ try { (function() {
 
                 html += `
                   <div class="timeline-item ${isLeft ? 'left' : 'right'} ${isStacked ? 'stacked-card' : 'spaced-card'}" data-era-id="${era.id}" data-era-name="${era.name}" data-mov-name="${mov.name}">
-                    <article class="timeline-card" onclick="window.location.hash='#/work/${work.id}'">
+                    <article class="timeline-card stagger-in" style="--stagger-i:${Math.min(itemIndex, 10)}" onclick="window.location.hash='#/work/${work.id}'">
                       <div class="timeline-card-header">
                         <span class="inv-stamp">${work.inv_number}</span>
                         <div class="timeline-card-header-right">
@@ -2105,9 +2133,9 @@ try { (function() {
                       </div>
                       <h3 class="card-title-eng">${work.title_eng || work.title}</h3>
                       ${work.title_eng && work.title_eng !== work.title ? `<div class="card-title-orig">${work.title}</div>` : ''}
-                      <div class="card-artist-meta">${work.artist} (${work.artist_dates || work.culture})</div>
+                      <div class="card-artist-meta settle-detail" style="--stagger-i:${Math.min(itemIndex, 10)}">${work.artist} (${work.artist_dates || work.culture})</div>
                       <p class="card-desc-snippet">${work.description.length > 170 ? work.description.slice(0, 170) + '…' : work.description}</p>
-                      <div class="card-tags-row">
+                      <div class="card-tags-row settle-detail" style="--stagger-i:${Math.min(itemIndex, 10)}">
                         <span class="fabric-tag">${mov.name}</span>
                       </div>
                     </article>
@@ -3949,7 +3977,7 @@ try { (function() {
           const isWide = (w.aspect_ratio && w.aspect_ratio >= 1.22);
           const aspect = getArtworkAspect(w);
           return `
-            <article class="grid-art-card ${isWide ? 'is-wide' : ''}" onclick="window.location.hash='#/work/${w.id}'">
+            <article class="grid-art-card stagger-in ${isWide ? 'is-wide' : ''}" style="--stagger-i:${Math.min(i, 10)}" onclick="window.location.hash='#/work/${w.id}'">
               <div class="grid-card-thumb" style="aspect-ratio: ${aspect};" data-photo-max-w="${w.max_width || ''}" data-photo-max-h="${w.max_height || ''}">
                 ${renderCardMedia(w, 500, isWide ? '(min-width: 641px) 796px, 92vw' : '(min-width: 1060px) 380px, (min-width: 641px) 45vw, 92vw', i < 4)}
               </div>
@@ -3962,8 +3990,8 @@ try { (function() {
                 </div>
                 <h4 class="card-title-eng">${w.title_eng || w.title}</h4>
                 ${w.title_eng && w.title_eng !== workTitle(w) ? `<div class="card-title-orig">${w.title}</div>` : ''}
-                <div class="card-artist-meta">${w.artist} · ${w.date_display}</div>
-                <div class="card-tags-row">
+                <div class="card-artist-meta settle-detail" style="--stagger-i:${Math.min(i, 10)}">${w.artist} · ${w.date_display}</div>
+                <div class="card-tags-row settle-detail" style="--stagger-i:${Math.min(i, 10)}">
                   <span class="fabric-tag">${w.culture}</span>
                 </div>
               </div>
@@ -5089,56 +5117,31 @@ try { (function() {
           const translationText = h.en || h.literal || '';
           const isSaved = CuratorialStack.has('haiku:' + hId) || CuratorialStack.has(hId);
 
+          const extraHtml = [
+            romajiText ? `<p class="dossier-haiku-romaji">${romajiText}</p>` : '',
+            h.notes ? `<p class="dossier-haiku-notes">${h.notes}</p>` : '',
+            (h.kigo || h.pathology) ? `<p class="dossier-haiku-tags">${[h.kigo ? `<span class="dossier-haiku-kigo">${h.kigo}</span>` : '', h.pathology || ''].filter(Boolean).join(' · ')}</p>` : ''
+          ].join('');
+
           cardsHtml += `
-            <article id="haiku-card-${hId}" class="dossier-specimen-card" style="border: 1px solid var(--border-hairline); background: var(--bg-surface); padding: clamp(14px, 3.5vw, 36px); margin-bottom: 32px; position: relative; box-sizing: border-box; max-width: 100%; min-width: 0; overflow: hidden;">
-              <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border-hairline); padding-bottom: 12px; margin-bottom: 20px; gap: 8px; font-size: 11px; min-width: 0;">
-                <div style="display: flex; align-items: center; gap: 8px;">
-                  <span style="font-family: var(--font-archival-mono); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-main);">${authorDisplay}</span>
-                  ${authorLifespan ? `<span style="font-family: var(--font-archival-mono); font-size: 11px; color: var(--text-muted);">${authorLifespan}</span>` : ''}
-                </div>
-                <div style="display: flex; align-items: center; gap: 8px;">
-                  ${yearDisplay ? `<span class="stamp-badge" style="color: var(--accent-stamp); border: 1px solid var(--accent-stamp); padding: 2px 7px; font-family: var(--font-archival-mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; transform: rotate(-1deg); display: inline-block;">${yearDisplay}</span>` : ''}
-                  <button class="card-stack-btn ${isSaved ? 'active' : ''}" data-haiku-id="haiku:${hId}" title="Save Haiku to Curatorial Stack" type="button" onclick="window.toggleHaikuStack('haiku:${hId}', this);">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="${isSaved ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-                  </button>
-                </div>
-              </div>
-
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 24px; align-items: center;">
-                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid var(--border-hairline); background: var(--bg-neutral); padding: 24px 16px; min-height: 200px; min-width: 0; box-sizing: border-box; overflow-x: auto;">
-                  <div style="writing-mode: vertical-rl; -webkit-writing-mode: vertical-rl; text-orientation: upright; font-family: var(--font-haiku-kanji); font-size: 22px; letter-spacing: 0.28em; line-height: 1.6; user-select: all;">
-                    ${jpText}
-                  </div>
-                  ${authorJp ? `<div style="margin-top: 16px; padding-top: 8px; border-top: 1px solid var(--border-hairline); font-size: 11.5px; font-family: var(--font-haiku-kanji); letter-spacing: 0.15em; color: var(--accent-stamp);">${authorJp}</div>` : ''}
-                </div>
-
-                <div style="display: flex; flex-direction: column; gap: 14px; min-width: 0; overflow-wrap: anywhere;">
-                  ${romajiText ? `<p style="font-family: var(--font-archival-mono); font-style: italic; font-size: 12.5px; color: var(--text-muted); margin: 0;">"${romajiText}"</p>` : ''}
-                  <blockquote style="border-left: 2px solid var(--accent-stamp); padding-left: 14px; margin: 0; font-family: var(--font-sans-body); font-weight: 700; font-size: 15px; line-height: 1.45; color: var(--text-main);">
-                    “${translationText}”
-                  </blockquote>
-                  ${h.notes ? `<div style="font-family: var(--font-sans-body); font-size: 12px; line-height: 1.6; color: var(--text-secondary);">${h.notes}</div>` : ''}
-                  ${h.kigo || h.pathology ? `
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding-top: 12px; border-top: 1px solid var(--border-hairline); font-size: 11px;">
-                      <div style="font-family: var(--font-haiku-kanji); color: var(--text-muted);">
-                        ${h.kigo || ''}
-                      </div>
-                      ${h.pathology ? `
-                        <div>
-                          <span style="font-family: var(--font-archival-mono); font-size: 10px; letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase;">PATHOS:</span>
-                          <span style="font-family: var(--font-sans-ui); font-weight: 700; color: var(--accent-stamp); margin-left: 4px;">${h.pathology}</span>
-                        </div>
-                      ` : ''}
-                    </div>
-                  ` : ''}
-                </div>
-              </div>
+            <article id="haiku-card-${hId}" class="dossier-haiku-card stagger-in" style="--stagger-i:${Math.min(idx, 10)}">
+              <header class="dossier-haiku-head">
+                <span class="dossier-haiku-author">${authorDisplay}</span>
+                ${yearDisplay ? `<span class="dossier-haiku-year settle-detail" style="--stagger-i:${Math.min(idx, 10)}">${yearDisplay}</span>` : ''}
+                <button class="card-stack-btn ${isSaved ? 'active' : ''}" data-haiku-id="haiku:${hId}" title="Save Haiku to Curatorial Stack" aria-label="Save haiku" type="button" onclick="window.toggleHaikuStack('haiku:${hId}', this);">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="${isSaved ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+              </header>
+              <div class="dossier-haiku-jp" lang="ja">${jpText}</div>
+              ${authorJp ? `<div class="dossier-haiku-author-jp" lang="ja">${authorJp}</div>` : ''}
+              <p class="dossier-haiku-en">${translationText}</p>
+              ${extraHtml ? `<details class="dossier-haiku-more"><summary>Notes</summary><div class="dossier-haiku-extra reveal-mask">${extraHtml}</div></details>` : ''}
             </article>
           `;
         });
 
         appRoot.innerHTML = `
-          <div class="dossier-page-container" style="max-width: 860px; margin: 0 auto; padding: clamp(24px, 4vw, 56px) clamp(12px, 4vw, 20px); box-sizing: border-box; width: 100%; overflow-x: hidden;">
+          <div class="dossier-page-container" style="max-width: 1200px; margin: 0 auto; padding: clamp(24px, 4vw, 56px) clamp(12px, 4vw, 20px); box-sizing: border-box; width: 100%; overflow-x: hidden;">
             <section style="border-left: 2px solid var(--accent-stamp); padding-left: 14px; margin-bottom: 40px; overflow-wrap: anywhere;">
               <div style="font-family: var(--font-technical-mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent-stamp); margin-bottom: 6px;">ARCHIVAL DOSSIER · ${allDossierHaikus.length} HAIKUS</div>
               <h1 style="font-family: var(--font-period-rizoma); font-size: clamp(22px, 3.2vw, 32px); font-weight: 700; text-transform: uppercase; margin: 0 0 12px 0;">
@@ -5152,7 +5155,7 @@ try { (function() {
               </p>
             </section>
 
-            <div id="dossier-specimens-list">
+            <div id="dossier-specimens-list" class="dossier-grid">
               ${cardsHtml}
             </div>
           </div>
@@ -5395,7 +5398,7 @@ try { (function() {
         if (audioEl) {
           try {
             audioEl.currentTime = 0;
-            audioEl.volume = 0.6;
+            audioEl.volume = 0.1;
             const p = audioEl.play();
             // Browsers block autoplay until the page has had a user gesture. If so, start the
             // music on the first gesture while the prologue is still running (visuals don't depend on it).
@@ -5404,7 +5407,7 @@ try { (function() {
               const retry = () => {
                 evs.forEach(t => window.removeEventListener(t, retry, true));
                 if (!running || exiting) return;
-                try { audioEl.volume = 0.6; const q = audioEl.play(); if (q && q.catch) q.catch(() => {}); } catch (e) {}
+                try { audioEl.volume = 0.1; const q = audioEl.play(); if (q && q.catch) q.catch(() => {}); } catch (e) {}
               };
               evs.forEach(t => window.addEventListener(t, retry, true));
             });
