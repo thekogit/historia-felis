@@ -1082,7 +1082,7 @@
     "collection": "British Museum, London, United Kingdom",
     "inv_number": "EA64391",
     "role": "main subject",
-    "featured": false,
+    "featured": true,
     "license": "CC0",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Gayer-Anderson_Cat%2C_British_Museum.jpg",
     "source_url": "https://commons.wikimedia.org/wiki/File:Gayer-Anderson_Cat%2C_British_Museum.jpg",
@@ -1097,13 +1097,16 @@
     ],
     "description": "Hollow-cast in leaded bronze using the lost-wax technique, this celebrated sculpture portrays a regal domestic cat seated bolt upright with paws neatly aligned and tail coiled around its right flank. Pierced ears retain authentic gold hoop earrings, a silver ring pierces its snout, and an incised silver-inlaid pectoral featuring the goddess Bastet and a winged solar scarab adorns its chest. The animal's sleek athletic contours, pricked ears, and vigilant gaze embody the sovereign majesty of the feline deity.",
     "context": "Donated to the British Museum in 1939 by Major Robert Grenville Gayer-Anderson, an English army doctor who restored the piece in his historic house in Cairo, the sculpture was likely dedicated at the great cat necropolis of Saqqara. Metallurgical analysis reveals that the bronze alloy was cast over an earthen core and heavily patched with contemporary rectangular repairs.",
-    "inventory_id": "Nº 0013",
+    "inventory_id": "EA64391",
     "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Gayer-Anderson_Cat%2C_British_Museum.jpg",
     "large_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Gayer-Anderson_Cat%2C_British_Museum.jpg",
-    "title_eng": "The Gayer-Anderson Cat (British Museum EA64391)",
+    "title_eng": "The Gayer-Anderson Cat",
     "type": "Bronze",
     "dimensions": "Height: 42 cm; Width: 14 cm; Depth: 25.5 cm",
-    "feline_symbolism": "The ultimate earthly manifestation of the goddess Bastet, balancing serene maternal benevolence with the solar scarab on its head and chest, which proclaims its connection to the daily rebirth of Ra."
+    "feline_symbolism": "The ultimate earthly manifestation of the goddess Bastet, balancing serene maternal benevolence with the solar scarab on its head and chest, which proclaims its connection to the daily rebirth of Ra.",
+    "year_sort": -600,
+    "location": "British Museum, London, United Kingdom",
+    "additional_images": []
   },
   {
     "id": "processional-way-babylon-striding-lion-600bce",
