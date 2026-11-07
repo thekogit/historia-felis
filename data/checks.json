@@ -8271,10 +8271,10 @@
   ]
  },
  "ex-349-amedeo-modigliani-seat-portrait-studies-montparnasse-sketche": {
-  "sig": "e52bea9b",
-  "status": "problem",
-  "checkedAt": "2026-11-07T12:12:07.544Z",
-  "ms": 61392,
+  "sig": "d9a96645",
+  "status": "verified",
+  "checkedAt": "2026-11-07T12:28:53.329Z",
+  "ms": 23016,
   "source": {
    "name": "The Met",
    "kind": "museum API",
@@ -8285,12 +8285,8 @@
   "imageDistance": null,
   "issues": [
    {
-    "level": "error",
-    "text": "Collection: The trusted source places the work in The Metropolitan Museum of Art, not the Hamburger Kunsthalle."
-   },
-   {
     "level": "ok",
-    "text": "Movement “Early Modernism, Ashcan & New Objectivity” is supported: Léger's 1921 Tubist/Cubist work falls within early modernism."
+    "text": "Movement “Early Modernism, Ashcan & New Objectivity” is supported: Léger's 1921 Cubist painting is an early modernist work."
    }
   ],
   "tried": [
