@@ -114,10 +114,10 @@
   ]
  },
  "lion-man-of-hohlenstein-stadel-40000bce": {
-  "sig": "e0a85cf6",
+  "sig": "781cc236",
   "status": "verified",
-  "checkedAt": "2026-11-02T20:12:23.865Z",
-  "ms": 16990,
+  "checkedAt": "2026-11-07T11:38:06.134Z",
+  "ms": 19790,
   "source": {
    "name": "Wikipedia",
    "kind": "source link",
@@ -133,7 +133,7 @@
    },
    {
     "level": "ok",
-    "text": "Movement “Paleolithic & Neolithic Art and Sculpture” is supported: The Lion-man is an Aurignacian Upper Paleolithic ivory sculpture, fitting the Paleolithic & Neolithic movement."
+    "text": "Movement “Paleolithic & Neolithic Art and Sculpture” is supported: The Lion-man is an Upper Paleolithic Aurignacian ivory sculpture, so it belongs to Paleolithic & Neolithic Art and Sculpture."
    }
   ],
   "tried": [
@@ -142,10 +142,10 @@
   ]
  },
  "bm-gold-spacer-bars-cats-ea57699": {
-  "sig": "81891582",
+  "sig": "dd12a6b4",
   "status": "verified",
-  "checkedAt": "2026-11-02T14:56:44.277Z",
-  "ms": 30733,
+  "checkedAt": "2026-11-07T11:42:18.542Z",
+  "ms": 38197,
   "source": {
    "name": "British Museum",
    "kind": "source link",
@@ -157,30 +157,27 @@
   "issues": [
    {
     "level": "warn",
-    "text": "Date: Catalogue date range c. 1575–1550 BCE differs from the source production date 1571–1560 BC."
+    "text": "Medium: The catalogue describes the cats as solid-cast and chased, while the source says their heads and bodies were probably hand-made with roughly cut details."
    },
    {
     "level": "warn",
-    "text": "Other: Catalogue culture cites Thebes/Dra Abu el-Naga, while the source gives the findspot as Edfu (?)."
+    "text": "Other: The catalogue says each spacer bar has five crouching cats, but the source describes three reclining cats."
    },
    {
-    "level": "warn",
-    "text": "Medium: Catalogue says solid cast and chased gold, but the source describes cast, cut, beaten, notched and incised gold with hand-made parts."
-   },
-   {
-    "level": "warn",
-    "text": "Other: Catalogue says the cats' tails are curled around their flanks, while the source says the tails curl around in front of the legs."
+    "level": "ok",
+    "text": "Movement “Second Intermediate & Early New Kingdom Jewellery” is supported: The 17th Dynasty spacer bar is dated c. 1571–1560 BCE, within the Second Intermediate Period range of the filed movement."
    }
   ],
   "tried": [
-   "source link (British Museum)"
+   "source link (British Museum)",
+   "movement attribution"
   ]
  },
  "seated-woman-of-catalhoyuk-felines-6000bce": {
-  "sig": "3aac5cd0",
+  "sig": "6986c4ec",
   "status": "verified",
-  "checkedAt": "2026-11-02T14:57:16.954Z",
-  "ms": 9766,
+  "checkedAt": "2026-11-07T11:39:09.610Z",
+  "ms": 28656,
   "source": {
    "name": "Wikimedia Commons (the image’s own record)",
    "kind": "image record",
@@ -192,21 +189,26 @@
   "issues": [
    {
     "level": "warn",
-    "text": "Other: The image record notes that parts such as the head are not original, which the catalogue entry does not mention."
+    "text": "Other: The image record notes that parts such as the head are not original."
+   },
+   {
+    "level": "ok",
+    "text": "Movement “Paleolithic & Neolithic Art and Sculpture” is supported: The work is a Neolithic sculpture dated c. 6000 BCE, within the Paleolithic & Neolithic movement's range."
    }
   ],
   "tried": [
    "web search",
-   "web search unavailable: web_search rate-limited for 173s",
+   "web search unavailable: ai is not defined",
    "museum APIs (Met, AIC, Cleveland)",
-   "image record (Commons)"
+   "image record (Commons)",
+   "movement attribution"
   ]
  },
  "chauvet-cave-panel-of-the-lions-36000bp": {
-  "sig": "6637d692",
+  "sig": "f288d704",
   "status": "verified",
-  "checkedAt": "2026-11-02T14:57:34.745Z",
-  "ms": 27556,
+  "checkedAt": "2026-11-07T11:39:21.526Z",
+  "ms": 95180,
   "source": {
    "name": "Wikimedia Commons (the image’s own record)",
    "kind": "image record",
@@ -215,12 +217,19 @@
   },
   "sameWork": "yes",
   "imageDistance": null,
-  "issues": [],
+  "issues": [
+   {
+    "level": "ok",
+    "text": "Movement “Paleolithic & Neolithic Art and Sculpture” is supported: The work is Aurignacian Franco-Cantabrian cave art, which falls within the broad Paleolithic & Neolithic movement."
+   }
+  ],
   "tried": [
    "web search",
-   "web search unavailable: web_search rate-limited for 173s",
+   "web search unavailable: ai is not defined",
    "museum APIs (Met, AIC, Cleveland)",
-   "image record (Commons)"
+   "skipped The Met: “Panel” is a different work",
+   "image record (Commons)",
+   "movement attribution"
   ]
  },
  "ex-339-gustav-klimt-sketchbook-studies-studio-photographs-with-his-": {
@@ -276,10 +285,10 @@
   ]
  },
  "gebel-el-arak-knife-handle-felines-3300bce": {
-  "sig": "1a1601af",
+  "sig": "e8db4fb8",
   "status": "verified",
-  "checkedAt": "2026-11-02T14:58:04.241Z",
-  "ms": 13209,
+  "checkedAt": "2026-11-07T11:40:10.054Z",
+  "ms": 60437,
   "source": {
    "name": "Wikimedia Commons (the image’s own record)",
    "kind": "image record",
@@ -288,12 +297,18 @@
   },
   "sameWork": "yes",
   "imageDistance": null,
-  "issues": [],
+  "issues": [
+   {
+    "level": "info",
+    "text": "Movement “Ancient Near East & Levantine Antiquities” is plausible, not confirmed by a source: The handle is Predynastic Egyptian and only broadly fits the Ancient Near East date range; no source ties it to that movement."
+   }
+  ],
   "tried": [
    "web search",
-   "web search unavailable: web search paused by rate limit (130s left)",
+   "web search unavailable: ai is not defined",
    "museum APIs (Met, AIC, Cleveland)",
-   "image record (Commons)"
+   "image record (Commons)",
+   "movement attribution"
   ]
  },
  "hierakonpolis-predynastic-cat-burials-3700bce": {
@@ -5573,26 +5588,32 @@
   ]
  },
  "ex-040-calcite-egyptian-alabaster-cat-shaped-cosmetic-jar-middle-ki": {
-  "sig": "9fcc0609",
+  "sig": "67665ad1",
   "status": "verified",
-  "checkedAt": "2026-11-02T19:19:07.643Z",
-  "ms": 11505,
+  "checkedAt": "2026-11-07T11:42:29.490Z",
+  "ms": 49145,
   "source": {
-   "name": "The Met",
-   "kind": "source link",
-   "url": "https://www.metmuseum.org/art/collection/search/544039",
-   "title": "Cosmetic Vessel in the Shape of a Cat - Middle Kingdom - The Metropolitan Museum of Art"
+   "name": "Wikimedia Commons (the image’s own record)",
+   "kind": "image record",
+   "url": "https://commons.wikimedia.org/wiki/File:Cosmetic_Vessel_in_the_Shape_of_a_Cat_MET_DT532.jpg",
+   "title": "Cosmetic Vessel in the Shape of a Cat"
   },
   "sameWork": "yes",
   "imageDistance": null,
   "issues": [
    {
     "level": "ok",
-    "text": "Movement “Old & Middle Kingdom Art & Tomb Reliefs” is supported: The Met dates the vessel to Middle Kingdom Dynasty 12, which falls within the movement's stated range."
+    "text": "Movement “Old & Middle Kingdom Art & Tomb Reliefs” is supported: The vessel is Middle Kingdom, 12th Dynasty, c. 1990–1900 BCE, within the listed Old & Middle Kingdom range."
    }
   ],
   "tried": [
    "source link (The Met)",
+   "web search",
+   "web search unavailable: ai is not defined",
+   "museum APIs (Met, AIC, Cleveland)",
+   "skipped The Met: “Cosmetic Vessel in the Shape of a Dwarf” is a different work",
+   "skipped Art Institute of Chicago: “Vessel in the Shape of a Bird” is a different work",
+   "image record (Commons)",
    "movement attribution"
   ]
  },
@@ -14376,10 +14397,10 @@
   ]
  },
  "shillourokambos-cat-burial-7500bce": {
-  "sig": "8ecf7b45",
-  "status": "problem",
-  "checkedAt": "2026-11-02T17:12:44.565Z",
-  "ms": 24856,
+  "sig": "e91ae061",
+  "status": "verified",
+  "checkedAt": "2026-11-07T11:38:40.945Z",
+  "ms": 34801,
   "source": {
    "name": "Wikimedia Commons (the image’s own record)",
    "kind": "image record",
@@ -14390,15 +14411,16 @@
   "imageDistance": null,
   "issues": [
    {
-    "level": "error",
-    "text": "Collection: The source places the cast in the Limassol Archaeological Museum, not at the excavation site."
+    "level": "ok",
+    "text": "Movement “Paleolithic & Neolithic Art and Sculpture” is supported: A c. 7500 BCE Pre-Pottery Neolithic B burial falls within the Paleolithic & Neolithic range."
    }
   ],
   "tried": [
    "web search",
-   "web search unavailable: web search paused by rate limit (6461s left)",
+   "web search unavailable: ai is not defined",
    "museum APIs (Met, AIC, Cleveland)",
-   "image record (Commons)"
+   "image record (Commons)",
+   "movement attribution"
   ]
  },
  "albrecht-durer-adam-and-eve-cat-1504": {
