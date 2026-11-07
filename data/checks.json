@@ -3740,8 +3740,8 @@
  "ex-496-the-boxing-cats-prof-welton-s-edison-manufacturing-co-1894": {
   "sig": "4b00c596",
   "status": "verified",
-  "checkedAt": "2026-11-07T12:11:06.113Z",
-  "ms": 43110,
+  "checkedAt": "2026-11-07T12:20:44.489Z",
+  "ms": 36502,
   "source": {
    "name": "Wikimedia Commons (the image’s own record)",
    "kind": "image record",
@@ -3753,11 +3753,7 @@
   "issues": [
    {
     "level": "warn",
-    "text": "Title: The source uses an abbreviated/alternative title, “Boxing Cats Dickson,” rather than the catalogue title."
-   },
-   {
-    "level": "warn",
-    "text": "Movement: “Romanticism & Realism” looks wrong. An 1894 American Kinetoscope film of boxing cats is outside Romanticism & Realism and better fits the Victorian-era cat-art span. Suggested: Victorian & Academic Cat Portraiture."
+    "text": "Movement: “Romanticism & Realism” looks wrong. An 1894 Kinetoscope film of boxing cats is not Romanticism & Realism and better fits the Victorian cat-art era. Suggested: Victorian & Academic Cat Portraiture."
    }
   ],
   "tried": [
