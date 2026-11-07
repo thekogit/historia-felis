@@ -13176,17 +13176,17 @@
   ]
  },
  "macclesfield-psalter-cat-catching-mouse-1330": {
-  "sig": "a12c493d",
-  "status": "problem",
-  "checkedAt": "2026-11-02T17:09:42.106Z",
-  "ms": 2142,
+  "sig": "81d5b466",
+  "status": "unverified",
+  "checkedAt": "2026-11-07T12:48:34.703Z",
+  "ms": 7771,
   "source": null,
   "sameWork": null,
   "imageDistance": null,
   "issues": [
    {
-    "level": "error",
-    "text": "Same image as “The Harley Bestiary Cat and Mice (England, c. 1230–1240, Harley MS 4751)” (ex-117-the-harley-bestiary-cat-and-mice-england-c-1230-1240-harley-)"
+    "level": "ok",
+    "text": "Movement “Manuscript Illumination & Bestiaries” is supported: A 13th-century English bestiary illumination clearly belongs to manuscript illumination and bestiaries."
    },
    {
     "level": "info",
@@ -13195,9 +13195,10 @@
   ],
   "tried": [
    "web search",
-   "web search unavailable: web search paused by rate limit (6621s left)",
+   "web search unavailable: ai is not defined",
    "museum APIs (Met, AIC, Cleveland)",
-   "Wikidata"
+   "Wikidata",
+   "movement attribution"
   ]
  },
  "cloth-of-gold-with-rabbit-wheels-1993-140": {
