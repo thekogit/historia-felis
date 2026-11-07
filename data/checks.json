@@ -3245,26 +3245,45 @@
   ]
  },
  "ex-375-victorian-essex-crystal-reverse-intaglio-cat-cufflinks-and-s": {
-  "sig": "f67347ec",
-  "status": "verified",
-  "checkedAt": "2026-11-06T23:34:35.053Z",
+  "sig": "94369a2c",
+  "status": "problem",
+  "checkedAt": "2026-11-07T12:11:17.419Z",
+  "ms": 73351,
   "source": {
-   "name": "Master Artwork Verifier",
-   "kind": "agent curation",
-   "url": "https://images.metmuseum.org/CRDImages/as/original/DT5300.jpg",
-   "title": "Cat Catching a Frog (Feline Album Leaf)"
+   "name": "The Met",
+   "kind": "museum API",
+   "url": "https://www.metmuseum.org/art/collection/search/54626",
+   "title": "Cat Catching a Frog"
   },
   "sameWork": "yes",
+  "imageDistance": 2,
   "issues": [
    {
     "level": "ok",
-    "text": "Verified authentic feline artwork and metadata"
+    "text": "Image matches The Met"
+   },
+   {
+    "level": "warn",
+    "text": "Title: The catalogue title adds \"(Feline Album Leaf)\" not present in the source title."
+   },
+   {
+    "level": "error",
+    "text": "Type: The source classifies the work as Paintings, not Drawing & Watercolor."
+   },
+   {
+    "level": "warn",
+    "text": "Medium: The catalogue medium omits \"Album leaf\" from the source medium."
+   },
+   {
+    "level": "info",
+    "text": "Movement “Symbolism, Posters & Art Nouveau” is plausible, not confirmed by a source: Kyōsai is a traditional Japanese painter, and while the 1887 date fits, no source ties this work to Symbolism or Art Nouveau."
    }
   ],
   "tried": [
-   "museum API",
-   "Commons API",
-   "verifier swarm"
+   "web search",
+   "web search unavailable: ai is not defined",
+   "museum APIs (Met, AIC, Cleveland)",
+   "movement attribution"
   ]
  },
  "ex-370-cartier-jeanne-toussaint-peter-lemarchand-panth-re-and-domes": {
@@ -3733,26 +3752,34 @@
   ]
  },
  "ex-496-the-boxing-cats-prof-welton-s-edison-manufacturing-co-1894": {
-  "sig": "6759964a",
+  "sig": "4b00c596",
   "status": "verified",
-  "checkedAt": "2026-11-06T23:34:35.053Z",
+  "checkedAt": "2026-11-07T12:11:06.113Z",
+  "ms": 43110,
   "source": {
-   "name": "Master Artwork Verifier",
-   "kind": "agent curation",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Boxing_Cats_Dickson.jpg",
-   "title": "The Boxing Cats (Prof. Welton's)"
+   "name": "Wikimedia Commons (the image’s own record)",
+   "kind": "image record",
+   "url": "https://commons.wikimedia.org/wiki/File:Boxing_Cats_Dickson.jpg",
+   "title": "Boxing Cats Dickson"
   },
   "sameWork": "yes",
+  "imageDistance": null,
   "issues": [
    {
-    "level": "ok",
-    "text": "Verified authentic feline artwork and metadata"
+    "level": "warn",
+    "text": "Title: The source uses an abbreviated/alternative title, “Boxing Cats Dickson,” rather than the catalogue title."
+   },
+   {
+    "level": "warn",
+    "text": "Movement: “Romanticism & Realism” looks wrong. An 1894 American Kinetoscope film of boxing cats is outside Romanticism & Realism and better fits the Victorian-era cat-art span. Suggested: Victorian & Academic Cat Portraiture."
    }
   ],
   "tried": [
-   "museum API",
-   "Commons API",
-   "verifier swarm"
+   "web search",
+   "web search unavailable: ai is not defined",
+   "museum APIs (Met, AIC, Cleveland)",
+   "image record (Commons)",
+   "movement attribution"
   ]
  },
  "ex-473-siam-1878-white-house": {
@@ -8556,12 +8583,17 @@
   ]
  },
  "ex-499-felix-the-cat-created-by-pat-sullivan-and-otto-messmer-felin": {
-  "sig": "a0d43c94",
+  "sig": "4302a967",
   "status": "problem",
-  "checkedAt": "2026-11-02T16:57:12.300Z",
-  "ms": 2493,
-  "source": null,
-  "sameWork": null,
+  "checkedAt": "2026-11-07T12:11:43.364Z",
+  "ms": 25904,
+  "source": {
+   "name": "Wikidata",
+   "kind": "Wikidata",
+   "url": "https://www.wikidata.org/wiki/Q692603",
+   "title": "Felix the Cat"
+  },
+  "sameWork": "unclear",
   "imageDistance": null,
   "issues": [
    {
@@ -8570,15 +8602,16 @@
    },
    {
     "level": "info",
-    "text": "No trusted source found. Not proof of a problem: many folk objects and finds are not online."
+    "text": "Movement “Early Modernism, Ashcan & New Objectivity” is plausible, not confirmed by a source: No source ties Felix the Cat to Early Modernism, but its 1919 American date and modern graphic style fit the broad era."
    }
   ],
   "tried": [
    "web search",
-   "web search unavailable: web search paused by rate limit (7371s left)",
+   "web search unavailable: ai is not defined",
    "museum APIs (Met, AIC, Cleveland)",
    "image record (Commons)",
-   "Wikidata"
+   "Wikidata",
+   "movement attribution"
   ]
  },
  "franz-marc-cat-behind-a-tree-1910": {
