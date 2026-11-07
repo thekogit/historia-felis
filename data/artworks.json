@@ -1381,7 +1381,7 @@
     "collection": "The Cleveland Museum of Art",
     "inv_number": "2021.130",
     "role": "main subject",
-    "featured": false,
+    "featured": true,
     "license": "CC0",
     "image_url": "https://openaccess-cdn.clevelandart.org/2021.130/2021.130_print.jpg",
     "thumb_url": "https://openaccess-cdn.clevelandart.org/2021.130/2021.130_print.jpg",
