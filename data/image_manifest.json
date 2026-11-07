@@ -9952,5 +9952,362 @@
     "h": 252,
     "hash": "2a3263e792938f57",
     "hash2": "2a3263e792938f57"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/78/Birds%2C_Flowers%2C_Cats_and_Dogs.png": {
+    "base": "assets/img/3030f7fa026a5d8b",
+    "widths": [
+      371
+    ],
+    "w": 371,
+    "h": 374,
+    "hash": "868286868706a694",
+    "hash2": "478286070f062685"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/16/%E6%98%8E%E6%B2%88%E5%91%A8%E5%AF%AB%E7%94%9F_%E5%86%8A.jpg": {
+    "base": "assets/img/eb02c5652db55c7b",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1416,
+    "h": 1060,
+    "hash": "4dd6ccccccd8c61b",
+    "hash2": "45d0ccccccd8c61b"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e0/William_Strang%2C_Montaigne_and_his_cat.jpg": {
+    "base": "assets/img/462109e4fdc4dd72",
+    "widths": [
+      480,
+      715
+    ],
+    "w": 715,
+    "h": 969,
+    "hash": "f8b0b0a8f2b2ac86",
+    "hash2": "f8b0b0a8f2b2ac86"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/34/%22The_Trapped_Cat_and_the_Frightened_Mouse_%28Rat_%3F%29%22%2C_Folio_from_a_Kalila_wa_Dimna_MET_DP300779.jpg": {
+    "base": "assets/img/339409b5ea62b4e1",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2745,
+    "h": 3780,
+    "hash": "3cfefaf6f2cad8cc",
+    "hash2": "bebefaf6f2ea98cc"
+  },
+  "https://bestiary.ca/beastimage/img102068.jpg": {
+    "base": "assets/img/2d38e014de535713",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1508,
+    "h": 1496,
+    "hash": "869b2c16141c6334",
+    "hash2": "869b2c16141c6334"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3e/%28Peonies_of%29_Wealth_and_Prosperity_in_a_Pot.png": {
+    "base": "assets/img/e28dc135050d7a62",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1704,
+    "h": 3522,
+    "hash": "969e9e8efe96869a",
+    "hash2": "969e9e8efe96869a"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1d/Mignon-chat-renversant-un-vase-de-fleurs-1806.jpg": {
+    "base": "assets/img/410a1ead3c46a3f7",
+    "widths": [
+      480,
+      960,
+      1168
+    ],
+    "w": 1168,
+    "h": 1500,
+    "hash": "42912d0d8d5a6b4b",
+    "hash2": "42912d0d8d5a6b4b"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6a/Still_Life_of_the_Remnants_of_a_Meal_with_a_Lunging_Cat_-_Alexandre-Fran%C3%A7ois_Desportes.jpg": {
+    "base": "assets/img/1cfc9573cfbc0fe8",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 3071,
+    "hash": "0e1d1f9b194f4b13",
+    "hash2": "0e1d1f9b194f4b13"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c2/La_toilette%2C_by_Fran%C3%A7ois_Boucher.jpg": {
+    "base": "assets/img/91eeb91fa6ca1bc8",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 3151,
+    "hash": "4d45c7cb8bdb8baf",
+    "hash2": "4d45c7cb8bdb8baf"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/ce/Tibert_de_kat_dagvaardt_Reinaert_de_vos_Reinaert_de_vos_%28serietitel%29%2C_RP-P-OB-50.460.jpg": {
+    "base": "assets/img/01a2da90aee73a24",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 3099,
+    "hash": "dc96b6b0f4c6e6d2",
+    "hash2": "dc96b6b0f4c6e6d2"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/21/SekienNekomata.jpg": {
+    "base": "assets/img/0e5336f6d487c4c3",
+    "widths": [
+      370
+    ],
+    "w": 370,
+    "h": 493,
+    "hash": "63e5e4d0d8104898",
+    "hash2": "63e5e4d0d8104898"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/00/SekienKasha.jpg": {
+    "base": "assets/img/09742c6ed5e877e9",
+    "widths": [
+      480,
+      507
+    ],
+    "w": 507,
+    "h": 668,
+    "hash": "6731f98c9cd8f9e1",
+    "hash2": "6531798c1cd979e1"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/dd/Hokusai_manga._j%C5%ABichihen_-_Ry%C5%ABtei_Tanehiko_jo_-_btv1b72003895_%2869_of_77%29.jpg": {
+    "base": "assets/img/10e99c6311fba471",
+    "widths": [
+      480,
+      856
+    ],
+    "w": 856,
+    "h": 1136,
+    "hash": "fe9e9ee6d2a2dada",
+    "hash2": "fe9e9ee6d2a2dada"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/61/Shashthi.jpg": {
+    "base": "assets/img/54bea2996b3a2540",
+    "widths": [
+      374
+    ],
+    "w": 374,
+    "h": 597,
+    "hash": "9b58b161681633a5",
+    "hash2": "9b58b161681633a5"
+  },
+  "https://images.metmuseum.org/CRDImages/as/original/101895.jpg": {
+    "base": "assets/img/456a908acf5d2433",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 2464,
+    "hash": "c0c431ccccaecece",
+    "hash2": "c060cc8c4a2aaece"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/21/At_the_British_Museum_2024_311.jpg": {
+    "base": "assets/img/385dc2ae3704d94f",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2612,
+    "hash": "e0f04061f1e96010",
+    "hash2": "f0f06061f1e96010"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a6/Untitled_%28Cat_Stealing_Prawn%29.jpg": {
+    "base": "assets/img/e86f7e2c01498a3c",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1534,
+    "h": 2500,
+    "hash": "b1e8b994969391e4",
+    "hash2": "b1e8b994969391e4"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e5/Yoshitoshi_Mitatetaidukushi_Torikeshitai.jpg": {
+    "base": "assets/img/8378cfd2e33f70c4",
+    "widths": [
+      480,
+      530
+    ],
+    "w": 530,
+    "h": 800,
+    "hash": "36160b639a986d9f",
+    "hash2": "36160b639a986d9f"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/26/Cat_art_detail%2C_from-_MET_DT5300_%28cropped%29.jpg": {
+    "base": "assets/img/44f382bc032ebac0",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1903,
+    "h": 2855,
+    "hash": "26123268c4c3a330",
+    "hash2": "26123268c4c3a330"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e2/I_AM_A_CAT_by_K._Ando.jpg": {
+    "base": "assets/img/7f87d31f7710601d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2305,
+    "h": 3294,
+    "hash": "4d4d497171696565",
+    "hash2": "2d0d497161696567"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7c/Kuroki_Neko_by_Hishida_Shunso.jpg": {
+    "base": "assets/img/981375d5b998cec3",
+    "widths": [
+      480,
+      488
+    ],
+    "w": 488,
+    "h": 1450,
+    "hash": "15939f83a171e081",
+    "hash2": "15939f83a171e081"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/95/Rembrandt_bugatti_panth%C3%A8re_%C3%A0_l%27affut_1013_bronze.jpg": {
+    "base": "assets/img/5b26f51e00cbcfd3",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2560,
+    "hash": "0f0b0f2373391907",
+    "hash2": "0f0b0f2373391907"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/76/Pinocchio_1940_-_Figaro.png": {
+    "base": "assets/img/c99257c991ecc18e",
+    "widths": [
+      480,
+      643
+    ],
+    "w": 643,
+    "h": 480,
+    "hash": "3d0d66262f1b3096",
+    "hash2": "3d0d66262f1b3096"
+  },
+  "https://uploads6.wikiart.org/images/lucian-freud/girl-with-a-kitten-1947.jpg": {
+    "base": "assets/img/855dba75b871e802",
+    "widths": [
+      480,
+      649
+    ],
+    "w": 649,
+    "h": 861,
+    "hash": "e1c0848c9c3869b0",
+    "hash2": "e1c0848c9c3869b0"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/76/Japan_2024-05-10_%2853891878157%29.jpg": {
+    "base": "assets/img/82afc20de258b0ad",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2558,
+    "hash": "0040000000083874",
+    "hash2": "0040000000083874"
+  },
+  "https://sothebys-md.brightspotcdn.com/dims4/default/c758de8/2147483647/strip/true/crop/2000x2000+0+0/resize/2048x2048!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2Fwebnative%2Fimages%2F74%2F4a%2Febd613f74b0ca46c6ff9ba6dd48a%2Fl23050-chys3-t2-01.jpg": {
+    "base": "assets/img/51582206e3c309c0",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2048,
+    "h": 2048,
+    "hash": "3008b2b2b2185a10",
+    "hash2": "d6e6e479707a5e2c"
+  },
+  "https://www.lospaziopensato.it/wp-content/uploads/2016/04/gatti-sui-libri-beige.jpg.jpg": {
+    "base": "assets/img/1bae04ec96d88aa9",
+    "widths": [
+      480,
+      900
+    ],
+    "w": 900,
+    "h": 844,
+    "hash": "2f23d3d3c0c4c8c5",
+    "hash2": "2f23d3d3c0c4c8c5"
+  },
+  "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/50430000959/4C21123.jpg": {
+    "base": "assets/img/d383d4c3f7afac4f",
+    "widths": [
+      480,
+      960,
+      1000
+    ],
+    "w": 1000,
+    "h": 871,
+    "hash": "374a4c65616ae0e1",
+    "hash2": "4e4465617368e0e1"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ab/Orangey_with_Audrey_Hepburn_in_Breakfast_at_Tiffanys.jpg": {
+    "base": "assets/img/c42aa54ea70e65cf",
+    "widths": [
+      480,
+      493
+    ],
+    "w": 493,
+    "h": 574,
+    "hash": "4dcdcd697975764a",
+    "hash2": "4dcdcd697975764a"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/86/MuMA_-_Pompon_-_Panth%C3%A8re.JPG": {
+    "base": "assets/img/3e1b357325e30289",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2592,
+    "h": 1944,
+    "hash": "be8e8386a6630301",
+    "hash2": "be8e8386a6630301"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c0/%E2%80%98Lady_with_Panther%E2%80%99_by_George_Barbier_for_Cartier%2C_1914.jpg": {
+    "base": "assets/img/faac947e71d9a488",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2724,
+    "h": 3485,
+    "hash": "b694948ccc8ce8e8",
+    "hash2": "b694948ccc8ce8e8"
   }
 }
