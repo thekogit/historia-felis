@@ -3553,26 +3553,34 @@
   ]
  },
  "ex-434-e-t-a-hoffmann-the-life-and-opinions-of-the-tomcat-murr-lebe": {
-  "sig": "ed432389",
+  "sig": "b04d0485",
   "status": "verified",
-  "checkedAt": "2026-11-06T23:34:35.053Z",
+  "checkedAt": "2026-11-07T12:09:07.207Z",
+  "ms": 19117,
   "source": {
-   "name": "Master Artwork Verifier",
-   "kind": "agent curation",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Katers_Murr_1820.jpg",
-   "title": "Lebens-Ansichten des Katers Murr (Tomcat Murr Frontispiece)"
+   "name": "Wikimedia Commons (the image’s own record)",
+   "kind": "image record",
+   "url": "https://commons.wikimedia.org/wiki/File:Katers_Murr_1820.jpg",
+   "title": "Katers Murr 1820"
   },
   "sameWork": "yes",
+  "imageDistance": null,
   "issues": [
    {
+    "level": "warn",
+    "text": "Date: The source dates the image to 1819 (a title page of the 1819 first edition bearing the date 1820), while the catalogue gives 1820."
+   },
+   {
     "level": "ok",
-    "text": "Verified authentic feline artwork and metadata"
+    "text": "Movement “Romanticism & Realism” is supported: Hoffmann is a German Romantic artist and the 1820 frontispiece falls within Romanticism & Realism."
    }
   ],
   "tried": [
-   "museum API",
-   "Commons API",
-   "verifier swarm"
+   "web search",
+   "web search unavailable: ai is not defined",
+   "museum APIs (Met, AIC, Cleveland)",
+   "image record (Commons)",
+   "movement attribution"
   ]
  },
  "ex-438-lewis-carroll-charles-lutwidge-dodgson-the-cheshire-cat-and-": {
@@ -6604,26 +6612,34 @@
   ]
  },
  "ex-467-boy-puddler-1640s-english-civil-war": {
-  "sig": "18bf495f",
+  "sig": "36d96c59",
   "status": "verified",
-  "checkedAt": "2026-11-06T23:34:35.052Z",
+  "checkedAt": "2026-11-07T12:08:46.382Z",
+  "ms": 52071,
   "source": {
-   "name": "Master Artwork Verifier",
-   "kind": "agent curation",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Henry_Wriothesley%2C_3rd_Earl_of_Southampton.jpg",
-   "title": "Portrait of Henry Wriothesley, 3rd Earl of Southampton, with his Cat in the Tower"
+   "name": "Wikimedia Commons (the image’s own record)",
+   "kind": "image record",
+   "url": "https://commons.wikimedia.org/wiki/File:Henry_Wriothesley,_3rd_Earl_of_Southampton.jpg",
+   "title": "Henry Wriothesley, 3rd Earl of Southampton (1573-1624) title QS:P1476,en:\"Henry Wriothesley, 3rd Earl of Southampton (1573-1624) \" label QS:Len,\"Henry Wriothesley, 3rd Earl of Southampton (1573-1624) \""
   },
   "sameWork": "yes",
+  "imageDistance": null,
   "issues": [
    {
-    "level": "ok",
-    "text": "Verified authentic feline artwork and metadata"
+    "level": "warn",
+    "text": "Date: The source dates the portrait to 1590–1593, not 1603."
+   },
+   {
+    "level": "warn",
+    "text": "Movement: “Dutch Golden Age Genre & Still Life” looks wrong. John de Critz was a Flemish portrait painter active at the English court, not a Dutch Golden Age genre or still-life artist. Suggested: Flemish Baroque & Animal Allegory."
    }
   ],
   "tried": [
-   "museum API",
-   "Commons API",
-   "verifier swarm"
+   "web search",
+   "web search unavailable: ai is not defined",
+   "museum APIs (Met, AIC, Cleveland)",
+   "image record (Commons)",
+   "movement attribution"
   ]
  },
  "ex-468-cardinal-richelieu-s-fourteen-palace-cats-paris-1630s-1642": {
@@ -10566,26 +10582,30 @@
   ]
  },
  "ex-421-bakeneko-nekomata-monster-cat-and-fork-tailed-cat-japanese-f": {
-  "sig": "0267137e",
+  "sig": "ec5d274f",
   "status": "verified",
-  "checkedAt": "2026-11-06T18:54:32.637Z",
+  "checkedAt": "2026-11-07T12:09:02.310Z",
+  "ms": 15882,
   "source": {
-   "name": "Artwork Verifier Agent",
-   "kind": "agent verification",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Felis_silvestris_catus_lying_on_rice_straw.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "title": "Bakeneko & Nekomata (\"Monster Cat\" and \"Fork-Tailed Cat\", Japanese Folklore)"
+   "name": "Wikimedia Commons (the image’s own record)",
+   "kind": "image record",
+   "url": "https://commons.wikimedia.org/wiki/File:SekienNekomata.jpg",
+   "title": "SekienNekomata"
   },
   "sameWork": "yes",
+  "imageDistance": null,
   "issues": [
    {
     "level": "ok",
-    "text": "image_url: Found replacement image for \"Bakeneko & Nekomata (\"Monster Cat\" and \"Fork-Tailed Cat\", Japanese Folklore)\" on Wikimedia Commons: Felis silvestris catus lying on rice straw.jpg"
+    "text": "Movement “Japanese Edo & Meiji Ukiyo-e” is supported: Toriyama Sekien was an Edo-period ukiyo-e artist and this 1776 woodblock book illustration falls within the movement's dates."
    }
   ],
   "tried": [
-   "commons API",
-   "museum API",
-   "verifier agent"
+   "web search",
+   "web search unavailable: ai is not defined",
+   "museum APIs (Met, AIC, Cleveland)",
+   "image record (Commons)",
+   "movement attribution"
   ]
  },
  "ex-446-natsume-s-seki-i-am-a-cat-wagahai-wa-neko-de-aru-1905-1906": {
@@ -12414,26 +12434,34 @@
   ]
  },
  "ex-157-230-year-old-mummified-foundation-cat-of-christchurch-cathed": {
-  "sig": "6fbfa36b",
+  "sig": "43f33096",
   "status": "verified",
-  "checkedAt": "2026-11-06T23:34:35.053Z",
+  "checkedAt": "2026-11-07T12:08:48.042Z",
+  "ms": 53712,
   "source": {
-   "name": "Master Artwork Verifier",
-   "kind": "agent curation",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/The_cat_and_the_rat_Christ_Church_Cathedral_in_Dublin_02.JPG",
-   "title": "The Mummified Cat and Rat of Christ Church Cathedral (\"Tom and Jerry\")"
+   "name": "Wikimedia Commons (the image’s own record)",
+   "kind": "image record",
+   "url": "https://commons.wikimedia.org/wiki/File:The_cat_and_the_rat_Christ_Church_Cathedral_in_Dublin_02.JPG",
+   "title": "The cat and the rat Christ Church Cathedral in Dublin 02"
   },
   "sameWork": "yes",
+  "imageDistance": null,
   "issues": [
    {
-    "level": "ok",
-    "text": "Verified authentic feline artwork and metadata"
+    "level": "warn",
+    "text": "Movement: the work's date (1860) is outside \"Gothic Carvings, Misericords & Tapestries\" (1100 to 1500)"
+   },
+   {
+    "level": "warn",
+    "text": "Movement: “Gothic Carvings, Misericords & Tapestries” looks wrong. It is a naturally desiccated animal curiosity from a later cathedral context, not a medieval Gothic carving, misericord, or tapestry."
    }
   ],
   "tried": [
-   "museum API",
-   "Commons API",
-   "verifier swarm"
+   "web search",
+   "web search unavailable: ai is not defined",
+   "museum APIs (Met, AIC, Cleveland)",
+   "image record (Commons)",
+   "movement attribution"
   ]
  },
  "amulet-of-bastet-1973-29": {
