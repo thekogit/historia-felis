@@ -8281,26 +8281,33 @@
   ]
  },
  "ex-349-amedeo-modigliani-seat-portrait-studies-montparnasse-sketche": {
-  "sig": "b844ed1a",
-  "status": "verified",
-  "checkedAt": "2026-11-06T23:34:35.053Z",
+  "sig": "e52bea9b",
+  "status": "problem",
+  "checkedAt": "2026-11-07T12:12:07.544Z",
+  "ms": 61392,
   "source": {
-   "name": "Master Artwork Verifier",
-   "kind": "agent curation",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Woman_with_a_Cat_%28Fernand_L%C3%A9ger%29.jpg",
-   "title": "Woman with a Cat (Femme avec un chat)"
+   "name": "The Met",
+   "kind": "museum API",
+   "url": "https://www.metmuseum.org/art/collection/search/486423",
+   "title": "Woman with a Cat"
   },
   "sameWork": "yes",
+  "imageDistance": null,
   "issues": [
    {
+    "level": "error",
+    "text": "Collection: The trusted source places the work in The Metropolitan Museum of Art, not the Hamburger Kunsthalle."
+   },
+   {
     "level": "ok",
-    "text": "Verified authentic feline artwork and metadata"
+    "text": "Movement “Early Modernism, Ashcan & New Objectivity” is supported: Léger's 1921 Tubist/Cubist work falls within early modernism."
    }
   ],
   "tried": [
-   "museum API",
-   "Commons API",
-   "verifier swarm"
+   "web search",
+   "web search unavailable: ai is not defined",
+   "museum APIs (Met, AIC, Cleveland)",
+   "movement attribution"
   ]
  },
  "ex-347-marc-chagall-paris-through-the-window-solomon-r-guggenheim-m": {
