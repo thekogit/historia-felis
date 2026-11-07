@@ -1423,7 +1423,7 @@
     "collection": "The Cleveland Museum of Art",
     "inv_number": "1948.477",
     "role": "main subject",
-    "featured": false,
+    "featured": true,
     "license": "CC0",
     "image_url": "https://openaccess-cdn.clevelandart.org/1948.477/1948.477_print.jpg",
     "thumb_url": "https://openaccess-cdn.clevelandart.org/1948.477/1948.477_print.jpg",
