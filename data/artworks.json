@@ -9344,10 +9344,10 @@
     ],
     "description": "Doré depicts the cunning feline hero of Charles Perrault's fairy tale standing upright in magnificent cavalier boots, leaning nonchalantly upon his walking cane as he surveys the Marquis of Carabas's prospective kingdom. Rendered in tour-de-force wood engraving by Héliodore Pisan after Doré's drawing, the composition pairs dramatic Romantic chiaroscuro with an imperious, whisker-twitched feline expression. The animal's predatory swagger and aristocratic posture perfectly realize Perrault's witty anthropomorphic trickster.",
     "context": "Published in Paris in 1867 by Hetzel in a lavish folio edition of Les Contes de Perrault, Doré's suite of illustrations became the definitive nineteenth-century visual interpretation of the European fairy-tale cat. Copies are conserved in the Bibliothèque nationale de France and the British Museum.",
-    "inventory_id": "Nº 0666",
+    "inventory_id": "Est. Rés. Y2-1082",
     "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Gustave_Dor%C3%A9_Puss_in_Boots.jpg",
     "large_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Gustave_Dor%C3%A9_Puss_in_Boots.jpg",
-    "title_eng": "Puss in Boots",
+    "title_eng": "Le Chat Botté (Puss in Boots)",
     "type": "Print",
     "artist_dates": "1832–1883",
     "medium": "Wood engraving on wove paper",
@@ -9356,7 +9356,10 @@
     "year_sort": 1867,
     "submovement": "French Romantic Graphic Illustration",
     "dimensions": "24.5 × 19.5 cm",
-    "feline_symbolism": "Puss in Boots embodies feline cunning, opportunistic intellect, and the triumphant subversion of social rank through sheer animal wit."
+    "feline_symbolism": "Puss in Boots embodies feline cunning, opportunistic intellect, and the triumphant subversion of social rank through sheer animal wit.",
+    "location": "Bibliothèque nationale de France, Paris",
+    "additional_images": [],
+    "source_url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_Puss_in_Boots.jpg"
   },
   {
     "id": "edouard-manet-le-rendez-vous-des-chats-1868",
