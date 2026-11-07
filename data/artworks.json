@@ -5925,15 +5925,19 @@
     "inventory_id": "Nº 0656",
     "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/SekienNekomata.jpg",
     "large_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/SekienNekomata.jpg",
-    "title_eng": "Nekomata: The Fork-Tailed Monster Cat",
+    "title_eng": "Nekomata: The Fork-Tailed Monster Cat (Gazu Hyakki Yagyō)",
     "type": "Literature & Folklore",
-    "year_sort": 1781,
+    "year_sort": 1776,
     "artist_dates": "1712–1788",
     "medium": "Woodblock-printed book illustration; ink on paper",
     "dimensions": "22.5 × 15.5 cm",
     "collection": "Tokyo National Museum / National Diet Library",
     "submovement": "Mid-Edo Yōkai Book Illustration",
-    "feline_symbolism": "The nekomata personifies the uncanny, liminal nature of aged felines, embodying ancient fears of the untamed predator lurking within the docile domestic companion."
+    "feline_symbolism": "The nekomata personifies the uncanny, liminal nature of aged felines, embodying ancient fears of the untamed predator lurking within the docile domestic companion.",
+    "culture": "",
+    "location": "Tokyo National Museum / National Diet Library",
+    "additional_images": [],
+    "source_url": "https://commons.wikimedia.org/wiki/File:SekienNekomata.jpg"
   },
   {
     "id": "ex-422-kasha-japanese-buddhist-folklore",
