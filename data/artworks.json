@@ -21624,7 +21624,7 @@
     ],
     "description": "Cast in life-size bronze atop a dressed Portland stone plinth, Dr. Samuel Johnson's cat Hodge sits comfortably upon his haunches beside an open copy of the Dictionary of the English Language and a scattered pair of empty oyster shells. Sculptor Jon Bickley modeled the bronze after his own domestic cat, portraying Hodge with an affectionate, slightly haughty expression, upright pointed ears, and a thick tail curled neatly around his paws. Unveiled in 1997 in Gough Square directly facing Johnson's historic residence, the monument pays tribute to the famous eighteenth-century feline immortalized in James Boswell's biography.",
     "context": "In the Life of Samuel Johnson (1791), James Boswell recounted how the imposing lexicographer personally purchased oysters from the fishmonger for Hodge, fearing that his servants might resent performing such chores and mistreat the animal. Johnson’s declaration that Hodge was 'a very fine cat indeed' remains one of the defining testaments to eighteenth-century domestic pet indulgence in English literary history.",
-    "inventory_id": "Nº 0688",
+    "inventory_id": "LONDON-HODGE-1997",
     "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Hodge_in_Gough_Square_-_geograph.org.uk_-_1801662.jpg",
     "large_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Hodge_in_Gough_Square_-_geograph.org.uk_-_1801662.jpg",
     "title_eng": "Monument to Dr. Samuel Johnson's Cat Hodge",
@@ -21635,7 +21635,11 @@
     "culture": "British",
     "dimensions": "Life-size cat figure (approx. 50 cm) on 110 cm stone plinth",
     "submovement": "British Contemporary Public Sculpture & Literary Commemoration",
-    "feline_symbolism": "Hodge represents the tender domestic humanity of scholars, symbolizing the egalitarian bond between an intellectual luminary and his pampered animal companion."
+    "feline_symbolism": "Hodge represents the tender domestic humanity of scholars, symbolizing the egalitarian bond between an intellectual luminary and his pampered animal companion.",
+    "year_sort": 1997,
+    "location": "Gough Square, City of London, England",
+    "additional_images": [],
+    "source_url": "https://en.wikipedia.org/wiki/Hodge_(cat)"
   },
   {
     "id": "ex-402-monument-to-the-yard-keeper-s-cat-kot-kazansky-bauman-street",
