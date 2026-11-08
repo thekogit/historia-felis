@@ -42,7 +42,7 @@
        never-reached fallbacks (Noto's CSS alone was 360 KB). Shippori Mincho is a 230 KB
        stylesheet only the margins and haiku pages need, so it loads without blocking. -->
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Geist+Mono:wght@400;500;600&family=Geist:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Shippori+Mincho:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
   <!-- Images are now mostly local; these hosts are fallback-only, so resolve DNS without opening idle connections -->
   <link rel="dns-prefetch" href="https://wsrv.nl">
@@ -209,11 +209,12 @@
     <div id="tt-en" class="tt-en"></div>
     <div class="tooltip-footer">
       <div class="tt-author-block">
-        <span id="tt-author" class="tt-author"></span>
+        <a id="tt-author" class="tt-author" href="#/dossier"></a>
         <span id="tt-lifespan" class="tt-lifespan"></span>
       </div>
       <span id="tt-year" class="tt-year"></span>
     </div>
+    <span class="tt-pin-hint" aria-hidden="true">Click to keep open</span>
   </div>
 
   <!-- Fixed Side indicator on desktop timeline -->
