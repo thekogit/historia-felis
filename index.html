@@ -4750,10 +4750,11 @@ header.site-header,
   font-family: var(--font-technical-mono);
   font-size: 11px;
   letter-spacing: 0.08em;
-  color: var(--accent-stamp);
+  /* Barely-there: a whisper off the page colour */
+  color: color-mix(in srgb, var(--text-main) 7%, var(--bg-canvas));
   padding-top: 4px;
 }
-.dossier-entry-num small { display: block; color: var(--text-muted); margin-top: 4px; font-size: 10.5px; }
+.dossier-entry-num small { display: block; color: inherit; margin-top: 4px; font-size: 10.5px; }
 .dossier-entry-jp { display: flex; justify-content: center; }
 /* One vertical column per poem: never wrap into a second column */
 .dossier-jp {
@@ -10443,7 +10444,7 @@ try { (function() {
                   <p class="dossier-tr">${esc(h.en || h.literal || '')}</p>
                   ${h.romaji ? `<p class="dossier-romaji">${esc(h.romaji)}</p>` : ''}
                   ${h.notes ? `<p class="dossier-notes">${esc(h.notes)}</p>` : ''}
-                  <div class="dossier-attr dossier-label">${esc(p.name)}${p.jp ? `<span lang="ja">${esc(p.jp)}</span>` : ''}${h.year ? `<span>· ${esc(h.year)}</span>` : ''}</div>
+                  <div class="dossier-attr dossier-label">${esc(p.name)}${p.jp ? `<span lang="ja">${esc(p.jp)}</span>` : ''}</div>
                 </div>
                 <button class="card-stack-btn dossier-save ${isSaved ? 'active' : ''}" data-haiku-id="haiku:${esc(h.id)}" title="Save haiku to Curatorial Stack" aria-label="Save haiku to stack" aria-pressed="${isSaved}" type="button" onclick="window.toggleHaikuStack('haiku:${esc(h.id)}', this);">${heartSvg(isSaved)}</button>
               </article>`;

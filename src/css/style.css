@@ -4694,10 +4694,11 @@ header.site-header,
   font-family: var(--font-technical-mono);
   font-size: 11px;
   letter-spacing: 0.08em;
-  color: var(--accent-stamp);
+  /* Barely-there: a whisper off the page colour */
+  color: color-mix(in srgb, var(--text-main) 7%, var(--bg-canvas));
   padding-top: 4px;
 }
-.dossier-entry-num small { display: block; color: var(--text-muted); margin-top: 4px; font-size: 10.5px; }
+.dossier-entry-num small { display: block; color: inherit; margin-top: 4px; font-size: 10.5px; }
 .dossier-entry-jp { display: flex; justify-content: center; }
 /* One vertical column per poem: never wrap into a second column */
 .dossier-jp {

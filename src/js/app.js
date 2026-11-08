@@ -5291,7 +5291,7 @@ try { (function() {
                   <p class="dossier-tr">${esc(h.en || h.literal || '')}</p>
                   ${h.romaji ? `<p class="dossier-romaji">${esc(h.romaji)}</p>` : ''}
                   ${h.notes ? `<p class="dossier-notes">${esc(h.notes)}</p>` : ''}
-                  <div class="dossier-attr dossier-label">${esc(p.name)}${p.jp ? `<span lang="ja">${esc(p.jp)}</span>` : ''}${h.year ? `<span>· ${esc(h.year)}</span>` : ''}</div>
+                  <div class="dossier-attr dossier-label">${esc(p.name)}${p.jp ? `<span lang="ja">${esc(p.jp)}</span>` : ''}</div>
                 </div>
                 <button class="card-stack-btn dossier-save ${isSaved ? 'active' : ''}" data-haiku-id="haiku:${esc(h.id)}" title="Save haiku to Curatorial Stack" aria-label="Save haiku to stack" aria-pressed="${isSaved}" type="button" onclick="window.toggleHaikuStack('haiku:${esc(h.id)}', this);">${heartSvg(isSaved)}</button>
               </article>`;
