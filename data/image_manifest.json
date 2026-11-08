@@ -12610,5 +12610,70 @@
     "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoGAAgAA4BaJYwCdADdfJ8AAP7JdYY68ZukrY0A5hzJqRy1UWmT8akUAAA=",
     "hash": "9ab4e4c09494f6be",
     "hash2": "9ab4e4c09494f6be"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c0/Mycenaean_Bronze_Sword_with_Gold_and_Silver_Inlays%2C_c._16th_Cent._BC.jpg": {
+    "base": "assets/img/0d171ba63c30cf44",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2560,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAUAA4BaJYwCdAEOO/CwAPuiqwurTaftq24Y9bwiiLwzZGfAAA==",
+    "hash": "030703409cc1077e",
+    "hash2": "030703409cc1077e"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/52/Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_top_in_2019_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/758f0424a225e166",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 1399,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoIAAMAA4BaJQBOgCHXYJAAAP6Hup3twaC3WabpzYqMR5Y73LRSHJvoWAAAAA==",
+    "hash": "1f0f8e8e0e0d0b2b",
+    "hash2": "1f0f8e8e0e0d0b2b"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a8/Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_all_in_2019_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/ac8c602868cdf420",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 3275,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoIAAcAA4BaJYgCdAD0SasFIADiXUuf9DmXXAQgIt/8M9f4K/PpsMJyML2Pa4AA",
+    "hash": "8f8eaa0e17d29ebf",
+    "hash2": "8f8eaa0e17d29ebf"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/59/Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_bottom_in_2019_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/18bcc651a5957a72",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 1762,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAABQAQCdASoIAAQAA4BaJQBOgCgAAP7s2MaRHKWRD7ITgmTTc9jP7MMJgnIm+hYAAAA=",
+    "hash": "1f1e37c7928e9eb6",
+    "hash2": "1f1e37c7928e9eb6"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b6/Museum_of_Anatolian_Civilizations_Hac%C4%B1lar_Statuette_of_goddess_holding_a_young_leopard_in_2019_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/da3d0b79a52d1c3c",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3128,
+    "h": 4944,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAABwAQCdASoFAAgAA4BaJQAANw88QAD+eJh6D3fj6MHE+GLLmutiYOfeMk7uAAAA",
+    "hash": "cec9c1d2b1c9c8e0",
+    "hash2": "cec9c1d2b1c9c8e0"
   }
 }

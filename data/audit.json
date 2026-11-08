@@ -41041,27 +41041,26 @@
   }
  },
  "picasso-dora-maar-au-chat-1941": {
-  "at": "2026-11-08T02:05:24.084Z",
+  "at": "2026-11-08T10:24:35.756Z",
   "image": {
    "ok": true,
-   "width": 270,
-   "height": 368,
+   "width": 608,
+   "height": 814,
    "grade": "low",
    "pass": false
   },
   "link": {
    "status": 200,
    "ok": true,
-   "finalUrl": "https://en.wikipedia.org/wiki/Dora_Maar_au_Chat",
-   "kind": "wikipedia"
+   "finalUrl": "https://www.sothebys.com/en/auctions/ecatalogue/2006/impressionist-modern-art-evening-sale-n08195/lot.14.html",
+   "kind": "other"
   },
   "cycle": {
-   "source": "Wikimedia Commons",
-   "pageUrl": "https://en.wikipedia.org/wiki/File:Dora_Maar_Au_Chat.jpg",
-   "note": "no other photos from the same shoot",
+   "source": "sothebys-brightspot.s3.amazonaws.com",
+   "note": "no catalogue API for this host",
    "category": null,
    "images": [
-    "https://upload.wikimedia.org/wikipedia/en/c/c3/Dora_Maar_Au_Chat.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+    "https://sothebys-brightspot.s3.amazonaws.com/dotcom/71/26/8c53b5f5474b8fb27f8c8af2ad34/4ly4n-n08195-14-a.jpg"
    ],
    "current": 1,
    "found": 1,
@@ -41070,14 +41069,12 @@
   },
   "rights": [
    {
-    "url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Dora_Maar_Au_Chat.jpg",
-    "license": "Fair use (non-free)",
+    "url": "https://sothebys-brightspot.s3.amazonaws.com/dotcom/71/26/8c53b5f5474b8fb27f8c8af2ad34/4ly4n-n08195-14-a.jpg",
+    "license": "",
+    "rights_status": "unverified",
+    "image_credit": "",
     "license_url": "",
-    "rights_status": "copyrighted",
-    "image_credit": "Wikimedia Commons",
-    "license_source": "https://en.wikipedia.org/wiki/File:Dora_Maar_Au_Chat.jpg",
-    "width": 270,
-    "height": 368
+    "license_source": ""
    }
   ],
   "prose": {
@@ -46249,5 +46246,178 @@
    "quality": "ok",
    "at": "2026-11-08T02:00:18.130Z"
   }
+ },
+ "hacilar-woman-holding-leopard-cub-5500bce": {
+  "at": "2026-11-08T10:24:35.756Z",
+  "image": {
+   "ok": true,
+   "width": 3128,
+   "height": 4944,
+   "grade": "good",
+   "pass": true
+  },
+  "link": {
+   "status": 200,
+   "ok": true,
+   "finalUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Anatolian_Civilizations_Hac%C4%B1lar_Statuette_of_goddess_holding_a_young_leopard_in_2019_10.jpg",
+   "kind": "wiki-media"
+  },
+  "cycle": {
+   "source": "Wikimedia Commons",
+   "pageUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Anatolian_Civilizations_Hac%C4%B1lar_Statuette_of_goddess_holding_a_young_leopard_in_2019_10.jpg",
+   "note": "no other photos from the same shoot",
+   "category": null,
+   "images": [
+    "https://upload.wikimedia.org/wikipedia/commons/b/b6/Museum_of_Anatolian_Civilizations_Hac%C4%B1lar_Statuette_of_goddess_holding_a_young_leopard_in_2019_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   ],
+   "current": 1,
+   "found": 1,
+   "foreign": [],
+   "pass": true
+  },
+  "rights": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Museum_of_Anatolian_Civilizations_Hac%C4%B1lar_Statuette_of_goddess_holding_a_young_leopard_in_2019_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "rights_status": "open-license",
+    "image_credit": "Dosseman · Own work",
+    "license_source": "https://commons.wikimedia.org/wiki/File:Museum_of_Anatolian_Civilizations_Hac%C4%B1lar_Statuette_of_goddess_holding_a_young_leopard_in_2019_10.jpg",
+    "width": 3128,
+    "height": 4944
+   }
+  ],
+  "prose": {
+   "descriptionWords": 89,
+   "contextWords": 124,
+   "tells": [],
+   "rewritten": true,
+   "pass": true
+  },
+  "fails": []
+ },
+ "catalhoyuk-leopard-reliefs-6000bce": {
+  "at": "2026-11-08T10:24:35.756Z",
+  "image": {
+   "ok": true,
+   "width": 3840,
+   "height": 3275,
+   "grade": "good",
+   "pass": true
+  },
+  "link": {
+   "status": 200,
+   "ok": true,
+   "finalUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_all_in_2019_01.jpg",
+   "kind": "wiki-media"
+  },
+  "cycle": {
+   "source": "Wikimedia Commons",
+   "pageUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_all_in_2019_01.jpg",
+   "note": "6 more photo(s) by Dosseman in \"Leopard reliefs of Çatalhöyük\" from the same shoot",
+   "category": "Leopard reliefs of Çatalhöyük",
+   "images": [
+    "https://upload.wikimedia.org/wikipedia/commons/a/a8/Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_all_in_2019_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "https://upload.wikimedia.org/wikipedia/commons/5/52/Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_top_in_2019_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "https://upload.wikimedia.org/wikipedia/commons/2/28/Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_top_right_in_2011_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "https://upload.wikimedia.org/wikipedia/commons/0/0a/Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_top_left_in_2011_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "https://upload.wikimedia.org/wikipedia/commons/1/14/Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_bottom_in_2011_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "https://upload.wikimedia.org/wikipedia/commons/5/59/Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_bottom_in_2019_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "https://upload.wikimedia.org/wikipedia/commons/6/63/Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_bottom_left_in_2018_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   ],
+   "current": 3,
+   "found": 7,
+   "foreign": [],
+   "pass": false
+  },
+  "rights": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_all_in_2019_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "rights_status": "open-license",
+    "image_credit": "Dosseman · Own work",
+    "license_source": "https://commons.wikimedia.org/wiki/File:Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_all_in_2019_01.jpg",
+    "width": 5112,
+    "height": 4360
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_top_in_2019_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "rights_status": "open-license",
+    "image_credit": "Dosseman · Own work",
+    "license_source": "https://commons.wikimedia.org/wiki/File:Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_top_in_2019_05.jpg",
+    "width": 7554,
+    "height": 2753
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_bottom_in_2019_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "rights_status": "open-license",
+    "image_credit": "Dosseman · Own work",
+    "license_source": "https://commons.wikimedia.org/wiki/File:Museum_of_Anatolian_Civilizations_%C3%87atalh%C3%B6y%C3%BCk_Leopard_reliefs_bottom_in_2019_02.jpg",
+    "width": 7806,
+    "height": 3581
+   }
+  ],
+  "prose": {
+   "descriptionWords": 99,
+   "contextWords": 135,
+   "tells": [],
+   "rewritten": true,
+   "pass": true
+  },
+  "fails": []
+ },
+ "mycenae-dagger-wild-cats-hunting-ducks-1550bce": {
+  "at": "2026-11-08T10:24:35.755Z",
+  "image": {
+   "ok": true,
+   "width": 3840,
+   "height": 2560,
+   "grade": "good",
+   "pass": true
+  },
+  "link": {
+   "status": 200,
+   "ok": true,
+   "finalUrl": "https://www.namuseum.gr/en/monthly_artefact/once-upon-a-time-in-the-aegean/",
+   "kind": "other"
+  },
+  "cycle": {
+   "source": "Wikimedia Commons",
+   "pageUrl": "https://commons.wikimedia.org/wiki/File:Mycenaean_Bronze_Sword_with_Gold_and_Silver_Inlays,_c._16th_Cent._BC.jpg",
+   "note": "no other photos from the same shoot",
+   "category": null,
+   "images": [
+    "https://upload.wikimedia.org/wikipedia/commons/c/c0/Mycenaean_Bronze_Sword_with_Gold_and_Silver_Inlays%2C_c._16th_Cent._BC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   ],
+   "current": 1,
+   "found": 1,
+   "foreign": [],
+   "pass": true
+  },
+  "rights": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Mycenaean_Bronze_Sword_with_Gold_and_Silver_Inlays%2C_c._16th_Cent._BC.jpg",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "rights_status": "public-domain",
+    "image_credit": "Gary Todd from Xinzheng, China · Mycenaean Bronze & Gold Sword",
+    "license_source": "https://commons.wikimedia.org/wiki/File:Mycenaean_Bronze_Sword_with_Gold_and_Silver_Inlays,_c._16th_Cent._BC.jpg",
+    "width": 5184,
+    "height": 3456
+   }
+  ],
+  "prose": {
+   "descriptionWords": 93,
+   "contextWords": 114,
+   "tells": [],
+   "rewritten": true,
+   "pass": true
+  },
+  "fails": []
  }
 }
