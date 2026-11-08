@@ -5462,7 +5462,7 @@ try { (function() {
         const poems = (HAIKU_POOL || []).filter(h => h.author === poet.author);
         const featured = poems.slice(0, 3);
         const first = poet.name.split(' ').pop();
-        // Each poet's section headings (data/poets.json `headings`), with the plain names as fallback
+        // Each poet's cats and timeline headings (data/poets.json `headings`), with the plain names as fallback
         const heads = poet.headings || {};
         const moreLabel = poems.length === 1 ? `The one cat haiku by ${first} in the dossier`
           : poems.length === 2 ? `Both of ${first}’s cat haiku in the dossier`
@@ -5527,7 +5527,7 @@ try { (function() {
               </aside>
 
               <main class="poet-main">
-                <h2 class="poet-h2">${esc(heads.life || 'Life')}</h2>
+                <h2 class="poet-h2">Life</h2>
                 <div class="poet-life">${(poet.lifeText || []).map(par => `
                   <div class="poet-para"><span class="poet-per">${esc(par.years)}</span><p>${poetRichText(par.text)}</p></div>`).join('')}
                 </div>
