@@ -4652,3 +4652,65 @@ header.site-header,
   .timeline-card,
   .timeline-spotlight-item { max-width: min(540px, 76vw) !important; }
 }
+
+/* BLUR-UP PLACEHOLDERS
+   An 8px preview (inlined by the build) fills the frame, softly blurred, until the real
+   image has loaded; the image then fades in over it and the preview fades away. */
+.has-lq::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--lq) center / contain no-repeat;
+  filter: blur(10px);
+  transform: scale(1.04); /* hides the blur's faded edge */
+  opacity: 1;
+  transition: opacity 400ms var(--ease-out) 120ms;
+  pointer-events: none;
+}
+.has-lq:has(img.is-loaded)::before { opacity: 0; }
+.has-lq > img { position: relative; }
+.has-lq img { transition: opacity 320ms var(--ease-out) !important; }
+.has-lq img:not(.is-loaded) { opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .has-lq::before, .has-lq img { transition: none !important; }
+}
+
+/* REVEAL TUNING: shorter, smaller rise so fast scrolling never shows empty slots */
+.timeline-item {
+  transform: translateY(10px);
+  transition: opacity 350ms var(--ease-out), transform 350ms var(--ease-out);
+}
+.timeline-item.revealed { transform: none; }
+
+/* ERA PROGRESS RAIL */
+.side-swatch {
+  position: relative;
+  background-color: var(--border-hairline) !important;
+  overflow: hidden;
+}
+.era-progress-fill {
+  position: absolute;
+  inset: 0;
+  background: var(--text-main);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 120ms linear;
+  pointer-events: none;
+}
+.era-progress-mobile {
+  inset: auto 0 0 0;      /* rests on the bar's bottom hairline */
+  height: 1px;
+}
+@media (prefers-reduced-motion: reduce) { .era-progress-fill { transition: none; } }
+
+/* SHARED-ELEMENT MORPH (card image <-> artwork hero) */
+::view-transition-group(artwork-hero) {
+  animation-duration: 380ms;
+  animation-timing-function: var(--ease-out);
+}
+::view-transition-old(artwork-hero),
+::view-transition-new(artwork-hero) {
+  height: 100%;
+  object-fit: contain;
+  animation-duration: 380ms;
+}

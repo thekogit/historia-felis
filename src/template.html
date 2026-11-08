@@ -38,7 +38,11 @@
   <!-- Typography Suite: Complete Haute-Couture System -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Geist+Mono:wght@400;500;600&family=Geist:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@300;400;600&family=Shippori+Mincho:wght@400;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Latin faces block first paint (~39 KB of CSS). Noto Serif JP and Courier Prime were
+       never-reached fallbacks (Noto's CSS alone was 360 KB). Shippori Mincho is a 230 KB
+       stylesheet only the margins and haiku pages need, so it loads without blocking. -->
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Geist+Mono:wght@400;500;600&family=Geist:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
   <!-- Images are now mostly local; these hosts are fallback-only, so resolve DNS without opening idle connections -->
   <link rel="dns-prefetch" href="https://wsrv.nl">
@@ -145,6 +149,7 @@
       <span id="mobile-era-title">PREHISTORY</span>
     </div>
     <div id="mobile-mov-title" style="font-family: var(--font-reading); font-size: 12px; font-style: italic; color: var(--text-secondary);">Ancient Cyprus</div>
+    <span class="era-progress-fill era-progress-mobile" aria-hidden="true"></span>
   </div>
 
   <!-- Compact Living Margin Settings Drawer (Left: Buttons & Haikus Link | Right: Sliders) -->
@@ -152,8 +157,8 @@
     <div class="settings-drawer-inner">
       <div class="drawer-buttons-col">
         <div class="mode-buttons-group">
-          <button data-mode="still" class="mode-btn">STILL</button>
-          <button data-mode="calm" class="mode-btn active">CALM DRIFT</button>
+          <button data-mode="still" class="mode-btn active">STILL</button>
+          <button data-mode="calm" class="mode-btn">CALM DRIFT</button>
           <button data-mode="rain" class="mode-btn">AUTUMN RAIN</button>
           <button data-mode="prowl" class="mode-btn">RESTLESS CAT</button>
         </div>
@@ -214,7 +219,7 @@
 
   <!-- Fixed Side indicator on desktop timeline -->
   <aside id="side-indicator" class="side-indicator" style="display: none;">
-    <div class="side-swatch" id="side-swatch"></div>
+    <div class="side-swatch" id="side-swatch"><span class="era-progress-fill" aria-hidden="true"></span></div>
     <div class="side-era-label" id="side-era-label">ERA</div>
     <div class="side-mov-label" id="side-mov-label">Movement</div>
   </aside>
