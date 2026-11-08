@@ -5462,6 +5462,8 @@ try { (function() {
         const poems = (HAIKU_POOL || []).filter(h => h.author === poet.author);
         const featured = poems.slice(0, 3);
         const first = poet.name.split(' ').pop();
+        // Each poet's section headings (data/poets.json `headings`), with the plain names as fallback
+        const heads = poet.headings || {};
         const moreLabel = poems.length === 1 ? `The one cat haiku by ${first} in the dossier`
           : poems.length === 2 ? `Both of ${first}’s cat haiku in the dossier`
           : `All ${poems.length} of ${first}’s cat haiku in the dossier`;
@@ -5525,7 +5527,7 @@ try { (function() {
               </aside>
 
               <main class="poet-main">
-                <h2 class="poet-h2">Life</h2>
+                <h2 class="poet-h2">${esc(heads.life || 'Life')}</h2>
                 <div class="poet-life">${(poet.lifeText || []).map(par => `
                   <div class="poet-para"><span class="poet-per">${esc(par.years)}</span><p>${poetRichText(par.text)}</p></div>`).join('')}
                 </div>
@@ -5536,7 +5538,7 @@ try { (function() {
                   ${poet.poem.note ? `<figcaption class="poet-dew-note">${esc(poet.poem.note)}</figcaption>` : ''}
                 </figure>` : ''}
 
-                <h2 class="poet-h2">${esc(first)} and cats</h2>
+                <h2 class="poet-h2">${esc(heads.cats || first + ' and cats')}</h2>
                 <div class="poet-note">${(poet.cats || []).map(c => `<p>${poetRichText(c)}</p>`).join('')}</div>
                 ${featured.length ? `<ol class="poet-poems">${featured.map(h => `
                   <li><div><p class="poet-poem-jp" lang="ja">${esc(h.jp || '')}</p>
@@ -5548,7 +5550,7 @@ try { (function() {
 
             ${tl.length ? `<section class="poet-tl" aria-label="Timeline of ${esc(poet.name)}’s life and work">
               <div class="poet-tl-head">
-                <div><h2 class="poet-h2">Timeline</h2>
+                <div><h2 class="poet-h2">${esc(heads.timeline || 'Timeline')}</h2>
                   <div class="poet-legend"><span class="v"><i></i>Life</span><span class="o"><i></i>Work</span><span class="p"><i></i>Afterwards</span></div></div>
                 <div class="poet-ctrl"><button type="button" data-step="-1" aria-label="Earlier years">‹</button><button type="button" data-step="1" aria-label="Later years">›</button></div>
               </div>

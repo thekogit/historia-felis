@@ -549,18 +549,6 @@
     "introduction": "Olmec, Teotihuacan, Maya, and Diquís artists rendered jaguars and other felines as shamanic alter egos, celestial guardians, and emblems of rulership in jade, murals, polychrome ceramics, and cast gold."
   },
   {
-    "id": "mov-ancient-near-east",
-    "name": "Ancient Near East & Levantine Antiquities",
-    "level": "movement",
-    "parent_id": "era-prehistory",
-    "start_year": -3500,
-    "end_year": -330,
-    "color": "#8c5835",
-    "color_name": "Susa Ochre",
-    "title_artwork_id": null,
-    "introduction": "Mesopotamian, Elamite, Anatolian, and Indus Valley artifacts capturing felines in bronze standards, carved cylinder seals, and architectural portal sculpture."
-  },
-  {
     "id": "mov-aegean-bronze-age",
     "name": "Aegean Bronze Age: Minoan & Mycenaean Art",
     "level": "movement",
