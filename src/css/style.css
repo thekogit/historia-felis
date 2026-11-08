@@ -4561,83 +4561,228 @@ header.site-header,
   }
 }
 
-/* HAIKU DOSSIER GRID */
-.dossier-page-container > section { max-width: 68ch; }
-.dossier-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(16px, 2vw, 28px);
-  align-items: stretch;
+/* HAIKU DOSSIER: critical edition (poet index + reading column) */
+.dossier-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 32px) 120px;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: clip;
 }
-@media (max-width: 1024px) { .dossier-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 640px) { .dossier-grid { grid-template-columns: 1fr; } }
-.dossier-haiku-card {
-  border: 1px solid var(--border-hairline);
-  padding: clamp(16px, 2vw, 24px);
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  min-width: 0;
-  overflow-wrap: anywhere;
-}
-.dossier-haiku-head {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
+.dossier-label {
   font-family: var(--font-technical-mono);
-  font-size: 11px;
-  letter-spacing: 0.06em;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--text-muted);
 }
-.dossier-haiku-author { color: var(--text-secondary); text-transform: uppercase; }
-.dossier-haiku-head .card-stack-btn { margin-left: auto; align-self: center; }
-.dossier-haiku-jp {
+.dossier-mast {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(40px, 6vw, 64px) 0 44px;
+  text-align: center;
+}
+.dossier-kicker { color: var(--accent-stamp); }
+.dossier-mast h1 {
+  font-family: var(--font-period-rizoma);
+  font-weight: 500;
+  font-size: clamp(32px, 4.4vw, 48px);
+  line-height: 1.05;
+  letter-spacing: 0;
+  margin: 16px 0 10px;
+  color: var(--text-main);
+}
+.dossier-mast h1 span {
+  display: block;
+  font-family: var(--font-haiku-kanji);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  color: var(--text-secondary);
+  margin-top: 12px;
+}
+.dossier-rule { width: 56px; height: 1px; background: var(--border-strong); margin: 26px auto; }
+.dossier-abstract {
+  max-width: 62ch;
+  margin: 0 auto;
+  font-family: var(--font-sans-body);
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  text-align: left;
+  text-indent: 2em;
+}
+.dossier-abstract em { color: var(--text-main); }
+.dossier-abstract em[lang="ja"] { font-family: var(--font-haiku-kanji); font-style: normal; }
+
+.dossier-body {
+  display: grid;
+  grid-template-columns: 232px minmax(0, 1fr);
+  gap: 56px;
+  border-top: 1px solid var(--border-strong);
+}
+.dossier-index {
+  position: sticky;
+  top: calc(var(--header-height) + 4px);
+  align-self: start;
+  padding-top: 28px;
+  max-height: calc(100dvh - var(--header-height) - 8px);
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.dossier-index h2 { margin: 0 0 12px; font-weight: 400; }
+.dossier-index ol { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border-hairline); }
+.dossier-index-link {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2px 8px;
+  padding: 9px 0;
+  border: 0;
+  border-bottom: 1px solid var(--border-hairline);
+  background: none;
+  color: var(--text-main);
+  text-align: left;
+  cursor: pointer;
+  transition: color var(--dur-fast) var(--ease-standard), padding var(--dur-fast) var(--ease-standard), box-shadow var(--dur-fast) var(--ease-standard);
+}
+.dossier-index li:last-child .dossier-index-link { border-bottom: 0; }
+.dossier-index-link:hover { color: var(--accent-stamp); }
+.dossier-index-link:focus-visible { outline: 1px solid var(--border-strong); outline-offset: 2px; }
+.dossier-index-name { font-family: var(--font-sans-ui); font-size: 13px; letter-spacing: 0; }
+.dossier-index-count, .dossier-index-life { font-family: var(--font-technical-mono); color: var(--text-muted); }
+.dossier-index-count { font-size: 10.5px; }
+.dossier-index-life { font-size: 10px; letter-spacing: 0.04em; }
+.dossier-index-link.active { box-shadow: inset 2px 0 0 var(--accent-stamp); padding-left: 10px; }
+.dossier-index-link.active .dossier-index-name { font-weight: 600; }
+
+.dossier-poet { scroll-margin-top: calc(var(--header-height) + 8px); }
+.dossier-poet-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 40px 0 14px;
+  border-bottom: 1px solid var(--border-strong);
+}
+.dossier-poet-head h2 {
+  margin: 0;
+  font-family: var(--font-period-rizoma);
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0;
+  color: var(--text-main);
+}
+.dossier-poet-head h2 span {
+  font-family: var(--font-haiku-kanji);
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-left: 10px;
+  letter-spacing: 0.12em;
+}
+.dossier-entry {
+  display: grid;
+  grid-template-columns: 64px 120px minmax(0, 1fr) 36px;
+  gap: 28px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border-hairline);
+  align-items: start;
+}
+.dossier-entry-num {
+  font-family: var(--font-technical-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--accent-stamp);
+  padding-top: 4px;
+}
+.dossier-entry-num small { display: block; color: var(--text-muted); margin-top: 4px; font-size: 10.5px; }
+.dossier-entry-jp { display: flex; justify-content: center; }
+/* One vertical column per poem: never wrap into a second column */
+.dossier-jp {
   writing-mode: vertical-rl;
   -webkit-writing-mode: vertical-rl;
   text-orientation: upright;
+  white-space: nowrap;
   font-family: var(--font-haiku-kanji);
   font-size: 19px;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.2em;
   line-height: 1.7;
-  max-height: 15em;
-  align-self: center;
   color: var(--text-main);
 }
-.dossier-haiku-author-jp {
-  align-self: center;
-  font-family: var(--font-haiku-kanji);
-  font-size: 11px;
-  letter-spacing: 0.15em;
-  color: var(--text-muted);
-}
-.dossier-haiku-en {
+.dossier-entry-text { min-width: 0; overflow-wrap: anywhere; }
+.dossier-tr {
   margin: 0;
+  max-width: 34ch;
   font-family: 'Cormorant Garamond', var(--font-category-lilian);
   font-style: italic;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.4;
   color: var(--text-main);
 }
-.dossier-haiku-more summary {
-  cursor: pointer;
-  list-style: none;
-  font-family: var(--font-technical-mono);
-  font-size: 10.5px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+.dossier-romaji, .dossier-notes {
+  margin: 12px 0 0;
+  font-family: var(--font-sans-body);
+  font-size: 13px;
+  line-height: 1.6;
   color: var(--text-muted);
-  transition: color var(--dur-fast) var(--ease-standard);
 }
-.dossier-haiku-more summary::-webkit-details-marker { display: none; }
-.dossier-haiku-more summary::after { content: ' +'; }
-.dossier-haiku-more[open] summary::after { content: ' −'; }
-.dossier-haiku-more summary:hover { color: var(--text-main); }
-.dossier-haiku-extra { display: flex; flex-direction: column; gap: 8px; padding-top: 10px; }
-.dossier-haiku-extra p { margin: 0; font-size: 12.5px; line-height: 1.6; color: var(--text-secondary); font-family: var(--font-sans-body); }
-.dossier-haiku-romaji { font-style: italic; }
-.dossier-haiku-tags { color: var(--text-muted) !important; font-size: 11.5px !important; }
-.dossier-haiku-kigo { font-family: var(--font-haiku-kanji); }
+.dossier-romaji { font-style: italic; }
+.dossier-notes { color: var(--text-secondary); }
+.dossier-attr { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.dossier-attr span[lang="ja"] { font-family: var(--font-haiku-kanji); font-size: 12px; letter-spacing: 0.08em; color: var(--text-secondary); }
+.dossier-save { width: 32px; height: 32px; justify-self: end; }
+.dossier-save.active { color: var(--accent-stamp); }
+
+/* Tablet / phone: the index becomes a scrolling strip, the poem sits beside its reading */
+@media (max-width: 899px) {
+  .dossier-body { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .dossier-index {
+    position: static;
+    max-height: none;
+    margin: 0 calc(-1 * clamp(16px, 4vw, 32px));
+    padding: 16px clamp(16px, 4vw, 32px) 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-bottom: 1px solid var(--border-hairline);
+  }
+  .dossier-index h2 { display: none; }
+  .dossier-index ol { display: flex; gap: 6px; border: 0; padding-bottom: 14px; width: max-content; }
+  .dossier-index-link {
+    display: inline-flex;
+    gap: 6px;
+    align-items: baseline;
+    width: auto;
+    padding: 7px 10px;
+    border: 1px solid var(--border-hairline);
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+  .dossier-index li:last-child .dossier-index-link { border-bottom: 1px solid var(--border-hairline); }
+  .dossier-index-life { display: none; }
+  .dossier-index-link.active { box-shadow: none; padding-left: 10px; border-color: var(--border-strong); }
+  .dossier-entry {
+    grid-template-columns: 52px minmax(0, 1fr) 32px;
+    grid-template-areas: "num num save" "jp text text";
+    gap: 12px 18px;
+    padding: 24px 0;
+  }
+  .dossier-entry-num { grid-area: num; display: flex; gap: 10px; align-items: baseline; padding-top: 0; }
+  .dossier-entry-num small { margin-top: 0; }
+  .dossier-entry-jp { grid-area: jp; }
+  .dossier-entry-text { grid-area: text; }
+  .dossier-save { grid-area: save; }
+  .dossier-jp { font-size: 17px; letter-spacing: 0.16em; }
+  .dossier-tr { font-size: 20px; }
+}
+@media (max-width: 480px) {
+  .dossier-entry { grid-template-columns: 40px minmax(0, 1fr) 32px; gap: 10px 14px; }
+  .dossier-jp { font-size: 15px; letter-spacing: 0.12em; }
+  .dossier-tr { font-size: 18.5px; }
+  .dossier-abstract { font-size: 14px; text-indent: 1.5em; }
+}
 
 /* IPAD / TABLET FIXES */
 @media (min-width: 861px) and (max-width: 1099px) {

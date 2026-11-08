@@ -4617,83 +4617,228 @@ header.site-header,
   }
 }
 
-/* HAIKU DOSSIER GRID */
-.dossier-page-container > section { max-width: 68ch; }
-.dossier-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(16px, 2vw, 28px);
-  align-items: stretch;
+/* HAIKU DOSSIER: critical edition (poet index + reading column) */
+.dossier-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 32px) 120px;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: clip;
 }
-@media (max-width: 1024px) { .dossier-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 640px) { .dossier-grid { grid-template-columns: 1fr; } }
-.dossier-haiku-card {
-  border: 1px solid var(--border-hairline);
-  padding: clamp(16px, 2vw, 24px);
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  min-width: 0;
-  overflow-wrap: anywhere;
-}
-.dossier-haiku-head {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
+.dossier-label {
   font-family: var(--font-technical-mono);
-  font-size: 11px;
-  letter-spacing: 0.06em;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--text-muted);
 }
-.dossier-haiku-author { color: var(--text-secondary); text-transform: uppercase; }
-.dossier-haiku-head .card-stack-btn { margin-left: auto; align-self: center; }
-.dossier-haiku-jp {
+.dossier-mast {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(40px, 6vw, 64px) 0 44px;
+  text-align: center;
+}
+.dossier-kicker { color: var(--accent-stamp); }
+.dossier-mast h1 {
+  font-family: var(--font-period-rizoma);
+  font-weight: 500;
+  font-size: clamp(32px, 4.4vw, 48px);
+  line-height: 1.05;
+  letter-spacing: 0;
+  margin: 16px 0 10px;
+  color: var(--text-main);
+}
+.dossier-mast h1 span {
+  display: block;
+  font-family: var(--font-haiku-kanji);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  color: var(--text-secondary);
+  margin-top: 12px;
+}
+.dossier-rule { width: 56px; height: 1px; background: var(--border-strong); margin: 26px auto; }
+.dossier-abstract {
+  max-width: 62ch;
+  margin: 0 auto;
+  font-family: var(--font-sans-body);
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  text-align: left;
+  text-indent: 2em;
+}
+.dossier-abstract em { color: var(--text-main); }
+.dossier-abstract em[lang="ja"] { font-family: var(--font-haiku-kanji); font-style: normal; }
+
+.dossier-body {
+  display: grid;
+  grid-template-columns: 232px minmax(0, 1fr);
+  gap: 56px;
+  border-top: 1px solid var(--border-strong);
+}
+.dossier-index {
+  position: sticky;
+  top: calc(var(--header-height) + 4px);
+  align-self: start;
+  padding-top: 28px;
+  max-height: calc(100dvh - var(--header-height) - 8px);
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.dossier-index h2 { margin: 0 0 12px; font-weight: 400; }
+.dossier-index ol { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border-hairline); }
+.dossier-index-link {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2px 8px;
+  padding: 9px 0;
+  border: 0;
+  border-bottom: 1px solid var(--border-hairline);
+  background: none;
+  color: var(--text-main);
+  text-align: left;
+  cursor: pointer;
+  transition: color var(--dur-fast) var(--ease-standard), padding var(--dur-fast) var(--ease-standard), box-shadow var(--dur-fast) var(--ease-standard);
+}
+.dossier-index li:last-child .dossier-index-link { border-bottom: 0; }
+.dossier-index-link:hover { color: var(--accent-stamp); }
+.dossier-index-link:focus-visible { outline: 1px solid var(--border-strong); outline-offset: 2px; }
+.dossier-index-name { font-family: var(--font-sans-ui); font-size: 13px; letter-spacing: 0; }
+.dossier-index-count, .dossier-index-life { font-family: var(--font-technical-mono); color: var(--text-muted); }
+.dossier-index-count { font-size: 10.5px; }
+.dossier-index-life { font-size: 10px; letter-spacing: 0.04em; }
+.dossier-index-link.active { box-shadow: inset 2px 0 0 var(--accent-stamp); padding-left: 10px; }
+.dossier-index-link.active .dossier-index-name { font-weight: 600; }
+
+.dossier-poet { scroll-margin-top: calc(var(--header-height) + 8px); }
+.dossier-poet-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 40px 0 14px;
+  border-bottom: 1px solid var(--border-strong);
+}
+.dossier-poet-head h2 {
+  margin: 0;
+  font-family: var(--font-period-rizoma);
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0;
+  color: var(--text-main);
+}
+.dossier-poet-head h2 span {
+  font-family: var(--font-haiku-kanji);
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-left: 10px;
+  letter-spacing: 0.12em;
+}
+.dossier-entry {
+  display: grid;
+  grid-template-columns: 64px 120px minmax(0, 1fr) 36px;
+  gap: 28px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border-hairline);
+  align-items: start;
+}
+.dossier-entry-num {
+  font-family: var(--font-technical-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--accent-stamp);
+  padding-top: 4px;
+}
+.dossier-entry-num small { display: block; color: var(--text-muted); margin-top: 4px; font-size: 10.5px; }
+.dossier-entry-jp { display: flex; justify-content: center; }
+/* One vertical column per poem: never wrap into a second column */
+.dossier-jp {
   writing-mode: vertical-rl;
   -webkit-writing-mode: vertical-rl;
   text-orientation: upright;
+  white-space: nowrap;
   font-family: var(--font-haiku-kanji);
   font-size: 19px;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.2em;
   line-height: 1.7;
-  max-height: 15em;
-  align-self: center;
   color: var(--text-main);
 }
-.dossier-haiku-author-jp {
-  align-self: center;
-  font-family: var(--font-haiku-kanji);
-  font-size: 11px;
-  letter-spacing: 0.15em;
-  color: var(--text-muted);
-}
-.dossier-haiku-en {
+.dossier-entry-text { min-width: 0; overflow-wrap: anywhere; }
+.dossier-tr {
   margin: 0;
+  max-width: 34ch;
   font-family: 'Cormorant Garamond', var(--font-category-lilian);
   font-style: italic;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.4;
   color: var(--text-main);
 }
-.dossier-haiku-more summary {
-  cursor: pointer;
-  list-style: none;
-  font-family: var(--font-technical-mono);
-  font-size: 10.5px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+.dossier-romaji, .dossier-notes {
+  margin: 12px 0 0;
+  font-family: var(--font-sans-body);
+  font-size: 13px;
+  line-height: 1.6;
   color: var(--text-muted);
-  transition: color var(--dur-fast) var(--ease-standard);
 }
-.dossier-haiku-more summary::-webkit-details-marker { display: none; }
-.dossier-haiku-more summary::after { content: ' +'; }
-.dossier-haiku-more[open] summary::after { content: ' −'; }
-.dossier-haiku-more summary:hover { color: var(--text-main); }
-.dossier-haiku-extra { display: flex; flex-direction: column; gap: 8px; padding-top: 10px; }
-.dossier-haiku-extra p { margin: 0; font-size: 12.5px; line-height: 1.6; color: var(--text-secondary); font-family: var(--font-sans-body); }
-.dossier-haiku-romaji { font-style: italic; }
-.dossier-haiku-tags { color: var(--text-muted) !important; font-size: 11.5px !important; }
-.dossier-haiku-kigo { font-family: var(--font-haiku-kanji); }
+.dossier-romaji { font-style: italic; }
+.dossier-notes { color: var(--text-secondary); }
+.dossier-attr { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.dossier-attr span[lang="ja"] { font-family: var(--font-haiku-kanji); font-size: 12px; letter-spacing: 0.08em; color: var(--text-secondary); }
+.dossier-save { width: 32px; height: 32px; justify-self: end; }
+.dossier-save.active { color: var(--accent-stamp); }
+
+/* Tablet / phone: the index becomes a scrolling strip, the poem sits beside its reading */
+@media (max-width: 899px) {
+  .dossier-body { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .dossier-index {
+    position: static;
+    max-height: none;
+    margin: 0 calc(-1 * clamp(16px, 4vw, 32px));
+    padding: 16px clamp(16px, 4vw, 32px) 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-bottom: 1px solid var(--border-hairline);
+  }
+  .dossier-index h2 { display: none; }
+  .dossier-index ol { display: flex; gap: 6px; border: 0; padding-bottom: 14px; width: max-content; }
+  .dossier-index-link {
+    display: inline-flex;
+    gap: 6px;
+    align-items: baseline;
+    width: auto;
+    padding: 7px 10px;
+    border: 1px solid var(--border-hairline);
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+  .dossier-index li:last-child .dossier-index-link { border-bottom: 1px solid var(--border-hairline); }
+  .dossier-index-life { display: none; }
+  .dossier-index-link.active { box-shadow: none; padding-left: 10px; border-color: var(--border-strong); }
+  .dossier-entry {
+    grid-template-columns: 52px minmax(0, 1fr) 32px;
+    grid-template-areas: "num num save" "jp text text";
+    gap: 12px 18px;
+    padding: 24px 0;
+  }
+  .dossier-entry-num { grid-area: num; display: flex; gap: 10px; align-items: baseline; padding-top: 0; }
+  .dossier-entry-num small { margin-top: 0; }
+  .dossier-entry-jp { grid-area: jp; }
+  .dossier-entry-text { grid-area: text; }
+  .dossier-save { grid-area: save; }
+  .dossier-jp { font-size: 17px; letter-spacing: 0.16em; }
+  .dossier-tr { font-size: 20px; }
+}
+@media (max-width: 480px) {
+  .dossier-entry { grid-template-columns: 40px minmax(0, 1fr) 32px; gap: 10px 14px; }
+  .dossier-jp { font-size: 15px; letter-spacing: 0.12em; }
+  .dossier-tr { font-size: 18.5px; }
+  .dossier-abstract { font-size: 14px; text-indent: 1.5em; }
+}
 
 /* IPAD / TABLET FIXES */
 @media (min-width: 861px) and (max-width: 1099px) {
@@ -10251,62 +10396,97 @@ try { (function() {
         tintOverlay.style.backgroundColor = 'transparent';
 
         const allDossierHaikus = (HAIKU_POOL && HAIKU_POOL.length > 0) ? HAIKU_POOL : HAIKU_SPECIMENS;
+        const esc = escapeAttr;
+        const heartSvg = saved => `<svg width="14" height="14" viewBox="0 0 24 24" fill="${saved ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>`;
 
-        let cardsHtml = '';
+        // Group by poet; poets ordered by birth year, poems by year within each poet
+        const poets = new Map();
         allDossierHaikus.forEach((h, idx) => {
-          const hId = h.id || String(idx + 1).padStart(3, '0');
-          const authorDisplay = h.author || 'Anonymous';
-          const authorLifespan = h.lifespan ? `(${h.lifespan})` : '';
-          const authorJp = h.authorJp || h.fullAuthorJp || h.shortAuthorJp || '';
-          const yearDisplay = h.year || '';
-          const jpText = h.jp || '';
-          const romajiText = h.romaji || '';
-          const translationText = h.en || h.literal || '';
-          const isSaved = CuratorialStack.has('haiku:' + hId) || CuratorialStack.has(hId);
-
-          const extraHtml = [
-            romajiText ? `<p class="dossier-haiku-romaji">${romajiText}</p>` : '',
-            h.notes ? `<p class="dossier-haiku-notes">${h.notes}</p>` : '',
-            (h.kigo || h.pathology) ? `<p class="dossier-haiku-tags">${[h.kigo ? `<span class="dossier-haiku-kigo">${h.kigo}</span>` : '', h.pathology || ''].filter(Boolean).join(' · ')}</p>` : ''
-          ].join('');
-
-          cardsHtml += `
-            <article id="haiku-card-${hId}" class="dossier-haiku-card stagger-in" style="--stagger-i:${Math.min(idx, 10)}">
-              <header class="dossier-haiku-head">
-                <span class="dossier-haiku-author">${authorDisplay}</span>
-                ${yearDisplay ? `<span class="dossier-haiku-year settle-detail" style="--stagger-i:${Math.min(idx, 10)}">${yearDisplay}</span>` : ''}
-                <button class="card-stack-btn ${isSaved ? 'active' : ''}" data-haiku-id="haiku:${hId}" title="Save Haiku to Curatorial Stack" aria-label="Save haiku" type="button" onclick="window.toggleHaikuStack('haiku:${hId}', this);">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="${isSaved ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-                </button>
-              </header>
-              <div class="dossier-haiku-jp" lang="ja">${jpText}</div>
-              ${authorJp ? `<div class="dossier-haiku-author-jp" lang="ja">${authorJp}</div>` : ''}
-              <p class="dossier-haiku-en">${translationText}</p>
-              ${extraHtml ? `<details class="dossier-haiku-more"><summary>Notes</summary><div class="dossier-haiku-extra reveal-mask">${extraHtml}</div></details>` : ''}
-            </article>
-          `;
+          const name = h.author || 'Anonymous';
+          if (!poets.has(name)) {
+            poets.set(name, {
+              name,
+              jp: h.fullAuthorJp || h.authorJp || h.shortAuthorJp || '',
+              life: h.lifespan || '',
+              slug: 'dossier-poet-' + name.normalize('NFD').replace(/[^\w]+/g, '-').replace(/^-|-$/g, '').toLowerCase(),
+              poems: []
+            });
+          }
+          poets.get(name).poems.push({ ...h, id: h.id || String(idx + 1).padStart(3, '0') });
         });
+        const born = p => parseInt(p.life, 10) || 9999;
+        const poetList = [...poets.values()].sort((a, b) => born(a) - born(b) || a.name.localeCompare(b.name));
+        poetList.forEach(p => p.poems.sort((a, b) => (parseInt(a.year, 10) || 0) - (parseInt(b.year, 10) || 0)));
+
+        const indexHtml = poetList.map(p => `
+          <li><button type="button" class="dossier-index-link" data-target="${p.slug}">
+            <span class="dossier-index-name">${esc(p.name)}</span>
+            <span class="dossier-index-count">${p.poems.length}</span>
+            ${p.life ? `<span class="dossier-index-life">${esc(p.life)}</span>` : ''}
+          </button></li>`).join('');
+
+        let entryIdx = 0;
+        const sectionsHtml = poetList.map(p => `
+          <section class="dossier-poet" id="${p.slug}" aria-labelledby="${p.slug}-title">
+            <header class="dossier-poet-head">
+              <h2 id="${p.slug}-title">${esc(p.name)}${p.jp ? `<span lang="ja">${esc(p.jp)}</span>` : ''}</h2>
+              <span class="dossier-label">${[p.life, `${p.poems.length} ${p.poems.length === 1 ? 'poem' : 'poems'}`].filter(Boolean).join(' · ')}</span>
+            </header>
+            ${p.poems.map(h => {
+              const isSaved = CuratorialStack.has('haiku:' + h.id) || CuratorialStack.has(h.id);
+              const i = Math.min(entryIdx++, 10);
+              return `
+              <article id="haiku-card-${esc(h.id)}" class="dossier-entry stagger-in" style="--stagger-i:${i}">
+                <div class="dossier-entry-num">${esc(h.id)}${h.year ? `<small>${esc(h.year)}</small>` : ''}</div>
+                <div class="dossier-entry-jp"><div class="dossier-jp" lang="ja">${esc(h.jp || '')}</div></div>
+                <div class="dossier-entry-text">
+                  <p class="dossier-tr">${esc(h.en || h.literal || '')}</p>
+                  ${h.romaji ? `<p class="dossier-romaji">${esc(h.romaji)}</p>` : ''}
+                  ${h.notes ? `<p class="dossier-notes">${esc(h.notes)}</p>` : ''}
+                  <div class="dossier-attr dossier-label">${esc(p.name)}${p.jp ? `<span lang="ja">${esc(p.jp)}</span>` : ''}${h.year ? `<span>· ${esc(h.year)}</span>` : ''}</div>
+                </div>
+                <button class="card-stack-btn dossier-save ${isSaved ? 'active' : ''}" data-haiku-id="haiku:${esc(h.id)}" title="Save haiku to Curatorial Stack" aria-label="Save haiku to stack" aria-pressed="${isSaved}" type="button" onclick="window.toggleHaikuStack('haiku:${esc(h.id)}', this);">${heartSvg(isSaved)}</button>
+              </article>`;
+            }).join('')}
+          </section>`).join('');
 
         appRoot.innerHTML = `
-          <div class="dossier-page-container" style="max-width: 1200px; margin: 0 auto; padding: clamp(24px, 4vw, 56px) clamp(12px, 4vw, 20px); box-sizing: border-box; width: 100%; overflow-x: hidden;">
-            <section style="border-left: 2px solid var(--accent-stamp); padding-left: 14px; margin-bottom: 40px; overflow-wrap: anywhere;">
-              <div style="font-family: var(--font-technical-mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent-stamp); margin-bottom: 6px;">ARCHIVAL DOSSIER · ${allDossierHaikus.length} HAIKUS</div>
-              <h1 style="font-family: var(--font-period-rizoma); font-size: clamp(22px, 3.2vw, 32px); font-weight: 700; text-transform: uppercase; margin: 0 0 12px 0;">
-                On the Pathos of the Starving Stray (<span style="font-family: var(--font-haiku-kanji);">猫の恋</span>)
-              </h1>
-              <p style="font-family: var(--font-sans-body); font-size: 13.5px; line-height: 1.65; color: var(--text-secondary); margin-bottom: 12px;">
-                In classical Japanese haikai, the spring seasonal word <span style="font-family: var(--font-haiku-kanji); color: var(--text-main);">猫の恋</span> (<em>neko no koi</em> — "cat's love") rarely signifies domestic warmth. Instead, poets from Matsuo Bashō to Masaoka Shiki documented the stray cat returning from the rooftops: soaked in cold rain, ribs protruding from a diet of coarse barley, reduced to two gleaming eyes in the dark.
-              </p>
-              <p style="font-family: var(--font-sans-body); font-size: 13.5px; line-height: 1.65; color: var(--text-secondary); margin: 0;">
-                Along the left and right margins of this archive, classical cat haikus glide as autonomous vertical <em>tategaki</em> ribbons with subtle parallax, kinetic scroll reactivity, and procedural stray cat apparitions.
-              </p>
-            </section>
-
-            <div id="dossier-specimens-list" class="dossier-grid">
-              ${cardsHtml}
+          <div class="dossier-page-container">
+            <header class="dossier-mast">
+              <div class="dossier-label dossier-kicker">Archival Dossier · Literature</div>
+              <h1>On the Stray Cat in Haiku<span lang="ja">猫の恋</span></h1>
+              <div class="dossier-rule" aria-hidden="true"></div>
+              <p class="dossier-abstract">In classical haikai the spring season word <em lang="ja">猫の恋</em> (<em>neko no koi</em>, “cat’s love”) rarely signifies domestic warmth. From Matsuo Bashō to Masaoka Shiki, poets recorded the stray returning from the rooftops: soaked in cold rain, thin from coarse barley, reduced to two gleaming eyes in the dark. The poems are given in their original vertical setting with an English reading and romanisation.</p>
+            </header>
+            <div class="dossier-body">
+              <nav class="dossier-index" aria-label="Index of poets">
+                <h2 class="dossier-label">Index of poets</h2>
+                <ol>${indexHtml}</ol>
+              </nav>
+              <div id="dossier-specimens-list" class="dossier-reading">${sectionsHtml}</div>
             </div>
           </div>
         `;
+
+        // Index: jump to a poet without touching the hash router, and track the poet in view
+        const links = [...appRoot.querySelectorAll('.dossier-index-link')];
+        const setActive = slug => links.forEach(l => l.classList.toggle('active', l.dataset.target === slug));
+        links.forEach(l => l.addEventListener('click', () => {
+          const target = document.getElementById(l.dataset.target);
+          if (!target) return;
+          const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+          setActive(l.dataset.target);
+        }));
+        if (window.dossierIndexObserver) window.dossierIndexObserver.disconnect();
+        if ('IntersectionObserver' in window) {
+          window.dossierIndexObserver = new IntersectionObserver(entries => {
+            const visible = entries.filter(e => e.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+            if (visible.length) setActive(visible[0].target.id);
+          }, { rootMargin: '-20% 0px -70% 0px' });
+          appRoot.querySelectorAll('.dossier-poet').forEach(s => window.dossierIndexObserver.observe(s));
+        }
+        if (poetList.length) setActive(poetList[0].slug);
       }
 
       // Initialize living margins on start
