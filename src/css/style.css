@@ -4889,9 +4889,10 @@ header.site-header,
 .poet-main { padding: 48px 0 64px; min-width: 0; }
 
 .poet-plate { margin: 0; border: 1px solid var(--border-hairline); padding: 12px; background: var(--bg-surface); }
-.poet-plate-frame { display: flex; justify-content: center; background: var(--bg-neutral); }
-.poet-plate-img { display: block; width: 100%; height: auto; max-height: 560px; object-fit: contain; }
-.poet-plate-img.is-small { width: auto; margin: 24px auto; box-shadow: 0 0 0 1px var(--border-hairline); }
+/* The frame never grows past the column: images shrink to fit (min-width: 0 lets a flex item go below its natural width) */
+.poet-plate-frame { display: flex; justify-content: center; max-width: 100%; overflow: hidden; background: var(--bg-neutral); }
+.poet-plate-img { display: block; width: 100%; min-width: 0; max-width: 100%; height: auto; max-height: 560px; object-fit: contain; }
+.poet-plate-img.is-small { width: auto; max-width: calc(100% - 48px); margin: 24px auto; box-shadow: 0 0 0 1px var(--border-hairline); }
 .poet-plate-cap { margin-top: 12px; font-size: 11px; line-height: 1.55; color: var(--text-muted); }
 .poet-cap-src { color: inherit; white-space: nowrap; border-bottom: 1px solid var(--border-hairline); text-decoration: none; }
 .poet-cap-src:hover { color: var(--accent-stamp); border-color: currentColor; }

@@ -4945,9 +4945,10 @@ header.site-header,
 .poet-main { padding: 48px 0 64px; min-width: 0; }
 
 .poet-plate { margin: 0; border: 1px solid var(--border-hairline); padding: 12px; background: var(--bg-surface); }
-.poet-plate-frame { display: flex; justify-content: center; background: var(--bg-neutral); }
-.poet-plate-img { display: block; width: 100%; height: auto; max-height: 560px; object-fit: contain; }
-.poet-plate-img.is-small { width: auto; margin: 24px auto; box-shadow: 0 0 0 1px var(--border-hairline); }
+/* The frame never grows past the column: images shrink to fit (min-width: 0 lets a flex item go below its natural width) */
+.poet-plate-frame { display: flex; justify-content: center; max-width: 100%; overflow: hidden; background: var(--bg-neutral); }
+.poet-plate-img { display: block; width: 100%; min-width: 0; max-width: 100%; height: auto; max-height: 560px; object-fit: contain; }
+.poet-plate-img.is-small { width: auto; max-width: calc(100% - 48px); margin: 24px auto; box-shadow: 0 0 0 1px var(--border-hairline); }
 .poet-plate-cap { margin-top: 12px; font-size: 11px; line-height: 1.55; color: var(--text-muted); }
 .poet-cap-src { color: inherit; white-space: nowrap; border-bottom: 1px solid var(--border-hairline); text-decoration: none; }
 .poet-cap-src:hover { color: var(--accent-stamp); border-color: currentColor; }
@@ -10802,7 +10803,7 @@ try { (function() {
           <img class="poet-plate-img ${poetNatW(img) < 600 ? 'is-small' : ''}" src="${esc(poetImgSrc(img, 960))}"
             srcset="${esc(poetSrcset(img))}"
             sizes="(max-width: 860px) 280px, 320px" width="${poetNatW(img)}" height="${(img.local && img.local.h) || img.h}"
-            ${poetNatW(img) < 600 ? `style="max-width:${Math.round(poetNatW(img) * 1.25)}px"` : ''}
+            ${poetNatW(img) < 600 ? `style="max-width:min(calc(100% - 48px), ${Math.round(poetNatW(img) * 1.25)}px)"` : ''}
             alt="${esc(img.caption)}" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">`;
         const capHtml = img => {
           const credit = img.credit && !img.caption.includes(img.credit) ? ` ${esc(img.credit)}.` : '';
