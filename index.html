@@ -1264,9 +1264,6 @@
       .timeline-spotlight-item + .timeline-item {
         margin-top: 32px;
       }
-      .timeline-card {
-        will-change: filter, opacity;
-      }
     }
 
     /* Mobile Timeline & Middle Placed Elements Optimization */
@@ -4563,10 +4560,56 @@ header.site-header,
 /* Glyph swaps in the margins never re-layout the page */
 .living-margin-container { contain: strict; }
 
+/* When the mobile header slides away the margins follow it with a transform instead of
+   animating `top` (which resized and re-laid out every ribbon on each frame). The box is
+   pinned at its header-hidden position; with the header shown it is pushed down by the
+   header's height and its lower edge simply runs off-screen. */
+.notepad-margin,
+.living-margin-container {
+  top: calc(var(--margin-top) - var(--hdr-top) + var(--sat));
+  transform: translate3d(0, calc(var(--hdr-top) - var(--sat)), 0);
+  transition: opacity var(--dur-base) var(--ease-standard), transform var(--dur-slow) var(--ease-standard);
+}
+
+/* Each haiku is its own vertical column block, stacked top to bottom. A glyph swap
+   re-lays out one ~40-glyph segment instead of the ribbon's single 2,000-glyph line. */
+.tategaki-ribbon { writing-mode: horizontal-tb; -webkit-writing-mode: horizontal-tb; }
+.ribbon-seg {
+  display: block;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  contain: layout style;
+}
+.glyph-cell { transition: none; } /* a per-glyph colour transition on ~80 swaps/s was pure overhead */
+
+/* Timeline depth of field: cards soften and dim at the viewport edges. Driven by the
+   scroll position on the compositor, so it tracks every frame with no JS. */
 @media (min-width: 900px) {
-  .timeline-card {
-    will-change: auto; /* was one GPU layer per card */
-    transition: filter 0.15s linear, opacity 0.15s linear; /* smooths the stepped observer */
+  .timeline-card { will-change: auto; }
+}
+@keyframes card-focus-in {
+  0%   { opacity: 0.68; filter: blur(2.4px); }
+  50%  { opacity: 0.84; filter: blur(0.6px); }
+  100% { opacity: 1;    filter: blur(0); }
+}
+@keyframes card-focus-out {
+  0%   { opacity: 1;    filter: blur(0); }
+  50%  { opacity: 0.84; filter: blur(0.6px); }
+  100% { opacity: 0.68; filter: blur(2.4px); }
+}
+@supports not (animation-timeline: view()) {
+  @media (min-width: 900px) {
+    /* Fallback: an IntersectionObserver sets the values in steps; ease between them */
+    .timeline-card { transition: filter 0.25s var(--ease-out), opacity 0.25s var(--ease-out); }
+  }
+}
+@supports (animation-timeline: view()) {
+  @media (min-width: 900px) and (prefers-reduced-motion: no-preference) {
+    .timeline-card {
+      animation: card-focus-in linear both, card-focus-out linear forwards;
+      animation-timeline: view(), view();
+      animation-range: entry 0% entry 45%, exit 55% exit 100%;
+    }
   }
 }
 
@@ -6172,10 +6215,11 @@ try { (function() {
       }
 
       function setCell(state, cell, ch) {
-        if (cell.currentChar === ch) return;
+        if (cell.currentChar === ch) return false;
         cell.currentChar = ch;
         cell.el.textContent = ch;
         if (ch === cell.baseChar) state.dirty.delete(cell); else state.dirty.add(cell);
+        return true;
       }
 
       function restoreRibbon(state) {
@@ -6190,7 +6234,11 @@ try { (function() {
           state.visible = state.el.getClientRects().length > 0; // false for ribbons hidden by CSS
           if (!state.visible) return;
           state.periodH = Math.max(240, state.el.scrollHeight / 2);
-          state.offsets = state.cells.map(c => c.el.offsetTop);
+          // Cells are offset within their haiku segment (contain: layout makes it the offsetParent)
+          state.offsets = state.cells.map(c => {
+            const seg = c.el.parentElement;
+            return c.el.offsetTop + (seg && seg.classList.contains('ribbon-seg') ? seg.offsetTop : 0);
+          });
         });
       }
       let marginMeasureTimer = 0;
@@ -6215,6 +6263,10 @@ try { (function() {
           cfg.haikus.forEach((h, slotIdx) => {
             const seg = buildRibbonSegment(h);
             const chars = Array.from(seg);
+            // One block per haiku: a glyph swap re-lays out ~40 glyphs, not the whole ribbon
+            const segEl = document.createElement('span');
+            segEl.className = 'ribbon-seg';
+            frag.appendChild(segEl);
             chars.forEach((ch) => {
               const span = document.createElement('span');
               const isKanji = /[぀-ヿ㐀-䶿一-鿿豈-﫿]/.test(ch);
@@ -6224,7 +6276,7 @@ try { (function() {
               span.dataset.slot = slotIdx;
               span.dataset.cellIdx = cIdx;
               span.dataset.haikuId = h.id;
-              frag.appendChild(span);
+              segEl.appendChild(span);
 
               cells.push({
                 baseChar: ch,
@@ -6270,36 +6322,68 @@ try { (function() {
         catApparition = { active: false, state: null, startIndex: 0, chars: [], ttl: 0 };
       }
 
-      function animateMargins() {
-        requestAnimationFrame(animateMargins);
-        tick++;
-        marginScrollVelocity *= 0.91;
-        if (marginScrollVelocity < 0.05) marginScrollVelocity = 0;
+      // The glyph logic keeps its 60 Hz tick clock (same rhythm on 60/120/144 Hz screens) but
+      // glyphs are written to the DOM every 2nd tick (30 Hz) and each pass covers both ticks,
+      // so the effect looks the same at half the layout/paint cost. The drift transform is
+      // written every display frame so it stays smooth.
+      const MARGIN_STEP_MS = 1000 / 60;
+      const GLYPH_PASS_TICKS = 2;
+      let marginClock = 0;
+      let marginLastNow = 0;
+      let lastGlyphTick = 0;
+      const chanceOver = (p, n) => 1 - Math.pow(1 - p, n); // chance of >=1 hit in n ticks
+      // Glyph writes per ribbon per pass. Fast scrolling raises the glitch rate exactly when
+      // frames matter most; the cap keeps it to a fixed cost. The scan start rotates so every
+      // part of the column still gets its turn.
+      const GLYPH_WRITE_BUDGET = 14;
 
-        if (catApparition.active) {
-          catApparition.ttl--;
-          if (catApparition.ttl === 55) catApparition.chars = catApparition.chars.map(c => (c === '◉' ? '─' : c));
-          else if (catApparition.ttl === 42) catApparition.chars = catApparition.chars.map(c => (c === '─' ? '◉' : c));
+      function animateMargins(now) {
+        requestAnimationFrame(animateMargins);
+        if (now === undefined) return;
+        if (!marginLastNow) marginLastNow = now;
+        marginClock += Math.min(now - marginLastNow, 100); // no catch-up burst after a stall
+        marginLastNow = now;
+        const smoothTick = marginClock / MARGIN_STEP_MS;
+        const prevTick = tick;
+        tick = Math.floor(smoothTick);
+        if (tick !== prevTick) {
+          marginScrollVelocity *= Math.pow(0.91, tick - prevTick);
+          if (marginScrollVelocity < 0.05) marginScrollVelocity = 0;
+        }
+        const n = Math.min(tick - lastGlyphTick, 6); // logic ticks this glyph pass covers
+        const glyphPass = n >= GLYPH_PASS_TICKS;
+        if (glyphPass) lastGlyphTick = tick;
+
+        if (!glyphPass) {
+          // transform pass only
+        } else if (catApparition.active) {
+          const before = catApparition.ttl;
+          catApparition.ttl -= n;
+          if (before > 55 && catApparition.ttl <= 55 && catApparition.ttl > 42) catApparition.chars = catApparition.chars.map(c => (c === '◉' ? '─' : c));
+          else if (before > 42 && catApparition.ttl <= 42) catApparition.chars = catApparition.chars.map(c => (c === '─' ? '◉' : c));
           if (catApparition.ttl <= 0) endCatApparition();
         } else if (currentMode !== 'still') {
           const prowlChance = currentMode === 'prowl' ? 0.022 : (currentMode === 'calm' ? 0.0015 : 0.004);
-          if (Math.random() < prowlChance * mutationRate) triggerCatEventInMargin();
+          if (Math.random() < chanceOver(prowlChance * mutationRate, n)) triggerCatEventInMargin();
         }
 
         const scrollY = window.scrollY || 0;
         const amp = currentMode === 'calm' ? 4 : 9;
         const rateFactor = currentMode === 'calm' ? mutationRate * 0.45 : mutationRate * 0.9;
-        const scrambleThreshold = marginScrollVelocity * 0.005 + (currentMode === 'rain' ? 0.003 : 0.001) * mutationRate;
+        const scrambleThreshold = chanceOver(Math.min(1, marginScrollVelocity * 0.005 + (currentMode === 'rain' ? 0.003 : 0.001) * mutationRate), n);
+        const restoreChance = chanceOver(0.03, n);
+        const restoreKanjiChance = chanceOver(0.18, n);
 
         for (const state of ribbonStates) {
           if (!state.visible) continue;
           const { config, el, cells, offsets } = state;
 
-          const breath = currentMode === 'still' ? 0 : Math.sin(tick * 0.022 + config.phase) * amp;
+          const breath = currentMode === 'still' ? 0 : Math.sin(smoothTick * 0.022 + config.phase) * amp;
           const rawY = scrollY * config.speed * parallaxMultiplier - breath;
           const P = state.periodH;
           const wrappedY = -(((rawY % P) + P) % P);
           el.style.transform = `translate3d(0, ${wrappedY.toFixed(2)}px, 0)`;
+          if (!glyphPass) continue;
 
           // Only glyphs inside the viewport (+ overscan) are touched
           const top = -wrappedY - MARGIN_OVERSCAN;
@@ -6323,24 +6407,28 @@ try { (function() {
             continue;
           }
 
-          for (let i = start; i < end; i++) {
+          const span = end - start;
+          const rot = span > 0 ? (tick * 17) % span : 0;
+          let writes = 0;
+          for (let j = 0; j < span && writes < GLYPH_WRITE_BUDGET; j++) {
+            const i = start + ((j + rot) % span);
             if (i >= catLo && i < catHi) continue;
             const cell = cells[i];
             if (!cell.isKanji) {
               const wave = Math.sin(tick * 0.045 - i * 0.28 + config.phase) + Math.cos(tick * 0.019 + i * 0.13);
-              if (wave > 1.35 - rateFactor && (tick + i) % 6 === 0) {
+              if (wave > 1.35 - rateFactor && (tick + i) % 6 < n) {
                 let next;
                 if (marginScrollVelocity > 18) next = BRAILLE_GLITCH[(tick + i) % BRAILLE_GLITCH.length];
                 else if (currentMode === 'prowl' && Math.random() < 0.08) next = '🐾';
                 else next = RAIN_GLYPHS[Math.abs(Math.floor(wave * 4 + tick * 0.08)) % RAIN_GLYPHS.length];
-                setCell(state, cell, next);
-              } else if (cell.currentChar !== cell.baseChar && Math.random() < 0.03) {
-                setCell(state, cell, cell.baseChar);
+                writes += setCell(state, cell, next);
+              } else if (cell.currentChar !== cell.baseChar && Math.random() < restoreChance) {
+                writes += setCell(state, cell, cell.baseChar);
               }
             } else if (Math.random() < scrambleThreshold) {
-              setCell(state, cell, BRAILLE_GLITCH[Math.floor(Math.random() * BRAILLE_GLITCH.length)]);
-            } else if (cell.currentChar !== cell.baseChar && Math.random() < 0.18) {
-              setCell(state, cell, cell.baseChar);
+              writes += setCell(state, cell, BRAILLE_GLITCH[Math.floor(Math.random() * BRAILLE_GLITCH.length)]);
+            } else if (cell.currentChar !== cell.baseChar && Math.random() < restoreKanjiChance) {
+              writes += setCell(state, cell, cell.baseChar);
             }
           }
         }
@@ -6730,6 +6818,9 @@ try { (function() {
 
       function setupMiddleplaneTimelineScroll() {
         if (window.innerWidth < 900) return;
+        // Scroll-driven CSS animation handles it on the compositor (see .timeline-card)
+        if (window.CSS && CSS.supports('animation-timeline: view()')) return;
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
         // Thresholds 0, 0.025 … 0.45: the browser reports visibility; no measuring on scroll
         const steps = Array.from({ length: 19 }, (_, i) => i * 0.025);
         const io = new IntersectionObserver(entries => {

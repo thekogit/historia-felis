@@ -1212,9 +1212,6 @@
       .timeline-spotlight-item + .timeline-item {
         margin-top: 32px;
       }
-      .timeline-card {
-        will-change: filter, opacity;
-      }
     }
 
     /* Mobile Timeline & Middle Placed Elements Optimization */
@@ -4511,10 +4508,56 @@ header.site-header,
 /* Glyph swaps in the margins never re-layout the page */
 .living-margin-container { contain: strict; }
 
+/* When the mobile header slides away the margins follow it with a transform instead of
+   animating `top` (which resized and re-laid out every ribbon on each frame). The box is
+   pinned at its header-hidden position; with the header shown it is pushed down by the
+   header's height and its lower edge simply runs off-screen. */
+.notepad-margin,
+.living-margin-container {
+  top: calc(var(--margin-top) - var(--hdr-top) + var(--sat));
+  transform: translate3d(0, calc(var(--hdr-top) - var(--sat)), 0);
+  transition: opacity var(--dur-base) var(--ease-standard), transform var(--dur-slow) var(--ease-standard);
+}
+
+/* Each haiku is its own vertical column block, stacked top to bottom. A glyph swap
+   re-lays out one ~40-glyph segment instead of the ribbon's single 2,000-glyph line. */
+.tategaki-ribbon { writing-mode: horizontal-tb; -webkit-writing-mode: horizontal-tb; }
+.ribbon-seg {
+  display: block;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  contain: layout style;
+}
+.glyph-cell { transition: none; } /* a per-glyph colour transition on ~80 swaps/s was pure overhead */
+
+/* Timeline depth of field: cards soften and dim at the viewport edges. Driven by the
+   scroll position on the compositor, so it tracks every frame with no JS. */
 @media (min-width: 900px) {
-  .timeline-card {
-    will-change: auto; /* was one GPU layer per card */
-    transition: filter 0.15s linear, opacity 0.15s linear; /* smooths the stepped observer */
+  .timeline-card { will-change: auto; }
+}
+@keyframes card-focus-in {
+  0%   { opacity: 0.68; filter: blur(2.4px); }
+  50%  { opacity: 0.84; filter: blur(0.6px); }
+  100% { opacity: 1;    filter: blur(0); }
+}
+@keyframes card-focus-out {
+  0%   { opacity: 1;    filter: blur(0); }
+  50%  { opacity: 0.84; filter: blur(0.6px); }
+  100% { opacity: 0.68; filter: blur(2.4px); }
+}
+@supports not (animation-timeline: view()) {
+  @media (min-width: 900px) {
+    /* Fallback: an IntersectionObserver sets the values in steps; ease between them */
+    .timeline-card { transition: filter 0.25s var(--ease-out), opacity 0.25s var(--ease-out); }
+  }
+}
+@supports (animation-timeline: view()) {
+  @media (min-width: 900px) and (prefers-reduced-motion: no-preference) {
+    .timeline-card {
+      animation: card-focus-in linear both, card-focus-out linear forwards;
+      animation-timeline: view(), view();
+      animation-range: entry 0% entry 45%, exit 55% exit 100%;
+    }
   }
 }
 
