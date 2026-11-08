@@ -1458,19 +1458,6 @@
     "hash2": "8757f8a6e4f8db77",
     "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoIAAUAA4BaJagCdAEPBiosGAD+0Vm0wcgh6vbAbc1NbC5MzzrQ67As+HAAAA=="
   },
-  "https://upload.wikimedia.org/wikipedia/commons/f/f1/Jean-Fran%C3%A7ois_Millet_-_Young_Woman_Churning_Butter_-_66.1052_-_Museum_of_Fine_Arts.jpg": {
-    "base": "assets/img/380cbe84d51d7a46",
-    "widths": [
-      480,
-      960,
-      1031
-    ],
-    "w": 1031,
-    "h": 1600,
-    "hash": "a5c7c2dbdbcac881",
-    "hash2": "a5c7c2dbdbcac881",
-    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoFAAgAA4BaJQBOgB6I402gAAD+72T18iyIveMyWuiR+zVkUHqB/SriAAA="
-  },
   "https://upload.wikimedia.org/wikipedia/commons/e/e7/JH_Dolph_Butterfly.jpg": {
     "base": "assets/img/7508145dbd75996b",
     "widths": [
@@ -2620,19 +2607,6 @@
     "hash2": "4d4ccdcd1f1b5b7b",
     "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoHAAgAA4BaJZwAApxvdkQAAP7tJ17+KIre8HOu74nNPNDAOBaZy8SrTCaXMzwAfAAAAA=="
   },
-  "https://upload.wikimedia.org/wikipedia/commons/0/0c/Judith_Leyster_-_Two_Children_with_a_Cat_-_WGA12955.jpg": {
-    "base": "assets/img/9716d5d748ec84d7",
-    "widths": [
-      480,
-      960,
-      1000
-    ],
-    "w": 1000,
-    "h": 1195,
-    "hash": "82838a09496f6766",
-    "hash2": "82838a09496f6766",
-    "lq": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAQCdASoHAAgAA4BaJbACdADze0iIAP7tKCo4Acb9CgiLGTswgPpiNEDZHH88nWXdctGEyBmBYqzttJL1cJIAAAA="
-  },
   "https://upload.wikimedia.org/wikipedia/commons/6/60/Nicolaes_Maes_-_Old_Woman_Saying_Grace_-_WGA13820.jpg": {
     "base": "assets/img/84a3646843fff204",
     "widths": [
@@ -2931,19 +2905,6 @@
     "hash2": "e2ae92137bfba9b2",
     "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAQAA4BaJYwCdAD5jhLcAAD+WwSp1zQfvsSWnUmlaiiCDSIIAAAA"
   },
-  "https://upload.wikimedia.org/wikipedia/commons/2/2e/%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C%2C_%D0%91%D0%B0%D1%83%D0%BC%D0%B0%D0%BD%D0%B0%2C_68.jpg": {
-    "base": "assets/img/0bfdb1bb8e8c4341",
-    "widths": [
-      480,
-      960,
-      1400
-    ],
-    "w": 4608,
-    "h": 3456,
-    "hash": "4441984660724145",
-    "hash2": "4441984660724145",
-    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAYAA4BaJYwCdAD0ejEoANzSyenFgXlZeQu4fYAKSgJkqAk7EHwwX+TMyQAA"
-  },
   "https://upload.wikimedia.org/wikipedia/commons/f/f1/Cat_Monument_Kuching.jpg": {
     "base": "assets/img/937c0c9cd586dac2",
     "widths": [
@@ -3085,19 +3046,6 @@
     "hash2": "486070729ab2d8c8",
     "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAAAwAQCdASoIAAgAA4BaJaQAA3AA/vQRSr+oH+sL9inakcIH5Dlw7Qci51diEUAA"
   },
-  "https://upload.wikimedia.org/wikipedia/commons/6/6d/Aerrapc_Guggenheim_art_photo_(70).png": {
-    "base": "assets/img/c3961dfcd331712c",
-    "widths": [
-      480,
-      960,
-      1400
-    ],
-    "w": 1936,
-    "h": 1288,
-    "hash": "3636666672723232",
-    "hash2": "3636666672723232",
-    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAUAA4BaJQBOgBugdBAA+UiCxo/aiCooRHDOFgpQsNeGmQAAAA=="
-  },
   "https://upload.wikimedia.org/wikipedia/commons/8/82/Egon_Schiele_-_Mann_mit_Melone_und_Zwicker_-_1910.jpeg": {
     "base": "assets/img/a03cc936a08e7a53",
     "widths": [
@@ -3173,17 +3121,6 @@
     "hash": "a74f9b2bfbb5fb43",
     "hash2": "a74f9b2bfbb5fb43",
     "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoIAAYAA4BaJZgCdAD0vP9HK6AA/I5Xzl0TZ8Q7NJ6Vxd+znsbVLnVz5ZChVuttkD0PrsAA"
-  },
-  "https://upload.wikimedia.org/wikipedia/commons/1/12/Gwen_John_-_Cat_Cleaning_Itself.jpg": {
-    "base": "assets/img/0f2dd4190bd19088",
-    "widths": [
-      220
-    ],
-    "w": 220,
-    "h": 314,
-    "hash": "3876c48094b47633",
-    "hash2": "3876c48094b47633",
-    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoGAAgAA4BaJZQC/OEfaEhQAP60C7AET914XInzzSe1FAAA"
   },
   "https://upload.wikimedia.org/wikipedia/commons/9/91/Gwen_John_-_Cat%2C_lot-5978144.jpg": {
     "base": "assets/img/afaf817dfb6ebfde",
@@ -4554,18 +4491,6 @@
     "hash2": "ce9ccccecacec692",
     "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoFAAgAA4BaJQBOgBneURmuAAD9oVPgp2fMbIrReQiWewwmCFpXQAAA"
   },
-  "https://upload.wikimedia.org/wikipedia/commons/0/0f/Balthus_King_of_cats.jpg": {
-    "base": "assets/img/03636a4776a39444",
-    "widths": [
-      480,
-      813
-    ],
-    "w": 813,
-    "h": 1066,
-    "hash": "f0f9e9e9e9e9f933",
-    "hash2": "d96c766666667c39",
-    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoGAAgAA4BaJZQCw7Ddk56JgAD+CbsTioyvRaTX0TZdqEOtIVZAAA=="
-  },
   "https://upload.wikimedia.org/wikipedia/commons/3/37/K%C3%B6lner_Kartause%2C_Ofenkachel_um_1500_-_Motiv_Maria_Verk%C3%BCndigumg.jpg": {
     "base": "assets/img/6433efb24ea41b53",
     "widths": [
@@ -4627,19 +4552,6 @@
     "hash": "c0a0a490b42c0c00",
     "hash2": "c0a0a490b42c0c00",
     "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAYAA4BaJaQAAqrjdeQAAP3rx8bZW6gzx7ZOsRxe90L1Vl1ZAAAA"
-  },
-  "https://upload.wikimedia.org/wikipedia/commons/8/8b/Salvador_Dali_A_(Dali_Atomicus)_09633u.jpg": {
-    "base": "assets/img/6e70ba2056c4c216",
-    "widths": [
-      480,
-      960,
-      1400
-    ],
-    "w": 3703,
-    "h": 2971,
-    "hash": "0f0f0b8c26231313",
-    "hash2": "0f0f0b8c26231313",
-    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACQAQCdASoIAAYAA4BaJaQAAp0iE0AA/u0IerBgeoUgXDREzza6yOiQAAA="
   },
   "https://upload.wikimedia.org/wikipedia/commons/8/80/Lisa-Larson-potter-at-Gustavsberg-391767756842.jpg": {
     "base": "assets/img/4542cbeca8ce5764",
@@ -7279,18 +7191,6 @@
     "hash2": "9c9899b5352b4f6f",
     "lq": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoGAAgAA4BaJaACdAEWl7Wh6gAA98sD0csYPy/gf+H5xmCq79EuFJFFX160tmy2/lCRNt9dgAA="
   },
-  "https://upload.wikimedia.org/wikipedia/commons/1/12/Louis_wain_cats.png": {
-    "base": "assets/img/bae01a234d0331e4",
-    "widths": [
-      480,
-      500
-    ],
-    "w": 500,
-    "h": 1011,
-    "hash": "53536766a7842e86",
-    "hash2": "53536766a7842e86",
-    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoEAAgAA4BaJaACdAD0MWUgAP5V7xbnIzNUHYfME0p7r1qUcN8M7VryfAAAAA=="
-  },
   "https://upload.wikimedia.org/wikipedia/commons/c/cd/Marc_-_Two_Cats%2C_1911%2C_Hoberg%2C_Jansen_152.jpg": {
     "base": "assets/img/c9014e7aa6c1a974",
     "widths": [
@@ -7639,17 +7539,6 @@
     "hash2": "ba1e2f3b96d753fc",
     "lq": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoGAAgAA4BaJZACdAD0QWowWADeZ5BNCZB0aXqMyQ6mJcWiRYgn7I7wMtKATQ+9fjxUZI/QtEdAAA=="
   },
-  "https://upload.wikimedia.org/wikipedia/en/1/1e/Frida_Kahlo_%28self_portrait%29.jpg": {
-    "base": "assets/img/a8965511d5d6c525",
-    "widths": [
-      277
-    ],
-    "w": 277,
-    "h": 360,
-    "hash": "8262ca8c8c0e73b1",
-    "hash2": "8262ca8c8c0e73b1",
-    "lq": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoGAAgAA4BaJZgCdAEXfj9i3AAA/qlbKN8K2aYFEEs1mZK6+2cHTTygoU/u2HbdVMa4vY73bgIs8gAA"
-  },
   "https://upload.wikimedia.org/wikipedia/commons/9/96/Black_Cat_Hissing_20th_century_print_in_high_resolution_by_Hiroaki_Takahashi._Original_from_The_Los_Angeles_County_Museum_of_Art._Digitally_enhanced_by_rawpixel._%2851126494334%29.jpg": {
     "base": "assets/img/12c85fe28d8ebcf0",
     "widths": [
@@ -7662,28 +7551,6 @@
     "hash": "89dc38fcf8f0ca97",
     "hash2": "89dc38fcf8f0ca97",
     "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoIAAUAA4BaJZQCdAEfbcW2TgAA/sqsXrc8qqs+r9GvMI4zNp0zHtdZKVGsRnT8HEaAAA=="
-  },
-  "https://upload.wikimedia.org/wikipedia/en/c/c3/Dora_Maar_Au_Chat.jpg": {
-    "base": "assets/img/14c45a7ff8016a32",
-    "widths": [
-      270
-    ],
-    "w": 270,
-    "h": 368,
-    "hash": "f0e8e9a8e8f8a8ae",
-    "hash2": "f0e8e9a8e8f8a8ae",
-    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoGAAgAA4BaJZQC7AD0iHK0AAD2v2dU1ssRM9dfIW9DymY3IN///5GHCLPkHHrYyMAAAA=="
-  },
-  "https://upload.wikimedia.org/wikipedia/en/c/ce/25_Cats_Name_Sam_and_One_Blue_Pussy_%28book_cover%29.jpg": {
-    "base": "assets/img/c5ee875fc30071ea",
-    "widths": [
-      214
-    ],
-    "w": 214,
-    "h": 300,
-    "hash": "0f3773701e1e1e1e",
-    "hash2": "0f3773701e1e1e1e",
-    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADwAQCdASoGAAgAA4BaJQBOgCPQTe6uaYAA2/hngwC4TFhhME5Ez5AAAAA="
   },
   "https://upload.wikimedia.org/wikipedia/commons/7/78/%22I_fell_in_love_with_a_lovely_kitten%22_--_Louis_Wain.jpg": {
     "base": "assets/img/c1f5b555106aca6d",
@@ -9580,18 +9447,6 @@
     "hash2": "0000004000040010",
     "lq": "data:image/webp;base64,UklGRioAAABXRUJQVlA4IB4AAABQAQCdASoGAAgAA4BaJZwABAAAAP70ZH5ozJb9wAA="
   },
-  "https://upload.wikimedia.org/wikipedia/commons/3/36/Shireen_and_her_friends_-_pages_from_the_life_of_a_persian_cat_%28IA_shireenherfriend00stab%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
-    "base": "assets/img/89ad5a5260475ced",
-    "widths": [
-      480,
-      500
-    ],
-    "w": 500,
-    "h": 679,
-    "hash": "d01b0d8f170f8ee0",
-    "hash2": "d01b0d8f170f8ee0",
-    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoGAAgAA4BaJYgCdAD5jH/quzgA/uoxZdoWltqfj9u2QADqus+CN32GETq5WiuluAAAAA=="
-  },
   "https://upload.wikimedia.org/wikipedia/commons/b/b6/Franz_Marc-Two_Cats%2CBlue_and_Yellow%28Zwei_Katzen%2C_blau_und_gelb%29_%281912%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
     "base": "assets/img/678f09ad6454ce88",
     "widths": [
@@ -9869,17 +9724,6 @@
     "hash2": "2172795c369cdc79",
     "lq": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoHAAgAA4BaJYwCdAED/DofjAD+6KFiyLhvTX4l1Ft1s89/R4rk+1cUKtbAe17rpEhwqt83tIgtAMAA"
   },
-  "https://upload.wikimedia.org/wikipedia/commons/7/75/Steinlen_-_pierrot-et-le-chat-xx-private-collection.jpg": {
-    "base": "assets/img/32bebb3063ac6cbd",
-    "widths": [
-      280
-    ],
-    "w": 280,
-    "h": 383,
-    "hash": "1b0f33b323e3d3b4",
-    "hash2": "1b0f33b323e3d3b4",
-    "lq": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoGAAgAA4BaJQBOgButoE8ogAD+0lb7zcdqe7UzGLygSBRc48DcclxXEn/Rk7mGVn2Eai9TkG0AAA=="
-  },
   "https://upload.wikimedia.org/wikipedia/commons/e/ec/Cowl%2C_Jane%2C_Miss%2C_with_Buzzer_the_cat%2C_portrait_photograph.jpg": {
     "base": "assets/img/4f6e730a9600cbee",
     "widths": [
@@ -10152,18 +9996,6 @@
     "hash": "911584b9a5665381",
     "hash2": "911584b9a5665381",
     "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoGAAgAA4BaJYgCdAD0tquIAAD3jL1kfcjJAH4GsZKQbEtmLjCaS2yyd+sAAA=="
-  },
-  "https://uploads2.wikiart.org/images/pablo-picasso/cat-catching-a-bird-1939.jpg": {
-    "base": "assets/img/0d8f33a336f7fdb1",
-    "widths": [
-      480,
-      723
-    ],
-    "w": 723,
-    "h": 573,
-    "hash": "3d3bf8fcd2da9a7a",
-    "hash2": "3d3bf8fcd2da9a7a",
-    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoIAAYAA4BaJQBOgCKUmOOSA8AAzjMusHwSiW7tF7mK3sbZpPkAVeUHCoeCPe/JeOAAAA=="
   },
   "https://images.metmuseum.org/CRDImages/es/original/DP-1143-006.jpg": {
     "base": "assets/img/651f77862fc445b8",
@@ -10601,19 +10433,6 @@
     "hash2": "f179e8c1d1cbc1fb",
     "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoIAAYAA4BaJaQAAud1413AAP5rYaH9YsrZccjHf/I4WSEzeeevQTNZQAAAAA=="
   },
-  "https://waralbum.ru/wp-content/uploads/2021/04/Stalingrad_author-J_Rumkin.jpg": {
-    "base": "assets/img/e5c6732ae5950612",
-    "widths": [
-      480,
-      960,
-      1400
-    ],
-    "w": 3000,
-    "h": 1923,
-    "hash": "7c58dc9eb1c4c4e4",
-    "hash2": "7c58dc9eb1c4c4e4",
-    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAUAA4BaJaQAAp10rxAAAPKnvXNgJJIbyeBgUNl0SrsAi4AAAA=="
-  },
   "https://media.tate.org.uk/art/images/work/T/T07/T07346_10.jpg": {
     "base": "assets/img/588f1874002b9c89",
     "widths": [
@@ -10626,19 +10445,6 @@
     "hash": "b6b4b6973637b72c",
     "hash2": "b6b4b6973637b72c",
     "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAABQAQCdASoIAAUAA4BaJQBOgCgAAP7vgnTD7kjcHvpZkWBfe+DjeteAAAA="
-  },
-  "https://www.artchive.com/wp-content/uploads/2024/08/The-Mediterranean-Cat-Balthus-1949-.jpg": {
-    "base": "assets/img/349a87dcf4ec2e7c",
-    "widths": [
-      480,
-      960,
-      1400
-    ],
-    "w": 2169,
-    "h": 1453,
-    "hash": "0303450b0b430f0b",
-    "hash2": "0303450b0b430f0b",
-    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAUAA4BaJagCdADbIP9MAAD2fMCT1RGfCEUPZOssFcgEYcflFzAA"
   },
   "https://upload.wikimedia.org/wikipedia/commons/d/d4/Oscar%2C_cat_from_the_German_ship_%27Bismarck%27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
     "base": "assets/img/887f35f9fe9d1b07",
@@ -10690,17 +10496,6 @@
     "hash2": "479b9b1b27c96936",
     "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoIAAUAA4BaJZgCdADx+IsgAOJiyZS7Q1X3m2IzoTqlTLweZ6lFzNUMpn1gAA=="
   },
-  "https://www.fondation-giacometti.fr/images/182411_01.jpg": {
-    "base": "assets/img/99f4cf67305d852e",
-    "widths": [
-      400
-    ],
-    "w": 400,
-    "h": 266,
-    "hash": "07072d2dd4d60300",
-    "hash2": "07072d2dd4d60300",
-    "lq": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoIAAUAA4BaJaQAAudD/C4AAP7F+ujqLrQpdemAAAA="
-  },
   "https://www.artchive.com/wp-content/uploads/2024/08/neighbourly-advice-leonora-carrington-1947.jpg": {
     "base": "assets/img/a3d4ab178c5db6e4",
     "widths": [
@@ -10734,18 +10529,6 @@
     "hash": "696e9a989c989b8a",
     "hash2": "696e9a989c989b8a",
     "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoGAAgAA4BaJZACdAD0SR22/QAA/iUndlDRqeYKOoaqOn/OM3E5RQVmLtLips8F59VgAA=="
-  },
-  "https://uploads4.wikiart.org/images/remedios-varo/sympathy-1955.jpg": {
-    "base": "assets/img/c477b9b45ea42112",
-    "widths": [
-      480,
-      699
-    ],
-    "w": 699,
-    "h": 800,
-    "hash": "0eb0a095260e1003",
-    "hash2": "0eb0a095260e1003",
-    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoHAAgAA4BaJZgCdAD0eqr5AAD+8N+vgBzNKjuENJERLPfXkVL/docoJAqTsLc64AA="
   },
   "https://upload.wikimedia.org/wikipedia/commons/1/1d/Patricia-Highsmith-1962.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
     "base": "assets/img/505d0c15cc43375b",
@@ -11042,19 +10825,6 @@
     "hash2": "26123268c4c3a330",
     "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoFAAgAA4BaJQBOgB6Vh1WgAN5XHjh2In8Fpq4e3BPRhNJOZRRPwAAA"
   },
-  "https://upload.wikimedia.org/wikipedia/commons/e/e2/I_AM_A_CAT_by_K._Ando.jpg": {
-    "base": "assets/img/7f87d31f7710601d",
-    "widths": [
-      480,
-      960,
-      1400
-    ],
-    "w": 2305,
-    "h": 3294,
-    "hash": "4d4d497171696565",
-    "hash2": "2d0d497161696567",
-    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoGAAgAA4BaJQBOgB5vjIMYAPzMMtUaqamu1k6a/SkFkvcsSTdwAAAA"
-  },
   "https://upload.wikimedia.org/wikipedia/commons/7/7c/Kuroki_Neko_by_Hishida_Shunso.jpg": {
     "base": "assets/img/981375d5b998cec3",
     "widths": [
@@ -11091,18 +10861,6 @@
     "hash": "3d0d66262f1b3096",
     "hash2": "3d0d66262f1b3096",
     "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoIAAYAA4BaJQBOgB5vWRwAAP6pOTqApo7G05rZxmBZkOzYSGFS5RRYCXAAAA=="
-  },
-  "https://uploads6.wikiart.org/images/lucian-freud/girl-with-a-kitten-1947.jpg": {
-    "base": "assets/img/855dba75b871e802",
-    "widths": [
-      480,
-      649
-    ],
-    "w": 649,
-    "h": 861,
-    "hash": "e1c0848c9c3869b0",
-    "hash2": "e1c0848c9c3869b0",
-    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoGAAgAA4BaJQBOgBuSKncAAP2uWSt9xerPSJTXxBhIxy26nHHqr7W/tZuYiHE1mlAAAA=="
   },
   "https://upload.wikimedia.org/wikipedia/commons/7/76/Japan_2024-05-10_%2853891878157%29.jpg": {
     "base": "assets/img/82afc20de258b0ad",
@@ -11142,19 +10900,6 @@
     "hash2": "2f23d3d3c0c4c8c5",
     "lq": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoIAAgAA4BaJZgCdAD0me3tJgAA/Sk/4TNHXJW8jda7hnP3s/CVyvOD7e9C5sRL0ISxOSdVaWixUrSaRIAAAA=="
   },
-  "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/50430000959/4C21123.jpg": {
-    "base": "assets/img/d383d4c3f7afac4f",
-    "widths": [
-      480,
-      960,
-      1000
-    ],
-    "w": 1000,
-    "h": 871,
-    "hash": "374a4c65616ae0e1",
-    "hash2": "4e4465617368e0e1",
-    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoIAAcAA4BaJaQAAlwm4sQAAP6bAq1qzM8HTEzRqA3peQLhbLwVJ2Gk0t0Lc9AAAAA="
-  },
   "https://upload.wikimedia.org/wikipedia/commons/a/ab/Orangey_with_Audrey_Hepburn_in_Breakfast_at_Tiffanys.jpg": {
     "base": "assets/img/c42aa54ea70e65cf",
     "widths": [
@@ -11192,5 +10937,1678 @@
     "hash": "b694948ccc8ce8e8",
     "hash2": "b694948ccc8ce8e8",
     "lq": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACwAQCdASoGAAgAA4BaJZgCdADW/hAAAP7EV9qo7LZOAyp+Du+T6FSotWINGdIU/Wm83WT5P0vc7hR1hBJaAAAA"
+  },
+  "https://images.metmuseum.org/CRDImages/eg/original/26.8.121a.jpg": {
+    "base": "assets/img/32d99c693a811427",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2000,
+    "h": 690,
+    "lq": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACQAQCdASoIAAMAA4BaJQBOgBaSKAAA23c6DiURrlFaYUUNIAA=",
+    "hash": "a98cd4d4cc8c8852",
+    "hash2": "8a8c94948c9c8c28"
+  },
+  "https://images.metmuseum.org/CRDImages/eg/original/26.8.121a_EGDP014315.jpg": {
+    "base": "assets/img/3d9a6ea927a047cc",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2000,
+    "h": 1125,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAQAA4BaJYwAAu18ucrQAP62XPELAuVpf2BtYRnPuT9EYAA=",
+    "hash": "050fd1d0d0922707",
+    "hash2": "050fd1d0d0922707"
+  },
+  "https://openaccess-cdn.clevelandart.org/1973.29/1973.29_print.jpg": {
+    "base": "assets/img/a65aaa7813ef95fd",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2076,
+    "h": 2595,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoGAAgAA4BaJaQAAp0iaXgA/tFYAsEi//QpSjX20+EGMFGCn+6JAAAA",
+    "hash": "cf77b3b1f9b97860",
+    "hash2": "5572b3b9b9b97860"
+  },
+  "https://images.metmuseum.org/CRDImages/eg/original/LC-2017_34_EGDP026053.jpg": {
+    "base": "assets/img/d945e3ba0b9e45eb",
+    "widths": [
+      480,
+      960,
+      1200
+    ],
+    "w": 1200,
+    "h": 1200,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAwAQCdASoIAAgAA4BaJaQAA3AA/vNAC9rlAOTzWoP/zFUoDwuLTgv1FvmUs04Zb5z8y7bAAAA=",
+    "hash": "00484c8e26a68448",
+    "hash2": "40b034389c8dcc58"
+  },
+  "https://openaccess-cdn.clevelandart.org/2021.130/2021.130_alt0_print.jpg": {
+    "base": "assets/img/e6dcf4c2061eb7e9",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2265,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoIAAUAA4BaJZwAApez2+AA/umvrEwcMKvFynX1YnZRojgA",
+    "hash": "050b50d45454f933",
+    "hash2": "07d4d4d454d8f903"
+  },
+  "https://openaccess-cdn.clevelandart.org/2021.130/2021.130_alt1_print.jpg": {
+    "base": "assets/img/9609a636b0fc647f",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2268,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoIAAUAA4BaJZwAAxZckSYAAP7pr6Jajw5hbiJd5MLK3RwA",
+    "hash": "050bccd444ccf82b",
+    "hash2": "0dccd4c46cccf90b"
+  },
+  "https://openaccess-cdn.clevelandart.org/2021.130/2021.130_alt2_print.jpg": {
+    "base": "assets/img/4094f9c55dec7a15",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2268,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAUAA4BaJZwAApxXsxQAAP7pr6JoWWVeLjMRRB67oAIAAAA=",
+    "hash": "0503d8dcdc5cf871",
+    "hash2": "03d8dcdc5cdcf813"
+  },
+  "https://images.metmuseum.org/CRDImages/eg/original/04.2.598_EGDP014402.jpg": {
+    "base": "assets/img/a5d712662c29d644",
+    "widths": [
+      480,
+      960,
+      1336
+    ],
+    "w": 1336,
+    "h": 2000,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoFAAgAA4BaJZQCdAEOuwSAAP7N/2wkr3GFbTXFK2MvQxo7eAAAAA==",
+    "hash": "ff6f0d253032b009",
+    "hash2": "ff6f0d253032b009"
+  },
+  "https://images.metmuseum.org/CRDImages/eg/original/04.2.598_EGDP014403.jpg": {
+    "base": "assets/img/26701a668e323884",
+    "widths": [
+      480,
+      960,
+      1336
+    ],
+    "w": 1336,
+    "h": 2000,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoFAAgAA4BaJZQCdAD0rrvIAAD+296kktlZhWqwW5OByZx6l5O14kAA",
+    "hash": "ff730d397969e114",
+    "hash2": "ff730d397969e114"
+  },
+  "https://images.metmuseum.org/CRDImages/eg/original/04.2.598_EGDP014401.jpg": {
+    "base": "assets/img/b41e9ccb6b060b78",
+    "widths": [
+      480,
+      960,
+      1336
+    ],
+    "w": 1336,
+    "h": 2000,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoFAAgAA4BaJZQCdAEOZ5OAAP7awuSdAAVyxr8cX0jN39mMcU9gAA==",
+    "hash": "bf1f4f6331686806",
+    "hash2": "bf1f4f6331686806"
+  },
+  "https://openaccess-cdn.clevelandart.org/2021.130/2021.130_alt3_print.jpg": {
+    "base": "assets/img/61916a0d32a30a7c",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2290,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAUAA4BaJZwAAubM2nUAAP7sm+DwyPdfMmh5jlZbybN6AAA=",
+    "hash": "011765ccc4ccf871",
+    "hash2": "07e1ccc4c4ccf871"
+  },
+  "https://openaccess-cdn.clevelandart.org/2021.130/2021.130_alt4_print.jpg": {
+    "base": "assets/img/8e6a1ae161544e33",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 3161,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACQAQCdASoIAAcAA4BaJZwAAudZsSAA/vMM8g12Zrong4nA+gpGbAAAAAA=",
+    "hash": "3368ccccc4cccce8",
+    "hash2": "68ccccc4cccccce8"
+  },
+  "https://openaccess-cdn.clevelandart.org/2021.130/2021.130_alt5_print.jpg": {
+    "base": "assets/img/81cce96c4d2ff282",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 3169,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAAAQAgCdASoIAAcAA4BaJYwCw7Efbno675wAAP7u75/PtonGMS7ELRYVO8ZQEbu2v+cQIAAA",
+    "hash": "230d8cdcc4c4ece8",
+    "hash2": "4c8cd4c4c4c4e8ec"
+  },
+  "https://openaccess-cdn.clevelandart.org/1948.477/1948.477_alt0_print.jpg": {
+    "base": "assets/img/013c6b2536bad733",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2568,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoIAAYAA4BaJYwCdADcMMXBgADiKPb45ag0M3QJhufGxgPy1gRI5sFRXojg6nMfTR0sAA==",
+    "hash": "0f373771c9ccccf1",
+    "hash2": "0f373771c9ccccf1"
+  },
+  "https://openaccess-cdn.clevelandart.org/1948.477/1948.477_alt1_print.jpg": {
+    "base": "assets/img/f72cea5e6837583e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2679,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAYAA4BaJYwCdAD0jIEUQADN/fFDXVAbJjLo+3jOiZiAE9zfr6HxIlvWGij5AAA=",
+    "hash": "1f5f6969cdccdcf1",
+    "hash2": "1f5f6969cdccdcf1"
+  },
+  "https://openaccess-cdn.clevelandart.org/1948.477/1948.477_alt2_print.jpg": {
+    "base": "assets/img/947528fda122744d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2595,
+    "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACQAQCdASoIAAYAA4BaJQBOgBrNJtAA4ij2+OWoMvLdSSp2+syO9FkTGLzYEej7nZiODqcx9NHSwAAA",
+    "hash": "0f373771c9ccdcf1",
+    "hash2": "0f373771c9ccdcf1"
+  },
+  "https://openaccess-cdn.clevelandart.org/1948.477/1948.477_alt3_print.jpg": {
+    "base": "assets/img/373781744d117f19",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2758,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoIAAYAA4BaJZQCw7D0YtQY7wAA/s4Bv5svXKidouuuPc1gCTRM4wnCpWzKmo+4gAA=",
+    "hash": "0f0f0f4cf0e869f0",
+    "hash2": "0f0f0dd4f8696070"
+  },
+  "https://openaccess-cdn.clevelandart.org/1948.477/1948.477_alt4_print.jpg": {
+    "base": "assets/img/4bbdfbe2e9a1b7e9",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2924,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAcAA4BaJZwAAp2cVMOwAAD+7Q9TN51epKK0sSS1UfRQYBVre5CvV3yvgZBQAAA=",
+    "hash": "0f2f4dccccc8e8e8",
+    "hash2": "2f4dccccccd8e8e1"
+  },
+  "https://openaccess-cdn.clevelandart.org/1948.477/1948.477_alt5_print.jpg": {
+    "base": "assets/img/ccacc4bda59a85a4",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1792,
+    "h": 1536,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoIAAcAA4BaJZQCw7EOu5ErQAD+7ODza0zUcyu9e6lcPKEUS6LcCmZTnoaWrAikNR4AAA==",
+    "hash": "000024304cce6c70",
+    "hash2": "000024304cce6c70"
+  },
+  "https://openaccess-cdn.clevelandart.org/1949.195/1949.195_alt0_print.jpg": {
+    "base": "assets/img/100ed309bd71c31b",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 3355,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAgAA4BaJZwAAuc/kZS0AP7N/jRTB1CWqJMCq9xhH3AAAAA=",
+    "hash": "170b3b6979697117",
+    "hash2": "5b3b696971697197"
+  },
+  "https://openaccess-cdn.clevelandart.org/1949.195/1949.195_alt1_print.jpg": {
+    "base": "assets/img/1df00c356cac0c44",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 3352,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACQAQCdASoIAAgAA4BaJZwAAuaeu+AA/s99lm6WGn3618KjXNBXwMwAAAA=",
+    "hash": "0f3b336979797137",
+    "hash2": "3b33697979797197"
+  },
+  "https://openaccess-cdn.clevelandart.org/1949.195/1949.195_alt2_print.jpg": {
+    "base": "assets/img/f3a30d7b9cf3e557",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 3073,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoIAAcAA4BaJZwAAubQjtsAAP6+h6PhY3ork20BbSkUAAAA",
+    "hash": "1f2f336971717933",
+    "hash2": "2b33696971697193"
+  },
+  "https://openaccess-cdn.clevelandart.org/1949.195/1949.195_alt3_print.jpg": {
+    "base": "assets/img/4cb5f7f59cf60796",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 3261,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAgAA4BaJaQAAudetrAAAP6+iYRnK/KF3AbgLtf1r93aRLcAAAAA",
+    "hash": "2f173369716971b3",
+    "hash2": "0f33696971697196"
+  },
+  "https://openaccess-cdn.clevelandart.org/1949.195/1949.195_alt4_print.jpg": {
+    "base": "assets/img/2b3c4763bc770e94",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 3279,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoIAAgAA4BaJaQAApt5gRhgAP6msM6rVKDZJ+OhM/PejaEQhNgqIAqSESAAAA==",
+    "hash": "2f17296d7169799f",
+    "hash2": "4f33696571687997"
+  },
+  "https://openaccess-cdn.clevelandart.org/1942.776/1942.776_alt0_print.jpg": {
+    "base": "assets/img/5f8a8b96c87acd48",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2198,
+    "h": 2076,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAgAA4BaJaQAAp3PGon0AN//zdC4l5Xr8uuy80QoWShmlUAAAA==",
+    "hash": "2759d9b162626869",
+    "hash2": "5959b97162626969"
+  },
+  "https://openaccess-cdn.clevelandart.org/1942.776/1942.776_alt1_print.jpg": {
+    "base": "assets/img/489a9d00a684340c",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2190,
+    "h": 2190,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAgAA4BaJaQAAp1QBAuwAP5oHo0dfn/Jjh5qDCGkB2MfOm0giwAA",
+    "hash": "8db2b3b3b2b2b2b3",
+    "hash2": "b2b2b2b3b2b2b232"
+  },
+  "https://openaccess-cdn.clevelandart.org/1949.195/1949.195_alt5_print.jpg": {
+    "base": "assets/img/5c44716cf87d59dd",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1536,
+    "h": 2047,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoGAAgAA4BaJQBOgCHcy9AgAP7xhkM0UaTMMr0dxQU5ibk8K5O91q6ZO9GksAAA",
+    "hash": "20081a1899e87821",
+    "hash2": "2018181cd9e87813"
+  },
+  "https://images.metmuseum.org/CRDImages/eg/original/DP-38628-005.jpg": {
+    "base": "assets/img/2f859ea92401953c",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3108,
+    "h": 4000,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoGAAgAA4BaJaQAAp21FH+AAP1TYXC1vPN1prstfDbd53U5NsAAAA==",
+    "hash": "030c0c7979e9c0a4",
+    "hash2": "030c0c7979e9c0a4"
+  },
+  "https://images.metmuseum.org/CRDImages/eg/original/DP-38628-004.jpg": {
+    "base": "assets/img/39fd23c2d7c9cb8e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2762,
+    "h": 4000,
+    "lq": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoGAAgAA4BaJaQAAp0hYoAA8qNIuT8t8NirRTC0vKAAAA==",
+    "hash": "012832323171f0cc",
+    "hash2": "012832323171f0cc"
+  },
+  "https://images.metmuseum.org/CRDImages/eg/original/DP245141.jpg": {
+    "base": "assets/img/93f80a671b1cd409",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3000,
+    "h": 4000,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoGAAgAA4BaJaQAApp3HYAA/s9xQhmTHHKo4XM5Zx0GqWAqgAAAAA==",
+    "hash": "0009197979e0f83b",
+    "hash2": "0219397971e0f833"
+  },
+  "https://images.metmuseum.org/CRDImages/eg/original/DP-38628-002.jpg": {
+    "base": "assets/img/029ab3649c23c7c7",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3022,
+    "h": 4000,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoGAAgAA4BaJaQAAp0f6QAA8p7MMEbCdrf6Jtwq8WyIUgAA",
+    "hash": "071732323333b0cc",
+    "hash2": "071732323333b0cc"
+  },
+  "https://images.metmuseum.org/CRDImages/eg/original/DP-38628-003.jpg": {
+    "base": "assets/img/6ac3743e86b5a915",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2924,
+    "h": 4000,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoGAAgAA4BaJaQAAud2hGtxwAD9nU018kRgKo/8np41N6b75AAAAA==",
+    "hash": "070387c171787886",
+    "hash2": "070387c171787886"
+  },
+  "https://images.metmuseum.org/CRDImages/eg/original/DP-38628-006.jpg": {
+    "base": "assets/img/a114082422f84d3e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3297,
+    "h": 4000,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoHAAgAA4BaJZwAApzUIJEAAP62VcHEyTeirXnElB8fMWG7vmB88cnFAvvhIQAA",
+    "hash": "8e96dce8c9f0f0e0",
+    "hash2": "96d4cce9c9f0f0e0"
+  },
+  "https://openaccess-cdn.clevelandart.org/1952.96/1952.96_alt0_print.jpg": {
+    "base": "assets/img/fa9c54bca304ac3c",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2114,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoFAAgAA4BaJaQAAp2XgRtgAPyrB5UTszyvyQ8sAa698rEG5kAAAA==",
+    "hash": "137361f1623230e0",
+    "hash2": "137361f1623230e0"
+  },
+  "https://openaccess-cdn.clevelandart.org/1917.998/1917.998_alt0_print.jpg": {
+    "base": "assets/img/52bade4976fac259",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2218,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoFAAgAA4BaJZwAAp3GHaQAAOJu92JbboOZzVJ/AUfq9+vP8AA=",
+    "hash": "ef676363e3e3e3e3",
+    "hash2": "ef676363e3e3e3e3"
+  },
+  "https://openaccess-cdn.clevelandart.org/1917.998/1917.998_alt1_print.jpg": {
+    "base": "assets/img/03905ac26a8af77d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2624,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoGAAgAA4BaJZwAAp3MMoKQAM4+QCqFcbfs6xSr6jEn84zivPTrsGIvstgIAA==",
+    "hash": "f7b3b373e3c9c9c1",
+    "hash2": "f7b3b373e3c9c9c1"
+  },
+  "https://images.metmuseum.org/CRDImages/eg/original/DP244252.jpg": {
+    "base": "assets/img/64cb71a4c6b2ef4d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3000,
+    "h": 4000,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACQAQCdASoGAAgAA4BaJaQAAuWsOoAA/trEXfYSBZ/g582gHOyVa15d2F3faLAAAAA=",
+    "hash": "4509266179f8f0e3",
+    "hash2": "0924637179f8f0a7"
+  },
+  "https://openaccess-cdn.clevelandart.org/1952.96/1952.96_alt1_print.jpg": {
+    "base": "assets/img/94c8f36b90f2d7e3",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2254,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAADQAQCdASoFAAgAA4BaJaQAA1ULs3OmAAD+peSV8Qe/qvrAAAA=",
+    "hash": "1959e93179391852",
+    "hash2": "38b89ae2d2f132b6"
+  },
+  "https://openaccess-cdn.clevelandart.org/1952.96/1952.96_alt2_print.jpg": {
+    "base": "assets/img/39b32e34f118fade",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2260,
+    "lq": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoIAAUAA4BaJaQAAp2JLaAA/XZ1ZvP4UiZ3s1j+A1gAAA==",
+    "hash": "01c4cccc68713103",
+    "hash2": "c5cccccc69487071"
+  },
+  "https://openaccess-cdn.clevelandart.org/1952.96/1952.96_alt3_print.jpg": {
+    "base": "assets/img/7e741f4a82e82afb",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1907,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAADQAQCdASoEAAgAA4BaJaQAAvd8bh2iAAD8d4rPzLfL4I7lBIR3gAAA",
+    "hash": "246360b0b172d064",
+    "hash2": "246360b0b172d064"
+  },
+  "https://images.metmuseum.org/CRDImages/ao/original/vs65_266_6.jpg": {
+    "base": "assets/img/bb58f681fdeadbca",
+    "widths": [
+      480,
+      960,
+      1340
+    ],
+    "w": 1340,
+    "h": 1610,
+    "lq": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoHAAgAA4BaJaQAAp2Nam0AAP63kKDtbMlRxgzIC8KlsaHoNvoM46GJQHO0pLLsLqgMNwmqAAA=",
+    "hash": "a426c19d9c9e98d1",
+    "hash2": "a466c99cdc9a98d1"
+  },
+  "https://openaccess-cdn.clevelandart.org/1950.567/1950.567_alt1_print.jpg": {
+    "base": "assets/img/acb26d11c02087ed",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 3083,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAgCdASoIAAcAA4BaJZQCw7D0pzbyE7zAAP2/9kkAgYN4e6/qaZO3BsDXOxRzcYGzWpB+j6YAAA==",
+    "hash": "330f9e172317cc49",
+    "hash2": "0d0e17332396cc29"
+  },
+  "https://openaccess-cdn.clevelandart.org/1950.567/1950.567_alt0_print.jpg": {
+    "base": "assets/img/a82603fec59daccd",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 3248,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoIAAgAA4BaJQBYdiPSGrcAAP6qFGYHI8RxBV42wmcUVEKVqHEUQFU79X2xkwmAAAA=",
+    "hash": "330f072f87cc4c33",
+    "hash2": "090f072f87cccc33"
+  },
+  "https://openaccess-cdn.clevelandart.org/1950.567/1950.567_alt2_print.jpg": {
+    "base": "assets/img/7a487277048bf49f",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1536,
+    "h": 1955,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoGAAgAA4BaJQBOja/gT/fBw9BwAP6rAFqOqEVXMQK9IlmWoGWqCEwUF0iaAbvvIAA=",
+    "hash": "7cb671e0efde789b",
+    "hash2": "7cb671e0efde789b"
+  },
+  "https://openaccess-cdn.clevelandart.org/1989.185/1989.185_alt0_print.jpg": {
+    "base": "assets/img/4aa9aebdd2355b06",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2673,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoGAAgAA4BaJaQAAp122sYVAAD+5tCwGw96StM1HUMCeL+kfzzWiOz0AAA=",
+    "hash": "1a4f0e9a8e9e161f",
+    "hash2": "4f469e9a8e16061f"
+  },
+  "https://openaccess-cdn.clevelandart.org/1964.255/1964.255_alt0_print.jpg": {
+    "base": "assets/img/58e47922fa943160",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2597,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAABwAQCdASoIAAYAA4BaJZwAApbYRgD+ScxAVhtechQ962t1iIwEAAAA",
+    "hash": "03030f17064e2a13",
+    "hash2": "03030f17064e2a13"
+  },
+  "https://openaccess-cdn.clevelandart.org/1964.255/1964.255_alt2_print.jpg": {
+    "base": "assets/img/66e137a28405f26c",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2383,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACQAQCdASoIAAYAA4BaJZwAAuV+abAA/olK1yATyuyZKwZfUlopW/Q+AAA=",
+    "hash": "030317070f161a07",
+    "hash2": "030317070f161a07"
+  },
+  "https://openaccess-cdn.clevelandart.org/1964.255/1964.255_alt1_print.jpg": {
+    "base": "assets/img/d19a26d354d89f51",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2868,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAcAA4BaJZwAAqsT0UUAAP6H6L3evF5MpGPDw7rgpy5mqWAAAA==",
+    "hash": "0101070714cec60f",
+    "hash2": "0101070714cec60f"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DT272985.jpg": {
+    "base": "assets/img/88f00b71b999b134",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3017,
+    "h": 3701,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoHAAgAA4BaJYgCdAD0etkAoAD+hVSettksIAuF3lQBfC8vellSNWksTwAAAA==",
+    "hash": "e097dececb9bd6cd",
+    "hash2": "e097dececb9bd6cd"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/SC65324.jpg": {
+    "base": "assets/img/71fa0888058dd21f",
+    "widths": [
+      480,
+      768
+    ],
+    "w": 768,
+    "h": 512,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAAAwAQCdASoIAAUAA4BaJZQAA3AA/vPx1kuFrGSuEY8AUkvH5fCsAAAA",
+    "hash": "6267674763636570",
+    "hash2": "666747474b634568"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DT272984.jpg": {
+    "base": "assets/img/cdbe65ac9da3e66a",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3093,
+    "h": 3711,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoHAAgAA4BaJQBOgB6RrxLLQAD+2V0901gwqCvzQLsEjEy7H0JEAAAA",
+    "hash": "ae2a2e22a6aa2aba",
+    "hash2": "ae2a2e22a6aa2aba"
+  },
+  "https://images.metmuseum.org/CRDImages/dp/original/DR52.jpg": {
+    "base": "assets/img/04cbd95762cb063f",
+    "widths": [
+      480,
+      960,
+      1360
+    ],
+    "w": 1360,
+    "h": 1906,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoGAAgAA4BaJYwCdAD0etRLcAD+4leu5Az6gKegQZb7SFFivI2jM0O7ecurVbvXgEAAAA==",
+    "hash": "1351f1dcccceceea",
+    "hash2": "195171cccececeea"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DT272986.jpg": {
+    "base": "assets/img/49ac6319e4f6a485",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2975,
+    "h": 3722,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoGAAgAA4BaJZACdAEOZzdAAP6iSKYJeCSd/ktHLM4V19Blts8gAA==",
+    "hash": "ca2c2e2aaeaa2ea2",
+    "hash2": "ca2c2e2aaeaa2ea2"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DT272987.jpg": {
+    "base": "assets/img/d89acda58638c3ed",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2977,
+    "h": 3722,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoGAAgAA4BaJYgCdAD0eagAAP66VDQZV5hkuNJrhbLAls182JAAAA==",
+    "hash": "8f8c9ad0ea9accca",
+    "hash2": "8f8c9ad0ea9accca"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-006.jpg": {
+    "base": "assets/img/6a431c3be93e6bcb",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAYAA4BaJYgCdADdPMnwAAD96nXsTVjhIj2j3rCKOdf+JlepHBwjAPLQJjnAAAA=",
+    "hash": "9aa1b4a4b5d79999",
+    "hash2": "ea2b99944b5aebe3"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-007.jpg": {
+    "base": "assets/img/0315a8d8887dfec4",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoIAAYAA4BaJZgCdADZkL0AAOHPYzmHnG1BUWBIjd815F89y0UiitHezFAAAA==",
+    "hash": "0a11d98a5b643c34",
+    "hash2": "0a11d98a5b643c34"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-008.jpg": {
+    "base": "assets/img/c72245dd3dba12ee",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACQAQCdASoIAAYAA4BaJQBOgBXrOAAA26iaAc340CiV5UeX0xcoDP02go2355mbcAA=",
+    "hash": "39b6d23695554c5c",
+    "hash2": "39b6d23695554c5c"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-009.jpg": {
+    "base": "assets/img/77dca08424d70df1",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoIAAYAA4BaJQBOgB6SAEKgAAD96nkOt7eIBTJp42bqdLBSbaqQfFF+1LUOAAAA",
+    "hash": "9935b59ab5b4b426",
+    "hash2": "eb8b89d4db495a0c"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-010.jpg": {
+    "base": "assets/img/3f0718dcdd7740cf",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoIAAYAA4BaJQBOgB5P3tAAzXR/27GaDmzOu9tbwnuWiSMpx3M0gAAA",
+    "hash": "3c145b2ed34c596d",
+    "hash2": "3c145b2ed34c596d"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-012.jpg": {
+    "base": "assets/img/ff474b083ca41dd7",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADwAQCdASoIAAYAA4BaJZQCdH8AFbOS0AAA/Nuj2N7XNo1wTYEcjCpMAAA=",
+    "hash": "b4a2b3b1ab86830f",
+    "hash2": "4a4c0d45c9cba553"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-013.jpg": {
+    "base": "assets/img/c84fb1960ee9e010",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoIAAYAA4BaJZQCdH8AAAAAyimJVzLLeVPo83gGKSJxgAAA",
+    "hash": "59645414b54b270b",
+    "hash2": "59645414b54b270b"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-011.jpg": {
+    "base": "assets/img/3b7414d206c8f316",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAYAA4BaJQBOgB6OQCIAAM4jOcmY2PNEGEIHAUHwnhH+tnFFKRhoztlguQAA",
+    "hash": "4c569638d55c9456",
+    "hash2": "4c569638d55c9456"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-014.jpg": {
+    "base": "assets/img/fd4d5028cd9d04b0",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoIAAYAA4BaJZQCw7D5q+AA293Tbse4dq2eP04fYYuAAA==",
+    "hash": "96565458ce330717",
+    "hash2": "96565458ce330717"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-015.jpg": {
+    "base": "assets/img/645831cb15033a97",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAYAA4BaJQBOgCHe2JkAAP6132RWUVmBYR0lQQAAAA==",
+    "hash": "9769481c8c890c0a",
+    "hash2": "9769481c8c890c0a"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-017.jpg": {
+    "base": "assets/img/7cfad2a32412183a",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAYAA4BaJQBOgCFrx5IAAP7F5gCFi6fZ5MDIMksAAA==",
+    "hash": "060383630b03a323",
+    "hash2": "7131154545151515"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-016.jpg": {
+    "base": "assets/img/95e5129604f4e138",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoIAAYAA4BaJQBOgCHfSFQAAP7F5f02jyMM/YFAAAA=",
+    "hash": "07013b1318581011",
+    "hash2": "07013b1318581011"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-018.jpg": {
+    "base": "assets/img/48f3a26d51456578",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoIAAYAA4BaJQBOgCHfwF2AAP6247gNi2D9T3gAAAA=",
+    "hash": "0e080c0c0c0c0c08",
+    "hash2": "5c48685868684949"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-020.jpg": {
+    "base": "assets/img/d10f518a2509f128",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAABQAQCdASoIAAYAA4BaJQBOgCgAAP7qVv0uzDyf5jFydMYuT0HxZupEAAA=",
+    "hash": "3323232343636303",
+    "hash2": "3323232343636303"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-019.jpg": {
+    "base": "assets/img/d782be0f854129de",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAABQAQCdASoIAAYAA4BaJQBOgCgAAP7uZDY1ObwcdmnCAAAA",
+    "hash": "9119181032331311",
+    "hash2": "1114143475511111"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-021.jpg": {
+    "base": "assets/img/ddb0cdafb97e368f",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoIAAYAA4BaJQBOgCHfwF2AAP6247gNi2DmN6oAAAA=",
+    "hash": "080a0c0e0c0c080c",
+    "hash2": "49496d6c68696848"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-022.jpg": {
+    "base": "assets/img/2f807592d9b3a934",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAABQAQCdASoIAAYAA4BaJQBOgCgAAP7uvY5vBx2acIAAAA==",
+    "hash": "1a11199219191111",
+    "hash2": "1a11199219191111"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-025.jpg": {
+    "base": "assets/img/7cad02eb6d253c1a",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAACwAQCdASoIAAYAD8BaJZQCdAEOuwSAAP7nBuRfCdxoAA==",
+    "hash": "19191a11131b0f0b",
+    "hash2": "19191a11131b0f0b"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-024.jpg": {
+    "base": "assets/img/20a1e93da29a59e6",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoIAAYAA4BaJZQCw7EOvEzgAAD+tuRBQvUUAAAA",
+    "hash": "0c0c080d0c04170b",
+    "hash2": "10149094101404a3"
+  },
+  "https://images.metmuseum.org/CRDImages/dp/original/DP807593.jpg": {
+    "base": "assets/img/0731d43ad775e7a8",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1996,
+    "h": 2158,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAABQAQCdASoHAAgAA4BaJQBOgCgAAP7w1DiCxIhCqi8mS34V2B8XKE3TgAA=",
+    "hash": "0a8a06f2b880c602",
+    "hash2": "0a8a06f2b880c602"
+  },
+  "https://images.metmuseum.org/CRDImages/dp/original/1995.493.jpg": {
+    "base": "assets/img/11acb682a5954cd4",
+    "widths": [
+      480,
+      741
+    ],
+    "w": 741,
+    "h": 789,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACQAQCdASoIAAgAA4BaJQBOgBt3pMAA93NLqBuBbGg+QPHrTFZ2TvEAAAA=",
+    "hash": "8888c6f2b880c280",
+    "hash2": "8888c6f2b880c280"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-023.jpg": {
+    "base": "assets/img/8e1d571ff6f123af",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAYAA4BaJYwCdAD0gbVuAP7nQMDs+MlKEYZ+rwAAAA==",
+    "hash": "232f27272327232b",
+    "hash2": "232f27272327232b"
+  },
+  "https://openaccess-cdn.clevelandart.org/1996.295/1996.295_alt0_print.jpg": {
+    "base": "assets/img/f1e95b779a388403",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2756,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAABwAQCdASoGAAgAA4BaJaQAApk0QAD+h4b5VqqrhaFYVzfESAAAAA==",
+    "hash": "0f2f0f0f0f4474f4",
+    "hash2": "0f2f0f0f0f4474f4"
+  },
+  "https://openaccess-cdn.clevelandart.org/1996.295/1996.295_alt1_print.jpg": {
+    "base": "assets/img/e3bde75c2d4eacbe",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2756,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoGAAgAA4BaJZwAAplfWwAA/tHy/YJPmtqDkS/lBB/yfAAA",
+    "hash": "0f0f0f0f0d4454b4",
+    "hash2": "0f0f0f0f0d545414"
+  },
+  "https://images.metmuseum.org/CRDImages/ad/original/DP-18742-026.jpg": {
+    "base": "assets/img/ec9f9fcd1f9e09b0",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoIAAYAA4BaJZQCw7Dx9FgAAP7nQMEO1IBx4l3pAAA=",
+    "hash": "232b23236375071a",
+    "hash2": "232b23236375071a"
+  },
+  "https://openaccess-cdn.clevelandart.org/2010.285.a/2010.285.a_print.jpg": {
+    "base": "assets/img/fc510b91a03447c4",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2429,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoIAAYAA4BaJQBOgB8uxK7AAP6RpfXdCELFpQ7cgxsUwo3b/iX2st1EYwmknQ14bDgAAA==",
+    "hash": "64949a6cace2e6c8",
+    "hash2": "64949a6cace2e6c8"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6b/Anatolian_Civilizations_Museum_1337.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/088780fe85ea926a",
+    "widths": [
+      480,
+      960,
+      1065
+    ],
+    "w": 1065,
+    "h": 1600,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoFAAgAA4BaJZwAAvd7eDKAAP7p+Qmy3LbyY+cyszjvnayhO+7+/wIA",
+    "hash": "734d1613ccd4c0e0",
+    "hash2": "734d1613ccd4c0e0"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e3/Ankara_Seated_Woman_of_%C3%87atalh%C3%B6y%C3%BCk_From_back_in_2019_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/f37ae3a5ba6fe466",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 5066,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoGAAgAA4BaJQBOgCKUmSRVLgAA/vGAgxFaqIftzg6y3twwfTA6Ff5BoyuBnUStdaIAAA==",
+    "hash": "934a1c172dc7e4fc",
+    "hash2": "4815073d8fc2e47c"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fd/Ankara_Seated_Woman_of_%C3%87atalh%C3%B6y%C3%BCk_From_back_in_2019_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/6e28bd6ee649354b",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 5759,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoFAAgAA4BaJZACdAEPCRCm8gAA/u9ngPSQ0F1zPemZAIQBND7OzTuw7IJNRpm9gAA=",
+    "hash": "a4460b30c0c0f988",
+    "hash2": "a4460b30c0c0f988"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e2/Ankara_Seated_Woman_of_%C3%87atalh%C3%B6y%C3%BCk_From_back_in_2019_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/7683dc4d2afb74cf",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 4979,
+    "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoGAAgAA4BaJQBOgCHXbj+AAP7sRGgYkvI/gOT6UPrHY1ZS59/o5FuCOv9O7Dns9ZO8QAAA",
+    "hash": "cccf33c4d2e4e280",
+    "hash2": "cccf33c4d2e4e280"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e0/Ankara_Seated_Woman_of_%C3%87atalh%C3%B6y%C3%BCk_From_back_in_2012_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/2e91a75d2639d7fe",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3280,
+    "h": 4224,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoGAAgAA4BaJZQCdADzd7iAAP5Lebsp/5LIXyTVSUz9A2hEpaIiWUoYg1gOJgXFvAAAAA==",
+    "hash": "cddb7968fac4c4c4",
+    "hash2": "cddb7968fac4c4c4"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e2/Cosmetic_Vessel_in_the_Shape_of_a_Cat_MET_DT6434.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/2eab81bcf7585777",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1488,
+    "h": 1861,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAABwAQCdASoGAAgAA4BaJZwAApkYAAD+82NJlivj0Dtr/htVxzK173nund6BWBc8AGKAAA==",
+    "hash": "60888d4c46068d73",
+    "hash2": "880d4c46468f9f77"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d4/Cosmetic_Vessel_in_the_Shape_of_a_Cat_MET_DT6436.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/fcecdee8d13227eb",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2978,
+    "h": 3722,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACQAQCdASoGAAgAA4BaJZwAApmV4cAA/t4CEDQbX665ouCtL37WH9RmBwzQBP+AAAA=",
+    "hash": "1b27664f8f4fcfff",
+    "hash2": "1b27664f8f4fcfff"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/da/Cosmetic_Vessel_in_the_Shape_of_a_Cat_MET_DT6435.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/eb645439bc3efec3",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3200,
+    "h": 4000,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAABwAQCdASoGAAgAA4BaJZwAAplmAAD+9MQX6UucCjvFk8dkETnDh8cWpKAAfwAA",
+    "hash": "304d4d4d0e175763",
+    "hash2": "4d4d4d0f0f15cf33"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4f/WLA_brooklynmuseum_Cat_ca_664-342_BCE_Bronze.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/43dfc130bd761858",
+    "widths": [
+      480,
+      800
+    ],
+    "w": 800,
+    "h": 1200,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoFAAgAA4BaJQBOgB6U6H+wcADMmybiRUSfpwZoj9++LtBKFusNGoYXxugwAAAA",
+    "hash": "7464666179b8b197",
+    "hash2": "74656271b8b8b196"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/bd/WLA_brooklynmuseum_Egyptian_Cat_hollow-cast_bronze.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/07e2c384580ea51e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2304,
+    "h": 3072,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoGAAgAA4BaJZQCdAD0TxALTMAA/P3XpOJl+BOonYz8KGnssIuDulphlW+9RD/0cAA=",
+    "hash": "376763b1b03c7c18",
+    "hash2": "376763b1b03c7c18"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0d/WLA_brooklynmuseum_bronze_cat_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/38251d77fe82c73e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1696,
+    "h": 2544,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoFAAgAA4BaJbACdLoAArMaFgAA/fxQnX2vVFSIZPlV52Yk+/mT9Cn2oqg/kZDbvoAAAA==",
+    "hash": "1fe7e76763717323",
+    "hash2": "1fe7e76763717323"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/96/Ankara_Seated_Woman_of_%C3%87atalh%C3%B6y%C3%BCk_From_left_in_2011_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/ec15754cc32b521a",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2832,
+    "h": 4256,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoFAAgAA4BaJQBOgCHNC0jQAP14OqcnlqBmg4uijmgWPLQBjFHmdCGx2DZqlhjnK4AAAA==",
+    "hash": "291d9838c4e0b8f1",
+    "hash2": "291d9838c4e0b8f1"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5c/Pieter_Bruegel_the_Elder_-_Netherlandish_Proverbs_%28detail%29_-_WGA3369.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/7c300c0fdaebf23c",
+    "widths": [
+      480,
+      850
+    ],
+    "w": 850,
+    "h": 1033,
+    "lq": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoHAAgAA4BaJZgCdAD0slaUaAAA/ukqTN7CWXgUn31Q9uCo597yVODb1JZY9y1ZtvgP/Tl0AAA=",
+    "hash": "81d030a0434697de",
+    "hash2": "81d030a0434697de"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d4/Mosaic_cat_ducks_Massimo_Inv124137.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/411eb84154c38c04",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2350,
+    "h": 2350,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAgAA4BaJZwAApzrB+JkAN/GUqq/dta6FB7wiLTNriEvAAA=",
+    "hash": "6666d88964262c3a",
+    "hash2": "6666d88964262c3a"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/96/Pieter_Bruegel_the_Elder_-_Netherlandish_Proverbs_%28detail%29_-_WGA3370.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/d3c846f458360cd5",
+    "widths": [
+      480,
+      960,
+      1075
+    ],
+    "w": 1075,
+    "h": 900,
+    "lq": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoIAAcAA4BaJQBOgB6KlFiQAP7smKuOUSUc4P8bHycfSoNRH30Z0Ho2xSa+wCAANqGUf/wqAAA=",
+    "hash": "266d6421d3a63c1c",
+    "hash2": "266d6421d3a63c1c"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ee/Pinturicchio%2C_penelope_e_i_suoi_corteggiatori%2C_1509_ca.%2C_dal_palazzo_del_magnifico_a_siena%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/eaced3e91cd43587",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 3364,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAcAA4BaJZACdADzbDvQAOJE3szSnGqzMYq2vmpfez8tlhybrxwVpNHKAAAA",
+    "hash": "be8c9e1e7c6e76df",
+    "hash2": "be8c9e1e7c6e76df"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f1/Mosaic_depicting_a_cat_attacking_a_quail_%28above%29_and_ducks%2C_fish_%26_shellfish_%28below%29%2C_from_the_House_of_the_Faun%2C_Pompeii%2C_late_2nd_century_BC%2C_Naples_Archaeological_Museum_%2815022043286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/943b504678de381f",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2976,
+    "h": 2943,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAgAA4BaJZQCdADz2yEe4AD+eMIeG82ynZHTRLANC5gPHnXRnwAA",
+    "hash": "9b9b0fea96968c2f",
+    "hash2": "9b9b0fea96968c2f"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e5/Pieter_Bruegel_the_Elder_-_Netherlandish_Proverbs_%28detail%29_-_WGA3371.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/7318557d269791ff",
+    "widths": [
+      480,
+      960,
+      1370
+    ],
+    "w": 1370,
+    "h": 650,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoIAAQAA4BaJYgCdAD0l4yqAAD+8Yz500B6Uj0sayY/pLUpGGt1K0V00wAAAA==",
+    "hash": "fee7e7ede9e3e6e6",
+    "hash2": "fee7e7ede9e3e6e6"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/86/Clara_Peeters_-_A_still_life_with_carp_in_a_ceramic_colander_etc.jpg": {
+    "base": "assets/img/baee2865783642d1",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2000,
+    "h": 1367,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoIAAUAA4BaJYgCdAEOuwSAAP7qS3uxogCtTu/tTRS0jt4aDxwdP4KQJbUbGJrgAAA=",
+    "hash": "13cd0f070e1d1d3f",
+    "hash2": "138c0f070d3c1d3d"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0a/Chardin%2C_la_razza%2C_1725-26_ca.%2C_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/bec55473078273b8",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3456,
+    "h": 2304,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoIAAUAA4BaJZQCdAD5hNd8n8AA/q1AbBrBLbvQHQcf2CtwRHux7cAgAAA=",
+    "hash": "0b0f165f47272767",
+    "hash2": "0b0f165f47272767"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0d/Art_of_Joseon%2C_Byeon_Sang-byeok_-_Myojakdo_%28title%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/03a277bbb3c04b42",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoFAAgAA4BaJZACdAEUpD/lWAD+0y/u9k1DnXqlty0ZsoE34AA=",
+    "hash": "8e8e4c4c0c941a0a",
+    "hash2": "8e8e4c4c0c941a0a"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f0/Chardin%2C_la_razza%2C_1725-26_ca.%2C_02_gatto.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/c30ae8948cbbdf0e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2304,
+    "h": 3456,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoFAAgAA4BaJZQCdADzd7iAAP67VHDxfHTkizBVAR+lG7I3JIkHMmAA",
+    "hash": "e8c8e0981c06232c",
+    "hash2": "e8c8e0981c06232c"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/eb/Art_of_Joseon%2C_Byeon_Sang-byeok_-_Myojakdo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/258d7ef62b174eb7",
+    "widths": [
+      480,
+      960,
+      1376
+    ],
+    "w": 1376,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoEAAgAA4BaJZgCdAEUpKRC+wAA4lauPXaVJ2blquOD3XrS2bLrZr5sSAAAAA==",
+    "hash": "c8c1c5f1801c3060",
+    "hash2": "c8c1c5f1801c3060"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5a/Art_of_Joseon%2C_Byeon_Sang-byeok_-_Myojakdo_%28cropped%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/390f314d869bf968",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoFAAgAA4BaJZACdAD5diCsAADOOAbH7ADn1tX9s55F0YHHQWrlnN+QSar++aAA",
+    "hash": "07cc637071080e4b",
+    "hash2": "07cc637071080e4b"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/20/Art_of_Joseon%2C_Byeon_Sang-byeok_-_Myojakdo_%28cropped%29_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/1d243348062f843d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3000,
+    "h": 2000,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAUAA4BaJZACdADye+QAAMxQKr0YtsI3RBPkUTW2c21N7qrS3Nm0WoklAAAA",
+    "hash": "51b5f684a6966725",
+    "hash2": "51b5f684a6966725"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ea/Manet%2C_%C3%89douard_-_Olympia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/558356b3b678e1cc",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3169,
+    "h": 2153,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAUAA4BaJQBOgB6C/guAAOI4O796ZtNeo5k2LnF6aBtya4XKIIA5WlwWR7AA",
+    "hash": "dab27373b36f928a",
+    "hash2": "dab27373b36f928a"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3e/Art_of_Joseon%2C_Byeon_Sang-byeok_-_Myojakdo_%28cropped%29_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/af855edf98b7886a",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoFAAgAA4BaJZACdADzG+AAAP6OJv/FCSJWA89uZGJKYuZLJr8ddDjpO7ri5oAAFqCcgAAA",
+    "hash": "19961672e3c4c061",
+    "hash2": "19961672e3c4c061"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d8/Auguste_Renoir_-_Julie_Manet_with_Cat_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/d1d070590b108732",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2353,
+    "h": 2352,
+    "lq": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoIAAgAA4BaJZgCdAD5idMnJgAA/slXdELPidLdJmkjCa9nBGjXIEjZ5Bjj1nGxl71UdqbkSr65wOgAAAA=",
+    "hash": "8ca6e335dccfb294",
+    "hash2": "8ca6e335dccfb294"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/72/Bruno_Liljefors_-_Cat_on_a_flowering_summer_meadow_1919.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/8cd49eea347c34d9",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 3190,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoIAAcAA4BaJQBdgCKfFJSwkADyU90hHlxvZ+nIqM2jo3FglkbmIwNaERzAAA==",
+    "hash": "7398cb2e93cd9c9e",
+    "hash2": "7398cb2e93cd9c9e"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/36/Franz_Marc_-_Kater_auf_gelbem_Kissen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/16e067918e733a99",
+    "widths": [
+      480,
+      960,
+      1000
+    ],
+    "w": 1000,
+    "h": 875,
+    "lq": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoIAAcAA4BaJYgCdAEO4dEKJAD+ZtjYfWCu4JUpQ4ouZy42oxTVkLSd+LZnhWr0CG+dshuV/iDz6HWAAAA=",
+    "hash": "e6471b2963d5abc2",
+    "hash2": "e6471b2963d5abc2"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/ce/Cat_and_kitten_Figure%2C_late_19th%E2%80%93early_20th_century_%28CH_18382391-2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/0af9a86c2485e23a",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2884,
+    "h": 2884,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAgAA4BaJZwAAp1dcuHwAP7zyQuLHq9BmLjHOmWlVsY2ERF6WYAA",
+    "hash": "7f737379b9316812",
+    "hash2": "7f737379b9316812"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b5/Minneke_Poes_Markt_Ieper.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/0b839cc9b0022507",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2592,
+    "h": 1944,
+    "lq": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoIAAYAA4BaJQBOgCL2y3UDywAA99IYsC+8K5wuqfd481CBNeCW54IWWyaTs+nLoHJgDp1xPD0P0AbwgAA=",
+    "hash": "f469de360d8f6363",
+    "hash2": "f469de360d8f6363"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a3/Dick_Whittington%E2%80%99s_Cat_looking_back.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/044aabb194826c76",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2048,
+    "h": 1638,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAYAA4BaJYwCdADx4pEAAMo/b0WH7wlfADd89DHa8GTfjdMwAA==",
+    "hash": "1a1e6f753371c9c9",
+    "hash2": "1a1e6f753371c9c9"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a3/Turn_again%2C_Whittington%21_Thrice_Lord_Mayor_of_London%21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/f3652c22a8d7205f",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1638,
+    "h": 2048,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoGAAgAA4BaJZQCdADdhotkQAD8Z8r7KT/fAuPN8eHWhBr3kORpL4SgAAA=",
+    "hash": "ab9a5698b961656d",
+    "hash2": "ab9a5698b961656d"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8e/Dingo%2C_PPL41%2802%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/ce0f6fa793e32385",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3457,
+    "h": 4679,
+    "lq": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAABwAQCdASoGAAgAA4BaJZwCdAFAAAD+8DEGNBv8N57AAA==",
+    "hash": "494d716171596d55",
+    "hash2": "494d716171596d55"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f7/Dingo%2C_PPL41%2803%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/6a4f3cb5db207842",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3480,
+    "h": 4699,
+    "lq": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAABwAQCdASoGAAgAA4BaJZQCdAFAAAD+7yItNb5iOCRlrmAA",
+    "hash": "11b1c9f1f1f1b141",
+    "hash2": "11b1c9f1f1f1b141"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/12/Dick_Whittington%E2%80%99s_Cat_in_London.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/2cbfc24b8623cfbc",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1638,
+    "h": 2048,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoGAAgAA4BaJQBOgB5vnNigAOJlgcy9c9MqCKHDWz1KKE4ms6QMNhbFgsAAAA==",
+    "hash": "2515471879d9f971",
+    "hash2": "2515471879d9f971"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f3/Hello_Dick_Whittington%E2%80%99s_Cat%21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/8a19a8c9fbc33d12",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1638,
+    "h": 2048,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoGAAgAA4BaJZwC7AEXfmfIqoAA9G+dA61ZMXFIfUtvU2R8unZnT56H00p9AAAA",
+    "hash": "2ba89814550d5a73",
+    "hash2": "2ba89814550d5a73"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/56/Turn_again%2C_Whittington%21_Thrice_Lord_Mayor_of_London%21_-_53873083838.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/68805dc484ec60a9",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2048,
+    "h": 1638,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAYAA4BaJZQCdADzGUAAANv+pw6pq9fqa1wedyTYpGQVTgAAAA==",
+    "hash": "47076d79f555f55b",
+    "hash2": "47076d79f555f55b"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fd/Whittington_Stone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/e449c4a3a6835f7d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2048,
+    "h": 1638,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAYAA4BaJZQAApzp6dIgAM47gLSD+LqulNFnsOhNrudPYQ4AAA==",
+    "hash": "cce4e0f072724a83",
+    "hash2": "cce4e0f072724a83"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a5/Millet_-_La_Baratteuse%2C_1865%2C1209.798.jpg": {
+    "base": "assets/img/c1fb77c68fec9e7b",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1564,
+    "h": 2284,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoFAAgAA4BaJZACdAEO/nCzAAD+vnC22ryf7fRejJR29TpBCp6UEGuLmyImUUT8AAA=",
+    "hash": "a6c8dadaccccec9a",
+    "hash2": "a2889a9a8cccec98"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/41/Judith_Leyster_A_Boy_and_a_Girl_with_a_Cat_and_an_Eel.jpg": {
+    "base": "assets/img/64245c0b8dd6ee17",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3486,
+    "h": 4226,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoHAAgAA4BaJQBOgB6MhghwwAD+6UgZcnxi2ZMOiezjluJjbuVHE1GQTJrTazbUAAA=",
+    "hash": "933333379656539b",
+    "hash2": "933333379656539b"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/NDL888725_%E5%90%BE%E8%BC%A9%E3%83%8F%E7%8C%AB%E3%83%87%E3%82%A2%E3%83%AB_%E4%B8%8A_part1.pdf/page1-2000px-NDL888725_%E5%90%BE%E8%BC%A9%E3%83%8F%E7%8C%AB%E3%83%87%E3%82%A2%E3%83%AB_%E4%B8%8A_part1.pdf.jpg": {
+    "base": "assets/img/16ba46da63d6a775",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2672,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAYAA4BaJaQAAlxX19QAAP7KL7s/ptB3/paJSoCodOSJaWcwbBXPj0zhoAAA",
+    "hash": "f4f8d8d8d8d8b8b8",
+    "hash2": "f05858d8d8d81838"
+  },
+  "https://www.simonis-buunk.nl/images/art/large/17528.jpg": {
+    "base": "assets/img/1ec2dfb1201771cd",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1920,
+    "h": 1419,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoIAAYAA4BaJQBOgCMDKO/iXQAA/t4c2Vqq8pV/YjtspEarKK/JfxHCzFYwmknMYCUAAA==",
+    "hash": "1c0cb5979e1bcd39",
+    "hash2": "1c0cb5979e1bcd39"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/dc/Abraham_Teniers_-_Barbershop_with_monkeys_and_cats.jpg": {
+    "base": "assets/img/4930f27d135ddabf",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1419,
+    "h": 1114,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAYAA4BaJYgCdAD5juUYAAD+5iJn22kk7/D74KBfQL0yuCU4XWkawHfI5drdAAA=",
+    "hash": "bab3b259cb9b922e",
+    "hash2": "bab3b259cb9b922e"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/82/Hortus_sanitatis_1491_%28111954547%29.jpg": {
+    "base": "assets/img/87a736e23d454732",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3628,
+    "h": 4754,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoGAAgAA4BaJYgCdAD0OY0MmAAA/sPvmWqb+Cri1xkATqQymA0l0uQ2VRQh7EAA",
+    "hash": "23939b9b9b9b931f",
+    "hash2": "23939b9b9b9b931f"
+  },
+  "https://theme.npm.edu.tw/fapi/ArtPic?id=2074&w=0&h=0": {
+    "base": "assets/img/7dfcb0b4de177256",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2000,
+    "h": 1296,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoIAAUAA4BaJQBOgB4+nLAA/uuA9GlyMCdjQhU4qExmxHuWihstgAAA",
+    "hash": "35dad8f8d898b690",
+    "hash2": "35dad8f8d898b690"
+  },
+  "https://uploads2.wikiart.org/images/theophile-steinlen/pierrot-et-le-chat-xx-private-collection.jpg": {
+    "base": "assets/img/88c6e3020f5c9ece",
+    "widths": [
+      480,
+      960,
+      970
+    ],
+    "w": 970,
+    "h": 1327,
+    "lq": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoGAAgAA4BaJQBOgB5vwPagAP7SVv0uILwnzZ67dZRJ9dD9elsiPmBYRtQDMsF8xu8H0d94MVYAAA==",
+    "hash": "1b0f33b323e3d3b4",
+    "hash2": "1b0f33b323e3d3b4"
+  },
+  "https://media.tate.org.uk/art/images/work/N/N05/N05155_10.jpg": {
+    "base": "assets/img/f79ee22bbf8a6844",
+    "widths": [
+      480,
+      960,
+      1139
+    ],
+    "w": 1139,
+    "h": 1536,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoGAAgAA4BaJYwCdADdfJ8AAP7JdYY68ZukrY0A5hzJqRy1UWmT8akUAAA=",
+    "hash": "9ab4e4c09494f6be",
+    "hash2": "9ab4e4c09494f6be"
   }
 }

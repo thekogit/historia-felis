@@ -8,8 +8,8 @@ Presented as a single, self-contained, high-performance interactive reference li
 
 ## Curatorial Scope & Structure
 
-- **739 Catalogued Artworks**: Spanning from the earliest known feline burial at Shillourokambos, Cyprus (c. 7500 BCE) through ancient Egyptian tomb paintings, Greco-Roman mosaics, Medieval manuscript drolleries, Chinese Song/Ming scrolls, Korean Joseon paintings, Japanese ukiyo-e, Islamic miniatures, Renaissance and Baroque masterpieces, 18th-century still lifes, Victorian feline portraits, Impressionism, Symbolism, 20th-century Modernism, and contemporary art through 2026.
-- **100% Public Domain**: Every featured artwork is in the public domain (artists deceased > 70 years / US public domain pre-1929).
+- **Catalogued Artworks**: Spanning from the earliest known feline burial at Shillourokambos, Cyprus (c. 7500 BCE) through ancient Egyptian tomb paintings, Greco-Roman mosaics, Medieval manuscript drolleries, Chinese Song/Ming scrolls, Korean Joseon paintings, Japanese ukiyo-e, Islamic miniatures, Renaissance and Baroque masterpieces, 18th-century still lifes, Victorian feline portraits, Impressionism, Symbolism, 20th-century Modernism, and contemporary art through 2026.
+- **Rights recorded per image**: Every entry carries its image licence, credit and rights status. Most works are public domain; copyrighted contemporary work (e.g. Lola Dupré) is shown with credit, hotlinked from the artist, never copied.
 - **Two Feline Roles**: Catalogs works where the cat is the **Main Subject** and where the cat appears as a **Secondary or Symbolic Element**.
 - **48 Categorized Eras & Movements**: Organized with a historical pigment colour palette (Red Ochre, Egyptian Blue, Terracotta, Lapis Lazuli, Cinnabar, Prussian Blue, Persian Turquoise, Verdigris, Raw Umber, Rose Madder, Chrome Yellow, Viridian, Tyrian Aubergine, Cadmium Red).
 - **100 Curated Archival Japanese Cat Haikus**: Featuring masterworks by Matsuo Bashō, Yosa Buson, Kobayashi Issa, Masaoka Shiki, Natsume Sōseki, and Kaga no Chiyo-ni.
@@ -86,6 +86,36 @@ Open **[http://localhost:3000/editor.html](http://localhost:3000/editor.html)** 
   Results are stored in `data/checks.json` and stop counting once the entry is edited.
 - **Blank entries & Delete**: "Blank entry" in the same window starts an empty draft; **"Delete Artwork"** removes one.
 - **Standalone Mode**: Can also be opened directly via `file:///` without a server to browse and export/download `artworks.json`.
+
+---
+
+## Catalogue Audit (agent system)
+
+Every entry is checked against seven curatorial rules, shown as chips **a b c d e f ©** in the editor:
+
+| Rule | What it checks | Who checks it |
+| :--- | :--- | :--- |
+| **a** Subject | A real cultural work with a cat or cat-like felid. Lions and tigers don't count; biographies of real cats, folklore ideas and festivals without a specific work are purged. | Ollama research agent + Claude reviewer |
+| **b** Image | Reachable; long edge ≥ 1600 px good, < 1000 px fails | deterministic |
+| **c** Prose | Description + context in a lively, loosely academic voice with a sourced fun fact; machine-sounding phrases flagged | Claude reviewer (editor: agent "Prose" mode) |
+| **d** Link | `source_url` points at the holding institution's own record | deterministic + agents |
+| **e** Taxonomy | Era / movement / submovement correct | agents |
+| **f** Image set | As many photos as exist, but all from **one** shoot or catalogue record (e.g. the Met's open-access record), none mixed in | deterministic (Met / AIC / Cleveland APIs, Commons same photographer + camera + date) |
+| **©** Rights | `license`, `license_url`, `rights_status` (public-domain · open-license · copyrighted · unverified), `image_credit` for every image | deterministic (Commons metadata, museum open-access flags) + agent "Rights" mode |
+
+```bash
+npm run audit                 # deterministic checks for all entries → data/audit.json
+npm run audit:deep            # + Ollama research agent (subject, best link, taxonomy); resumable
+npm run audit:report          # failing-rule counts and purge proposals
+npm run audit:apply -- --reviews <dir>   # merge audit + reviewer JSON into artworks.json, writes data/audit_report.md
+```
+
+Purged entries move to `data/purged_artworks.json` with the reason, never deleted.
+
+**Copyrighted works shown with credit** (e.g. Lola Dupré's collages, `npm run import:lola`) carry `hotlink: true`: their images load from the artist's own site and are never downloaded, and `text_policy: "attribution-only"` keeps them free of description and context. The validator requires a licence notice, credit and source link on every copyrighted entry.
+
+### Research agent (editor)
+The editor's right rail runs the configured Ollama model (`OLLAMA_MODEL`, default `beam:cloud`) as a tool-calling agent. Its tools are museum open-access APIs (Met, Art Institute of Chicago, Cleveland), SearXNG + Ollama web search, page reading, Wikidata, Wikimedia Commons (licence, photographer, same-shoot sets), image size and URL checks, the taxonomy, a catalogue lookup and, optionally, **Reddit** (read-only, through `../../mcps/reddit-mcp-server`, override with `REDDIT_MCP_DIR`, disable with `REDDIT_MCP=off`). Modes: **Audit**, **Images**, **Rights**, **Prose**, **Ask**. Tool calls stream in as cards; results come back as a per-field diff you apply or reject. The status strip at the bottom shows audit progress, model, SearXNG and Reddit status; **Ctrl+J** opens the activity console (tool calls, audits, saves, errors).
 
 ---
 

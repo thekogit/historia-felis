@@ -8,7 +8,7 @@
     "end_year": -330,
     "color": "#a75338",
     "color_name": "Red Ochre",
-    "title_artwork_id": "shillourokambos-cat-burial-7500bce",
+    "title_artwork_id": "seated-woman-of-catalhoyuk-felines-6000bce",
     "introduction": "The earliest archaeological and artistic traces of felids in human culture reveal the dawn of feline representation and domestication across the Paleolithic world, the Fertile Crescent, and the Mediterranean basin. From Ice Age mammoth-ivory carvings and cave murals to Neolithic human-cat burials in Cyprus, enthroned felines at Çatalhöyük, and sacred processional reliefs in Babylon and Persia, cats crossed the threshold from revered primeval apex predator to domestic guardian and spiritual companion."
   },
   {
@@ -20,7 +20,7 @@
     "end_year": -3000,
     "color": "#944833",
     "color_name": "Earth Ochre",
-    "title_artwork_id": "lion-man-of-hohlenstein-stadel-40000bce",
+    "title_artwork_id": "seated-woman-of-catalhoyuk-felines-6000bce",
     "introduction": "The earliest manifestations of human visual culture, featuring mammoth-ivory carvings, parietal cave murals of cave lions, and Neolithic terracotta figurines."
   },
   {
@@ -68,32 +68,20 @@
     "end_year": 1532,
     "color": "#b06d3b",
     "color_name": "Ochre Clay",
-    "title_artwork_id": "paracas-flying-pampas-cats-mantle-200bce",
+    "title_artwork_id": "square-bowl-with-pampas-cats-2021-130",
     "introduction": "Across Mesoamerica, Central America, and the Andean highlands, pre-Columbian cultures (Olmec, Chavín, Paracas, Nazca, Moche, Tiwanaku, Wari, Chimú, Maya, and Inca) revered wild felines as sacred embodiments of shamanic transformation, celestial power, and underworld guardianship."
   },
   {
     "id": "era-east-asia",
-    "name": "East Asian Traditions",
+    "name": "Asia & the Islamic World",
     "level": "era",
     "parent_id": null,
     "start_year": -200,
-    "end_year": 1912,
+    "end_year": 1924,
     "color": "#862c2c",
     "color_name": "Cinnabar",
     "title_artwork_id": "kuniyoshi-cats-fifty-three-stations-tokaido-1848",
-    "introduction": "In the visual traditions of China, Korea, and Japan, cats were celebrated as emblems of longevity, domestic serenity, and supernatural whimsy. Imperial Chinese scrolls, Korean Joseon masterworks, and Japanese Edo ukiyo-e woodblocks elevated feline observation into high artistic refinement and popular visual culture."
-  },
-  {
-    "id": "era-islamic-world",
-    "name": "The Islamic World",
-    "level": "era",
-    "parent_id": null,
-    "start_year": 622,
-    "end_year": 1924,
-    "color": "#1b6163",
-    "color_name": "Persian Turquoise",
-    "title_artwork_id": "qajar-portrait-of-a-lady-with-cat-1850",
-    "introduction": "In Islamic civilization, cats enjoyed affection and ritual purity, celebrated in Hadith traditions honoring the Prophet Muhammad's tenderness toward felines like Muezza. Across Persian, Mughal, and Ottoman court painting, cats appear in moral animal allegories such as Kalila wa Dimna, intimate dervish hermitages, and opulent palace terraces."
+    "introduction": "From imperial Chinese scrolls, Korean Joseon masterworks, and Japanese ukiyo-e to the rich miniature traditions of Persian, Mughal, and Ottoman courts, Asian and Islamic artists celebrated cats as emblems of longevity, domestic serenity, ritual purity, and literary wit."
   },
   {
     "id": "era-renaissance",
@@ -264,11 +252,23 @@
     "introduction": "In the floating world of Edo, masters like Utagawa Kuniyoshi, Hiroshige, and Yoshitoshi turned the cat into a superstar of woodblock prints: anthropomorphized kabuki actors, spirit-monsters, and beloved studio companions."
   },
   {
-    "id": "mov-islamic-miniatures",
-    "name": "Islamic Miniatures, Ceramics & Metalwork",
+    "id": "mov-nihonga",
+    "name": "Nihonga: Modern Japanese Painting (Meiji–Shōwa)",
     "level": "movement",
-    "parent_id": "era-islamic-world",
-    "start_year": 700,
+    "parent_id": "era-east-asia",
+    "start_year": 1868,
+    "end_year": 1945,
+    "color": "#245852",
+    "color_name": "Mineral Verdigris",
+    "title_artwork_id": "hishida-shunso-black-cat-nihonga-1910",
+    "introduction": "Arising during the Meiji and Taishō eras as a dynamic revival of classical aesthetics in dialogue with European naturalism, Nihonga deployed mineral pigments (iwa-enogu) and sumi ink across silk and washi to capture felines with luminous intimacy. From Hishida Shunsō's soft-focus morōtai contouring to Takeuchi Seihō's acute Kyoto-school realism, these masterworks elevated domestic cats into icons of modern Japanese national heritage."
+  },
+  {
+    "id": "mov-islamic-miniatures",
+    "name": "Islamic & Persianate Painting",
+    "level": "movement",
+    "parent_id": "era-east-asia",
+    "start_year": 622,
     "end_year": 1924,
     "color": "#1b6163",
     "color_name": "Persian Turquoise",
@@ -358,6 +358,18 @@
     "color_name": "Light Madder",
     "title_artwork_id": "william-hogarth-the-graham-children-cat-1742",
     "introduction": "In Georgian London, William Hogarth used the predatory cat to puncture aristocratic innocence, while Gainsborough and Stubbs observed domestic pets with sensitive English naturalism."
+  },
+  {
+    "id": "mov-russian-lubok",
+    "name": "Russian Lubok Folk Prints",
+    "level": "movement",
+    "parent_id": "era-18th-century",
+    "start_year": 1700,
+    "end_year": 1850,
+    "color": "#b85d38",
+    "color_name": "Terracotta Ochre",
+    "title_artwork_id": "russian-lubok-kot-kazanskiy-18th-century",
+    "introduction": "Printed from rough-hewn woodblocks and etched copper plates before being splashed with unruly gouache at village fairs, Russian lubki were the irreverent broadsides of early modern Slavic visual culture. Here, the domestic cat reigns supreme not as a pampered boudoir ornament, but as a dagger-clawed tyrant, a swaggering stand-in for imperial tsars, or a faux-deceased patriarch escorted to the grave by an ecstatic brigade of drunken mice."
   },
   {
     "id": "mov-romanticism-realism",
@@ -501,6 +513,18 @@
     "introduction": "Młoda Polska (Young Poland) was a Polish modernist movement (c. 1890–1918) synthesising Symbolism, Art Nouveau, and early modernism across literature, music, and the visual arts."
   },
   {
+    "id": "mov-wain-kaleidoscopic",
+    "name": "Louis Wain: Kaleidoscopic & Late Hospital Works",
+    "level": "movement",
+    "parent_id": "era-early-20th-century",
+    "start_year": 1914,
+    "end_year": 1939,
+    "color": "#9c27b0",
+    "color_name": "Psychedelic Violet",
+    "title_artwork_id": "louis-wain-l-wain-s-psychedelic-cat-1875",
+    "introduction": "During his later years confined to Springfield, Bethlem Royal, and Napsbury hospitals, Louis Wain transformed his beloved comic felines into vibrating astral entities. Laying down saturated gouache in electrifying geometric fractals, Turkish-carpet spirals, and radiant halos, Wain dissolved the boundary between British illustration and visionary outsider modernism."
+  },
+  {
     "id": "mov-south-american-pre-columbian",
     "name": "South American Pre-Columbian Art",
     "level": "movement",
@@ -509,7 +533,7 @@
     "end_year": 1532,
     "color": "#b06d3b",
     "color_name": "Ochre Clay",
-    "title_artwork_id": "paracas-flying-pampas-cats-mantle-200bce",
+    "title_artwork_id": "square-bowl-with-pampas-cats-2021-130",
     "introduction": "Chavín, Paracas, Nazca, Moche, Tiwanaku, Wari, Chimú, Calima, and Inca artists immortalized pampas cats, pumas, and jaguars in textiles, stirrup-spout vessels, gold, and monumental geoglyphs across the Andes and northern South America."
   },
   {
@@ -533,20 +557,8 @@
     "end_year": -330,
     "color": "#8c5835",
     "color_name": "Susa Ochre",
-    "title_artwork_id": "gebel-el-arak-knife-handle-felines-3300bce",
+    "title_artwork_id": null,
     "introduction": "Mesopotamian, Elamite, Anatolian, and Indus Valley artifacts capturing felines in bronze standards, carved cylinder seals, and architectural portal sculpture."
-  },
-  {
-    "id": "mov-viking-scandinavian",
-    "name": "Viking & Early Scandinavian Art",
-    "level": "movement",
-    "parent_id": "era-medieval",
-    "start_year": 750,
-    "end_year": 1100,
-    "color": "#435d6e",
-    "color_name": "Nordic Slate",
-    "title_artwork_id": "ex-419-j-lak-tturinn-the-yule-cat-icelandic-folklore-codified-in-po",
-    "introduction": "Zoomorphic woodcarvings and silver amulets from Oseberg and Birka connecting felines with Nordic mythology and the chariot of Freyja."
   },
   {
     "id": "mov-surrealism-midcentury",
@@ -559,17 +571,6 @@
     "color_name": "Deep Carmine",
     "title_artwork_id": "kahlo-self-portrait-thorn-necklace-1940",
     "introduction": "Surrealist, Existentialist, and postwar painters and sculptors (Picasso, Giacometti, Kahlo, Carrington) explored the cat as an occult guardian and solitary witness."
-  },
-  {
-    "id": "mov-expressionism",
-    "name": "Expressionism",
-    "level": "movement",
-    "parent_id": "era-mid-20th-century",
-    "start_year": 1930,
-    "end_year": 1959,
-    "color": "#7a3b2e",
-    "color_name": "Burnt Sienna",
-    "introduction": "Art that distorts form and colour to convey inner feeling over outward appearance, from Die Brücke in Dresden and Der Blaue Reiter in Munich to Vienna and Berlin. Cats appear as intimate, restless companions rendered in saturated colour and bold, angular line."
   },
   {
     "id": "mov-chinese-ming",
@@ -592,7 +593,7 @@
     "end_year": 2026,
     "color": "#6c3483",
     "color_name": "Imperial Purple",
-    "title_artwork_id": "maria-prymachenko-a-cat-caught-a-bird-1983",
+    "title_artwork_id": "ex-412-ypres-kattenstoet-festival-of-the-cats-giant-parade-sculptur",
     "introduction": "From 1960 through the 21st century, the domestic feline evolved from an intimate household companion into a universal icon of Pop Art, visionary folk painting, public civic sculpture, and digital culture."
   },
   {
@@ -608,18 +609,6 @@
     "introduction": "From Fifth Dynasty Saqqara tomb reliefs to Eleventh and Twelfth Dynasty painted tombs at Beni Hasan and turquoise faience amulets, Middle Kingdom Egyptian art documents the earliest named domestic felines (miw) and their roles as hunters and companions."
   },
   {
-    "id": "mov-egypt-second-intermediate",
-    "name": "Second Intermediate & Early New Kingdom Jewellery",
-    "level": "movement",
-    "parent_id": "era-ancient-egypt",
-    "start_year": -1650,
-    "end_year": -1550,
-    "color": "#205c8d",
-    "color_name": "Royal Gold",
-    "title_artwork_id": "bm-gold-spacer-bars-cats-ea57699",
-    "introduction": "During the Seventeenth Dynasty at Thebes, royal goldsmiths created magnificent solid gold spacer-bars and cuff bracelets featuring couchant cats bearing the cartouches of King Intef and Queen Sobekemsaf."
-  },
-  {
     "id": "mov-contemporary-pop",
     "name": "Pop Art, Visionary Folk & Contemporary Art",
     "level": "movement",
@@ -628,7 +617,7 @@
     "end_year": 2026,
     "color": "#884ea0",
     "color_name": "Amethyst",
-    "title_artwork_id": "maria-prymachenko-a-cat-caught-a-bird-1983",
+    "title_artwork_id": "ex-412-ypres-kattenstoet-festival-of-the-cats-giant-parade-sculptur",
     "introduction": "Contemporary artists celebrate felines across bold acrylics, public bronze monuments, graphic comix, and digital media."
   },
   {
@@ -640,7 +629,7 @@
     "end_year": 1900,
     "color": "#c25e2e",
     "color_name": "Indian Ochre",
-    "title_artwork_id": "ex-210-the-tamra-maew-cat-book-poems-ayutthaya-to-rattanakosin-king",
+    "title_artwork_id": "ex-218-kalighat-temple-painting-the-cat-holding-a-prawn-fish-kolkat",
     "introduction": "Across the Indian subcontinent, the Himalayas, and Southeast Asia, felines feature prominently in Buddhist Jataka reliefs, Hindu devotional art of Shashti, royal Siamese treatise manuscripts (Tamra Maew), and Kalighat folk paintings."
   }
 ]

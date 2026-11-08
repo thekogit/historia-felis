@@ -257,10 +257,16 @@ try { (function() {
         const pick = v.widths.find(x => x >= minWidth) || v.widths[v.widths.length - 1];
         return `${v.base}-${pick}.webp`;
       }
+      // Best URL for one image: local variant → raw source for hotlinked (copyrighted) works,
+      // which must never pass through a resizing proxy → wsrv.nl CDN otherwise
+      function displayUrl(work, url, width) {
+        if (work && work.hotlink) return typeof url === 'string' ? url.trim() : url;
+        return localUrl(work, url, width) || getOptimizedImageUrl(url, width);
+      }
       // src + srcset + sizes + width/height (no layout shift); CDN fallback when not pre-built
       function imgAttrs(work, url, width, sizes) {
-        const v = localVariant(work, url);
-        if (!v) return `src="${getOptimizedImageUrl(url, width)}"`;
+        const v = !(work && work.hotlink) && localVariant(work, url);
+        if (!v) return `src="${displayUrl(work, url, width)}"`;
         const srcset = v.widths.map(x => `${v.base}-${x}.webp ${x}w`).join(', ');
         return `src="${localUrl(work, url, width)}" srcset="${srcset}" sizes="${sizes}" width="${v.w}" height="${v.h}"`;
       }
@@ -312,8 +318,8 @@ try { (function() {
       }
 
       // Blur-up: the 8px placeholder from the build sits behind the image until it loads
-      const lqClass = work => (work && work.lq ? ' has-lq' : '');
-      const lqStyle = work => (work && work.lq && /^data:image\/webp;base64,[A-Za-z0-9+/=]+$/.test(work.lq) ? ` --lq: url('${work.lq}');` : '');
+      const lqClass = work => (work && work.lq && !work.hotlink ? ' has-lq' : '');
+      const lqStyle = work => (work && work.lq && !work.hotlink && /^data:image\/webp;base64,[A-Za-z0-9+/=]+$/.test(work.lq) ? ` --lq: url('${work.lq}');` : '');
 
       // Render Card Media: single image or multi-image swipe slider with locked dimensions
       function renderCardMedia(work, width = 500, sizes = '', eager = false) {
@@ -2171,7 +2177,7 @@ try { (function() {
                       <h3 class="card-title-eng" style="font-size: clamp(20px, 2.5vw, 28px);">${work.title_eng || work.title}</h3>
                       ${work.title_eng && work.title_eng !== work.title ? `<div class="card-title-orig">${work.title}</div>` : ''}
                       <div class="card-artist-meta settle-detail" style="--stagger-i:${Math.min(itemIndex, 10)}">${work.artist} (${work.artist_dates || work.culture})</div>
-                      <p class="card-desc-snippet" style="font-size: 14px; max-width: 760px;">${work.description}</p>
+                      ${work.description ? `<p class="card-desc-snippet" style="font-size: 14px; max-width: 760px;">${work.description}</p>` : (work.attribution ? `<p class="card-desc-snippet card-attribution">${work.attribution}</p>` : '')}
                       <div class="card-tags-row settle-detail" style="--stagger-i:${Math.min(itemIndex, 10)}">
                         <span class="fabric-tag">${mov.name}</span>
                         <span class="fabric-tag">${work.culture}</span>
@@ -2203,7 +2209,7 @@ try { (function() {
                       <h3 class="card-title-eng">${work.title_eng || work.title}</h3>
                       ${work.title_eng && work.title_eng !== work.title ? `<div class="card-title-orig">${work.title}</div>` : ''}
                       <div class="card-artist-meta settle-detail" style="--stagger-i:${Math.min(itemIndex, 10)}">${work.artist} (${work.artist_dates || work.culture})</div>
-                      <p class="card-desc-snippet">${work.description.length > 170 ? work.description.slice(0, 170) + '…' : work.description}</p>
+                      ${work.description ? `<p class="card-desc-snippet">${work.description.length > 170 ? work.description.slice(0, 170) + '…' : work.description}</p>` : (work.attribution ? `<p class="card-desc-snippet card-attribution">${work.attribution}</p>` : '')}
                       <div class="card-tags-row settle-detail" style="--stagger-i:${Math.min(itemIndex, 10)}">
                         <span class="fabric-tag">${mov.name}</span>
                       </div>
@@ -4370,12 +4376,18 @@ try { (function() {
                   </button>
                 </div>
 
+                ${work.text_policy === 'attribution-only' ? `
+                <div class="frl-label-caption">Shown with credit to the artist</div>
+                <div class="dossier-desc-text dossier-attribution" style="margin-top: 6px;">${work.attribution || `${work.title}, ${work.date_display}, by ${work.artist}`}</div>
+                <p class="rights-note">© ${work.artist}. All rights reserved. Images load directly from the artist’s own website and are not copied here. See more at <a href="${escapeAttr(work.source_url)}" target="_blank" rel="noopener noreferrer">${(work.source_url || '').replace(/^https?:\/\/(www\.)?/, '')}</a>.</p>
+                ` : `
                 <div class="frl-label-caption">From the Collection</div>
                 <div class="dossier-desc-text" style="margin-top: 6px;">${work.description}</div>
 
-                <div class="historical-margin-note" style="margin-top: 18px;">
+                ${work.context ? `<div class="historical-margin-note" style="margin-top: 18px;">
                   <p>${work.context}</p>
-                </div>
+                </div>` : ''}
+                `}
 
                 <div class="frl-specs-table">
                   <div class="frl-spec-item">
@@ -4403,9 +4415,13 @@ try { (function() {
                     <span class="frl-spec-value tabular-numbers">${work.dimensions || 'Archival folio standards'}</span>
                   </div>
                   <div class="frl-spec-item">
-                    <span class="frl-spec-label">License</span>
-                    <span class="frl-spec-value">${work.license}</span>
+                    <span class="frl-spec-label">Image Licence</span>
+                    <span class="frl-spec-value">${work.license_url ? `<a href="${escapeAttr(work.license_url)}" target="_blank" rel="noopener noreferrer license">${work.license}</a>` : (work.license || 'Unverified')}</span>
                   </div>
+                  ${work.image_credit ? `<div class="frl-spec-item">
+                    <span class="frl-spec-label">Image Credit</span>
+                    <span class="frl-spec-value">${work.image_credit}</span>
+                  </div>` : ''}
                 </div>
 
                 <div class="frl-label-caption">Archival Keywords</div>
@@ -4417,7 +4433,7 @@ try { (function() {
 
                 <div class="archive-actions-row">
                   <a href="${work.source_url}" target="_blank" rel="noopener noreferrer" class="primary-archive-btn">
-                    MUSEUM COLLECTION ARCHIVE ↗
+                    ${work.text_policy === 'attribution-only' ? 'ARTIST’S WEBSITE ↗' : 'MUSEUM COLLECTION ARCHIVE ↗'}
                   </a>
                 </div>
               </div>
@@ -4427,7 +4443,7 @@ try { (function() {
                   <div class="carousel-viewport">
                     <div class="carousel-stage ${allAngles.length > 1 ? 'has-multiple' : ''}" id="carousel-stage">
                       ${allAngles.map((imgUrl, idx) => `
-                        <img src="${escapeAttr(localUrl(work, imgUrl, 1400) || getOptimizedImageUrl(imgUrl, 1400))}" data-raw-src="${escapeAttr(imgUrl)}" alt="${escapeAttr(work.title_eng || work.title)} - View ${idx + 1}"
+                        <img src="${escapeAttr(displayUrl(work, imgUrl, 1400))}" data-raw-src="${escapeAttr(imgUrl)}" alt="${escapeAttr(work.title_eng || work.title)} - View ${idx + 1}"
                              class="slide ${idx === 0 ? 'is-active' : ''}"
                              data-slide-index="${idx}"
                              ${idx === 0 ? 'fetchpriority="high" decoding="sync"' : 'decoding="async"'}
@@ -5400,7 +5416,7 @@ try { (function() {
             prefetched.add(id);
             const img = new Image();
             img.decoding = 'async';
-            img.src = localUrl(work, url, 1400) || getOptimizedImageUrl(url, 1400);
+            img.src = displayUrl(work, url, 1400); // same URL the hero will request
             if (img.decode) img.decode().catch(() => {});
           }, 80); // ignore pointers just passing over
         }, { passive: true });
