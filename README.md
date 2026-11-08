@@ -33,7 +33,8 @@ art_cats/
 ├── data/                       # Canonical structured datasets
 │   ├── artworks.json           # Catalog of all 739 artworks (metadata, dates, licenses, URLs)
 │   ├── categories.json         # Taxonomy of 48 eras and art movements
-│   └── haiku_pool.json         # Curated pool of 100 archival haikus with translations
+│   ├── haiku_pool.json         # Curated pool of 100 archival haikus with translations
+│   └── poets.json              # The 12 poet pages (#/poet/<slug>): life, asides, timeline, portraits + rights
 │
 ├── src/                        # Modular human-maintainable source code
 │   ├── template.html           # Clean HTML skeleton & semantic layout
@@ -49,6 +50,7 @@ art_cats/
 └── scripts/                    # Core automation tooling
     ├── editor_server.js        # Local backend server for the Visual Catalog Editor
     ├── build.js                # Node.js bundler (compiles src/ + data/ -> index.html in ~20ms)
+    ├── poet_images.js          # Resolves poet portraits on Wikimedia Commons (licence, credit) + local WebP copies
     └── validate.js             # Automated schema, taxonomy & bundle health validator
 ```
 

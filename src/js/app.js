@@ -827,7 +827,7 @@ try { (function() {
             if (k) query[decodeURIComponent(k)] = decodeURIComponent(v || '');
           });
         }
-        const KNOWN_PAGES = ['timeline', 'categories', 'category', 'work', 'stack', 'dossier'];
+        const KNOWN_PAGES = ['timeline', 'categories', 'category', 'work', 'stack', 'dossier', 'poet'];
         return {
           raw: hash,
           page: KNOWN_PAGES.includes(parts[0]) ? parts[0] : 'timeline',
@@ -843,13 +843,13 @@ try { (function() {
 
       function updateNavActive(page) {
         if (eraIndexBar) {
-          eraIndexBar.style.display = (page === 'dossier') ? 'none' : '';
+          eraIndexBar.style.display = (page === 'dossier' || page === 'poet') ? 'none' : '';
         }
         // Category, sub-category and artwork pages live under CATEGORIES; unknown routes
         // render the timeline (see navigate()), so they highlight TIMELINE too
         const activeNav = ['categories', 'category', 'work'].includes(page) ? navCategories
           : page === 'stack' ? navStack
-          : page === 'dossier' ? navHaikus
+          : (page === 'dossier' || page === 'poet') ? navHaikus
           : navTimeline;
         [navTimeline, navCategories, navHaikus, navStack].forEach(a => {
           if (a) a.classList.toggle('active', a === activeNav);
@@ -1276,6 +1276,12 @@ try { (function() {
       }
 
       window.HAIKU_POOL = HAIKU_POOL;
+
+      // Poet biographies for #/poet/<slug> (data/poets.json, injected at build time).
+      // `author` matches the haiku pool's author field, so any haiku leads to its poet.
+      const POETS = /* __INJECT_POETS__ */ [];
+      const poetForAuthor = name => POETS.find(p => p.author === name || p.name === name) || null;
+      window.POETS = POETS;
       window.pickRandomHaikus = pickRandomHaikus;
       window.RIBBON_CONFIGS = RIBBON_CONFIGS;
       window.buildRibbonSegment = buildRibbonSegment;
@@ -1581,7 +1587,20 @@ try { (function() {
 
       function populateTooltipFromHaiku(h) {
         if (!h) return false;
-        if (ttAuthor) ttAuthor.textContent = h.author || '';
+        if (ttAuthor) {
+          ttAuthor.textContent = h.author || '';
+          // The poet's name leads to their page (pin the tooltip on desktop to reach it)
+          const poet = poetForAuthor(h.author);
+          if (poet) {
+            ttAuthor.setAttribute('href', '#/poet/' + poet.slug);
+            ttAuthor.removeAttribute('aria-disabled');
+            ttAuthor.title = 'About ' + poet.name;
+          } else {
+            ttAuthor.removeAttribute('href');
+            ttAuthor.setAttribute('aria-disabled', 'true');
+            ttAuthor.removeAttribute('title');
+          }
+        }
         const ttLifespan = document.getElementById('tt-lifespan');
         if (ttLifespan) ttLifespan.textContent = h.lifespan ? '(' + h.lifespan + ')' : '';
         if (ttYear) ttYear.textContent = h.year || '';
@@ -1700,7 +1719,9 @@ try { (function() {
         });
       }
       if (tooltip) {
-        tooltip.addEventListener('click', () => {
+        tooltip.addEventListener('click', (e) => {
+          // The poet's name is a real link: let it navigate (navigate() closes the card)
+          if (e.target.closest && e.target.closest('#tt-author[href]')) return;
           if (isTouchHaikuOpen) closeTouchHaikuModal();
         });
       }
@@ -1714,9 +1735,55 @@ try { (function() {
         }, true);
       }
 
-      // Desktop Hover Tooltip
+      // Desktop Hover Tooltip. A click on a margin haiku pins its card in place, so the pointer
+      // can travel to it and follow the poet's name; a click elsewhere or Esc lets it go.
+      let ttPinned = false;
+      // After a navigation the new page renders under a resting pointer, and the browser fires
+      // mouseover at it; hover cards wait until the mouse has actually moved.
+      let ttQuietAt = null;
+      document.addEventListener('mousemove', (e) => {
+        if (ttQuietAt && Math.hypot(e.clientX - ttQuietAt.x, e.clientY - ttQuietAt.y) > 4) ttQuietAt = null;
+      }, true);
+      function placeTooltip(x, y) {
+        const offsetX = x < window.innerWidth / 2 ? x + 24 : x - 300;
+        const offsetY = Math.min(window.innerHeight - 140, Math.max(16, y - 30));
+        tooltip.style.left = `${Math.max(12, offsetX)}px`;
+        tooltip.style.top = `${offsetY}px`;
+      }
+      function unpinMarginTooltip() {
+        if (window.lastPointer) ttQuietAt = { ...window.lastPointer };
+        if (tooltip && !isTouchHaikuOpen) {
+          tooltip.classList.remove('visible');
+          tooltip.classList.add('hidden');
+        }
+        if (!ttPinned || !tooltip) return;
+        ttPinned = false;
+        tooltip.classList.remove('pinned', 'visible');
+        tooltip.classList.add('hidden');
+        tooltip.setAttribute('aria-hidden', 'true');
+      }
+      document.addEventListener('click', (e) => {
+        if (isTouchHaikuOpen || !isDesktopPointer || window.innerWidth <= 991 || !tooltip) return;
+        if (e.target.closest && e.target.closest('#margin-tooltip')) return;
+        const cell = e.target.closest ? e.target.closest('.m-char') : null;
+        const cfg = cell && RIBBON_CONFIGS[Number(cell.dataset.ribbon)];
+        const h = cfg && cfg.haikus && cfg.haikus[Number(cell.dataset.slot)];
+        if (h && populateTooltipFromHaiku(h)) {
+          ttPinned = true;
+          tooltip.classList.remove('hidden', 'touch-modal-active');
+          tooltip.classList.add('visible', 'pinned');
+          tooltip.setAttribute('aria-hidden', 'false');
+          placeTooltip(e.clientX, e.clientY);
+        } else {
+          unpinMarginTooltip();
+        }
+      });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') unpinMarginTooltip(); });
+      document.addEventListener('pointermove', (e) => { window.lastPointer = { x: e.clientX, y: e.clientY }; }, { passive: true, capture: true });
+
       document.addEventListener('mouseover', (e) => {
-        if (isTouchHaikuOpen || !isDesktopPointer) return;
+        if (isTouchHaikuOpen || !isDesktopPointer || ttPinned) return;
+        if (ttQuietAt && Math.hypot(e.clientX - ttQuietAt.x, e.clientY - ttQuietAt.y) <= 4) return;
         const cell = e.target.closest ? e.target.closest('.m-char') : null;
         if (!cell) {
           if (tooltip) {
@@ -1739,18 +1806,13 @@ try { (function() {
       });
 
       document.addEventListener('mousemove', (e) => {
-        if (isTouchHaikuOpen || !isDesktopPointer) return;
+        if (isTouchHaikuOpen || !isDesktopPointer || ttPinned) return;
         if (!tooltip || !tooltip.classList.contains('visible')) return;
-        const pointerX = e.clientX;
-        const pointerY = e.clientY;
-        const offsetX = pointerX < window.innerWidth / 2 ? pointerX + 24 : pointerX - 300;
-        const offsetY = Math.min(window.innerHeight - 140, Math.max(16, pointerY - 30));
-        tooltip.style.left = `${Math.max(12, offsetX)}px`;
-        tooltip.style.top = `${offsetY}px`;
+        placeTooltip(e.clientX, e.clientY);
       });
 
       document.addEventListener('mouseleave', () => {
-        if (isTouchHaikuOpen) return;
+        if (isTouchHaikuOpen || ttPinned) return;
         if (tooltip) {
           tooltip.classList.remove('visible');
           tooltip.classList.add('hidden');
@@ -1844,6 +1906,11 @@ try { (function() {
 
       function navigate() {
         closeTouchHaikuModal();
+        unpinMarginTooltip();
+        if (window.activePoetCleanup) {
+          window.activePoetCleanup.abort();
+          window.activePoetCleanup = null;
+        }
         const currentY = window.scrollY;
         if (lastRoute) {
           scrollMemory.set(lastRoute, currentY);
@@ -1891,7 +1958,10 @@ try { (function() {
             renderStackView();
             break;
           case 'dossier':
-            renderDossierView();
+            renderDossierView(route.query);
+            break;
+          case 'poet':
+            renderPoetView(route.param);
             break;
           default:
             renderTimelineView();
@@ -5234,7 +5304,7 @@ try { (function() {
       // ============================================================================
       // 8. VIEW: ARCHIVAL CAT HAIKU DOSSIER (#/dossier)
       // ============================================================================
-      function renderDossierView() {
+      function renderDossierView(query = {}) {
         if (window.activeTimelineScrollHandler) {
           window.removeEventListener('scroll', window.activeTimelineScrollHandler);
           window.activeTimelineScrollHandler = null;
@@ -5256,6 +5326,7 @@ try { (function() {
               name,
               jp: h.fullAuthorJp || h.authorJp || h.shortAuthorJp || '',
               life: h.lifespan || '',
+              page: poetForAuthor(name),
               slug: 'dossier-poet-' + name.normalize('NFD').replace(/[^\w]+/g, '-').replace(/^-|-$/g, '').toLowerCase(),
               poems: []
             });
@@ -5277,7 +5348,7 @@ try { (function() {
         const sectionsHtml = poetList.map(p => `
           <section class="dossier-poet" id="${p.slug}" aria-labelledby="${p.slug}-title">
             <header class="dossier-poet-head">
-              <h2 id="${p.slug}-title">${esc(p.name)}${p.jp ? `<span lang="ja">${esc(p.jp)}</span>` : ''}</h2>
+              <h2 id="${p.slug}-title">${p.page ? `<a class="dossier-poet-link" href="#/poet/${p.page.slug}" title="About ${esc(p.name)}">${esc(p.name)}</a>` : esc(p.name)}${p.jp ? `<span lang="ja">${esc(p.jp)}</span>` : ''}</h2>
               <span class="dossier-label">${[p.life, `${p.poems.length} ${p.poems.length === 1 ? 'poem' : 'poems'}`].filter(Boolean).join(' · ')}</span>
             </header>
             ${p.poems.map(h => {
@@ -5291,7 +5362,7 @@ try { (function() {
                   <p class="dossier-tr">${esc(h.en || h.literal || '')}</p>
                   ${h.romaji ? `<p class="dossier-romaji">${esc(h.romaji)}</p>` : ''}
                   ${h.notes ? `<p class="dossier-notes">${esc(h.notes)}</p>` : ''}
-                  <div class="dossier-attr dossier-label">${esc(p.name)}${p.jp ? `<span lang="ja">${esc(p.jp)}</span>` : ''}</div>
+                  <div class="dossier-attr dossier-label">${p.page ? `<a class="dossier-poet-link" href="#/poet/${p.page.slug}">${esc(p.name)}</a>` : esc(p.name)}${p.jp ? `<span lang="ja">${esc(p.jp)}</span>` : ''}</div>
                 </div>
                 <button class="card-stack-btn dossier-save ${isSaved ? 'active' : ''}" data-haiku-id="haiku:${esc(h.id)}" title="Save haiku to Curatorial Stack" aria-label="Save haiku to stack" aria-pressed="${isSaved}" type="button" onclick="window.toggleHaikuStack('haiku:${esc(h.id)}', this);">${heartSvg(isSaved)}</button>
               </article>`;
@@ -5335,6 +5406,252 @@ try { (function() {
           appRoot.querySelectorAll('.dossier-poet').forEach(s => window.dossierIndexObserver.observe(s));
         }
         if (poetList.length) setActive(poetList[0].slug);
+        const wanted = query.poet && poetList.find(p => p.page && p.page.slug === query.poet);
+        if (wanted) {
+          // after navigate() has restored the scroll position for this route
+          requestAnimationFrame(() => {
+            const target = document.getElementById(wanted.slug);
+            if (target) { target.scrollIntoView({ block: 'start' }); setActive(wanted.slug); }
+          });
+        }
+      }
+
+      // ============================================================================
+      // 9. VIEW: POET BIOGRAPHY (#/poet/<slug>)
+      // Portrait column (sticky, pinned by its bottom edge) beside Life and the cats note,
+      // then a free-gliding horizontal timeline. Content lives in data/poets.json.
+      // ============================================================================
+      // Trusted text from data/poets.json: [label](url) links and *emphasis*; inline HTML
+      // (lang spans) passes through. External links open in a new tab.
+      function poetRichText(text) {
+        return String(text || '')
+          .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (m, label, url) => url.startsWith('#')
+            ? `<a class="poet-wl" href="${escapeAttr(url)}">${label}</a>`
+            : `<a class="poet-wl" href="${escapeAttr(url)}" target="_blank" rel="noopener noreferrer">${label}</a>`)
+          .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+      }
+      // Local WebP variants (assets/img) when built; the Wikimedia original otherwise
+      const poetImgSrc = (img, w) => {
+        const L = img.local;
+        if (!L || !L.widths || !L.widths.length) return img.src;
+        return `${L.base}-${L.widths.find(x => x >= w) || L.widths[L.widths.length - 1]}.webp`;
+      };
+      const poetSrcset = img => img.local && img.local.widths
+        ? img.local.widths.map(x => `${img.local.base}-${x}.webp ${x}w`).join(', ')
+        : `${img.src} ${img.w}w`;
+      const poetNatW = img => (img.local && img.local.w) || img.w;
+
+      function renderPoetView(slug) {
+        sideIndicator.style.display = 'none';
+        mobileEraBar.style.display = 'none';
+        tintOverlay.style.backgroundColor = 'transparent';
+        const esc = escapeAttr;
+        const idx = POETS.findIndex(p => p.slug === slug);
+        const poet = POETS[idx];
+
+        if (!poet) {
+          appRoot.innerHTML = `
+            <div class="poet-page poet-missing">
+              <header class="poet-mast"><h1>Poet not found</h1><div class="poet-rule" aria-hidden="true"></div></header>
+              <p>There is no poet at this address. <a class="poet-wl" href="#/dossier">Back to the Haiku Dossier</a></p>
+            </div>`;
+          return;
+        }
+
+        const prev = POETS[idx - 1], next = POETS[idx + 1];
+        const poems = (HAIKU_POOL || []).filter(h => h.author === poet.author);
+        const featured = poems.slice(0, 3);
+        const first = poet.name.split(' ').pop();
+        const moreLabel = poems.length === 1 ? `The one cat haiku by ${first} in the dossier`
+          : poems.length === 2 ? `Both of ${first}’s cat haiku in the dossier`
+          : `All ${poems.length} of ${first}’s cat haiku in the dossier`;
+
+        // Portrait plate: the first image large, any others as a row of thumbnails
+        const imgs = poet.images || [];
+        const imgHtml = (img, i) => `
+          <img class="poet-plate-img ${poetNatW(img) < 600 ? 'is-small' : ''}" src="${esc(poetImgSrc(img, 960))}"
+            srcset="${esc(poetSrcset(img))}"
+            sizes="(max-width: 860px) 280px, 320px" width="${poetNatW(img)}" height="${(img.local && img.local.h) || img.h}"
+            ${poetNatW(img) < 600 ? `style="max-width:${Math.round(poetNatW(img) * 1.25)}px"` : ''}
+            alt="${esc(img.caption)}" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">`;
+        const capHtml = img => {
+          const credit = img.credit && !img.caption.includes(img.credit) ? ` ${esc(img.credit)}.` : '';
+          return `${esc(img.caption)}${credit} <a class="poet-cap-src" href="${esc(img.page)}" target="_blank" rel="noopener noreferrer">${esc(img.license)} · full size ↗</a>`;
+        };
+        const plateHtml = imgs.length ? `
+          <figure class="poet-plate">
+            <a class="poet-plate-frame" href="${esc(imgs[0].page)}" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size image on Wikimedia Commons">${imgHtml(imgs[0], 0)}</a>
+            <figcaption class="poet-plate-cap">${capHtml(imgs[0])}</figcaption>
+            ${imgs.length > 1 ? `<div class="poet-thumbs" role="group" aria-label="More images">${imgs.map((img, i) => `
+              <button type="button" class="poet-thumb ${i === 0 ? 'active' : ''}" data-i="${i}" aria-label="Show image ${i + 1} of ${imgs.length}" aria-pressed="${i === 0}">
+                <img src="${esc(poetImgSrc(img, 160))}" alt="" loading="lazy" decoding="async"></button>`).join('')}</div>` : ''}
+          </figure>` : `
+          <figure class="poet-plate poet-plate-empty">
+            <div class="poet-nameplate" lang="ja">${esc(poet.jp)}</div>
+            <figcaption class="poet-plate-cap">No portrait of ${esc(poet.name)} with a clear public licence is available, so the name stands in for the face.</figcaption>
+          </figure>`;
+
+        // Timeline: one even row per event; the active years drawn as a rust bar on the line
+        const yearNum = y => parseInt(String(y).replace(/[^0-9]/g, ''), 10);
+        const tl = poet.timeline || [];
+        const [from, to] = poet.active || [];
+        const i0 = Math.max(0, tl.findIndex(e => e.kind !== 'after' && yearNum(e.year) >= from));
+        let i1 = i0;
+        tl.forEach((e, i) => { if (e.kind !== 'after' && yearNum(e.year) <= to) i1 = i; });
+        const KIND = { life: 'v', work: 'o', after: 'p' };
+        const tlHtml = tl.map((e, i) => {
+          const k = KIND[e.kind] || 'v';
+          const link = e.link ? `<a class="poet-src" href="${esc(e.link.url)}" target="_blank" rel="noopener noreferrer"${e.link.lang ? ` hreflang="${esc(e.link.lang)}"` : ''}>${esc(e.link.label)} ↗${e.link.lang === 'ja' ? '<span>in Japanese</span>' : ''}</a>` : '';
+          return `<span class="poet-yr ${k}" style="grid-column:${i + 1}">${esc(e.year)}</span><span class="poet-dot ${k}" style="grid-column:${i + 1}" aria-hidden="true"></span><span class="poet-tx ${k}" style="grid-column:${i + 1}">${esc(e.text)}${link}</span>`;
+        }).join('');
+
+        const sourceLabel = url => /\/\/ja\./.test(url) ? 'Wikipedia (Japanese)' : /\/\/en\./.test(url) ? 'Wikipedia (English)' : url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0];
+
+        appRoot.innerHTML = `
+          <div class="poet-page">
+            <header class="poet-mast">
+              <h1>${esc(poet.name)}</h1>
+              <span class="poet-mast-jp" lang="ja">${esc(poet.jp)}</span>
+              <div class="poet-mast-dates">${esc(poet.life.replace('–', ' — '))}</div>
+              <div class="poet-rule" aria-hidden="true"></div>
+            </header>
+
+            <div class="poet-cols">
+              <aside class="poet-side" aria-label="Portrait and asides">
+                ${plateHtml}
+                <h2 class="poet-h3">Asides</h2>
+                <ul class="poet-asides">${(poet.asides || []).map(a => `<li><b>${esc(a.title)}</b><span>${poetRichText(a.text)}</span></li>`).join('')}</ul>
+                <p class="poet-sources">Sources: ${(poet.sources || []).map(u => `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${sourceLabel(u)}</a>`).join(' · ')}</p>
+              </aside>
+
+              <main class="poet-main">
+                <h2 class="poet-h2">Life</h2>
+                <div class="poet-life">${(poet.lifeText || []).map(par => `
+                  <div class="poet-para"><span class="poet-per">${esc(par.years)}</span><p>${poetRichText(par.text)}</p></div>`).join('')}
+                </div>
+
+                ${poet.poem ? `<figure class="poet-dew">
+                  <p class="poet-dew-jp" lang="ja">${esc(poet.poem.jp)}</p>
+                  <p class="poet-dew-en">${esc(poet.poem.en)}</p>
+                  ${poet.poem.note ? `<figcaption class="poet-dew-note">${esc(poet.poem.note)}</figcaption>` : ''}
+                </figure>` : ''}
+
+                <h2 class="poet-h2">${esc(first)} and cats</h2>
+                <div class="poet-note">${(poet.cats || []).map(c => `<p>${poetRichText(c)}</p>`).join('')}</div>
+                ${featured.length ? `<ol class="poet-poems">${featured.map(h => `
+                  <li><div><p class="poet-poem-jp" lang="ja">${esc(h.jp || '')}</p>
+                    ${h.romaji ? `<p class="poet-poem-ro">${esc(h.romaji.replace(/ \/ /g, ' · '))}</p>` : ''}
+                    <p class="poet-poem-en">${esc(h.en || h.literal || '')}</p></div></li>`).join('')}</ol>
+                <a class="poet-more" href="#/dossier?poet=${esc(poet.slug)}">${esc(moreLabel)} →</a>` : ''}
+              </main>
+            </div>
+
+            ${tl.length ? `<section class="poet-tl" aria-label="Timeline of ${esc(poet.name)}’s life and work">
+              <div class="poet-tl-head">
+                <div><h2 class="poet-h2">Timeline</h2>
+                  <div class="poet-legend"><span class="v"><i></i>Life</span><span class="o"><i></i>Work</span><span class="p"><i></i>Afterwards</span></div></div>
+                <div class="poet-ctrl"><button type="button" data-step="-1" aria-label="Earlier years">‹</button><button type="button" data-step="1" aria-label="Later years">›</button></div>
+              </div>
+              <div class="poet-frame is-start"><div class="poet-track" tabindex="0" role="region" aria-label="Timeline, scrolls sideways">
+                <div class="poet-rail" style="--i0:${i0};--i1:${i1}">
+                  ${from ? `<div class="poet-act"><span>Active ${from}–${to}</span></div>` : ''}
+                  ${tlHtml}
+                </div></div></div>
+              <div class="poet-mini" aria-hidden="true"><b></b></div>
+            </section>` : ''}
+
+            <nav class="poet-pager" aria-label="Poets">
+              ${prev ? `<a class="poet-prev" href="#/poet/${esc(prev.slug)}"><span>Previous</span><strong>${esc(prev.name)}</strong></a>` : '<span></span>'}
+              <a class="poet-all" href="#/dossier">All poets</a>
+              ${next ? `<a class="poet-next" href="#/poet/${esc(next.slug)}"><span>Next</span><strong>${esc(next.name)}</strong></a>` : '<span></span>'}
+            </nav>
+          </div>`;
+
+        const ctl = new AbortController();
+        window.activePoetCleanup = ctl;
+        const on = (el, ev, fn, opts = {}) => el && el.addEventListener(ev, fn, { ...opts, signal: ctl.signal });
+        const page = appRoot.querySelector('.poet-page');
+
+        // Thumbnails swap the plate image and its caption
+        const plate = page.querySelector('.poet-plate');
+        page.querySelectorAll('.poet-thumb').forEach(btn => on(btn, 'click', () => {
+          const img = imgs[Number(btn.dataset.i)];
+          plate.querySelector('.poet-plate-frame').href = img.page;
+          plate.querySelector('.poet-plate-frame').innerHTML = imgHtml(img, 0);
+          plate.querySelector('.poet-plate-cap').innerHTML = capHtml(img);
+          page.querySelectorAll('.poet-thumb').forEach(b => {
+            b.classList.toggle('active', b === btn);
+            b.setAttribute('aria-pressed', String(b === btn));
+          });
+          pin();
+        }));
+
+        // The shorter left column scrolls with the page until its bottom is in view, then holds
+        const side = page.querySelector('.poet-side');
+        const headerH = () => parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) || 56;
+        function pin() {
+          if (!side) return;
+          if (window.innerWidth <= 860) { side.style.top = ''; return; }
+          side.style.top = Math.min(headerH() + 24, window.innerHeight - side.offsetHeight - 24) + 'px';
+        }
+        on(window, 'resize', pin);
+        page.querySelectorAll('.poet-side img').forEach(img => on(img, 'load', pin));
+        pin();
+
+        // Timeline: buttons, keys, drag with a glide on release, fades and a position bar
+        const frame = page.querySelector('.poet-frame');
+        const track = page.querySelector('.poet-track');
+        if (!track) return;
+        const bar = page.querySelector('.poet-mini b');
+        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        function update() {
+          const max = track.scrollWidth - track.clientWidth;
+          const r = max > 0 ? track.scrollLeft / max : 0;
+          const w = track.clientWidth / track.scrollWidth * 100;
+          bar.style.width = w + '%';
+          bar.style.left = (r * (100 - w)) + '%';
+          frame.classList.toggle('is-start', r < 0.02);
+          frame.classList.toggle('is-end', r > 0.98 || max <= 0);
+        }
+        page.querySelectorAll('.poet-ctrl [data-step]').forEach(b => on(b, 'click', () =>
+          track.scrollBy({ left: Number(b.dataset.step) * track.clientWidth * 0.66, behavior: reduce ? 'auto' : 'smooth' })));
+        on(track, 'scroll', update, { passive: true });
+        on(window, 'resize', update);
+        on(track, 'keydown', e => {
+          if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+          e.preventDefault();
+          track.scrollBy({ left: (e.key === 'ArrowRight' ? 1 : -1) * 300, behavior: reduce ? 'auto' : 'smooth' });
+        });
+        let drag = null, lastX = 0, vx = 0, raf = 0, moved = 0;
+        const glide = () => {
+          track.scrollLeft -= vx;
+          vx *= 0.94;
+          if (Math.abs(vx) > 0.4) raf = requestAnimationFrame(glide);
+        };
+        on(track, 'pointerdown', e => {
+          if (e.pointerType !== 'mouse' || e.button !== 0) return; // touch scrolls natively
+          cancelAnimationFrame(raf);
+          drag = { x: e.clientX, s: track.scrollLeft };
+          lastX = e.clientX; vx = 0; moved = 0;
+          track.classList.add('is-dragging');
+        });
+        on(window, 'pointermove', e => {
+          if (!drag) return;
+          vx = e.clientX - lastX;
+          lastX = e.clientX;
+          track.scrollLeft = drag.s - (e.clientX - drag.x);
+        });
+        on(window, 'pointerup', () => {
+          if (!drag) return;
+          moved = Math.abs(track.scrollLeft - drag.s);
+          drag = null;
+          track.classList.remove('is-dragging');
+          if (!reduce) raf = requestAnimationFrame(glide);
+        });
+        // A drag that ends on a link must not follow it
+        on(track, 'click', e => { if (moved > 5) { e.preventDefault(); e.stopPropagation(); moved = 0; } }, { capture: true });
+        ctl.signal.addEventListener('abort', () => cancelAnimationFrame(raf));
+        update();
       }
 
       // Initialize living margins on start
@@ -5431,7 +5748,10 @@ try { (function() {
           if (!newEl.decode) return;
           return Promise.race([newEl.decode().catch(() => {}), new Promise(r => setTimeout(r, 150))]);
         });
-        vt.finished.finally(() => { if (newEl) newEl.style.viewTransitionName = ''; });
+        // A second quick navigation skips this transition; its promises then reject, which is
+        // expected, not an error worth reporting
+        vt.ready.catch(() => {});
+        vt.finished.catch(() => {}).finally(() => { if (newEl) newEl.style.viewTransitionName = ''; });
       });
 
       // ---- Hover prefetch: decode the artwork page's hero before the click lands ----
