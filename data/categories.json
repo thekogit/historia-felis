@@ -561,6 +561,18 @@
     "introduction": "Mesopotamian, Elamite, Anatolian, and Indus Valley artifacts capturing felines in bronze standards, carved cylinder seals, and architectural portal sculpture."
   },
   {
+    "id": "mov-aegean-bronze-age",
+    "name": "Aegean Bronze Age: Minoan & Mycenaean Art",
+    "level": "movement",
+    "parent_id": "era-prehistory",
+    "start_year": -3000,
+    "end_year": -1100,
+    "color": "#8c6a3c",
+    "color_name": "Bronze Patina",
+    "title_artwork_id": "mycenae-dagger-wild-cats-hunting-ducks-1550bce",
+    "introduction": "Palace frescoes of Minoan Crete and the inlaid weapons of the Mycenaean shaft graves, where cats first appear in Greek lands as hunters stalking birds through river reeds."
+  },
+  {
     "id": "mov-surrealism-midcentury",
     "name": "Surrealism & Mid-Century Modernism",
     "level": "movement",
