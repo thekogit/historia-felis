@@ -5244,62 +5244,97 @@ try { (function() {
         tintOverlay.style.backgroundColor = 'transparent';
 
         const allDossierHaikus = (HAIKU_POOL && HAIKU_POOL.length > 0) ? HAIKU_POOL : HAIKU_SPECIMENS;
+        const esc = escapeAttr;
+        const heartSvg = saved => `<svg width="14" height="14" viewBox="0 0 24 24" fill="${saved ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>`;
 
-        let cardsHtml = '';
+        // Group by poet; poets ordered by birth year, poems by year within each poet
+        const poets = new Map();
         allDossierHaikus.forEach((h, idx) => {
-          const hId = h.id || String(idx + 1).padStart(3, '0');
-          const authorDisplay = h.author || 'Anonymous';
-          const authorLifespan = h.lifespan ? `(${h.lifespan})` : '';
-          const authorJp = h.authorJp || h.fullAuthorJp || h.shortAuthorJp || '';
-          const yearDisplay = h.year || '';
-          const jpText = h.jp || '';
-          const romajiText = h.romaji || '';
-          const translationText = h.en || h.literal || '';
-          const isSaved = CuratorialStack.has('haiku:' + hId) || CuratorialStack.has(hId);
-
-          const extraHtml = [
-            romajiText ? `<p class="dossier-haiku-romaji">${romajiText}</p>` : '',
-            h.notes ? `<p class="dossier-haiku-notes">${h.notes}</p>` : '',
-            (h.kigo || h.pathology) ? `<p class="dossier-haiku-tags">${[h.kigo ? `<span class="dossier-haiku-kigo">${h.kigo}</span>` : '', h.pathology || ''].filter(Boolean).join(' · ')}</p>` : ''
-          ].join('');
-
-          cardsHtml += `
-            <article id="haiku-card-${hId}" class="dossier-haiku-card stagger-in" style="--stagger-i:${Math.min(idx, 10)}">
-              <header class="dossier-haiku-head">
-                <span class="dossier-haiku-author">${authorDisplay}</span>
-                ${yearDisplay ? `<span class="dossier-haiku-year settle-detail" style="--stagger-i:${Math.min(idx, 10)}">${yearDisplay}</span>` : ''}
-                <button class="card-stack-btn ${isSaved ? 'active' : ''}" data-haiku-id="haiku:${hId}" title="Save Haiku to Curatorial Stack" aria-label="Save haiku" type="button" onclick="window.toggleHaikuStack('haiku:${hId}', this);">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="${isSaved ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-                </button>
-              </header>
-              <div class="dossier-haiku-jp" lang="ja">${jpText}</div>
-              ${authorJp ? `<div class="dossier-haiku-author-jp" lang="ja">${authorJp}</div>` : ''}
-              <p class="dossier-haiku-en">${translationText}</p>
-              ${extraHtml ? `<details class="dossier-haiku-more"><summary>Notes</summary><div class="dossier-haiku-extra reveal-mask">${extraHtml}</div></details>` : ''}
-            </article>
-          `;
+          const name = h.author || 'Anonymous';
+          if (!poets.has(name)) {
+            poets.set(name, {
+              name,
+              jp: h.fullAuthorJp || h.authorJp || h.shortAuthorJp || '',
+              life: h.lifespan || '',
+              slug: 'dossier-poet-' + name.normalize('NFD').replace(/[^\w]+/g, '-').replace(/^-|-$/g, '').toLowerCase(),
+              poems: []
+            });
+          }
+          poets.get(name).poems.push({ ...h, id: h.id || String(idx + 1).padStart(3, '0') });
         });
+        const born = p => parseInt(p.life, 10) || 9999;
+        const poetList = [...poets.values()].sort((a, b) => born(a) - born(b) || a.name.localeCompare(b.name));
+        poetList.forEach(p => p.poems.sort((a, b) => (parseInt(a.year, 10) || 0) - (parseInt(b.year, 10) || 0)));
+
+        const indexHtml = poetList.map(p => `
+          <li><button type="button" class="dossier-index-link" data-target="${p.slug}">
+            <span class="dossier-index-name">${esc(p.name)}</span>
+            <span class="dossier-index-count">${p.poems.length}</span>
+            ${p.life ? `<span class="dossier-index-life">${esc(p.life)}</span>` : ''}
+          </button></li>`).join('');
+
+        let entryIdx = 0;
+        const sectionsHtml = poetList.map(p => `
+          <section class="dossier-poet" id="${p.slug}" aria-labelledby="${p.slug}-title">
+            <header class="dossier-poet-head">
+              <h2 id="${p.slug}-title">${esc(p.name)}${p.jp ? `<span lang="ja">${esc(p.jp)}</span>` : ''}</h2>
+              <span class="dossier-label">${[p.life, `${p.poems.length} ${p.poems.length === 1 ? 'poem' : 'poems'}`].filter(Boolean).join(' · ')}</span>
+            </header>
+            ${p.poems.map(h => {
+              const isSaved = CuratorialStack.has('haiku:' + h.id) || CuratorialStack.has(h.id);
+              const i = Math.min(entryIdx++, 10);
+              return `
+              <article id="haiku-card-${esc(h.id)}" class="dossier-entry stagger-in" style="--stagger-i:${i}">
+                <div class="dossier-entry-num">${esc(h.id)}${h.year ? `<small>${esc(h.year)}</small>` : ''}</div>
+                <div class="dossier-entry-jp"><div class="dossier-jp" lang="ja">${esc(h.jp || '')}</div></div>
+                <div class="dossier-entry-text">
+                  <p class="dossier-tr">${esc(h.en || h.literal || '')}</p>
+                  ${h.romaji ? `<p class="dossier-romaji">${esc(h.romaji)}</p>` : ''}
+                  ${h.notes ? `<p class="dossier-notes">${esc(h.notes)}</p>` : ''}
+                  <div class="dossier-attr dossier-label">${esc(p.name)}${p.jp ? `<span lang="ja">${esc(p.jp)}</span>` : ''}${h.year ? `<span>· ${esc(h.year)}</span>` : ''}</div>
+                </div>
+                <button class="card-stack-btn dossier-save ${isSaved ? 'active' : ''}" data-haiku-id="haiku:${esc(h.id)}" title="Save haiku to Curatorial Stack" aria-label="Save haiku to stack" aria-pressed="${isSaved}" type="button" onclick="window.toggleHaikuStack('haiku:${esc(h.id)}', this);">${heartSvg(isSaved)}</button>
+              </article>`;
+            }).join('')}
+          </section>`).join('');
 
         appRoot.innerHTML = `
-          <div class="dossier-page-container" style="max-width: 1200px; margin: 0 auto; padding: clamp(24px, 4vw, 56px) clamp(12px, 4vw, 20px); box-sizing: border-box; width: 100%; overflow-x: hidden;">
-            <section style="border-left: 2px solid var(--accent-stamp); padding-left: 14px; margin-bottom: 40px; overflow-wrap: anywhere;">
-              <div style="font-family: var(--font-technical-mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent-stamp); margin-bottom: 6px;">ARCHIVAL DOSSIER · ${allDossierHaikus.length} HAIKUS</div>
-              <h1 style="font-family: var(--font-period-rizoma); font-size: clamp(22px, 3.2vw, 32px); font-weight: 700; text-transform: uppercase; margin: 0 0 12px 0;">
-                On the Pathos of the Starving Stray (<span style="font-family: var(--font-haiku-kanji);">猫の恋</span>)
-              </h1>
-              <p style="font-family: var(--font-sans-body); font-size: 13.5px; line-height: 1.65; color: var(--text-secondary); margin-bottom: 12px;">
-                In classical Japanese haikai, the spring seasonal word <span style="font-family: var(--font-haiku-kanji); color: var(--text-main);">猫の恋</span> (<em>neko no koi</em> — "cat's love") rarely signifies domestic warmth. Instead, poets from Matsuo Bashō to Masaoka Shiki documented the stray cat returning from the rooftops: soaked in cold rain, ribs protruding from a diet of coarse barley, reduced to two gleaming eyes in the dark.
-              </p>
-              <p style="font-family: var(--font-sans-body); font-size: 13.5px; line-height: 1.65; color: var(--text-secondary); margin: 0;">
-                Along the left and right margins of this archive, classical cat haikus glide as autonomous vertical <em>tategaki</em> ribbons with subtle parallax, kinetic scroll reactivity, and procedural stray cat apparitions.
-              </p>
-            </section>
-
-            <div id="dossier-specimens-list" class="dossier-grid">
-              ${cardsHtml}
+          <div class="dossier-page-container">
+            <header class="dossier-mast">
+              <div class="dossier-label dossier-kicker">Archival Dossier · Literature</div>
+              <h1>On the Stray Cat in Haiku<span lang="ja">猫の恋</span></h1>
+              <div class="dossier-rule" aria-hidden="true"></div>
+              <p class="dossier-abstract">In classical haikai the spring season word <em lang="ja">猫の恋</em> (<em>neko no koi</em>, “cat’s love”) rarely signifies domestic warmth. From Matsuo Bashō to Masaoka Shiki, poets recorded the stray returning from the rooftops: soaked in cold rain, thin from coarse barley, reduced to two gleaming eyes in the dark. The poems are given in their original vertical setting with an English reading and romanisation.</p>
+            </header>
+            <div class="dossier-body">
+              <nav class="dossier-index" aria-label="Index of poets">
+                <h2 class="dossier-label">Index of poets</h2>
+                <ol>${indexHtml}</ol>
+              </nav>
+              <div id="dossier-specimens-list" class="dossier-reading">${sectionsHtml}</div>
             </div>
           </div>
         `;
+
+        // Index: jump to a poet without touching the hash router, and track the poet in view
+        const links = [...appRoot.querySelectorAll('.dossier-index-link')];
+        const setActive = slug => links.forEach(l => l.classList.toggle('active', l.dataset.target === slug));
+        links.forEach(l => l.addEventListener('click', () => {
+          const target = document.getElementById(l.dataset.target);
+          if (!target) return;
+          const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+          setActive(l.dataset.target);
+        }));
+        if (window.dossierIndexObserver) window.dossierIndexObserver.disconnect();
+        if ('IntersectionObserver' in window) {
+          window.dossierIndexObserver = new IntersectionObserver(entries => {
+            const visible = entries.filter(e => e.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+            if (visible.length) setActive(visible[0].target.id);
+          }, { rootMargin: '-20% 0px -70% 0px' });
+          appRoot.querySelectorAll('.dossier-poet').forEach(s => window.dossierIndexObserver.observe(s));
+        }
+        if (poetList.length) setActive(poetList[0].slug);
       }
 
       // Initialize living margins on start
