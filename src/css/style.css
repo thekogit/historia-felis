@@ -4714,3 +4714,9 @@ header.site-header,
   object-fit: contain;
   animation-duration: 380ms;
 }
+
+    /* Attribution-only entries (copyrighted works shown with credit) and licence links */
+    .card-attribution { font-style: italic; color: var(--text-secondary); }
+    .dossier-attribution { font-style: italic; }
+    .rights-note { margin-top: 12px; font-family: var(--font-mono); font-size: 11px; line-height: 1.6; color: var(--text-secondary); max-width: 62ch; }
+    .rights-note a, .frl-spec-value a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
