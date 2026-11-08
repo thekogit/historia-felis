@@ -311,6 +311,10 @@ try { (function() {
         return 1.0;
       }
 
+      // Blur-up: the 8px placeholder from the build sits behind the image until it loads
+      const lqClass = work => (work && work.lq ? ' has-lq' : '');
+      const lqStyle = work => (work && work.lq && /^data:image\/webp;base64,[A-Za-z0-9+/=]+$/.test(work.lq) ? ` --lq: url('${work.lq}');` : '');
+
       // Render Card Media: single image or multi-image swipe slider with locked dimensions
       function renderCardMedia(work, width = 500, sizes = '', eager = false) {
         if (!work) return '';
@@ -505,6 +509,7 @@ try { (function() {
       };
 
       window.handleCardImageLoad = function(img) {
+        if (img) img.classList.add('is-loaded');
         if (!img || !img.naturalWidth || !img.naturalHeight) return;
         const container = img.closest('.card-thumb-wrap, .grid-card-thumb');
         if (!container) return;
@@ -522,6 +527,7 @@ try { (function() {
 
       window.handleImageError = function(img, invNumber, title, artist, sourceUrl) {
         if (!img) return;
+        img.classList.add('is-loaded'); // never leave a failed image hidden behind its placeholder
 
         // Phase 0: a pre-built local variant failed (e.g. not deployed) → back to the CDN path
         // srcset (cards) or a plain local src (detail carousel) — the second case used to skip the fallback
@@ -1188,7 +1194,9 @@ try { (function() {
       const BRAILLE_GLITCH = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏', '∷', '※'];
       const CAT_MOTIFS = ['(=^‥^=)', '◉_◉', '🐾·🐾·🐾', '╱|、猫', '( ◉ )', 'ミ◦_◦彡'];
 
-      let currentMode = 'calm';
+      let currentMode = 'still'; // static haikus with a gentle drift; rain/prowl are opt-in
+      try { const m = localStorage.getItem('felis_margin_mode'); if (/^(still|calm|rain|prowl)$/.test(m || '')) currentMode = m; } catch (e) {}
+      let lastScrollAt = -1e9; // glyph swaps pause while the page scrolls
       let mutationRate = 0.01;
       let parallaxMultiplier = 1.0;
       let tick = 0;
@@ -1312,6 +1320,13 @@ try { (function() {
         marginMeasureTimer = setTimeout(measureRibbons, 150);
       }, { passive: true });
       if (document.fonts && document.fonts.ready) document.fonts.ready.then(measureRibbons);
+      // The kanji face arrives late (non-blocking stylesheet): re-measure once it has loaded
+      if (document.fonts && document.fonts.addEventListener) {
+        document.fonts.addEventListener('loadingdone', () => {
+          clearTimeout(marginMeasureTimer);
+          marginMeasureTimer = setTimeout(measureRibbons, 100);
+        });
+      }
 
       function initMarginRibbons() {
         randomizeRibbonHaikus();
@@ -1415,6 +1430,9 @@ try { (function() {
           marginScrollVelocity *= Math.pow(0.91, tick - prevTick);
           if (marginScrollVelocity < 0.05) marginScrollVelocity = 0;
         }
+        // Scrolling gets the whole frame budget: glyphs hold still until 300 ms after it stops
+        const scrolling = now - lastScrollAt < 300;
+        if (scrolling) lastGlyphTick = tick;
         const n = Math.min(tick - lastGlyphTick, 6); // logic ticks this glyph pass covers
         const glyphPass = n >= GLYPH_PASS_TICKS;
         if (glyphPass) lastGlyphTick = tick;
@@ -1433,7 +1451,7 @@ try { (function() {
         }
 
         const scrollY = window.scrollY || 0;
-        const amp = currentMode === 'calm' ? 4 : 9;
+        const amp = (currentMode === 'calm' || currentMode === 'still') ? 4 : 9;
         const rateFactor = currentMode === 'calm' ? mutationRate * 0.45 : mutationRate * 0.9;
         const scrambleThreshold = chanceOver(Math.min(1, marginScrollVelocity * 0.005 + (currentMode === 'rain' ? 0.003 : 0.001) * mutationRate), n);
         const restoreChance = chanceOver(0.03, n);
@@ -1443,7 +1461,7 @@ try { (function() {
           if (!state.visible) continue;
           const { config, el, cells, offsets } = state;
 
-          const breath = currentMode === 'still' ? 0 : Math.sin(smoothTick * 0.022 + config.phase) * amp;
+          const breath = Math.sin(smoothTick * 0.022 + config.phase) * amp;
           const rawY = scrollY * config.speed * parallaxMultiplier - breath;
           const P = state.periodH;
           const wrappedY = -(((rawY % P) + P) % P);
@@ -1508,6 +1526,7 @@ try { (function() {
         const delta = Math.abs(currentY - lastMarginScrollY);
         marginScrollVelocity = Math.min(marginScrollVelocity + delta * 0.35, 65);
         lastMarginScrollY = currentY;
+        lastScrollAt = performance.now();
       }, { passive: true });
 
       // Mobile smart header: hides while reading down, returns on any upward scroll.
@@ -1773,10 +1792,12 @@ try { (function() {
         }
       }
 
+      modeButtons.forEach(b => b.classList.toggle('active', b.getAttribute('data-mode') === currentMode));
       modeButtons.forEach(btn => {
         btn.addEventListener('click', () => {
           playNyaaSound();
           currentMode = btn.getAttribute('data-mode');
+          try { localStorage.setItem('felis_margin_mode', currentMode); } catch (e) {}
           modeButtons.forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
           if (currentMode === 'prowl') {
@@ -2144,7 +2165,7 @@ try { (function() {
                           </button>
                         </div>
                       </div>
-                      <div class="card-thumb-wrap" style="aspect-ratio: ${aspect};" data-photo-max-w="${work.max_width || ''}" data-photo-max-h="${work.max_height || ''}">
+                      <div class="card-thumb-wrap${lqClass(work)}" style="aspect-ratio: ${aspect};${lqStyle(work)}" data-photo-max-w="${work.max_width || ''}" data-photo-max-h="${work.max_height || ''}">
                         ${renderCardMedia(work, 900, '(min-width: 900px) 860px, 82vw', itemIndex <= 2)}
                       </div>
                       <h3 class="card-title-eng" style="font-size: clamp(20px, 2.5vw, 28px);">${work.title_eng || work.title}</h3>
@@ -2176,7 +2197,7 @@ try { (function() {
                           </button>
                         </div>
                       </div>
-                      <div class="card-thumb-wrap" style="aspect-ratio: ${aspect};" data-photo-max-w="${work.max_width || ''}" data-photo-max-h="${work.max_height || ''}">
+                      <div class="card-thumb-wrap${lqClass(work)}" style="aspect-ratio: ${aspect};${lqStyle(work)}" data-photo-max-w="${work.max_width || ''}" data-photo-max-h="${work.max_height || ''}">
                         ${renderCardMedia(work, 500, '(min-width: 900px) 460px, 82vw', itemIndex <= 4)}
                       </div>
                       <h3 class="card-title-eng">${work.title_eng || work.title}</h3>
@@ -2220,7 +2241,7 @@ try { (function() {
               <span class="inv-stamp">${work.inv_number}</span>
               <span class="fabric-tag">${work.date_display}</span>
             </div>
-            <div class="card-thumb-wrap" style="aspect-ratio: ${aspect};" data-photo-max-w="${work.max_width || ''}" data-photo-max-h="${work.max_height || ''}">
+            <div class="card-thumb-wrap${lqClass(work)}" style="aspect-ratio: ${aspect};${lqStyle(work)}" data-photo-max-w="${work.max_width || ''}" data-photo-max-h="${work.max_height || ''}">
               ${renderCardMedia(work, 400, '(min-width: 1100px) 300px, (min-width: 600px) 45vw, 82vw', false)}
             </div>
             <h4 class="card-title-eng">${work.title_eng || work.title}</h4>
@@ -2237,9 +2258,10 @@ try { (function() {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
               entry.target.classList.add('revealed');
+              revealObserver.unobserve(entry.target); // one-shot: stop paying for it on every scroll
             }
           });
-        }, { threshold: 0.12 });
+        }, { threshold: 0, rootMargin: '0px 0px -4% 0px' }); // starts as soon as a card peeks in
 
         items.forEach(el => revealObserver.observe(el));
 
@@ -2262,7 +2284,61 @@ try { (function() {
 
         nodes.forEach(el => sideObserver.observe(el));
         window.activeTimelineObservers = [revealObserver, sideObserver];
+        EraProgress.attach();
       }
+
+      // Era progress rail: a hairline under the era name (side indicator / mobile era bar)
+      // fills as you read through the current era. Heading positions are cached and only
+      // re-read when the timeline's size changes, so a scroll frame is arithmetic plus one
+      // transform write.
+      const EraProgress = (() => {
+        const fills = () => document.querySelectorAll('.era-progress-fill');
+        let tops = [], end = 0, ro = null, page = null, ticking = false, lastP = -1;
+        const ANCHOR = 0.35; // reading line: 35% down the viewport
+
+        function measure() {
+          if (!page || !page.isConnected) return;
+          const y = window.scrollY;
+          tops = Array.from(page.querySelectorAll('.era-heading-node'))
+            .map(n => n.getBoundingClientRect().top + y);
+          const r = page.getBoundingClientRect();
+          end = r.bottom + y;
+          update();
+        }
+        function update() {
+          ticking = false;
+          if (!tops.length) return;
+          const line = window.scrollY + window.innerHeight * ANCHOR;
+          let i = tops.length - 1;
+          while (i > 0 && tops[i] > line) i--;
+          const from = tops[i];
+          const to = i + 1 < tops.length ? tops[i + 1] : end;
+          const p = Math.max(0, Math.min(1, (line - from) / Math.max(1, to - from)));
+          if (Math.abs(p - lastP) < 0.002) return;
+          lastP = p;
+          const t = `scaleX(${p.toFixed(4)})`;
+          fills().forEach(f => { f.style.transform = t; });
+        }
+        const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', () => requestAnimationFrame(measure), { passive: true });
+
+        return {
+          attach() {
+            page = document.querySelector('.timeline-page');
+            lastP = -1;
+            if (ro) ro.disconnect();
+            if (!page || !window.ResizeObserver) { tops = []; requestAnimationFrame(measure); return; }
+            let pending = false;
+            ro = new ResizeObserver(() => {
+              if (pending) return;
+              pending = true;
+              requestAnimationFrame(() => { pending = false; measure(); });
+            });
+            ro.observe(page);
+          }
+        };
+      })();
 
       // Persona 5 Shibuya Cut-Out Tokens & Typography Helpers
       const categoryTypologyState = {};
@@ -4026,7 +4102,7 @@ try { (function() {
           const aspect = getArtworkAspect(w);
           return `
             <article class="grid-art-card stagger-in ${isWide ? 'is-wide' : ''}" style="--stagger-i:${Math.min(i, 10)}" onclick="window.location.hash='#/work/${w.id}'">
-              <div class="grid-card-thumb" style="aspect-ratio: ${aspect};" data-photo-max-w="${w.max_width || ''}" data-photo-max-h="${w.max_height || ''}">
+              <div class="grid-card-thumb${lqClass(w)}" style="aspect-ratio: ${aspect};${lqStyle(w)}" data-photo-max-w="${w.max_width || ''}" data-photo-max-h="${w.max_height || ''}">
                 ${renderCardMedia(w, 500, isWide ? '(min-width: 641px) 796px, 92vw' : '(min-width: 1060px) 380px, (min-width: 641px) 45vw, 92vw', i < 4)}
               </div>
               <div class="grid-card-meta-wrap">
@@ -5218,10 +5294,117 @@ try { (function() {
       const supportsVT = typeof document.startViewTransition === 'function';
       if (supportsVT) document.documentElement.classList.add('vt-enabled');
 
+      // ---- Shared-element morph: card image <-> artwork page hero ----
+      const MORPH_NAME = 'artwork-hero';
+      const WORK_LINK = '[onclick*="#/work/"], a[href^="#/work/"]';
+      const workIdFromHash = h => { const m = /^#\/work\/([^?]+)/.exec(h || ''); return m ? decodeURIComponent(m[1]) : null; };
+      const workIdFromLink = el => {
+        const m = /#\/work\/([^'"?\s]+)/.exec(el.getAttribute('onclick') || el.getAttribute('href') || '');
+        return m ? m[1] : null;
+      };
+      const inViewport = el => {
+        const r = el.getBoundingClientRect();
+        return r.width > 0 && r.bottom > 0 && r.top < window.innerHeight && r.right > 0 && r.left < window.innerWidth;
+      };
+      // The image the user actually sees in a card (a multi-image slider has several)
+      function visibleCardImage(card) {
+        let best = null, bestArea = 0;
+        card.querySelectorAll('img').forEach(img => {
+          if (img.closest('.carousel-thumb-btn')) return;
+          const r = img.getBoundingClientRect();
+          const w = Math.min(r.right, window.innerWidth) - Math.max(r.left, 0);
+          const h = Math.min(r.bottom, window.innerHeight) - Math.max(r.top, 0);
+          const area = Math.max(0, w) * Math.max(0, h);
+          if (area > bestArea) { bestArea = area; best = img; }
+        });
+        return best;
+      }
+      // Back from an artwork: land on the card you opened (pixel scroll memory drifts because
+      // off-screen timeline items render at placeholder heights), then morph into it.
+      function cardImageForWork(id) {
+        const btn = document.querySelector(`.card-stack-btn[data-work-id="${CSS.escape(id)}"]`);
+        const card = btn && btn.closest('article, .specimen-mini-card');
+        if (!card) return null;
+        if (!inViewport(card)) card.scrollIntoView({ block: 'center', behavior: 'instant' });
+        const img = visibleCardImage(card);
+        return img && inViewport(img) ? img : null;
+      }
+      const heroImage = () => document.querySelector('.artwork-page-view .slide.is-active');
+
+      let morphSource = null; // { id, img, at }
+      document.addEventListener('click', e => {
+        const link = e.target.closest && e.target.closest(WORK_LINK);
+        if (!link || link.closest('.artwork-page-view')) { morphSource = null; return; }
+        const id = workIdFromLink(link);
+        const img = id && visibleCardImage(link);
+        morphSource = img ? { id, img, at: performance.now() } : null;
+      }, true);
+
+      // The router restores scroll per route itself (scrollMemory). Native restoration jumped
+      // the page before hashchange fired, so Back saved the wrong position and the hero was
+      // already off-screen when the morph looked for it.
+      try { if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; } catch (e) {}
+
+      let lastHash = location.hash;
       window.addEventListener('hashchange', () => {
+        const prevHash = lastHash;
+        lastHash = location.hash;
         if (!supportsVT || Motion.reduced) { navigate(); return; }
-        document.startViewTransition(() => navigate());
+
+        const toId = workIdFromHash(location.hash);
+        const fromId = workIdFromHash(prevHash);
+        let oldEl = null, findNew = null;
+        if (toId && !fromId && morphSource && morphSource.id === toId &&
+            performance.now() - morphSource.at < 1500 && morphSource.img.isConnected) {
+          oldEl = morphSource.img;                       // card -> artwork page
+          findNew = heroImage;
+        } else if (fromId && !toId) {
+          oldEl = heroImage();                           // artwork page -> back to a list
+          findNew = () => cardImageForWork(fromId);
+        }
+        morphSource = null;
+        if (oldEl && !inViewport(oldEl)) oldEl = null;
+        if (oldEl) oldEl.style.viewTransitionName = MORPH_NAME;
+
+        let newEl = null;
+        const vt = document.startViewTransition(() => {
+          if (oldEl) oldEl.style.viewTransitionName = '';
+          navigate();
+          if (!oldEl || !findNew) return;
+          newEl = findNew();
+          if (!newEl) return;
+          newEl.style.viewTransitionName = MORPH_NAME;
+          // A just-rendered card image waits behind its placeholder; show it now and give it a
+          // moment to decode (it is cached) so the morph lands on the picture, not a blank.
+          newEl.classList.add('is-loaded');
+          if (!newEl.decode) return;
+          return Promise.race([newEl.decode().catch(() => {}), new Promise(r => setTimeout(r, 150))]);
+        });
+        vt.finished.finally(() => { if (newEl) newEl.style.viewTransitionName = ''; });
       });
+
+      // ---- Hover prefetch: decode the artwork page's hero before the click lands ----
+      const prefetched = new Set();
+      let prefetchTimer = 0;
+      if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+        document.addEventListener('pointerover', e => {
+          const link = e.target.closest && e.target.closest(WORK_LINK);
+          if (!link) return;
+          const id = workIdFromLink(link);
+          if (!id || prefetched.has(id)) return;
+          clearTimeout(prefetchTimer);
+          prefetchTimer = setTimeout(() => {
+            const work = artworkSlugMap.get(id);
+            const url = work && getArtworkImages(work)[0];
+            if (!url) return;
+            prefetched.add(id);
+            const img = new Image();
+            img.decoding = 'async';
+            img.src = localUrl(work, url, 1400) || getOptimizedImageUrl(url, 1400);
+            if (img.decode) img.decode().catch(() => {});
+          }, 80); // ignore pointers just passing over
+        }, { passive: true });
+      }
       if (document.readyState === 'loading') {
         window.addEventListener('DOMContentLoaded', navigate);
       } else {
