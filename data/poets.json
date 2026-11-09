@@ -1,189 +1,5 @@
 [
   {
-    "slug": "ito-shintoku",
-    "author": "Itō Shintoku",
-    "name": "Itō Shintoku",
-    "jp": "伊藤信徳",
-    "life": "1633–1698",
-    "headings": {
-      "cats": "One bite, one trout",
-      "timeline": "From Kyoto merchant to Bashō’s partner"
-    },
-    "images": [],
-    "lifeText": [
-      {
-        "years": "1633–1698",
-        "text": "Itō Shintoku was the son of a prosperous Kyoto merchant and travelled the country on the family business from boyhood. He started haikai in the conservative Teimon school, moved over to the livelier Danrin poets, and in Edo became friends with Bashō and [Yamaguchi Sodō](#/poet/yamaguchi-sodo). The three wrote *Edo Sangin*, *Three Poets in Edo*, together in 1677. By the Genroku years he was one of the leading haikai masters of Kyoto."
-      }
-    ],
-    "cats": [
-      "His cat poem is a single snap: a rain trout, gone in one bite. The Danrin school loved a joke told fast, and this is one."
-    ],
-    "asides": [
-      {
-        "title": "Three poets in Edo",
-        "text": "Edo Sangin, written with Bashō and Sodō in 1677 and printed the next year, is one of the earliest records of the young Bashō at work."
-      }
-    ],
-    "timeline": [
-      {
-        "year": "1633",
-        "kind": "life",
-        "text": "Born in Kyoto, a merchant’s son"
-      },
-      {
-        "year": "c. 1645",
-        "kind": "work",
-        "text": "Begins haikai under Takase Baisei of the Teimon school"
-      },
-      {
-        "year": "1677",
-        "kind": "work",
-        "text": "Writes Edo Sangin with Bashō and Sodō"
-      },
-      {
-        "year": "1698",
-        "kind": "life",
-        "text": "Dies on 15 November"
-      }
-    ],
-    "sources": [
-      "https://ja.wikipedia.org/wiki/%E4%BC%8A%E8%97%A4%E4%BF%A1%E5%BE%B3"
-    ]
-  },
-  {
-    "slug": "kawai-chigetsu",
-    "author": "Kawai Chigetsu",
-    "name": "Kawai Chigetsu",
-    "jp": "河合智月",
-    "life": "c. 1633–1718",
-    "headings": {
-      "cats": "A hand raised, and lowered",
-      "timeline": "The woman who kept house for Bashō"
-    },
-    "images": [],
-    "lifeText": [
-      {
-        "years": "c. 1633–1718",
-        "text": "Kawai Chigetsu was born near Kyoto and married into a family of post-station officials in Ōtsu. Widowed around 1686, she became a nun and adopted her younger brother Otokuni as the family heir. She was the best-known woman poet of Bashō’s school, and from 1689 she often had Bashō to stay and looked after him while he lived near Zeze. He gave her his prose piece on the Genjūan hut as a keepsake. When he died, she and Otokuni’s wife sewed his burial robe."
-      }
-    ],
-    "cats": [
-      "Her cat poem is a small domestic scene that says a lot about her: she raises her hand at the tomcat in love, and cannot bring herself to bring it down."
-    ],
-    "asides": [
-      {
-        "title": "A poem for remembrance",
-        "text": "She once asked Bashō for a poem to remember him by. He laughed at being asked for a farewell poem, wrote one, and died that same year."
-      },
-      {
-        "title": "One colour only",
-        "text": "Kyoriku judged her better than her brother Otokuni, but said that of the five colours she dyed only one."
-      }
-    ],
-    "timeline": [
-      {
-        "year": "c. 1633",
-        "kind": "life",
-        "text": "Born near Kyoto"
-      },
-      {
-        "year": "c. 1686",
-        "kind": "life",
-        "text": "Widowed; becomes a nun"
-      },
-      {
-        "year": "1689",
-        "kind": "life",
-        "text": "Begins hosting Bashō in Ōtsu"
-      },
-      {
-        "year": "1691",
-        "kind": "work",
-        "text": "Bashō gives her the Genjūan-ki"
-      },
-      {
-        "year": "1694",
-        "kind": "life",
-        "text": "Sews Bashō’s burial robe"
-      },
-      {
-        "year": "1718",
-        "kind": "life",
-        "text": "Dies in the spring"
-      }
-    ],
-    "sources": [
-      "https://ja.wikipedia.org/wiki/%E6%B2%B3%E5%90%88%E6%99%BA%E6%9C%88"
-    ]
-  },
-  {
-    "slug": "yamaguchi-sodo",
-    "author": "Yamaguchi Sodō",
-    "name": "Yamaguchi Sodō",
-    "jp": "山口素堂",
-    "life": "1642–1716",
-    "headings": {
-      "cats": "Court ladies with cats’ voices",
-      "timeline": "Green leaves, a cuckoo, the first bonito"
-    },
-    "images": [],
-    "lifeText": [
-      {
-        "years": "1642–1716",
-        "text": "Yamaguchi Sodō was born in Kai to a sake-brewing family, handed the business to a younger brother at about twenty, and went to Edo to study Confucian learning under Hayashi Gahō. He met Bashō in 1675 and stayed his friend, never his pupil, living near the Fukagawa hut. In 1696 he surveyed and designed an embankment on the Nigori River near Kōfu, still remembered there as the Yamaguchi dyke. He died in Edo in 1716."
-      }
-    ],
-    "cats": [
-      "His cat poem is a scholar’s joke on the Genji tale, where a cat lifts the blind on a royal consort: the palace hearth is lit for winter, and the consorts and ladies-in-waiting all sound like cats."
-    ],
-    "asides": [
-      {
-        "title": "Eyes, ears, mouth",
-        "text": "His most famous haiku names three things of early summer, green leaves for the eyes, the cuckoo for the ears and the first bonito for the mouth."
-      },
-      {
-        "title": "Engineer",
-        "text": "Asked by the Kōfu magistrate to deal with a flood-prone river, he surveyed it and built the embankment in about two years."
-      }
-    ],
-    "timeline": [
-      {
-        "year": "1642",
-        "kind": "life",
-        "text": "Born in Kai on 1 June"
-      },
-      {
-        "year": "1675",
-        "kind": "work",
-        "text": "First writes linked verse with Bashō"
-      },
-      {
-        "year": "1677",
-        "kind": "work",
-        "text": "Writes Edo Sangin with Bashō and Shintoku"
-      },
-      {
-        "year": "1678",
-        "kind": "work",
-        "text": "His green-leaves poem appears in print"
-      },
-      {
-        "year": "1696",
-        "kind": "work",
-        "text": "Designs the Yamaguchi embankment near Kōfu"
-      },
-      {
-        "year": "1716",
-        "kind": "life",
-        "text": "Dies on 30 September"
-      }
-    ],
-    "sources": [
-      "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%8F%A3%E7%B4%A0%E5%A0%82"
-    ]
-  },
-  {
     "slug": "matsuo-basho",
     "author": "Matsuo Bashō",
     "name": "Matsuo Bashō",
@@ -479,70 +295,13 @@
     ]
   },
   {
-    "slug": "esa-shohaku",
-    "author": "Esa Shōhaku",
-    "name": "Esa Shōhaku",
-    "jp": "江左尚白",
-    "life": "1650–1722",
-    "headings": {
-      "cats": "Too faint-hearted for a lovers’ pact",
-      "timeline": "Ōtsu’s elder, Bashō’s critic"
-    },
-    "images": [],
-    "lifeText": [
-      {
-        "years": "1650–1722",
-        "text": "Esa Shōhaku was a physician in Ōtsu from a family of doctors, a man also known for nō chanting, go and tea. He met Bashō when the master passed through Ōtsu in 1685, joined his school, and hosted him at home three years later. Many of the Ōmi poets, among them [Mizuta Masahide](#/poet/mizuta-masahide), [Morikawa Kyoriku](#/poet/morikawa-kyoriku) and [Hamada Shadō](#/poet/hamada-shado), came to Bashō through him. But he never warmed to Bashō’s later style, and a quarrel over the preface to one of his anthologies left them estranged."
-      }
-    ],
-    "cats": [
-      "His cat in love is gently mocked: all yowling, but far too faint-hearted for a real lovers’ suicide pact."
-    ],
-    "asides": [
-      {
-        "title": "The falling-out",
-        "text": "Shōhaku disliked the turn Bashō took with the anthology Sarumino, and their dispute over the preface to his own anthology Wasure-ume ended their friendship."
-      }
-    ],
-    "timeline": [
-      {
-        "year": "1650",
-        "kind": "life",
-        "text": "Born at Asama in Ise"
-      },
-      {
-        "year": "1685",
-        "kind": "work",
-        "text": "Joins Bashō’s school in Ōtsu"
-      },
-      {
-        "year": "1688",
-        "kind": "work",
-        "text": "Hosts Bashō for a haikai session at his house"
-      },
-      {
-        "year": "1694",
-        "kind": "life",
-        "text": "Writes a mourning poem on Bashō’s death"
-      },
-      {
-        "year": "1722",
-        "kind": "life",
-        "text": "Dies in Ōtsu"
-      }
-    ],
-    "sources": [
-      "https://ja.wikipedia.org/wiki/%E6%B1%9F%E5%B7%A6%E5%B0%9A%E7%99%BD"
-    ]
-  },
-  {
     "slug": "ikenishi-gonsui",
     "author": "Ikenishi Gonsui",
     "name": "Ikenishi Gonsui",
     "jp": "池西言水",
     "life": "1650–1722",
     "headings": {
-      "cats": "A cat runs, the plum tree shakes",
+      "cats": "Ikenishi Gonsui and cats",
       "timeline": "Gonsui of the winter wind"
     },
     "images": [
@@ -916,76 +675,20 @@
     ]
   },
   {
-    "slug": "konishi-raizan",
-    "author": "Konishi Raizan",
-    "name": "Konishi Raizan",
-    "jp": "小西来山",
-    "life": "1654–1716",
-    "headings": {
-      "cats": "Whiskers on both sides",
-      "timeline": "An Osaka judge of verse"
-    },
-    "images": [],
-    "lifeText": [
-      {
-        "years": "1654–1716",
-        "text": "Konishi Raizan was the son of an Osaka pharmacist, began haikai at seven and was a qualified judge of verse at eighteen. He studied Zen, took a priest’s appearance, and wrote linked verse with Ihara Saikaku. From the 1690s he was the busiest judge of comic verse in Osaka. He left no collection of his own; he preached poetry in “everyday words”, plain and unforced."
-      }
-    ],
-    "cats": [
-      "His cat poem is the classic shrug of the season word: cats in love, and both of them have whiskers. Who is the bride and who the groom is anyone’s guess."
-    ],
-    "asides": [
-      {
-        "title": "A rest in jail",
-        "text": "Once arrested while drunk, he refused to give his name and spent three days in a cell. When his pupils finally found him and sympathised, he said it had been restful, since he didn’t have to cook."
-      },
-      {
-        "title": "New Year early",
-        "text": "Sent the makings of the New Year soup on New Year’s Eve, he ate them that night with his sake, and wrote that his spring had been tidied away by evening."
-      }
-    ],
-    "timeline": [
-      {
-        "year": "1654",
-        "kind": "life",
-        "text": "Born in Osaka, a pharmacist’s son"
-      },
-      {
-        "year": "1661",
-        "kind": "work",
-        "text": "Begins haikai at seven"
-      },
-      {
-        "year": "1678",
-        "kind": "work",
-        "text": "First appears in print, in an anthology by Saikaku"
-      },
-      {
-        "year": "1716",
-        "kind": "life",
-        "text": "Dies on 16 November"
-      }
-    ],
-    "sources": [
-      "https://ja.wikipedia.org/wiki/%E5%B0%8F%E8%A5%BF%E6%9D%A5%E5%B1%B1"
-    ]
-  },
-  {
     "slug": "shiinomoto-saimaro",
     "author": "Shiinomoto Saimaro",
     "name": "Shiinomoto Saimaro",
     "jp": "椎本才麿",
     "life": "1656–1738",
     "headings": {
-      "cats": "A kitten sniffing a snail",
+      "cats": "Shiinomoto Saimaro and cats",
       "timeline": "Saikaku’s pupil in Osaka"
     },
     "images": [],
     "lifeText": [
       {
         "years": "1656–1738",
-        "text": "Shiinomoto Saimaro was born in Uda in Yamato, adopted into a retainer family and lost his place, it is said, over some misstep. He studied haikai first with Yamamoto Saimu and then with the novelist and poet Ihara Saikaku, taking a character from each teacher’s name in turn. In Edo from 1677 he moved in Bashō’s circle and knew [Takarai Kikaku](#/poet/takarai-kikaku); from 1689 he lived in Osaka for good, where, with the backing of [Uejima Onitsura](#/poet/uejima-onitsura) and [Konishi Raizan](#/poet/konishi-raizan), he became one of the leading masters. He died on the second day of the New Year, 1738, by the old calendar."
+        "text": "Shiinomoto Saimaro was born in Uda in Yamato, adopted into a retainer family and lost his place, it is said, over some misstep. He studied haikai first with Yamamoto Saimu and then with the novelist and poet Ihara Saikaku, taking a character from each teacher’s name in turn. In Edo from 1677 he moved in Bashō’s circle and knew [Takarai Kikaku](#/poet/takarai-kikaku); from 1689 he lived in Osaka for good, where, with the backing of [Uejima Onitsura](#/poet/uejima-onitsura) and Konishi Raizan, he became one of the leading masters. He died on the second day of the New Year, 1738, by the old calendar."
       }
     ],
     "cats": [
@@ -1063,7 +766,7 @@
     "lifeText": [
       {
         "years": "1656–1692",
-        "text": "Morikawa Kyoriku was a samurai of the Hikone domain, a master of the cross-bladed spear, a student of Chinese verse and a painter trained in the Kanō school. He wrote haikai in the Danrin manner as a young man, then found his way to Bashō’s school through [Esa Shōhaku](#/poet/esa-shohaku), [Takarai Kikaku](#/poet/takarai-kikaku) and [Hattori Ransetsu](#/poet/hattori-ransetsu)."
+        "text": "Morikawa Kyoriku was a samurai of the Hikone domain, a master of the cross-bladed spear, a student of Chinese verse and a painter trained in the Kanō school. He wrote haikai in the Danrin manner as a young man, then found his way to Bashō’s school through Esa Shōhaku, [Takarai Kikaku](#/poet/takarai-kikaku) and [Hattori Ransetsu](#/poet/hattori-ransetsu)."
       },
       {
         "years": "1692–1715",
@@ -1080,7 +783,7 @@
       },
       {
         "title": "A carved Bashō",
-        "text": "He is said to have cut down a cherry tree Bashō loved and carved it into a statue of the master for [Kawai Chigetsu](#/poet/kawai-chigetsu)."
+        "text": "He is said to have cut down a cherry tree Bashō loved and carved it into a statue of the master for Kawai Chigetsu."
       }
     ],
     "timeline": [
@@ -1118,7 +821,12 @@
     "sources": [
       "https://ja.wikipedia.org/wiki/%E6%A3%AE%E5%B7%9D%E8%A8%B1%E5%85%AD",
       "https://en.wikipedia.org/wiki/Morikawa_Kyoriku"
-    ]
+    ],
+    "poem": {
+      "jp": "十團子も小粒になりぬ秋の風",
+      "en": "Even the ten dumplings have grown smaller: autumn wind",
+      "note": "The dumplings sold at Utsu Pass on the Tōkaidō, strung ten to a skewer"
+    }
   },
   {
     "slug": "ochi-etsujin",
@@ -1127,7 +835,7 @@
     "jp": "越智越人",
     "life": "1656–c. 1739",
     "headings": {
-      "cats": "When it’s over, it’s over",
+      "cats": "Ochi Etsujin and cats",
       "timeline": "A dyer who walked to Sarashina"
     },
     "images": [],
@@ -1191,7 +899,7 @@
     "lifeText": [
       {
         "years": "1657–1723",
-        "text": "Mizuta Masahide was born in Zeze on Lake Biwa and seems to have held a fairly senior place in the domain. He studied with [Esa Shōhaku](#/poet/esa-shohaku), and in 1688 a single poem made Bashō want to meet him: when his storehouse burned down, Masahide wrote that now nothing stood in the way of the moon. Bashō called it the very soul of poetry. Masahide went on to support Bashō with money and was the main backer of the Mumyōan hut at Gichū-ji, where Bashō is buried. He died in 1723."
+        "text": "Mizuta Masahide was born in Zeze on Lake Biwa and seems to have held a fairly senior place in the domain. He studied with Esa Shōhaku, and in 1688 a single poem made Bashō want to meet him: when his storehouse burned down, Masahide wrote that now nothing stood in the way of the moon. Bashō called it the very soul of poetry. Masahide went on to support Bashō with money and was the main backer of the Mumyōan hut at Gichū-ji, where Bashō is buried. He died in 1723."
       }
     ],
     "cats": [
@@ -1236,7 +944,12 @@
     ],
     "sources": [
       "https://ja.wikipedia.org/wiki/%E6%B0%B4%E7%94%B0%E6%AD%A3%E7%A7%80"
-    ]
+    ],
+    "poem": {
+      "jp": "倉焼けてさはるものなき月見かな",
+      "en": "My storehouse burned down: now nothing blocks the view of the moon",
+      "note": "His most quoted verse, a cheerful answer to losing everything"
+    }
   },
   {
     "slug": "takarai-kikaku",
@@ -1584,7 +1297,7 @@
     "jp": "河野李由",
     "life": "1662–1705",
     "headings": {
-      "cats": "Cats in love at a ruined barrier",
+      "cats": "Kōno Riyū and cats",
       "timeline": "A temple priest in Bashō’s circle"
     },
     "images": [],
@@ -1634,171 +1347,13 @@
     ]
   },
   {
-    "slug": "shida-yaba",
-    "author": "Shida Yaba",
-    "name": "Shida Yaba",
-    "jp": "志太野坡",
-    "life": "1662–1740",
-    "headings": {
-      "cats": "Crying from the very first note",
-      "timeline": "A money-changer’s clerk with a light touch"
-    },
-    "images": [],
-    "lifeText": [
-      {
-        "years": "1662–1740",
-        "text": "Shida Yaba was born in Fukui and taken to Edo by his father, where he worked as a clerk at the money-changing branch of the Echigoya, the forerunner of Mitsukoshi. He learned under Bashō in his last years and in 1694 co-edited *Sumidawara*, the anthology most associated with Bashō’s ideal of lightness. After Bashō’s death he spent years in Nagasaki on business, then left the firm and walked Kyushu and western Japan spreading Bashō’s style, gathering many pupils. He died in the New Year of 1740."
-      }
-    ],
-    "cats": [
-      "His cat poem is the whole season word in one breath: cats in love, crying from the very first note, and that is what makes it sad."
-    ],
-    "asides": [
-      {
-        "title": "Lightness itself",
-        "text": "A contemporary judged that “in lightness, no one comes near Yaba”."
-      },
-      {
-        "title": "Letters with Kyoriku",
-        "text": "In 1714 and 1715 he and [Morikawa Kyoriku](#/poet/morikawa-kyoriku) argued about poetics by letter; the exchange was later published."
-      }
-    ],
-    "timeline": [
-      {
-        "year": "1662",
-        "kind": "life",
-        "text": "Born in Fukui on 21 February"
-      },
-      {
-        "year": "1694",
-        "kind": "work",
-        "text": "Co-edits Sumidawara"
-      },
-      {
-        "year": "1698",
-        "kind": "life",
-        "text": "Posted to Nagasaki on business"
-      },
-      {
-        "year": "1702",
-        "kind": "work",
-        "text": "Begins his poetry journeys through Kyushu"
-      },
-      {
-        "year": "1740",
-        "kind": "life",
-        "text": "Dies on 31 January"
-      }
-    ],
-    "sources": [
-      "https://ja.wikipedia.org/wiki/%E5%BF%97%E5%A4%AA%E9%87%8E%E5%9D%A1"
-    ]
-  },
-  {
-    "slug": "shiba-sonome",
-    "author": "Shiba Sonome",
-    "name": "Shiba Sonome",
-    "jp": "斯波園女",
-    "life": "1664–1726",
-    "headings": {
-      "cats": "A garden cat and the swallows",
-      "timeline": "Ise, Osaka, Edo"
-    },
-    "images": [
-      {
-        "file": "Shiba Sonome by Kurihara Nobumitsu.jpg",
-        "caption": "Shiba Sonome, by Kurihara Nobumitsu (1794–1870), from a collection of portraits. National Diet Library.",
-        "credit": "Kurihara Nobumitsu",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Shiba_Sonome_by_Kurihara_Nobumitsu.jpg",
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/71/Shiba_Sonome_by_Kurihara_Nobumitsu.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Shiba_Sonome_by_Kurihara_Nobumitsu.jpg",
-        "w": 1847,
-        "h": 2183,
-        "license": "Public domain",
-        "license_url": "https://commons.wikimedia.org/wiki/File:Shiba_Sonome_by_Kurihara_Nobumitsu.jpg",
-        "rights_status": "public-domain",
-        "image_credit": "Kurihara Nobumitsu (1794-1870)",
-        "local": {
-          "base": "assets/img/af056562d7a1cc6a",
-          "widths": [
-            480,
-            960,
-            1400
-          ],
-          "w": 1847,
-          "h": 2183,
-          "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAABwAQCdASoHAAgAA4BaJYwCdAFAAAD+8IBYn//liEZT78VgfFmraAAA"
-        }
-      }
-    ],
-    "lifeText": [
-      {
-        "years": "1664–1705",
-        "text": "Shiba Sonome was the daughter of a Shinto priest at Ise and married the physician and poet Shiba Ichiu. She joined Bashō’s school around 1688 and moved with her husband to Osaka, where she was at her most active. In 1694 she invited the visiting Bashō to her house; he opened a linked-verse sequence with a poem about her white chrysanthemums, and it turned out to be his last."
-      },
-      {
-        "years": "1705–1726",
-        "text": "After her husband’s death she moved to Edo, relying on [Takarai Kikaku](#/poet/takarai-kikaku), and kept going as an eye doctor and poet. She gave thirty-six cherry trees to the Fukagawa Hachiman shrine, took the tonsure in 1718, and spent her last years writing waka."
-      }
-    ],
-    "cats": [
-      "Her cat poem is a kindly bit of advice to a garden cat: play with the swallows, the birds that keep their promise to come back each year."
-    ],
-    "asides": [
-      {
-        "title": "Bashō’s last sequence",
-        "text": "The linked verse at her house in Osaka, in the ninth month of 1694 by the old calendar, was the last Bashō led; he died a few weeks later."
-      },
-      {
-        "title": "The poets’ cherries",
-        "text": "Her thirty-six cherry trees at Fukagawa Hachiman, one for each of the thirty-six immortal poets, were long known in Edo as the Kasen-zakura."
-      }
-    ],
-    "timeline": [
-      {
-        "year": "1664",
-        "kind": "life",
-        "text": "Born in Yamada, Ise, a Shinto priest’s daughter"
-      },
-      {
-        "year": "c. 1688",
-        "kind": "work",
-        "text": "Joins Bashō’s school"
-      },
-      {
-        "year": "1694",
-        "kind": "work",
-        "text": "Hosts Bashō’s last linked-verse sequence in Osaka"
-      },
-      {
-        "year": "1705",
-        "kind": "life",
-        "text": "Widowed, moves to Edo"
-      },
-      {
-        "year": "1718",
-        "kind": "life",
-        "text": "Takes the tonsure as Chikyō"
-      },
-      {
-        "year": "1726",
-        "kind": "life",
-        "text": "Dies on 21 May"
-      }
-    ],
-    "sources": [
-      "https://ja.wikipedia.org/wiki/%E6%96%AF%E6%B3%A2%E5%9C%92%E5%A5%B3",
-      "https://en.wikipedia.org/wiki/Sonome"
-    ]
-  },
-  {
     "slug": "kagami-shiko",
     "author": "Kagami Shikō",
     "name": "Kagami Shikō",
     "jp": "各務支考",
     "life": "1665–1731",
     "headings": {
-      "cats": "Bored with a silk lap",
+      "cats": "Kagami Shikō and cats",
       "timeline": "From temple boy to his own funeral"
     },
     "images": [
@@ -1899,7 +1454,7 @@
     "jp": "直江木導",
     "life": "1666–1723",
     "headings": {
-      "cats": "A courtesan reborn as a cat",
+      "cats": "Naoe Mokudō and cats",
       "timeline": "A samurai with the best cherry in Hikone"
     },
     "images": [],
@@ -1949,135 +1504,13 @@
     ]
   },
   {
-    "slug": "roka",
-    "author": "Rōka",
-    "name": "Rōka",
-    "jp": "浪化",
-    "life": "1672–1703",
-    "headings": {
-      "cats": "A stray crying out of season",
-      "timeline": "A prince of the temple"
-    },
-    "images": [],
-    "lifeText": [
-      {
-        "years": "1672–1703",
-        "text": "Rōka was a son of the head of the Higashi Honganji, the eastern branch of Pure Land Buddhism, sent at seven to become heir to Zuisen-ji at Inami in Etchū. Haikai ran in his family. He studied first with Kitamura Kigin, then with [Mukai Kyorai](#/poet/mukai-kyorai), who introduced him to Bashō at his Saga cottage in 1694; Bashō at first declined to take him as a pupil and gave in to his eagerness. He edited the anthology *Ariso-umi* and became the leading poet of Etchū before dying at thirty-one."
-      }
-    ],
-    "cats": [
-      "His cat poem is a stray’s voice heard at the wrong moment: a cat crying for love in the coldest days of winter, long before its season."
-    ],
-    "asides": [
-      {
-        "title": "A reluctant teacher",
-        "text": "Bashō’s letter describing their meeting says he tried to decline, and gave way when the young abbot insisted."
-      }
-    ],
-    "timeline": [
-      {
-        "year": "1672",
-        "kind": "life",
-        "text": "Born in Kyoto, son of the Higashi Honganji’s head"
-      },
-      {
-        "year": "1677",
-        "kind": "life",
-        "text": "Ordained and sent to Zuisen-ji in Etchū"
-      },
-      {
-        "year": "1691",
-        "kind": "work",
-        "text": "First appears in print, in a Kanazawa anthology"
-      },
-      {
-        "year": "1694",
-        "kind": "work",
-        "text": "Meets Bashō at Rakushisha and joins his school"
-      },
-      {
-        "year": "1703",
-        "kind": "life",
-        "text": "Dies on 17 November"
-      }
-    ],
-    "sources": [
-      "https://ja.wikipedia.org/wiki/%E6%B5%AA%E5%8C%96"
-    ]
-  },
-  {
-    "slug": "nakagawa-otsuyu",
-    "author": "Nakagawa Otsuyū",
-    "name": "Nakagawa Otsuyū",
-    "jp": "中川乙由",
-    "life": "1675–1739",
-    "headings": {
-      "cats": "Caught stealing, and given up on",
-      "timeline": "A merchant house spent on poetry"
-    },
-    "images": [],
-    "lifeText": [
-      {
-        "years": "1675–1717",
-        "text": "Nakagawa Otsuyū was born into a wealthy merchant house in Funae, in Ise, and spent most of its fortune on poetry and pleasure within a single generation. At about fourteen he met Bashō when the master came to worship at the Ise Shrines, studied under the Ise poet Ryōto, and looked up to [Kagami Shikō](#/poet/kagami-shiko) when Shikō settled nearby."
-      },
-      {
-        "years": "1717–1739",
-        "text": "When Ryōto died in 1717, Otsuyū became the leading poet of Ise, and his following grew large enough to be called the Ise school. His plain, light manner was easy to like and easy to imitate, which is exactly what critics held against it: together with Shikō’s Mino school it was dismissed as “country Bashō”."
-      }
-    ],
-    "cats": [
-      "His one cat poem in the dossier is pure Ise-school lightness: a tomcat in love who has stolen once too often, and whom everyone has now given up on. No metaphysics, just a neighbourhood verdict."
-    ],
-    "asides": [
-      {
-        "title": "Spent it on verse",
-        "text": "Japanese sources say plainly that his love of elegant amusement ran his family’s merchant business into the ground in one generation."
-      },
-      {
-        "title": "Country Bashō",
-        "text": "His school and Shikō’s were lumped together as the “Shi-Baku” crowd, after Shikō and Otsuyū’s studio name Bakurinsha: popular, plain and looked down on by purists."
-      }
-    ],
-    "timeline": [
-      {
-        "year": "1675",
-        "kind": "life",
-        "text": "Born in Funae, Ise, to a merchant house"
-      },
-      {
-        "year": "c. 1689",
-        "kind": "life",
-        "text": "Meets Bashō on the master’s visit to the Ise Shrines"
-      },
-      {
-        "year": "1698",
-        "kind": "work",
-        "text": "Published in Ise Shin-hyakuin with Ryōto and Shikō"
-      },
-      {
-        "year": "1717",
-        "kind": "work",
-        "text": "Ryōto dies; Otsuyū leads the Ise poets"
-      },
-      {
-        "year": "1739",
-        "kind": "life",
-        "text": "Dies on 20 September"
-      }
-    ],
-    "sources": [
-      "https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%B7%9D%E4%B9%99%E7%94%B1"
-    ]
-  },
-  {
     "slug": "yokoi-yayu",
     "author": "Yokoi Yayū",
     "name": "Yokoi Yayū",
     "jp": "横井也有",
     "life": "1702–1783",
     "headings": {
-      "cats": "A cat scratching its ear in plum-scented shade",
+      "cats": "Yokoi Yayū and cats",
       "timeline": "From retainer to retired wit"
     },
     "images": [
@@ -2661,7 +2094,7 @@
     "jp": "立花北枝",
     "life": "?–1718",
     "headings": {
-      "cats": "A cat’s ears in the winter wind",
+      "cats": "Tachibana Hokushi and cats",
       "timeline": "The sword polisher who walked with Bashō"
     },
     "images": [],
@@ -2730,7 +2163,7 @@
     "jp": "三宅嘯山",
     "life": "1718–1801",
     "headings": {
-      "cats": "Cats in love who don’t care who hears",
+      "cats": "Miyake Shōzan and cats",
       "timeline": "A pawnbroker of letters"
     },
     "images": [],
@@ -2781,179 +2214,13 @@
     ]
   },
   {
-    "slug": "takakuwa-ranko",
-    "author": "Takakuwa Rankō",
-    "name": "Takakuwa Rankō",
-    "jp": "高桑闌更",
-    "life": "1726–1798",
-    "headings": {
-      "cats": "Forgotten by today",
-      "timeline": "Keeper of the Bashō Hall"
-    },
-    "images": [],
-    "lifeText": [
-      {
-        "years": "1726–1798",
-        "text": "Takakuwa Rankō was born into a Kanazawa merchant family and trained in the Ise school before turning, in his thirties, to the movement to return to Bashō. He collected Bashō documents, wrote on the changes in Bashō’s style, and later moved to Kyoto, practising medicine and setting up a Bashō Hall in the eastern hills with a statue of Bashō carved by [Morikawa Kyoriku](#/poet/morikawa-kyoriku). From 1786 he held a Bashō memorial there every spring. He died in Kyoto in 1798."
-      }
-    ],
-    "cats": [
-      "His cat poem catches the season word at its shortest: the she-cat’s lover, already forgotten by today."
-    ],
-    "asides": [
-      {
-        "title": "Under the blossoms",
-        "text": "In 1793 the Nijō court family gave him the title of “master under the blossoms”, an old honour for linked-verse masters."
-      }
-    ],
-    "timeline": [
-      {
-        "year": "1726",
-        "kind": "life",
-        "text": "Born in Kanazawa"
-      },
-      {
-        "year": "1763",
-        "kind": "work",
-        "text": "Holds Bashō’s 70th memorial in Kanazawa"
-      },
-      {
-        "year": "1769",
-        "kind": "work",
-        "text": "Arinomama, on Bashō’s changing style"
-      },
-      {
-        "year": "1786",
-        "kind": "work",
-        "text": "Begins yearly Bashō memorials in Kyoto"
-      },
-      {
-        "year": "1798",
-        "kind": "life",
-        "text": "Dies on 16 June"
-      }
-    ],
-    "sources": [
-      "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A1%91%E9%97%8C%E6%9B%B4"
-    ]
-  },
-  {
-    "slug": "kuroyanagi-shoha",
-    "author": "Kuroyanagi Shōha",
-    "name": "Kuroyanagi Shōha",
-    "jp": "黒柳召波",
-    "life": "1727–1772",
-    "headings": {
-      "cats": "A tomcat coming along the branches",
-      "timeline": "Chinese verse, then Buson"
-    },
-    "images": [],
-    "lifeText": [
-      {
-        "years": "1727–1772",
-        "text": "Kuroyanagi Shōha was a Kyoto merchant’s son who first made his name in Chinese verse, studying in Edo with Hattori Nankaku. Around the 1750s he turned to haikai and joined [Yosa Buson](#/poet/yosa-buson), taking part in Buson’s Sankasha poetry meetings from 1766 and hosting some of them at his own house. He died in 1772; his son collected his poems as *Shundei Kushū*, and Buson wrote the preface."
-      }
-    ],
-    "cats": [
-      "His single cat poem has the scholar’s neatness and the haikai poet’s grin: a tomcat in love coming along from branch to branch, spoiling for a fight."
-    ],
-    "asides": [
-      {
-        "title": "Buson’s preface",
-        "text": "The preface Buson wrote for Shōha’s collection is one of his best-known statements on haikai, including the advice to use the everyday to leave the everyday behind."
-      }
-    ],
-    "timeline": [
-      {
-        "year": "1727",
-        "kind": "life",
-        "text": "Born in Kyoto"
-      },
-      {
-        "year": "1766",
-        "kind": "work",
-        "text": "Joins Buson’s Sankasha poetry meetings"
-      },
-      {
-        "year": "1772",
-        "kind": "life",
-        "text": "Dies on 11 January"
-      },
-      {
-        "year": "1777",
-        "kind": "after",
-        "text": "Shundei Kushū published, with Buson’s preface"
-      }
-    ],
-    "sources": [
-      "https://ja.wikipedia.org/wiki/%E9%BB%92%E6%9F%B3%E5%8F%AC%E6%B3%A2"
-    ]
-  },
-  {
-    "slug": "hamada-shado",
-    "author": "Hamada Shadō",
-    "name": "Hamada Shadō",
-    "jp": "濱田洒堂",
-    "life": "?–1737",
-    "headings": {
-      "cats": "Enough love for a stack of poem cards",
-      "timeline": "From Zeze to Osaka"
-    },
-    "images": [],
-    "lifeText": [
-      {
-        "years": "?–1737",
-        "text": "Hamada Shadō was a physician of the Zeze domain who began under [Esa Shōhaku](#/poet/esa-shohaku) and joined Bashō around 1689. Bashō stayed with him in 1690 and wrote a short piece for his house, and Shadō published the anthology *Hisago*, *The Gourd*. He lived with Bashō in Fukagawa through the winter of 1692, then moved to Osaka, where a turf war with a fellow pupil, Shidō, grew bitter enough that Bashō came to Osaka partly to make peace. The quarrel kept Shadō away even from Bashō’s deathbed and funeral. In later life he drifted from haikai and served the domain as a doctor."
-      }
-    ],
-    "cats": [
-      "His cat poem is gently mocking: cats in love, tender enough to fill a whole stack of poem cards."
-    ],
-    "asides": [
-      {
-        "title": "Missing the funeral",
-        "text": "His feud with Shidō in Osaka meant he neither visited the dying Bashō nor attended the funeral."
-      }
-    ],
-    "timeline": [
-      {
-        "year": "c. 1689",
-        "kind": "work",
-        "text": "Joins Bashō’s school"
-      },
-      {
-        "year": "1690",
-        "kind": "work",
-        "text": "Publishes Hisago"
-      },
-      {
-        "year": "1692",
-        "kind": "life",
-        "text": "Lives with Bashō in Fukagawa over the winter"
-      },
-      {
-        "year": "1693",
-        "kind": "life",
-        "text": "Moves to Osaka"
-      },
-      {
-        "year": "1737",
-        "kind": "life",
-        "text": "Said to have died on 6 October"
-      }
-    ],
-    "sources": [
-      "https://ja.wikipedia.org/wiki/%E6%BF%B1%E7%94%B0%E6%B4%92%E5%A0%82"
-    ]
-  },
-  {
     "slug": "kaya-shirao",
     "author": "Kaya Shirao",
     "name": "Kaya Shirao",
     "jp": "加舎白雄",
     "life": "1738–1791",
     "headings": {
-      "cats": "Letting the tomcat out",
+      "cats": "Kaya Shirao and cats",
       "timeline": "Four thousand pupils, no wife"
     },
     "images": [],
@@ -3019,7 +2286,7 @@
     "jp": "松岡青蘿",
     "life": "1740–1791",
     "headings": {
-      "cats": "A trap on the road to love",
+      "cats": "Matsuoka Seira and cats",
       "timeline": "Banished samurai, Kakogawa master"
     },
     "images": [],
@@ -3085,7 +2352,7 @@
     "jp": "高井几董",
     "life": "1741–1789",
     "headings": {
-      "cats": "Blowfish soup, even for the cat",
+      "cats": "Takai Kitō and cats",
       "timeline": "Buson’s heir"
     },
     "images": [],
@@ -3160,14 +2427,14 @@
     "jp": "成田蒼虬",
     "life": "1761–1842",
     "headings": {
-      "cats": "A cat in love behind the asters",
+      "cats": "Narita Sōkyū and cats",
       "timeline": "Kanazawa to Kyoto"
     },
     "images": [],
     "lifeText": [
       {
         "years": "1761–1842",
-        "text": "Narita Sōkyū was the son of a Kanazawa samurai. He studied with [Takakuwa Rankō](#/poet/takakuwa-ranko), and when his father died in prison and the family stipend was confiscated, he went to Kyoto and relied on his teacher, later inheriting Rankō’s Bashō Hall in the eastern hills. From 1835 he lived in a hut near Yasaka and led the haikai world of the Tenpō era, one of its three great masters with [Sakurai Baishitsu](#/poet/sakurai-baishitsu) and [Tagawa Hōrō](#/poet/tagawa-horo). He died in 1842."
+        "text": "Narita Sōkyū was the son of a Kanazawa samurai. He studied with Takakuwa Rankō, and when his father died in prison and the family stipend was confiscated, he went to Kyoto and relied on his teacher, later inheriting Rankō’s Bashō Hall in the eastern hills. From 1835 he lived in a hut near Yasaka and led the haikai world of the Tenpō era, one of its three great masters with Sakurai Baishitsu and Tagawa Hōrō. He died in 1842."
       }
     ],
     "cats": [
@@ -3208,68 +2475,6 @@
     ],
     "sources": [
       "https://ja.wikipedia.org/wiki/%E6%88%90%E7%94%B0%E8%92%BC%E8%99%AC"
-    ]
-  },
-  {
-    "slug": "tagawa-horo",
-    "author": "Tagawa Hōrō",
-    "name": "Tagawa Hōrō",
-    "jp": "田川鳳朗",
-    "life": "1762–1845",
-    "headings": {
-      "cats": "Noisy, for Kyoto",
-      "timeline": "From Kumamoto to the master under the blossoms"
-    },
-    "images": [],
-    "lifeText": [
-      {
-        "years": "1762–1845",
-        "text": "Tagawa Hōrō was born in Higo, the son of a poet, and took up haikai at about twelve. In 1798 he left the service of the Kumamoto domain to travel, settled in Edo in 1816, and became friends with Natsume Seibi, Issa’s patron. He called for a return to “true Bashō style”, became one of the leading masters in Edo, and was counted with [Sakurai Baishitsu](#/poet/sakurai-baishitsu) and [Narita Sōkyū](#/poet/narita-sokyu) among the three great masters of the Tenpō era. For Bashō’s 150th memorial he persuaded the Nijō family to grant Bashō a divine title. He died in 1845."
-      }
-    ],
-    "cats": [
-      "His cat poem is a visitor’s complaint: cats in love, and noisy, for a night in Kyoto."
-    ],
-    "asides": [
-      {
-        "title": "A god called Bashō",
-        "text": "For the 150th anniversary of Bashō’s death he worked to have the Nijō family grant Bashō the title of a deity, and received the title “Old Man under the Blossoms” himself."
-      }
-    ],
-    "timeline": [
-      {
-        "year": "1762",
-        "kind": "life",
-        "text": "Born in Higo"
-      },
-      {
-        "year": "1798",
-        "kind": "life",
-        "text": "Leaves domain service and travels"
-      },
-      {
-        "year": "1816",
-        "kind": "life",
-        "text": "Settles in Edo"
-      },
-      {
-        "year": "1817",
-        "kind": "work",
-        "text": "Bashō-ba Bune, calling for a return to Bashō"
-      },
-      {
-        "year": "1843",
-        "kind": "work",
-        "text": "Secures a divine title for Bashō"
-      },
-      {
-        "year": "1845",
-        "kind": "life",
-        "text": "Dies on 26 December"
-      }
-    ],
-    "sources": [
-      "https://ja.wikipedia.org/wiki/%E7%94%B0%E5%B7%9D%E9%B3%B3%E6%9C%97"
     ]
   },
   {
@@ -3543,14 +2748,14 @@
     "jp": "鶴田卓池",
     "life": "1768–1846",
     "headings": {
-      "cats": "Borrowing a cat in the rainy season",
+      "cats": "Tsuruta Takuchi and cats",
       "timeline": "A dyer’s son in Okazaki"
     },
     "images": [],
     "lifeText": [
       {
         "years": "1768–1846",
-        "text": "Tsuruta Takuchi was born into a family of indigo dyers in Okazaki, in Mikawa. At seventeen he became a pupil of Katō Kyōtai of Owari and also studied with Inoue Shirō, and he grew into the central figure of haikai in the Mikawa region, counted with [Sakurai Baishitsu](#/poet/sakurai-baishitsu), [Narita Sōkyū](#/poet/narita-sokyu) and [Tagawa Hōrō](#/poet/tagawa-horo) among the “four old men of Tenpō”. He was known as good-natured and fond of drink. He died in Okazaki in 1846, aged seventy-six."
+        "text": "Tsuruta Takuchi was born into a family of indigo dyers in Okazaki, in Mikawa. At seventeen he became a pupil of Katō Kyōtai of Owari and also studied with Inoue Shirō, and he grew into the central figure of haikai in the Mikawa region, counted with Sakurai Baishitsu, [Narita Sōkyū](#/poet/narita-sokyu) and Tagawa Hōrō among the “four old men of Tenpō”. He was known as good-natured and fond of drink. He died in Okazaki in 1846, aged seventy-six."
       }
     ],
     "cats": [
@@ -3589,103 +2794,13 @@
     ]
   },
   {
-    "slug": "sakurai-baishitsu",
-    "author": "Sakurai Baishitsu",
-    "name": "Sakurai Baishitsu",
-    "jp": "桜井梅室",
-    "life": "1769–1852",
-    "headings": {
-      "cats": "Granny hasn’t heard a thing",
-      "timeline": "Sword polisher to master of Tenpō"
-    },
-    "images": [
-      {
-        "file": "Sakurai Baishitsu by Hiroshige.jpg",
-        "caption": "Sakurai Baishitsu, by Utagawa Hiroshige. Tokyo National Museum.",
-        "credit": "Utagawa Hiroshige",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Sakurai_Baishitsu_by_Hiroshige.jpg",
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/52/Sakurai_Baishitsu_by_Hiroshige.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Sakurai_Baishitsu_by_Hiroshige.jpg",
-        "w": 452,
-        "h": 920,
-        "license": "Public domain",
-        "license_url": "https://commons.wikimedia.org/wiki/File:Sakurai_Baishitsu_by_Hiroshige.jpg",
-        "rights_status": "public-domain",
-        "image_credit": "歌川広重",
-        "local": {
-          "base": "assets/img/b92ab26f4b62b43f",
-          "widths": [
-            452
-          ],
-          "w": 452,
-          "h": 920,
-          "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoEAAgAA4BaJaACdAEOZzdAAP7Uepv7YnrD0I2B/X3lDXrWVpNHKAAA"
-        }
-      }
-    ],
-    "lifeText": [
-      {
-        "years": "1769–1807",
-        "text": "Sakurai Baishitsu was born in Kanazawa and worked as a sword polisher for the Kaga domain. He took up haikai at sixteen, and in 1800, at the urging of [Narita Sōkyū](#/poet/narita-sokyu), inherited the poetry studio Shūkaian."
-      },
-      {
-        "years": "1807–1852",
-        "text": "In 1807 he handed the family trade to a pupil and moved to Kyoto, poor enough to copy out directories for a living. He later worked in Osaka and Edo, where his house burned twice, before going home to Kanazawa. With Sōkyū and [Tagawa Hōrō](#/poet/tagawa-horo) he was counted among the three great masters of the Tenpō era. He died in 1852."
-      }
-    ],
-    "cats": [
-      "His cat poem is a comic household scene: the whole neighbourhood kept awake by cats in love, and Granny, hard of hearing, sleeping through every note."
-    ],
-    "asides": [
-      {
-        "title": "In Bashō’s footsteps",
-        "text": "In 1829, after his Edo house burned, he walked the route of Oku no Hosomichi from Sōka to Nikkō."
-      }
-    ],
-    "timeline": [
-      {
-        "year": "1769",
-        "kind": "life",
-        "text": "Born in Kanazawa on 24 December"
-      },
-      {
-        "year": "1800",
-        "kind": "work",
-        "text": "Inherits the Shūkaian studio"
-      },
-      {
-        "year": "1807",
-        "kind": "life",
-        "text": "Leaves the family trade and moves to Kyoto"
-      },
-      {
-        "year": "1823",
-        "kind": "life",
-        "text": "Arrives in Edo"
-      },
-      {
-        "year": "1834",
-        "kind": "life",
-        "text": "Burned out again; returns to Kanazawa"
-      },
-      {
-        "year": "1852",
-        "kind": "life",
-        "text": "Dies on 12 November"
-      }
-    ],
-    "sources": [
-      "https://ja.wikipedia.org/wiki/%E6%A1%9C%E4%BA%95%E6%A2%85%E5%AE%A4"
-    ]
-  },
-  {
     "slug": "inoue-seigetsu",
     "author": "Inoue Seigetsu",
     "name": "Inoue Seigetsu",
     "jp": "井上井月",
     "life": "c. 1822–1887",
     "headings": {
-      "cats": "Even the cat is out tonight",
+      "cats": "Inoue Seigetsu and cats",
       "timeline": "Thirty years on the road in Ina"
     },
     "images": [
@@ -3774,7 +2889,7 @@
     "jp": "内藤鳴雪",
     "life": "1847–1926",
     "headings": {
-      "cats": "One-sided, like an abalone",
+      "cats": "Naitō Meisetsu and cats",
       "timeline": "A samurai who took a pupil for a teacher"
     },
     "images": [
@@ -3862,7 +2977,7 @@
     "jp": "村上鬼城",
     "life": "1865–1938",
     "headings": {
-      "cats": "Abandoned in the bindweed",
+      "cats": "Murakami Kijō and cats",
       "timeline": "A deaf clerk in Takasaki"
     },
     "images": [
@@ -4435,7 +3550,7 @@
     "jp": "松瀬青々",
     "life": "1869–1937",
     "headings": {
-      "cats": "A kitten licking a violet",
+      "cats": "Matsuse Seisei and cats",
       "timeline": "Osaka’s answer to Hototogisu"
     },
     "images": [],
@@ -4491,99 +3606,13 @@
     ]
   },
   {
-    "slug": "iwaya-sazanami",
-    "author": "Iwaya Sazanami",
-    "name": "Iwaya Sazanami",
-    "jp": "巖谷小波",
-    "life": "1870–1933",
-    "headings": {
-      "cats": "A cat left by the frosty fence",
-      "timeline": "Momotarō’s modern storyteller"
-    },
-    "images": [
-      {
-        "file": "巖谷 小波.jpg",
-        "caption": "Iwaya Sazanami, photograph. National Diet Library.",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/%E5%B7%96%E8%B0%B7_%E5%B0%8F%E6%B3%A2.jpg",
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5c/%E5%B7%96%E8%B0%B7_%E5%B0%8F%E6%B3%A2.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:%E5%B7%96%E8%B0%B7_%E5%B0%8F%E6%B3%A2.jpg",
-        "w": 1390,
-        "h": 1750,
-        "license": "Public domain",
-        "license_url": "https://commons.wikimedia.org/wiki/File:%E5%B7%96%E8%B0%B7_%E5%B0%8F%E6%B3%A2.jpg",
-        "rights_status": "public-domain",
-        "image_credit": "Unknown artist",
-        "local": {
-          "base": "assets/img/cc2f9f1be1bcf1e5",
-          "widths": [
-            480,
-            960,
-            1390
-          ],
-          "w": 1390,
-          "h": 1750,
-          "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoGAAgAA4BaJYwCdAD5ifksAAD+PHJ/mY/c4sUOA5q09haQ7GGAAA=="
-        }
-      }
-    ],
-    "lifeText": [
-      {
-        "years": "1870–1891",
-        "text": "Iwaya Sazanami was born in Tokyo, the son of the official and celebrated calligrapher Iwaya Ichiroku; his mother died a few months later. At ten he was sent a German book of European fairy tales by an elder brother studying medicine in Germany, meant as language practice. It made him a writer instead, and he dropped out of the medical track against his family’s wishes to join Ozaki Kōyō’s literary circle, the Ken’yūsha."
-      },
-      {
-        "years": "1891–1933",
-        "text": "His *Koganemaru* of 1891, a story about a heroic dog, is counted as the first modern Japanese children’s book. Through the boys’ and girls’ magazines he edited and his long series of retold folk tales, he gave generations of children their Momotarō, Kintarō and Urashima Tarō. He was also a haiku poet who painted his own fairy-tale haiga."
-      }
-    ],
-    "cats": [
-      "His one cat poem is far from the nursery: a cat abandoned by a fence in the autumn frost. A storyteller’s eye, with no happy ending supplied."
-    ],
-    "asides": [
-      {
-        "title": "Read by Moppo",
-        "text": "The housebound boy who became the poet [Tomita Moppo](#/poet/tomita-moppo) taught himself to read partly from Sazanami’s fairy tales and magazine, and first learned what haiku were from Sazanami’s poems."
-      },
-      {
-        "title": "Tickle the feet",
-        "text": "His Japanese biography records that at home he liked to have children tickle the soles of his feet."
-      }
-    ],
-    "timeline": [
-      {
-        "year": "1870",
-        "kind": "life",
-        "text": "Born in Tokyo on 4 July"
-      },
-      {
-        "year": "1887",
-        "kind": "work",
-        "text": "Joins Ozaki Kōyō’s Ken’yūsha"
-      },
-      {
-        "year": "1891",
-        "kind": "work",
-        "text": "Koganemaru, the first modern Japanese children’s story"
-      },
-      {
-        "year": "1933",
-        "kind": "life",
-        "text": "Dies on 5 September"
-      }
-    ],
-    "sources": [
-      "https://ja.wikipedia.org/wiki/%E5%B7%96%E8%B0%B7%E5%B0%8F%E6%B3%A2",
-      "https://en.wikipedia.org/wiki/Sazanami_Iwaya"
-    ]
-  },
-  {
     "slug": "terada-torahiko",
     "author": "Terada Torahiko",
     "name": "Terada Torahiko",
     "jp": "寺田寅彦",
     "life": "1878–1935",
     "headings": {
-      "cats": "A cat that won’t answer",
+      "cats": "Terada Torahiko and cats",
       "timeline": "Physics, essays and Sōseki"
     },
     "images": [
@@ -4773,108 +3802,12 @@
     "sources": [
       "https://ja.wikipedia.org/wiki/%E7%A8%AE%E7%94%B0%E5%B1%B1%E9%A0%AD%E7%81%AB",
       "https://en.wikipedia.org/wiki/Sant%C5%8Dka_Taneda"
-    ]
-  },
-  {
-    "slug": "ozaki-hosai",
-    "author": "Ozaki Hōsai",
-    "name": "Ozaki Hōsai",
-    "jp": "尾崎放哉",
-    "life": "1885–1926",
-    "headings": {
-      "cats": "A moonlit night and a cat in love",
-      "timeline": "From insurance office to island hut"
-    },
-    "images": [
-      {
-        "file": "Ozaki Hosai 1.jpg",
-        "caption": "Ozaki Hōsai, photograph. National Diet Library.",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Ozaki_Hosai_1.jpg",
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Ozaki_Hosai_1.jpg",
-        "page": "https://commons.wikimedia.org/wiki/File:Ozaki_Hosai_1.jpg",
-        "w": 1330,
-        "h": 2029,
-        "license": "Public domain",
-        "license_url": "https://commons.wikimedia.org/wiki/File:Ozaki_Hosai_1.jpg",
-        "rights_status": "public-domain",
-        "image_credit": "Unknown artist",
-        "local": {
-          "base": "assets/img/4b4748039fe5e2e4",
-          "widths": [
-            480,
-            960,
-            1330
-          ],
-          "w": 1330,
-          "h": 2029,
-          "lq": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACQAQCdASoFAAgAA4BaJaQAAp2pxsAA/CWOVn8dfrWDW5gAAAA="
-        }
-      }
     ],
-    "lifeText": [
-      {
-        "years": "1885–1921",
-        "text": "Ozaki Hōsai was born in Tottori, went through the First Higher School and the law faculty of Tokyo Imperial University, and became a manager at a life insurance company. He wrote conventional haiku as a student; then his senior from school, Ogiwara Seisensui, launched free-verse haiku in *Sōun*, and Hōsai read it, he said, like a man given water after a long thirst."
-      },
-      {
-        "years": "1921–1926",
-        "text": "Drink and an inability to fit in cost him his career, first in Tokyo and then in Seoul. After the 1923 earthquake he left his wife, worked as a lay servant at a Buddhist community in Kyoto, moved from temple to temple as a caretaker, and ended in a tiny hermitage on Shōdoshima, where he died of tuberculosis at forty-one. *Ōzora*, *The Wide Sky*, published after his death, made his name."
-      }
-    ],
-    "cats": [
-      "His one cat poem is pure Hōsai, short and unfinished-sounding: a moonlit night by the fatsia leaves, and a cat in love."
-    ],
-    "asides": [
-      {
-        "title": "Alone even when coughing",
-        "text": "His best-known poem is seven syllables long: <span lang=\"ja\">咳をしても一人</span>, “even when I cough, alone”."
-      },
-      {
-        "title": "Paired with Santōka",
-        "text": "He and [Taneda Santōka](#/poet/taneda-santoka), both followers of Seisensui and both ruined by drink, are the two names everyone remembers from free-verse haiku."
-      }
-    ],
-    "timeline": [
-      {
-        "year": "1885",
-        "kind": "life",
-        "text": "Born in Tottori on 20 January"
-      },
-      {
-        "year": "1915",
-        "kind": "work",
-        "text": "First free-verse haiku published in Sōun"
-      },
-      {
-        "year": "1921",
-        "kind": "life",
-        "text": "Leaves his insurance company"
-      },
-      {
-        "year": "1923",
-        "kind": "life",
-        "text": "Joins the Ittōen community in Kyoto"
-      },
-      {
-        "year": "1925",
-        "kind": "life",
-        "text": "Settles in a hermitage on Shōdoshima"
-      },
-      {
-        "year": "1926",
-        "kind": "life",
-        "text": "Dies on Shōdoshima on 7 April"
-      },
-      {
-        "year": "1926",
-        "kind": "after",
-        "text": "Ōzora published"
-      }
-    ],
-    "sources": [
-      "https://ja.wikipedia.org/wiki/%E5%B0%BE%E5%B4%8E%E6%94%BE%E5%93%89",
-      "https://en.wikipedia.org/wiki/H%C5%8Dsai_Ozaki"
-    ]
+    "poem": {
+      "jp": "分け入つても分け入つても青い山",
+      "en": "I push on in, and on in: still green mountains",
+      "note": "1926, on his first long pilgrimage on foot, in Kyushu"
+    }
   },
   {
     "slug": "hasegawa-reiyoshi",
@@ -4883,7 +3816,7 @@
     "jp": "長谷川零余子",
     "life": "1886–1928",
     "headings": {
-      "cats": "The cat that isn’t dead yet",
+      "cats": "Hasegawa Reiyoshi and cats",
       "timeline": "Pharmacist and editor"
     },
     "images": [
@@ -5022,7 +3955,12 @@
     "sources": [
       "https://ja.wikipedia.org/wiki/%E8%8A%A5%E5%B7%9D%E9%BE%8D%E4%B9%8B%E4%BB%8B",
       "https://en.wikipedia.org/wiki/Ry%C5%ABnosuke_Akutagawa"
-    ]
+    ],
+    "poem": {
+      "jp": "水洟や鼻の先だけ暮れのこる",
+      "en": "A runny nose: only the tip of my nose still catches the last light of day",
+      "note": "A winter dusk, and a joke at his own expense"
+    }
   },
   {
     "slug": "tomita-moppo",
@@ -5031,14 +3969,14 @@
     "jp": "富田木歩",
     "life": "1897–1923",
     "headings": {
-      "cats": "A cat in the millet, a cat near its time",
+      "cats": "Tomita Moppo and cats",
       "timeline": "Twenty-six years in Mukōjima"
     },
     "images": [],
     "lifeText": [
       {
         "years": "1897–1923",
-        "text": "Tomita Moppo was born in Mukōjima, Tokyo, into a once-prosperous family reduced to running a small eel shop. A fever in his first year left both his legs paralysed. He never went to school; he learned to read from picture cards and from [Iwaya Sazanami](#/poet/iwaya-sazanami)’s children’s magazine, and took the name Moppo, “wooden steps”, from the wooden legs he made himself in the hope of walking. Disabled, poor, tubercular and unschooled, he was hailed as the Takuboku of Taishō haiku. He died at twenty-six in the fires after the Great Kantō Earthquake."
+        "text": "Tomita Moppo was born in Mukōjima, Tokyo, into a once-prosperous family reduced to running a small eel shop. A fever in his first year left both his legs paralysed. He never went to school; he learned to read from picture cards and from Iwaya Sazanami’s children’s magazine, and took the name Moppo, “wooden steps”, from the wooden legs he made himself in the hope of walking. Disabled, poor, tubercular and unschooled, he was hailed as the Takuboku of Taishō haiku. He died at twenty-six in the fires after the Great Kantō Earthquake."
       }
     ],
     "cats": [
@@ -5151,6 +4089,11 @@
     "sources": [
       "https://ja.wikipedia.org/wiki/%E5%B7%9D%E7%AB%AF%E8%8C%85%E8%88%8D",
       "https://en.wikipedia.org/wiki/Kawabata_B%C5%8Dsha"
-    ]
+    ],
+    "poem": {
+      "jp": "露の玉蟻たぢたぢとなりにけり",
+      "en": "A bead of dew: the ant stumbles back, unsure",
+      "note": "Dew seen at an ant’s scale"
+    }
   }
 ]
