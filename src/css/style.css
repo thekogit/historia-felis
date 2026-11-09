@@ -4739,6 +4739,7 @@ header.site-header,
 .dossier-romaji { font-style: italic; }
 .dossier-notes { color: var(--text-secondary); }
 .dossier-attr { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.dossier-attr-name { display: inline-flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
 .dossier-attr span[lang="ja"] { font-family: var(--font-haiku-kanji); font-size: 12px; letter-spacing: 0.08em; color: var(--text-secondary); }
 /* Where the Japanese text comes from: quiet, after the poet, on its own line on narrow screens */
 .dossier-src { flex-basis: 100%; color: var(--text-muted); text-decoration: none; border-bottom: 1px solid var(--border-hairline); width: fit-content; text-transform: none; letter-spacing: 0.02em; transition: color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out); }
@@ -4975,6 +4976,7 @@ header.site-header,
 .poet-rail::before { content: ""; position: absolute; left: 0; right: 0; top: 122px; height: 1px; background: var(--border-strong); }
 .poet-act { position: absolute; top: 119px; height: 6px; background: var(--accent-stamp); left: calc(var(--pad) + var(--i0) * var(--col)); width: calc((var(--i1) - var(--i0)) * var(--col) + 10px); }
 .poet-act span { position: absolute; top: -20px; left: 0; white-space: nowrap; font-family: var(--font-mono); font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent-stamp); }
+.poet-yr, .poet-dot, .poet-tx { grid-column: calc(var(--i) + 1); }
 .poet-yr { grid-row: 1; align-self: end; font-family: var(--font-period-soul); font-weight: 400; font-size: 44px; line-height: 1; letter-spacing: -.01em; padding-right: 24px; white-space: nowrap; }
 /* the site squares every corner; the timeline markers are the approved exception */
 .poet-dot { grid-row: 2; align-self: center; justify-self: start; width: 11px; height: 11px; border-radius: 50% !important; background: var(--text-main); position: relative; z-index: 1; box-shadow: 0 0 0 4px var(--bg-canvas); }
@@ -5030,6 +5032,92 @@ header.site-header,
   .poet-pager { grid-template-columns: 1fr 1fr; margin-top: 72px; padding-bottom: 64px; }
   .poet-all { grid-column: 1 / -1; grid-row: 2; text-align: center; }
   .poet-pager strong { font-size: 19px; }
+}
+
+/* ---- PHONES & SMALL TABLETS: haiku poets ----
+   Dossier: the poet chips stay pinned under the header (and follow the header as it slides
+   away), and each poem drops the poet's name it already sits under.
+   Poet page: Life comes straight after a compact portrait card, the asides follow the cats,
+   and the timeline reads top to bottom instead of sideways. */
+@media (max-width: 899px) {
+  .dossier-index {
+    position: sticky;
+    top: var(--hdr-top);
+    z-index: 20;
+    padding-top: 10px;
+    background: var(--bg-canvas);
+    scroll-snap-type: x proximity;
+    scroll-padding: 0 clamp(16px, 4vw, 32px);
+    transition: top var(--dur-slow) var(--ease-standard);
+    scrollbar-width: none;
+  }
+  .dossier-index::-webkit-scrollbar { display: none; }
+  .dossier-index ol { padding-bottom: 10px; }
+  .dossier-index li { scroll-snap-align: start; }
+  .dossier-index-link { min-height: 36px; align-items: center; }
+  /* header (if shown) + the chip strip */
+  .dossier-poet { scroll-margin-top: calc(var(--hdr-top) + 64px); }
+  .dossier-poet-head { padding-top: 32px; }
+  .dossier-attr-name { display: none; }
+  .dossier-attr { margin-top: 14px; }
+}
+@media (max-width: 860px) {
+  /* Reading order: portrait card, Life, the poem, the cats, then the asides */
+  .poet-cols { display: flex; flex-direction: column; gap: 0; }
+  .poet-side { display: contents; }
+  .poet-plate { order: 1; margin-top: 28px; }
+  .poet-main { order: 2; padding-top: 40px; }
+  .poet-side > .poet-h3 { order: 3; margin-top: 56px; font-size: 28px; }
+  .poet-asides { order: 4; }
+  .poet-sources { order: 5; }
+  .poet-poem-jp { font-size: 19px; letter-spacing: .08em; }
+  .poet-poem-en { font-size: 21px; }
+}
+@media (max-width: 600px) {
+  .poet-mast { padding: 36px 0 32px; }
+  .poet-mast h1 { font-size: clamp(38px, 12vw, 56px); }
+  .poet-mast-jp { margin-top: 16px; }
+  .poet-mast-dates { margin-top: 12px; font-size: 16px; }
+  .poet-rule { margin-top: 22px; }
+
+  /* Portrait as a card: image left, caption and thumbnails beside it */
+  .poet-plate { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 0 14px; max-width: none; padding: 10px; }
+  .poet-plate-frame { grid-row: 1 / span 2; align-self: start; }
+  .poet-plate-img { max-height: 168px; }
+  .poet-plate-img.is-small { max-width: calc(100% - 16px) !important; margin: 8px auto; }
+  .poet-plate-cap { grid-column: 2; margin-top: 0; }
+  .poet-thumbs { grid-column: 2; align-self: end; margin-top: 10px; }
+  .poet-thumb { width: 44px; height: 44px; }
+
+  .poet-h2 { font-size: 26px; margin-bottom: 16px; }
+  .poet-note { margin: 0 -16px; padding: 22px 16px 8px; border-left: 0; border-top: 1px solid var(--border-strong); }
+  .poet-note p { font-size: 12px; }
+
+  /* Vertical timeline: year | marker on a running line | text */
+  .poet-tl { padding-top: 56px; }
+  .poet-tl-head { margin-bottom: 8px; }
+  .poet-ctrl, .poet-mini { display: none; }
+  .poet-frame { border: 0; }
+  .poet-frame::before, .poet-frame::after { display: none; }
+  .poet-track { overflow: visible; cursor: auto; user-select: auto; -webkit-user-select: auto; }
+  .poet-rail { display: grid; grid-auto-flow: row; grid-template-columns: 52px 11px minmax(0, 1fr); grid-template-rows: none; grid-auto-columns: auto; column-gap: 14px; min-width: 0; padding: 4px 0 8px; }
+  .poet-rail::before { display: none; }
+  .poet-yr, .poet-dot, .poet-tx { grid-row: calc(var(--i) + 2); }
+  .poet-yr { grid-column: 1; align-self: start; justify-self: end; font-size: 21px; line-height: 1.2; padding: 0; }
+  .poet-rail .poet-dot,
+  .poet-rail .poet-dot.o,
+  .poet-rail .poet-dot.p { grid-column: 2; align-self: stretch; justify-self: center; position: relative; width: 11px; height: auto; border: 0; border-radius: 0 !important; box-shadow: none;
+    background: linear-gradient(var(--border-strong), var(--border-strong)) center top / 1px 100% no-repeat; }
+  .poet-rail .poet-dot.act { background-image: linear-gradient(to bottom, transparent 13px, var(--accent-stamp) 13px); background-size: 3px 100%; }
+  .poet-rail .poet-dot.first { background-position: center 13px; }
+  .poet-rail .poet-dot.last { background-size: 1px 13px; }
+  .poet-dot::before { content: ""; position: absolute; top: 8px; left: 0; width: 11px; height: 11px; box-sizing: border-box; border-radius: 50% !important; background: var(--text-main); box-shadow: 0 0 0 3px var(--bg-canvas); }
+  .poet-dot.o::before { background: var(--bg-canvas); border: 1.5px solid var(--accent-stamp); }
+  .poet-dot.p::before { background: var(--bg-canvas); border: 1px dashed var(--text-muted); }
+  .poet-tx { grid-column: 3; max-width: none; margin: 0; padding: 4px 0 26px; border-left: 0; font-size: 13.5px; }
+  .poet-act { position: static; grid-row: 1; grid-column: 1 / -1; height: auto; width: auto; background: none; margin: 4px 0 18px; }
+  .poet-act span { position: static; display: inline-flex; align-items: center; gap: 8px; }
+  .poet-act span::before { content: ""; width: 3px; height: 14px; background: var(--accent-stamp); }
 }
 
 /* Poet names that lead to their pages: a barely-there underline */

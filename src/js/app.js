@@ -5293,7 +5293,7 @@ try { (function() {
                   <p class="dossier-tr">${esc(h.en || h.literal || '')}</p>
                   ${h.romaji ? `<p class="dossier-romaji">${esc(h.romaji)}</p>` : ''}
                   ${h.notes ? `<p class="dossier-notes">${esc(h.notes)}</p>` : ''}
-                  <div class="dossier-attr dossier-label">${p.page ? `<a class="dossier-poet-link" href="#/poet/${p.page.slug}">${esc(p.name)}</a>` : esc(p.name)}${p.jp ? `<span lang="ja">${esc(p.jp)}</span>` : ''}${h.source ? `<a class="dossier-src" href="${esc(h.sourceUrl || '')}" target="_blank" rel="noopener noreferrer" title="Where the Japanese text comes from">${esc(h.collection ? h.collection + ' · ' : '')}${esc(h.source)} ↗</a>` : ''}</div>
+                  <div class="dossier-attr dossier-label"><span class="dossier-attr-name">${p.page ? `<a class="dossier-poet-link" href="#/poet/${p.page.slug}">${esc(p.name)}</a>` : esc(p.name)}${p.jp ? `<span lang="ja">${esc(p.jp)}</span>` : ''}</span>${h.source ? `<a class="dossier-src" href="${esc(h.sourceUrl || '')}" target="_blank" rel="noopener noreferrer" title="Where the Japanese text comes from">${esc(h.collection ? h.collection + ' · ' : '')}${esc(h.source)} ↗</a>` : ''}</div>
                 </div>
                 <button class="card-stack-btn dossier-save ${isSaved ? 'active' : ''}" data-haiku-id="haiku:${esc(h.id)}" title="Save haiku to Curatorial Stack" aria-label="Save haiku to stack" aria-pressed="${isSaved}" type="button" onclick="window.toggleHaikuStack('haiku:${esc(h.id)}', this);">${heartSvg(isSaved)}</button>
               </article>`;
@@ -5320,7 +5320,17 @@ try { (function() {
 
         // Index: jump to a poet without touching the hash router, and track the poet in view
         const links = [...appRoot.querySelectorAll('.dossier-index-link')];
-        const setActive = slug => links.forEach(l => l.classList.toggle('active', l.dataset.target === slug));
+        const indexNav = appRoot.querySelector('.dossier-index');
+        const setActive = slug => {
+          links.forEach(l => l.classList.toggle('active', l.dataset.target === slug));
+          // Phones: the index is a sticky strip of chips; keep the current poet's chip in view
+          const cur = links.find(l => l.dataset.target === slug);
+          if (!cur || !indexNav || indexNav.scrollWidth <= indexNav.clientWidth + 1) return;
+          const n = indexNav.getBoundingClientRect(), c = cur.getBoundingClientRect();
+          const left = indexNav.scrollLeft + c.left - n.left - (n.width - c.width) / 2;
+          const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          indexNav.scrollTo({ left: Math.max(0, left), behavior: reduceMotion ? 'auto' : 'smooth' });
+        };
         links.forEach(l => l.addEventListener('click', () => {
           const target = document.getElementById(l.dataset.target);
           if (!target) return;
@@ -5431,7 +5441,10 @@ try { (function() {
         const tlHtml = tl.map((e, i) => {
           const k = KIND[e.kind] || 'v';
           const link = e.link ? `<a class="poet-src" href="${esc(e.link.url)}" target="_blank" rel="noopener noreferrer"${e.link.lang ? ` hreflang="${esc(e.link.lang)}"` : ''}>${esc(e.link.label)} ↗${e.link.lang === 'ja' ? '<span>in Japanese</span>' : ''}</a>` : '';
-          return `<span class="poet-yr ${k}" style="grid-column:${i + 1}">${esc(e.year)}</span><span class="poet-dot ${k}" style="grid-column:${i + 1}" aria-hidden="true"></span><span class="poet-tx ${k}" style="grid-column:${i + 1}">${esc(e.text)}${link}</span>`;
+          // --i places the event: a column on wide screens, a row in the phone's vertical timeline;
+          // `act` marks the stretch of line between the first and last active-year events
+          const act = (i >= i0 && i < i1 ? ' act' : '') + (i === 0 ? ' first' : '') + (i === tl.length - 1 ? ' last' : '');
+          return `<span class="poet-yr ${k}" style="--i:${i}">${esc(e.year)}</span><span class="poet-dot ${k}${act}" style="--i:${i}" aria-hidden="true"></span><span class="poet-tx ${k}" style="--i:${i}">${esc(e.text)}${link}</span>`;
         }).join('');
 
         const sourceLabel = url => /\/\/ja\./.test(url) ? 'Wikipedia (Japanese)' : /\/\/en\./.test(url) ? 'Wikipedia (English)' : url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0];
