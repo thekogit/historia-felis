@@ -1081,120 +1081,8 @@ try { (function() {
       // ============================================================================
       // LIVING MARGINALIA & AUTONOMOUS 6-RIBBON ENGINE (ALL HAIKUS RANDOMIZED)
       // ============================================================================
-      const HAIKU_SPECIMENS = [
-        {
-          id: "01",
-          code: "BS-1691-A",
-          author: "Matsuo Bashō",
-          authorJp: "松尾芭蕉",
-          lifespan: "1644–1694",
-          year: "1691 (Saga Diary)",
-          jp: "麦めしにやつるる恋か猫の妻",
-          romaji: "Mugi-meshi ni / yatsururu koi ka / neko no tsuma",
-          literal: "Wasting away on coarse barley rice—is it from love, O cat’s wife?",
-          notes: "Recorded in Bashō's Saga Diary (嵯峨日記). Unlike pampered court cats fed on fish, this rural stray subsists on rough boiled barley, growing gaunt and hollow-cheeked during the spring mating season.",
-          kigo: "猫の妻 (Cat's wife — Spring)",
-          pathology: "Malnutrition & unrequited longing"
-        },
-        {
-          id: "02",
-          code: "BS-1690-B",
-          author: "Matsuo Bashō",
-          authorJp: "松尾芭蕉",
-          lifespan: "1644–1694",
-          year: "c. 1690 (Genroku Era)",
-          jp: "猫の恋やむとき閨の朧月",
-          romaji: "Neko no koi / yamu toki neya no / oborozuki",
-          literal: "When the cat's cries of love finally cease—the hazy moon in the bedchamber.",
-          notes: "All night the alley reverberates with desperate feline yowling. At the exact moment the crying stops, an eerie silence floods the room, illuminated only by a blurred, melancholic vernal moon.",
-          kigo: "猫の恋 (Cat's love) / 朧月 (Hazy moon)",
-          pathology: "Nocturnal exhaustion & sudden acoustic void"
-        },
-        {
-          id: "03",
-          code: "IS-1812-A",
-          author: "Kobayashi Issa",
-          authorJp: "小林一茶",
-          lifespan: "1763–1828",
-          year: "1812 (Bunka 9)",
-          jp: "うかれ猫奇妙に痩せて参りけり",
-          romaji: "Ukare-neko / kimyō ni yasete / mairi-keri",
-          literal: "The lovesick stray cat—strangely thin and gaunt, comes limping home.",
-          notes: "Issa, lifelong chronicler of small, overlooked creatures, observes a wandering tomcat returning after days of absence. The adverb 'kimyō ni' (strangely/uncannily) underscores the skeletal transformation.",
-          kigo: "うかれ猫 (Wandering lovesick cat — Spring)",
-          pathology: "Extreme weight loss & limping gait"
-        },
-        {
-          id: "04",
-          code: "IS-1818-B",
-          author: "Kobayashi Issa",
-          authorJp: "小林一茶",
-          lifespan: "1763–1828",
-          year: "c. 1818 (Bunsei Era)",
-          jp: "恋猫のぬれつつ帰るあはれさよ",
-          romaji: "Koi-neko no / nuretsutsu kaeru / awaresa yo",
-          literal: "The pathos of the lovesick cat, returning home soaked through with rain.",
-          notes: "Classical 'mono no aware' applied to an alley cat. Matted fur, shivering spine, trudging across wet tatami or mud at dawn after a futile night outdoors.",
-          kigo: "恋猫 (Lovesick cat — Spring)",
-          pathology: "Hypothermia & damp dejection"
-        },
-        {
-          id: "05",
-          code: "MS-1896-A",
-          author: "Masaoka Shiki",
-          authorJp: "正岡子規",
-          lifespan: "1867–1902",
-          year: "1896 (Meiji 29)",
-          jp: "恋猫の眼ばかりに痩せにけり",
-          romaji: "Koi-neko no / manako bakari ni / yase ni keri",
-          literal: "The lovesick cat has wasted away until only its eyes remain.",
-          notes: "Written while Shiki himself was bedridden with tuberculosis. The hyper-realist 'shasei' (sketch from life) reduces the starving animal to two enormous, feverish orbs floating in a shrunken skull.",
-          kigo: "恋猫 (Lovesick cat — Spring)",
-          pathology: "Ocular prominence via severe emaciation"
-        },
-        {
-          id: "06",
-          code: "YB-1774-A",
-          author: "Yosa Buson",
-          authorJp: "与謝蕪村",
-          lifespan: "1716–1784",
-          year: "c. 1774 (An'ei Era)",
-          jp: "恋わたる猫のあわれや春の暮",
-          romaji: "Koi-wataru / neko no aware ya / haru no kure",
-          literal: "How pitiful, the cat wandering across the roofs in love—spring dusk.",
-          notes: "Buson brings a painter's composition: as twilight deepens over Kyoto tiles, a solitary silhouette crosses the ridgepole, crying into the gathering cold.",
-          kigo: "春の暮 (Spring evening)",
-          pathology: "Twilight disorientation & solitude"
-        },
-        {
-          id: "07",
-          code: "TK-1689-A",
-          author: "Takarai Kikaku",
-          authorJp: "宝井其角",
-          lifespan: "1661–1707",
-          year: "c. 1689 (Genroku Era)",
-          jp: "猫の恋初手から鳴いて哀れなり",
-          romaji: "Neko no koi / shote kara naite / aware nari",
-          literal: "Cat's love: crying out in grief from the very beginning, how pitiful.",
-          notes: "Bashō's foremost disciple notes that unlike human romance—which begins in sweetness and ends in tears—the alley cat's courtship starts from its very first breath as an agonizing wail.",
-          kigo: "猫の恋 (Cat's love — Spring)",
-          pathology: "Congenital vocal anguish"
-        },
-        {
-          id: "08",
-          code: "NS-1908-A",
-          author: "Natsume Sōseki",
-          authorJp: "夏目漱石",
-          lifespan: "1867–1916",
-          year: "c. 1908 (Meiji 41)",
-          jp: "恋猫の眼ばかり光る闇夜かな",
-          romaji: "Koi-neko no / me bakari hikaru / yamiyo kana",
-          literal: "Only the eyes of the lovesick cat gleam in the pitch-dark night.",
-          notes: "By the author of 'I Am a Cat' (Wagahai wa Neko de Aru). After the death of his family's nameless stray cat in 1908, Sōseki wrote solemn memorials and dark nocturnal haiku where the cat dissolves into pure phosphorescent gaze.",
-          kigo: "恋猫 (Lovesick cat — Spring)",
-          pathology: "Nocturnal tapetum lucidum reflection"
-        }
-      ];
+      // Haiku come only from data/haiku_pool.json, where every poem is traced to a source.
+      const HAIKU_SPECIMENS = [];
 
       const RAIN_GLYPHS = ['·', '∶', '⋮', '░', '▒', '│', '¦', ' ', ' '];
       const BRAILLE_GLITCH = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏', '∷', '※'];
@@ -1248,7 +1136,7 @@ try { (function() {
       const RIBBON_CONFIGS = [];
 
       function randomizeRibbonHaikus() {
-        // Shuffle the entire HAIKU_POOL every time so all 100 haikus are randomized
+        // Shuffle the entire HAIKU_POOL every time so every haiku gets its turn
         const allShuffled = pickRandomHaikus(HAIKU_POOL, HAIKU_POOL.length);
         activeMarginHaikus = allShuffled;
         window.activeMarginHaikus = activeMarginHaikus;
@@ -5362,7 +5250,7 @@ try { (function() {
                   <p class="dossier-tr">${esc(h.en || h.literal || '')}</p>
                   ${h.romaji ? `<p class="dossier-romaji">${esc(h.romaji)}</p>` : ''}
                   ${h.notes ? `<p class="dossier-notes">${esc(h.notes)}</p>` : ''}
-                  <div class="dossier-attr dossier-label">${p.page ? `<a class="dossier-poet-link" href="#/poet/${p.page.slug}">${esc(p.name)}</a>` : esc(p.name)}${p.jp ? `<span lang="ja">${esc(p.jp)}</span>` : ''}</div>
+                  <div class="dossier-attr dossier-label">${p.page ? `<a class="dossier-poet-link" href="#/poet/${p.page.slug}">${esc(p.name)}</a>` : esc(p.name)}${p.jp ? `<span lang="ja">${esc(p.jp)}</span>` : ''}${h.source ? `<a class="dossier-src" href="${esc(h.sourceUrl || '')}" target="_blank" rel="noopener noreferrer" title="Where the Japanese text comes from">${esc(h.collection ? h.collection + ' · ' : '')}${esc(h.source)} ↗</a>` : ''}</div>
                 </div>
                 <button class="card-stack-btn dossier-save ${isSaved ? 'active' : ''}" data-haiku-id="haiku:${esc(h.id)}" title="Save haiku to Curatorial Stack" aria-label="Save haiku to stack" aria-pressed="${isSaved}" type="button" onclick="window.toggleHaikuStack('haiku:${esc(h.id)}', this);">${heartSvg(isSaved)}</button>
               </article>`;
@@ -5375,7 +5263,7 @@ try { (function() {
               <div class="dossier-label dossier-kicker">Archival Dossier · Literature</div>
               <h1>On the Stray Cat in Haiku<span lang="ja">猫の恋</span></h1>
               <div class="dossier-rule" aria-hidden="true"></div>
-              <p class="dossier-abstract">In classical haikai the spring season word <em lang="ja">猫の恋</em> (<em>neko no koi</em>, “cat’s love”) rarely signifies domestic warmth. From Matsuo Bashō to Masaoka Shiki, poets recorded the stray returning from the rooftops: soaked in cold rain, thin from coarse barley, reduced to two gleaming eyes in the dark. The poems are given in their original vertical setting with an English reading and romanisation.</p>
+              <p class="dossier-abstract">In classical haikai the spring season word <em lang="ja">猫の恋</em> (<em>neko no koi</em>, “cat’s love”) is rarely about domestic warmth. From Matsuo Bashō to Masaoka Shiki, poets followed the tomcat over the rooftops: slipping in through a crumbled stove, grown thin on barley rice, shaking off the rain he came home in. Later poets kept their cats closer: asleep on a lap at the year’s end, sniffing a snail, abandoned by a fence in the frost. Every poem here is traced to a published source, shown under it, and given in its original vertical setting with our own English reading and a romanisation.</p>
             </header>
             <div class="dossier-body">
               <nav class="dossier-index" aria-label="Index of poets">
