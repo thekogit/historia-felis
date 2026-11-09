@@ -5136,14 +5136,11 @@ header.site-header,
   .poet-mast-dates { margin-top: 12px; font-size: 16px; }
   .poet-rule { margin-top: 22px; }
 
-  /* Portrait as a card: image left, caption and thumbnails beside it */
-  .poet-plate { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 0 14px; max-width: none; padding: 10px; }
-  .poet-plate-frame { grid-row: 1 / span 2; align-self: start; }
-  .poet-plate-img { max-height: 168px; }
-  .poet-plate-img.is-small { max-width: calc(100% - 16px) !important; margin: 8px auto; }
-  .poet-plate-cap { grid-column: 2; margin-top: 0; }
-  .poet-thumbs { grid-column: 2; align-self: end; margin-top: 10px; }
-  .poet-thumb { width: 44px; height: 44px; }
+  /* Portrait full width of the card, caption and thumbnails under it */
+  .poet-plate { max-width: none; padding: 10px; }
+  .poet-plate-img { width: auto; max-width: 100%; max-height: min(64vh, 480px); margin: 0 auto; }
+  .poet-plate-cap { margin-top: 10px; }
+  .poet-thumb { width: 48px; height: 48px; }
 
   .poet-h2 { font-size: 26px; margin-bottom: 16px; }
   .poet-note { margin: 0 -16px; padding: 22px 16px 8px; border-left: 0; border-top: 1px solid var(--border-strong); }
@@ -10842,7 +10839,7 @@ try { (function() {
         const imgHtml = (img, i) => `
           <img class="poet-plate-img ${poetNatW(img) < 600 ? 'is-small' : ''}" src="${esc(poetImgSrc(img, 960))}"
             srcset="${esc(poetSrcset(img))}"
-            sizes="(max-width: 860px) 280px, 320px" width="${poetNatW(img)}" height="${(img.local && img.local.h) || img.h}"
+            sizes="(max-width: 600px) calc(100vw - 52px), (max-width: 860px) 280px, 320px" width="${poetNatW(img)}" height="${(img.local && img.local.h) || img.h}"
             ${poetNatW(img) < 600 ? `style="max-width:min(calc(100% - 48px), ${Math.round(poetNatW(img) * 1.25)}px)"` : ''}
             alt="${esc(img.caption)}" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">`;
         const capHtml = img => {

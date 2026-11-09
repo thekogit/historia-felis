@@ -5414,7 +5414,7 @@ try { (function() {
         const imgHtml = (img, i) => `
           <img class="poet-plate-img ${poetNatW(img) < 600 ? 'is-small' : ''}" src="${esc(poetImgSrc(img, 960))}"
             srcset="${esc(poetSrcset(img))}"
-            sizes="(max-width: 860px) 280px, 320px" width="${poetNatW(img)}" height="${(img.local && img.local.h) || img.h}"
+            sizes="(max-width: 600px) calc(100vw - 52px), (max-width: 860px) 280px, 320px" width="${poetNatW(img)}" height="${(img.local && img.local.h) || img.h}"
             ${poetNatW(img) < 600 ? `style="max-width:min(calc(100% - 48px), ${Math.round(poetNatW(img) * 1.25)}px)"` : ''}
             alt="${esc(img.caption)}" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">`;
         const capHtml = img => {
