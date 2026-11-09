@@ -5067,7 +5067,9 @@ header.site-header,
   .poet-cols { display: block; }
   .poet-side { position: static; padding: 32px 0 0; }
   .poet-main { padding: 32px 0 0; }
-  .poet-plate { max-width: 280px; }
+  .poet-plate { width: 100%; max-width: 560px; margin-inline: auto; box-sizing: border-box; }
+  .poet-plate-cap { text-align: center; }
+  .poet-thumbs { justify-content: center; }
   .poet-h2 { font-size: 28px; }
   .poet-para { grid-template-columns: 1fr; gap: 6px; padding: 18px 0; }
   .poet-per { padding-top: 0; }
@@ -5136,10 +5138,11 @@ header.site-header,
   .poet-mast-dates { margin-top: 12px; font-size: 16px; }
   .poet-rule { margin-top: 22px; }
 
-  /* Portrait full width of the card, caption and thumbnails under it */
-  .poet-plate { max-width: none; padding: 10px; }
-  .poet-plate-img { width: auto; max-width: 100%; max-height: min(64vh, 480px); margin: 0 auto; }
-  .poet-plate-cap { margin-top: 10px; }
+  /* Portrait runs edge to edge, as large as the screen allows; caption and thumbnails centred under it */
+  .poet-plate { max-width: none; width: auto; margin-inline: -16px; padding: 0 0 14px; border-inline: 0; }
+  .poet-plate-img { width: auto; max-width: 100%; max-height: min(80vh, 640px); margin: 0 auto; }
+  .poet-plate-cap { margin-top: 12px; padding: 0 16px; }
+  .poet-thumbs { padding: 0 16px; }
   .poet-thumb { width: 48px; height: 48px; }
 
   .poet-h2 { font-size: 26px; margin-bottom: 16px; }
@@ -10839,7 +10842,7 @@ try { (function() {
         const imgHtml = (img, i) => `
           <img class="poet-plate-img ${poetNatW(img) < 600 ? 'is-small' : ''}" src="${esc(poetImgSrc(img, 960))}"
             srcset="${esc(poetSrcset(img))}"
-            sizes="(max-width: 600px) calc(100vw - 52px), (max-width: 860px) 280px, 320px" width="${poetNatW(img)}" height="${(img.local && img.local.h) || img.h}"
+            sizes="(max-width: 600px) 100vw, (max-width: 860px) 560px, 320px" width="${poetNatW(img)}" height="${(img.local && img.local.h) || img.h}"
             ${poetNatW(img) < 600 ? `style="max-width:min(calc(100% - 48px), ${Math.round(poetNatW(img) * 1.25)}px)"` : ''}
             alt="${esc(img.caption)}" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">`;
         const capHtml = img => {
