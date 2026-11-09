@@ -141,7 +141,7 @@
     "color": "#852929",
     "color_name": "Cadmium Red",
     "title_artwork_id": "franz-marc-the-white-cat-1912",
-    "introduction": "The opening decades of the twentieth century dismantled classical illusionism, rendering the cat through daring Fauvist colour, expressive distortion, Ashcan realism, and psychological abstraction. Artists from Franz Marc to Gwen John, Paul Klee, and Tsuguharu Foujita celebrated the cat as an autonomous spirit of feline instinct and modernist design."
+    "introduction": "The opening decades of the twentieth century dismantled classical illusionism. Franz Marc turned cats into blocks of pure colour, Gwen John gave them quiet Parisian interiors, Paul Klee made them a line, and René Lalique poured them into glass. Cameras and film arrived too, and the cat promptly stole the scene."
   },
   {
     "id": "era-mid-20th-century",
@@ -153,7 +153,7 @@
     "color": "#7a3b2e",
     "color_name": "Burnt Sienna",
     "title_artwork_id": "picasso-dora-maar-au-chat-1941",
-    "introduction": "Spanning Surrealism, mid-century sculpture, and postwar expressive figuration, mid-20th-century masters turned to the feline as an emblem of psychic mystery, existential tension, and totemic companionship."
+    "introduction": "Surrealists and postwar painters read the cat as a creature of psychic mystery and unease. On the same decades' ships and battlefields, real cats worked as mascots and mouse-hunters, and animators, jewellers and Pop pioneers were already drawing them for the mass market."
   },
   {
     "id": "mov-egypt-new-kingdom",
@@ -468,7 +468,7 @@
   },
   {
     "id": "mov-early-modernism",
-    "name": "Early Modernism, Ashcan & New Objectivity",
+    "name": "Early Modernist Painting, Drawing & Prints",
     "level": "movement",
     "parent_id": "era-early-20th-century",
     "start_year": 1900,
@@ -476,7 +476,31 @@
     "color": "#6b2020",
     "color_name": "Deep Iron Oxide",
     "title_artwork_id": "gwen-john-cat-cleaning-itself-1905",
-    "introduction": "From Gwen John's delicate Parisian portraits and Tsuguharu Foujita's milk-white glazed felines to Paul Klee's psychological abstraction, early modernists saw the cat as an emblem of modern solitude and pure graphic line."
+    "introduction": "Gwen John's patient studies of her tortoiseshell, Bonnard's drowsy interiors, Klee's cat stalking a bird in a few lines, and Witkacy's sickly kittens. Early modernists treated the cat as an emblem of modern solitude and pure graphic line."
+  },
+  {
+    "id": "mov-art-deco-sculpture",
+    "name": "Art Deco Glass & Sculpture",
+    "level": "movement",
+    "parent_id": "era-early-20th-century",
+    "start_year": 1920,
+    "end_year": 1935,
+    "color": "#a03a2a",
+    "color_name": "Lacquer Red",
+    "title_artwork_id": "sitting-cat-1932",
+    "introduction": "Lalique pressed cats into frosted glass, and Pompon smoothed a panther into a single polished curve. The cat becomes a sleek object that is meant to be held."
+  },
+  {
+    "id": "mov-early-photography-film",
+    "name": "Early Photography & Film",
+    "level": "movement",
+    "parent_id": "era-early-20th-century",
+    "start_year": 1900,
+    "end_year": 1920,
+    "color": "#7d4a3a",
+    "color_name": "Sepia Umber",
+    "title_artwork_id": "ex-497-the-sick-kitten-directed-by-george-albert-smith-brighton-uk-",
+    "introduction": "A sick kitten in a 1903 film, an actress and her cat, Mark Twain with a kitten, and an airship mascot. The camera learned early that cats will happily star in front of it."
   },
   {
     "id": "mov-ecole-de-paris",
@@ -562,7 +586,7 @@
   },
   {
     "id": "mov-surrealism-midcentury",
-    "name": "Surrealism & Mid-Century Modernism",
+    "name": "Surrealism & Figurative Modernism",
     "level": "movement",
     "parent_id": "era-mid-20th-century",
     "start_year": 1930,
@@ -570,7 +594,31 @@
     "color": "#8f4458",
     "color_name": "Deep Carmine",
     "title_artwork_id": "kahlo-self-portrait-thorn-necklace-1940",
-    "introduction": "Surrealist, Existentialist, and postwar painters and sculptors (Picasso, Giacometti, Kahlo, Carrington) explored the cat as an occult guardian and solitary witness."
+    "introduction": "Picasso's cat with a bird in its jaws, Balthus's feline king, Kahlo's cat poised on her shoulder, Freud's girl with a kitten. Painters and sculptors of the war years and after used the cat as an occult guardian and solitary witness."
+  },
+  {
+    "id": "mov-wartime-mascots",
+    "name": "Ship Cats & Wartime Mascots",
+    "level": "movement",
+    "parent_id": "era-mid-20th-century",
+    "start_year": 1939,
+    "end_year": 1949,
+    "color": "#6f4a3a",
+    "color_name": "Navy Rust",
+    "title_artwork_id": "ex-482-mourka-stalingrad-1942",
+    "introduction": "Cats on warships and in trenches, kept for mice and morale. Peebles, Mourka, Simon and Oscar served in photographs and in legend."
+  },
+  {
+    "id": "mov-midcentury-design-pop",
+    "name": "Jewels, Animation & Early Pop",
+    "level": "movement",
+    "parent_id": "era-mid-20th-century",
+    "start_year": 1940,
+    "end_year": 1959,
+    "color": "#a0506a",
+    "color_name": "Rose Madder",
+    "title_artwork_id": "ex-371-van-cleef-arpels-chat-malicieux-mischievous-cat-brooch-paris",
+    "introduction": "Figaro on screen, a Van Cleef & Arpels brooch, Halsman and Dalí flinging cats through the air, and Warhol's twenty-five Sams. Mid-century commerce and play make the cat a design motif."
   },
   {
     "id": "mov-chinese-ming",
@@ -594,7 +642,31 @@
     "color": "#6c3483",
     "color_name": "Imperial Purple",
     "title_artwork_id": "ex-412-ypres-kattenstoet-festival-of-the-cats-giant-parade-sculptur",
-    "introduction": "From 1960 through the 21st century, the domestic feline evolved from an intimate household companion into a universal icon of Pop Art, visionary folk painting, public civic sculpture, and digital culture."
+    "introduction": "From 1960 on, the cat leaves the studio. It stars on screen, towers over town squares in bronze and papier-mâché, and turns up again in contemporary collage and paint."
+  },
+  {
+    "id": "mov-public-monuments",
+    "name": "Public Monuments & Festivals",
+    "level": "movement",
+    "parent_id": "era-contemporary",
+    "start_year": 1960,
+    "end_year": 2009,
+    "color": "#7a3f93",
+    "color_name": "Heather Plum",
+    "title_artwork_id": "ex-412-ypres-kattenstoet-festival-of-the-cats-giant-parade-sculptur",
+    "introduction": "Whittington's stone cat on Highgate Hill, Hodge outside Dr Johnson's house, the Cat of Kazan, and a giant parade cat in Ypres. Cities commemorate their cats in bronze, stone and carnival."
+  },
+  {
+    "id": "mov-screen-popular-culture",
+    "name": "Screen & Popular Culture",
+    "level": "movement",
+    "parent_id": "era-contemporary",
+    "start_year": 1961,
+    "end_year": 1961,
+    "color": "#9a6bb0",
+    "color_name": "Wisteria",
+    "title_artwork_id": "ex-504-orangey-rhubarb-1950-1967-two-time-patsy-award-winner",
+    "introduction": "Orangey, the two-time Patsy Award winner who played Cat opposite Audrey Hepburn in Breakfast at Tiffany's."
   },
   {
     "id": "mov-egypt-old-middle-kingdom",
@@ -610,15 +682,15 @@
   },
   {
     "id": "mov-contemporary-pop",
-    "name": "Pop Art, Visionary Folk & Contemporary Art",
+    "name": "Contemporary Painting & Collage",
     "level": "movement",
     "parent_id": "era-contemporary",
-    "start_year": 1960,
+    "start_year": 2000,
     "end_year": 2026,
     "color": "#884ea0",
     "color_name": "Amethyst",
-    "title_artwork_id": "ex-412-ypres-kattenstoet-festival-of-the-cats-giant-parade-sculptur",
-    "introduction": "Contemporary artists celebrate felines across bold acrylics, public bronze monuments, graphic comix, and digital media."
+    "title_artwork_id": "lola-dupre-ophelia-2023",
+    "introduction": "Lola Dupré's hand-cut photocollage cats, assembled from photographs and cut into portraits that look regal and slightly amused."
   },
   {
     "id": "mov-south-southeast-asia",
