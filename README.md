@@ -12,7 +12,7 @@ Presented as a single, self-contained, high-performance interactive reference li
 - **Rights recorded per image**: Every entry carries its image licence, credit and rights status. Most works are public domain; copyrighted contemporary work (e.g. Lola Dupré) is shown with credit, hotlinked from the artist, never copied.
 - **Two Feline Roles**: Catalogs works where the cat is the **Main Subject** and where the cat appears as a **Secondary or Symbolic Element**.
 - **48 Categorized Eras & Movements**: Organized with a historical pigment colour palette (Red Ochre, Egyptian Blue, Terracotta, Lapis Lazuli, Cinnabar, Prussian Blue, Persian Turquoise, Verdigris, Raw Umber, Rose Madder, Chrome Yellow, Viridian, Tyrian Aubergine, Cadmium Red).
-- **100 Curated Archival Japanese Cat Haikus**: Featuring masterworks by Matsuo Bashō, Yosa Buson, Kobayashi Issa, Masaoka Shiki, Natsume Sōseki, and Kaga no Chiyo-ni.
+- **485 Japanese Cat Haiku by 54 Poets**: From Bashō and his disciples through Buson, Issa (236 poems), Shiki and the free-verse poets Santōka and Hōsai. Every poem is traced to a source shown under it: David G. Lanoue’s Issa archive, Itō Yoshitaka’s Bashō database, Aozora Bunko texts, or published saijiki examples. The English translations are the catalogue’s own. Only poets who died before 1946 are included, so every text is public domain. Haiku that could not be traced are kept, with the reason, in `data/purged_haiku.json`.
 - **Search Everything**: The Categories page searches every field at once: artist, title, movement, era, type, culture, medium, museum, tags and descriptions. Accents are optional ("catalhoyuk", "mloda polska"), typos are corrected, and dates work as `1475`, `1800s`, `19th century`, `1500-1600` or `3000 bce`. Use `"quotes"` for phrases and qualifiers such as `artist:wain`, `type:print`, `era:egypt` or `museum:louvre`. Searches are shareable as `#/categories?q=…`.
 
 ---
@@ -33,8 +33,9 @@ art_cats/
 ├── data/                       # Canonical structured datasets
 │   ├── artworks.json           # Catalog of all 739 artworks (metadata, dates, licenses, URLs)
 │   ├── categories.json         # Taxonomy of 48 eras and art movements
-│   ├── haiku_pool.json         # Curated pool of 100 archival haikus with translations
-│   └── poets.json              # The 12 poet pages (#/poet/<slug>): life, asides, timeline, portraits + rights
+│   ├── haiku_pool.json         # 485 sourced cat haiku: Japanese, romaji, own English, source + link
+│   ├── purged_haiku.json       # Haiku removed because no source could be found, with the reason
+│   └── poets.json              # The 54 poet pages (#/poet/<slug>): life, cats, asides, timeline, portraits + rights
 │
 ├── src/                        # Modular human-maintainable source code
 │   ├── template.html           # Clean HTML skeleton & semantic layout
