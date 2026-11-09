@@ -12675,5 +12675,876 @@
     "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAABwAQCdASoFAAgAA4BaJQAANw88QAD+eJh6D3fj6MHE+GLLmutiYOfeMk7uAAAA",
     "hash": "cec9c1d2b1c9c8e0",
     "hash2": "cec9c1d2b1c9c8e0"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6d/Leonardo_da_Vinci%2C_Study_for_the_Madonna_of_the_Cat_%28verso%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/e05b00649e7c184b",
+    "widths": [
+      480,
+      960,
+      1276
+    ],
+    "w": 1276,
+    "h": 1708,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoGAAgAA4BaJQBOgCLMJo50/4AA+VEAzNVAHQsoIPFtxl2Yiko+AY8ZlYKb9tE3YGAAAA==",
+    "hash": "8971f1c9dcd0f2b8",
+    "hash2": "8971f1c9dcd0f2b8"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/08/Leonardo_da_Vinci_-_1856%2C0621.1%2C_The_Virgin_and_Christ_Child_with_a_cat_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/399430c048dbf36f",
+    "widths": [
+      480,
+      960,
+      1352
+    ],
+    "w": 1352,
+    "h": 1856,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoGAAgAA4BaJQBOgCHerbTkAAD+tpz2jqu/Av03W1cNk4XrQKQ8XDORhozsneIAAAA=",
+    "hash": "677260e4e4ecb0f0",
+    "hash2": "677260e4e4ecb0f0"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5f/Cosimo_Rosselli_Ultima_cena.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/aa9eb0c0c3d56b6f",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2000,
+    "h": 1416,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoIAAYAA4BaJQBOgCHNAfSQAP7AW0HwsKeH7A8syHMRT4/3vcfKA1TNBmAAAA==",
+    "hash": "070d8c8e8d933327",
+    "hash2": "070d8c8e8d933327"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/82/Hortus_sanitatis_1491_%28111954547%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/87a736e23d454732",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3628,
+    "h": 4754,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoGAAgAA4BaJYgCdAD0OY0MmAAA/sPvmWqb+Cri1xkATqQymA0l0uQ2VRQh7EAA",
+    "hash": "23939b9b9b9b931f",
+    "hash2": "23939b9b9b9b931f"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f8/Hortus_sanitatis_1491_%28111954548%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/86bd46ad2aa3910b",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3584,
+    "h": 4705,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoGAAgAA4BaJQBOgB8xV48gAP627YBKBLw7GTXRv+Mhy1L3LRSHJvoWAAA=",
+    "hash": "3b33343626262601",
+    "hash2": "3b33343626262601"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/10/Leonardo_da_Vinci_-_RCIN_912363%2C_Cats%2C_lions%2C_and_a_dragon_c.1517-18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/6871b6a264b2ebd5",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1553,
+    "h": 2000,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoGAAgAA4BaJQBOgCHfFNoAAP7v6B1LPNYixnuWikOTdgYAAAA=",
+    "hash": "829aaeacccc8b6a6",
+    "hash2": "0b88aeac4cc8b2ba"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/01/Adam_and_Eve_MET_DP820351.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/1b2a1edbf61be91e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2825,
+    "h": 3540,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoGAAgAA4BaJZQCdAD0trrlwADMJbiyz2xFUQMYYsTAzGdGHj6c00SYluCYAAAA",
+    "hash": "a4aeb2b2b2aa9aaa",
+    "hash2": "acaebab3b2aa8aaa"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/31/Leonardo_da_Vinci_-_RCIN_912363%2C_v%2C_Cats%2C_lions%2C_and_a_dragon_c.1517-18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/f0925ca23020b950",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1570,
+    "h": 2000,
+    "lq": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAABQAQCdASoGAAgAA4BaJQBOgDEIAP7wk6SYYTBCl2AAAA==",
+    "hash": "8aaa8aa28aacb2b2",
+    "hash2": "2f2f1a22cdacb292"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/de/Jacopo_da_Ponte_%28Bassano%29_Supper_at_Emmaus_Kimbell.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/a9b814dd3005f767",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2220,
+    "h": 1645,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoIAAYAA4BaJYgCdAD0pzI5GQAA/qNyxCqEH/DsGpiYcvIX0UG3KCwfFyhO20IXriAAAA==",
+    "hash": "f0d045c50f179bea",
+    "hash2": "f0d045c50f179bea"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4b/Lorenzo_Lotto_066.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/a36f061f7a5086ac",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2469,
+    "h": 3489,
+    "lq": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoGAAgAA4BaJbACdADze7UQAP71zwFV91SYPktqxufmMoXH9b6aWqCaRtwnZD7PpuKb7Lh6IAAAAA==",
+    "hash": "9a998141311a4e0c",
+    "hash2": "9a998141311a4e0c"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/af/Pinturicchio%2C_penelope_e_i_suoi_corteggiatori%2C_1509_ca.%2C_dal_palazzo_del_magnifico_a_siena%2C_02_gatto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/522eac7ad9333b3d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2303,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAUAA4BaJQBOgB5vdqIAAP6Dl2tUmXDm7fb458+KLl60xWsE019AAAA=",
+    "hash": "93c3dbb49c9c9d1b",
+    "hash2": "93c3dbb49c9c9d1b"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e5/Jacopo_da_Ponte_%28Bassano%29_Supper_at_Emmaus_Kimbell_detail_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/3d60be4238c257bd",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2448,
+    "h": 3264,
+    "lq": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACwAQCdASoGAAgAA4BaJZACdADzHMkAAP7SCO1Jsr24SBsM/4S1mnPB1ks8mMQGwA08nRmGmROFFx16csxagAAA",
+    "hash": "0c0e4a0e0e4e7331",
+    "hash2": "0c0e4a0e0e4e7331"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fe/Jacopo_da_Ponte_%28Bassano%29_Supper_at_Emmaus_Kimbell_detail_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/da84f460c7093901",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2026,
+    "h": 3167,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoFAAgAA4BaJaACdAEPDGitIADOGJcdQDA5UDzR4jRYK3AHYyusH0u87HLQagN61gAAAA==",
+    "hash": "1337af9bb3fdcdf1",
+    "hash2": "1337af9bb3fdcdf1"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/38/Jacopo_da_Ponte_%28Bassano%29_Supper_at_Emmaus_Kimbell_detail_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/ef9c0dd64b79b80d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3264,
+    "h": 2448,
+    "lq": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoIAAYAA4BaJQBOgB6TMZy1QAD+PEeHQus5G1rBWv2nlfLRFYXKMSqvVZ1ZlwtIhBCc4YQAAAA=",
+    "hash": "397368392b6b270e",
+    "hash2": "397368392b6b270e"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/62/Tintoretto%2C_leda_e_il_cigno%2C_1550_ca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/8ac116c248c5fae2",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3168,
+    "h": 2754,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoIAAcAA4BaJYwCdAYoBmv4C2AA/uYxqtHC9HeRF5uuFo6PPZHjUoSMO0Ei3D3rqkY4AA==",
+    "hash": "b1ec22268b89ac66",
+    "hash2": "b1ec22268b89ac66"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b4/Paolo_Veronese_-_The_Wedding_at_Cana_-_Google_Arts_%26_Culture.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/29c1397b09eb9f74",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2575,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoIAAUAA4BaJQBOgBraNQAA9pzC6+LWSMj1QGkh6sps/Mn6XXY8ugAA",
+    "hash": "170f0f9fbede590d",
+    "hash2": "170f0f9fbede590d"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7e/Pieter_Brueghel_the_Elder_-_The_Dutch_Proverbs_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/ab0d6f2813625be1",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2719,
+    "lq": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoIAAYAA4BaJZgCdADyfvaAAP7b0Z9DGh/YqKJuu1ZAWD0fJ7GHHo4q8nVR5HomuRhezrRxeAAAAA==",
+    "hash": "4cd2e2e91147c851",
+    "hash2": "4cd2e2e91147c851"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8d/Federico_barocci%2C_madonna_della_gatta%2C_1575_ca._06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/bda773ff8a2adcd0",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2586,
+    "lq": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoIAAUAA4BaJQBOgB5vWYwAAP7mU9+tDkrKovfKJcA4t9wall+TldCZvWbTPqEz/gFa1cMAAAA=",
+    "hash": "e6accde92337f139",
+    "hash2": "e6accde92337f139"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/76/Federico_barocci%2C_madonna_della_gatta%2C_1575_ca._05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/d48c440993a3feca",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3077,
+    "h": 4960,
+    "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoFAAgAA4BaJQBOgCHh3JdrgAD2FtDZAhtPE7L4nFPfxMzgt3K9XdYry2ckfqKAKnS4epgA",
+    "hash": "6264c9e0d6928400",
+    "hash2": "6264c9e0d6928400"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/84/Federico_barocci%2C_madonna_della_gatta%2C_1575_ca._01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/45549d1f3bcc051c",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3186,
+    "h": 3816,
+    "lq": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoHAAgAA4BaJQBOgCLvW9/2AAD+0mnBMIYNWT5xBdnqju1CWeUvmlh7kUdwY6AAU+tlSDxuiuAAAA==",
+    "hash": "92ba2d15291b190d",
+    "hash2": "92ba2d15291b190d"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d7/Federico_barocci%2C_madonna_della_gatta%2C_1575_ca._03_cardellino.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/e72fa9c7498b3b5d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3648,
+    "h": 5472,
+    "lq": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoFAAgAA4BaJagCdAD0pi8TDgAAzcReDpkv1I+flLiwnTcHtPx2BlXZRFFDhWXFGUHcBfb7m6anj0Ya/VuYbQAA",
+    "hash": "394176264e6939ab",
+    "hash2": "394176264e6939ab"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/cf/Hendrick_Goltzius_-_Sight_%28One_of_the_Five_Senses%29%2C_c1595-1596-_Museum_Boijmans_Van_Beuningen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/970867bb4e63bb47",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2880,
+    "h": 3665,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoGAAgAA4BaJQBOgB6XOhVQAAD4MscnqNmFBQh2iy0u7QYGH973LRSHLUE5AAAA",
+    "hash": "ecf6d6968aab8998",
+    "hash2": "ecb6d69683ab2998"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/23/Federico_barocci%2C_annunciazione_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/d51112f46bec6a50",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2490,
+    "h": 3378,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoGAAgAA4BaJQBOgCLMwGLv6AD+5Nrr+DpT+N/R13rIJKY9Jp4fSD6N3fZDk+AA",
+    "hash": "c6ce8eba82868f07",
+    "hash2": "c6ce8eba82868f07"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/72/Federico_barocci%2C_annunciazione_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/f66bef51c4d289cf",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2346,
+    "h": 3648,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoFAAgAA4BaJYwCdAEUmesVwAD+rSweKycAKqrzLFwcvzni30tm5ftWvy+qfdgAAAA=",
+    "hash": "87a51a838a8c8c86",
+    "hash2": "87a51a838a8c8c86"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1a/Federico_barocci%2C_annunciazione_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/baf9d9cb2757e414",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2496,
+    "h": 3648,
+    "lq": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoFAAgAA4BaJYgCdEf/gbaa4gAA/sJI3vqH0isw9tRy4UnTuVHsmf0EGfHIB4lycEiaA7ZR8AA=",
+    "hash": "0ed333c79f9d5939",
+    "hash2": "0ed333c79f9d5939"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ab/Ghirlandaio_e_aiuti%2C_cenacolo_di_san_marco%2C_1480%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/c45418a120714473",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3052,
+    "h": 2160,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoIAAYAA4BaJZQCdAEPRNvSgGAA99Cg+qylcY13TFCZ+jKfQLPEbDe2J8ITAAAA",
+    "hash": "cccc85a49b1b2707",
+    "hash2": "cccc85a49b1b2707"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/38/Jheronimus_Bosch_023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/3605b2ec76ca6b3f",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 1946,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAQAA4BaJYgCdAD0gbJgAPXcasMbS/RDubc3ZYKb9DaZgAA=",
+    "hash": "2b2b2b2b2b2b6b2b",
+    "hash2": "2b2b2b2b2b2b6b2b"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b1/Antonello_da_Messina_-_St_Jerome_in_his_study_-_National_Gallery_London.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/116d9240be6fd288",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 4870,
+    "lq": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoGAAgAA4BaJZgCdAEekVAcRAAA/uUrf5SINcl1JwSYiim6HSadGmxylJbcpuRLHP4AE2JAAAA=",
+    "hash": "0770ccececd880b8",
+    "hash2": "0770ccececd880b8"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/bc/Ghirlandaio_e_aiuti%2C_cenacolo_di_san_marco%2C_1480%2C_14_gatto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/474a941e7786889c",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3456,
+    "h": 2244,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAUAA4BaJZQCdAEPBFNuwAD+rEhSpoUyYz0sK8TDAedS39OEAAAA",
+    "hash": "492717134b0bba2c",
+    "hash2": "492717134b0bba2c"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/aa/Giulio_romano%2C_madonna_della_gatta%2C_1519-20%2C_Q140%2C_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/27128b8f6ee1ec5d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2526,
+    "h": 2964,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoHAAgAA4BaJagCdADb0rg4AP6/pPClqg/UmZiY1+s6hdBJu1X27m1/UmzX2G/AAAA=",
+    "hash": "82828a96cccc9871",
+    "hash2": "82828a96cccc9871"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/54/Jacopo_bassano%2C_ultima_cena%2C_1546-48_circa%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/2297fd2fe2bb4f4a",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2295,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAUAA4BaJZgCdAD5djplAAD+qvVGydmpBlAC9lSfHZZbybXG5uvWtnatj8AAAAA=",
+    "hash": "a0e88aba96eca89b",
+    "hash2": "a0e88aba96eca89b"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b3/Giulio_romano%2C_madonna_della_gatta%2C_1519-20%2C_Q140%2C_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/43a7fe7d7d60d630",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3056,
+    "h": 2552,
+    "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAAAQAgCdASoIAAcAA4BaJagCdAEf/mBpV6KAAP7sA9piD0a6hSqqmklNHxMEP+ttpjFxZnzFZ3LTbgAA",
+    "hash": "0d9c9c938e343083",
+    "hash2": "0d9c9c938e343083"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/77/Jacopo_bassano%2C_ultima_cena%2C_1546-48_circa%2C_05_cane_e_bacinella.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/cc7d69b261e4b46d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 1951,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAQAA4BaJaACdAD0gbJgAP7s2qUEKAMFmm1Tso4nZnzM3NC+HC6GrEtaKgAA",
+    "hash": "1b1e5a8c27677333",
+    "hash2": "1b1e5a8c27677333"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d8/Giulio_romano%2C_madonna_della_gatta%2C_1519-20%2C_Q140%2C_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/8d45ca2212b6824f",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3636,
+    "h": 2672,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoIAAYAA4BaJYgCdAEfBwvQTqAA/u+S81H4ziswHtiR+DC1JbNt7JaMshsGb84zkAA=",
+    "hash": "87a3c68f0e0c39fc",
+    "hash2": "87a3c68f0e0c39fc"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/aa/Jacopo_bassano%2C_ultima_cena%2C_1546-48_circa%2C_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/75c57ff949b2b965",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2459,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAUAA4BaJagCdAEOuwSAAP7bwnpGdkhvTjh6Edp4178O7tWnv/29a5WrRwAA",
+    "hash": "acae276ccc4c6d0f",
+    "hash2": "acae276ccc4c6d0f"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6e/The_Feast_in_the_House_of_Levi_%28edited%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/197b233c000a2e9b",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 1610,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoIAAMAA4BaJYwCdAD6IiEoAAD2Hz5uYgoAERG3jfTw4BgAAAA=",
+    "hash": "499a7b79798bab39",
+    "hash2": "499a7b79798bab39"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/dd/Jacopo_bassano%2C_ultima_cena%2C_1546-48_circa%2C_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/8ec0f819ec7cff03",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3208,
+    "h": 4424,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoGAAgAA4BaJZgCdAEPAbQ1wAD+2h94fyOzoskwpgfpgodXBODZLHhm1gSWJRbUAAA=",
+    "hash": "ece4c119291ec68b",
+    "hash2": "ece4c119291ec68b"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fd/Tintoretto%2C_ultima_cena%2C_1594%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/983dd72c8b676b85",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2376,
+    "h": 1632,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAADQAQCdASoIAAUAA4BaJYwCdAEO+mIiAAD+71ojm37bG+6w8ZBBQAAA",
+    "hash": "87b3ba8e8b97ad9d",
+    "hash2": "87b3ba8e8b97ad9d"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/da/Jacopo_bassano%2C_ultima_cena%2C_1546-48_circa%2C_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/8f25cc959349a8a7",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3016,
+    "h": 4472,
+    "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoFAAgAA4BaJaACdAD0r5PFoAD+zag24e38ZS8uKy2rILpla43OA2qQSvdoCAcwiA3UTlAA",
+    "hash": "8adc323270638486",
+    "hash2": "8adc323270638486"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/66/HANS-BALDUNG-GEN-GRIEN_ALLEGORISCHE-FRAUENGESTALT-MIT-LIEDERBUCH-VIOLA-UND-KATZE_CC-BY-SA_BSTGS_1423.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/86d56348e952bc85",
+    "widths": [
+      480,
+      960,
+      1228
+    ],
+    "w": 1228,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoDAAgAA4BaJQBOgCHXb0eAAP7B1wDWMlc0knso+YGJfjfeZvJ7tMKG2AAAAA==",
+    "hash": "e6870f088829296d",
+    "hash2": "e6870f088829296d"
+  },
+  "https://images.metmuseum.org/CRDImages/ep/original/DP164794.jpg": {
+    "base": "assets/img/bad06bfb598f6385",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3114,
+    "h": 3798,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoHAAgAA4BaJZACdAEf/8eBKgAA/uXQjdKR/taMnGQNftQcq+QwVD1p1Z2lNz5kgAA=",
+    "hash": "294e5cbc2c733919",
+    "hash2": "294e5cbc2c733919"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/58/Tintoretto%2C_ultima_cena%2C_1594%2C_09_gatto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/9e22e2311f809534",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3276,
+    "h": 2240,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAUAA4BaJYwCdADze7hYAP7upvRb/Ai2/9Pia1VqRECc4uGAAA==",
+    "hash": "b93b93932574666e",
+    "hash2": "b93b93932574666e"
+  },
+  "https://images.metmuseum.org/CRDImages/ep/original/DT1422.jpg": {
+    "base": "assets/img/8df52f716d040ffb",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3714,
+    "h": 3658,
+    "lq": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoIAAgAA4BaJQBOgB6V9WRbIAD+5srJbGJ2umUGuIipSzg9f7TRG6VxhWUwwUwzAAzOzkXEgP2xcoifIHlFVwAA",
+    "hash": "0f0311d14f4d330f",
+    "hash2": "0f0311d14f4d330f"
+  },
+  "https://images.metmuseum.org/CRDImages/cl/original/DP102858.jpg": {
+    "base": "assets/img/eb4ddc03d28b0d07",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3791,
+    "h": 3792,
+    "lq": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACwAQCdASoIAAgAA4BaJZQCdAD0eqnsAP5sTMqT5VWhBBnMtEI7hDf6cBiwsDStB5/l41gIacKXcSws9mP+UAAA",
+    "hash": "70ec96dad192acf0",
+    "hash2": "70ec96dad192acf0"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8b/Jacopo_bassano%2C_ultima_cena%2C_1546-48_circa%2C_07_gatto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/5ecb7d219a4cd0b1",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2560,
+    "h": 3856,
+    "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoFAAgAA4BaJYgCdAEOuwWOAAD+2rPLKTZOq5qAzyc96FPvRz9ctiTJj4EJCDmLYEPlQMAA",
+    "hash": "39979e8921e0f839",
+    "hash2": "39979e8921e0f839"
+  },
+  "https://images.metmuseum.org/CRDImages/dp/original/DP822115.jpg": {
+    "base": "assets/img/1d48af73c190b712",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2457,
+    "h": 3525,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoGAAgAA4BaJQBOgCHfxJFwAP7nRCPlLjT6QtsRHmT9XHqgAAA=",
+    "hash": "8e8e8e969eba929a",
+    "hash2": "8e0e1e969eba969a"
+  },
+  "https://images.metmuseum.org/CRDImages/ep/original/DP164793.jpg": {
+    "base": "assets/img/203ab8422f86292f",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3096,
+    "h": 3802,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAQCdASoHAAgAA4BaJYwCdAD0X2SqYAAA/vXvCflFDpMTERJF8T9d8sMHpQAA",
+    "hash": "a28e8ece8f0d4747",
+    "hash2": "a28e8ece8f0d4747"
+  },
+  "https://images.metmuseum.org/CRDImages/dp/original/DT203414.jpg": {
+    "base": "assets/img/55ccd78156ca7517",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2613,
+    "h": 3722,
+    "lq": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAABwAQCdASoGAAgAA4BaJZQCdAFAAAD+7K8hZvRYFr3XhPVLaTAAAA==",
+    "hash": "8e8e9e929eba979a",
+    "hash2": "8e8e9e929eba979a"
+  },
+  "https://images.metmuseum.org/CRDImages/cl/original/cdi1999-243.jpg": {
+    "base": "assets/img/1213f9d016c59038",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2100,
+    "h": 2100,
+    "lq": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoIAAgAA4BaJZQCdAD0slWGoAD8soT11XOdxm0Csb7AVQva8Tppm7bBvN2IIg8I96p8kVDvjiEQAAAA",
+    "hash": "f18c875f53939e70",
+    "hash2": "f18c875f53939e70"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1e/Ghirlandaio_e_aiuti%2C_cenacolo_di_san_marco%2C_1480%2C_01%2C2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/f3c4e8e8bf87a0ea",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3456,
+    "h": 2304,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAUAA4BaJYwCdADW0agAAPa0NTch8RGQSUwemVEgfJ/Ap0ruAAAA",
+    "hash": "0707071317071d03",
+    "hash2": "0707071317071d03"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/88/Ghirlandaio_e_aiuti%2C_cenacolo_di_san_marco%2C_1480%2C_01%2C1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/cfceb573fbdea009",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2304,
+    "h": 3456,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoFAAgAA4BaJYwCdAEVJs+k0AD+t6kcmBPR4DLOyLWFTX4TDlRO4VIIAAA=",
+    "hash": "7765e0e6a363a6e0",
+    "hash2": "7765e0e6a363a6e0"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/09/Federico_barocci%2C_madonna_della_gatta%2C_1575_ca._04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/f35f5918e04f0e07",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2604,
+    "h": 4932,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoEAAgAA4BaJZgCdAEO4c6qgAD+5soZ8YNOjRKEvSlM205TCZTq8lv4a4q/hOyxp54AAA==",
+    "hash": "278784a17971e1cf",
+    "hash2": "278784a17971e1cf"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5b/Federico_barocci%2C_madonna_della_gatta%2C_1575_ca._02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/0e21c7a09ef81986",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3648,
+    "h": 5472,
+    "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoFAAgAA4BaJQBOgCP7sXZHegAA/uU62m5tdtnp+EqWj7ioWMQgAt4bkM2VN3UyKw4cAAAA",
+    "hash": "d18c8c9c1d4b638e",
+    "hash2": "d18c8c9c1d4b638e"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ad/Ghirlandaio_e_aiuti%2C_cenacolo_di_san_marco%2C_1480%2C_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/5d77af27a74dc941",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3096,
+    "h": 2304,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoIAAYAA4BaJZwAAqsSBpXUAAD2mX2dW8bsvtNSPCUV1qvvv/U3Wv/GSeFYAAAA",
+    "hash": "0c0426474e66ee36",
+    "hash2": "0c0426474e66ee36"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/61/Ghirlandaio_e_aiuti%2C_cenacolo_di_san_marco%2C_1480%2C_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/91507181312f9bd2",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3456,
+    "h": 2108,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAUAA4BaJZQCdADze7UQAPz2mxiic7Bh/RU0TY6lCvjNDaBll82f5eTKqAAA",
+    "hash": "71d1d2b255d5931e",
+    "hash2": "71d1d2b255d5931e"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/cb/Ghirlandaio_e_aiuti%2C_cenacolo_di_san_marco%2C_1480%2C_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/9848df4e0b8066ce",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3456,
+    "h": 2304,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoIAAUAA4BaJZQCdAD0PXs7AAD+ZWSlHMiC8FQxIr+a7PzjTg+sAo73cO09gAAA",
+    "hash": "26262727660e2e5e",
+    "hash2": "26262727660e2e5e"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a0/Ghirlandaio_e_aiuti%2C_cenacolo_di_san_marco%2C_1480%2C_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/b245b7586104ee95",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2804,
+    "h": 2304,
+    "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoIAAcAA4BaJZQCdADzfHU4AAD+0mjx2XDFbZ+L9gRSNdlYhvh2LxIXyTaEaJnDdSjVAAAA",
+    "hash": "961797b737333923",
+    "hash2": "961797b737333923"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/ca/Ghirlandaio_e_aiuti%2C_cenacolo_di_san_marco%2C_1480%2C_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/3f0d1edff4698731",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2304,
+    "h": 3456,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoFAAgAA4BaJZwAD4AOwcVVAAD+4od4h84zgGyF+QlJMEydN4dGw8u0e1gSJFgjgAA=",
+    "hash": "0d3317964d63c746",
+    "hash2": "0d3317964d63c746"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ab/Ghirlandaio_e_aiuti%2C_cenacolo_di_san_marco%2C_1480%2C_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/23712a8bd3c6d1cb",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3456,
+    "h": 2304,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAQCdASoIAAUAA4BaJZwCdAEfbMtuNAAA/Dp4s4tV/RMRrzwwzpVj/aZP62AA",
+    "hash": "16260739b91f0e8b",
+    "hash2": "16260739b91f0e8b"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f0/Tintoretto%2C_ultima_cena%2C_1594%2C_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/c778d85ac865e6e6",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2712,
+    "h": 1336,
+    "lq": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAQAA4BaJZwC7AD0bRugAP7y4Q84ezo4pCqqscAAAA==",
+    "hash": "2707870e4f6d7871",
+    "hash2": "2707870e4f6d7871"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ghirlandaio_e_aiuti%2C_cenacolo_di_san_marco%2C_1480%2C_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/5775885fa44db118",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3456,
+    "h": 2304,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAUAA4BaJYwCdAD0lcG0AAD+0qWfioJvTCmgDC6w/4viszQT/IAA",
+    "hash": "0f0e4a0a9c9d1dad",
+    "hash2": "0f0e4a0a9c9d1dad"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/45/Tintoretto%2C_ultima_cena%2C_1594%2C_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/05013e2a980b2f4d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2760,
+    "h": 2361,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoIAAcAA4BaJYwCdAEYGatmLgAA/u0a7zVfP/tQiHbNm21V9BxF5uRjgAA=",
+    "hash": "1e1e1327234e181b",
+    "hash2": "1e1e1327234e181b"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/96/Tintoretto%2C_ultima_cena%2C_1594%2C_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/681e2aa1cf0eab3a",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2512,
+    "h": 1670,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoIAAUAA4BaJZQCdAD5af/GAAD+6ifWQ1j7JTqkxHlzrqaI/8MWcleox4AAAA==",
+    "hash": "23332e1e4a132d1f",
+    "hash2": "23332e1e4a132d1f"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/21/Tintoretto%2C_ultima_cena%2C_1594%2C_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/adeb388dea8aaed0",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2980,
+    "h": 2356,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoIAAYAA4BaJZQCdAEOeXw5OAD+7Cp2byJgmxYqd7bEXawAwAA=",
+    "hash": "7f7b278793261c30",
+    "hash2": "7f7b278793261c30"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/12/Tintoretto%2C_ultima_cena%2C_1594%2C_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/1c0daa26f3ce98a5",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1720,
+    "h": 3144,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoEAAgAA4BaJQBOgCHftNIAAP7xEstM6Wt6bFS5GGjOyd4gAAA=",
+    "hash": "fe5959d85d1dbb2e",
+    "hash2": "fe5959d85d1dbb2e"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/dc/Tintoretto%2C_ultima_cena%2C_1594%2C_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/f672e4b13918bae7",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3648,
+    "h": 2432,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAUAA4BaJQBOgCHM/jvAAP6qCxgaKYv6MsVbt55zX/FEYZAx5SAA",
+    "hash": "0f9c8c8e8e9e1f3d",
+    "hash2": "0f9c8c8e8e9e1f3d"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/62/Tintoretto%2C_ultima_cena%2C_1594%2C_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": {
+    "base": "assets/img/2d99dfc34d0b7594",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3008,
+    "h": 2432,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoIAAYAA4BaJYwCdADzevxgAP7mbA+x33hvyZSg/2bFNrHgOJUOECJLwTpFhXcAAAA=",
+    "hash": "4767131618374c40",
+    "hash2": "4767131618374c40"
   }
 }
