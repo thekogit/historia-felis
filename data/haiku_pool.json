@@ -1,47 +1,5 @@
 [
   {
-    "id": "001",
-    "author": "Itō Shintoku",
-    "authorJp": "信徳",
-    "shortAuthorJp": "信徳",
-    "lifespan": "1633–1698",
-    "year": "",
-    "jp": "喰ひてけり猫一口にあめの魚",
-    "romaji": "Kuite keri / neko hitokuchi ni / ame no uo",
-    "en": "The cat gobbled it in one bite: a rain trout.",
-    "fullAuthorJp": "伊藤信徳",
-    "source": "575筆まか勢 (saijiki examples)",
-    "sourceUrl": "https://fudemaka57.exblog.jp/32219948/"
-  },
-  {
-    "id": "002",
-    "author": "Kawai Chigetsu",
-    "authorJp": "智月",
-    "shortAuthorJp": "智月",
-    "lifespan": "c. 1633–1718",
-    "year": "",
-    "jp": "手を上てうたれぬ猫の夫かな",
-    "romaji": "Te wo agete / utarenu neko no / tsuma kana",
-    "en": "I raise my hand and can’t bring myself to hit him, the tomcat in love.",
-    "fullAuthorJp": "河合智月",
-    "source": "575筆まか勢: 猫の恋",
-    "sourceUrl": "https://fudemaka57.exblog.jp/25332775/"
-  },
-  {
-    "id": "003",
-    "author": "Yamaguchi Sodō",
-    "authorJp": "素堂",
-    "shortAuthorJp": "素堂",
-    "lifespan": "1642–1716",
-    "year": "",
-    "jp": "宮殿炉なり女御更衣も猫の声",
-    "romaji": "Kyūden ro nari / nyōgo kōi mo / neko no koe",
-    "en": "The palace hearth is lit: consorts and ladies too, voices like cats.",
-    "fullAuthorJp": "山口素堂",
-    "source": "575筆まか勢 (saijiki examples)",
-    "sourceUrl": "https://fudemaka57.exblog.jp/32219948/"
-  },
-  {
     "id": "004",
     "author": "Matsuo Bashō",
     "authorJp": "芭蕉",
@@ -130,20 +88,6 @@
     "source": "芭蕉DB (Itō Yoshitaka)",
     "sourceUrl": "http://www2.yamanashi-ken.ac.jp/~itoyo/basho/haikusyu/neko5.htm",
     "collection": "五十四郡"
-  },
-  {
-    "id": "010",
-    "author": "Esa Shōhaku",
-    "authorJp": "尚白",
-    "shortAuthorJp": "尚白",
-    "lifespan": "1650–1722",
-    "year": "",
-    "jp": "おきいろふ心中よはし猫の妻",
-    "romaji": "Okiirou / shinjū yowashi / neko no tsuma",
-    "en": "Weak-hearted for a lovers’ pact, the cat in love.",
-    "fullAuthorJp": "江左尚白",
-    "source": "575筆まか勢: 猫の恋",
-    "sourceUrl": "https://fudemaka57.exblog.jp/25332775/"
   },
   {
     "id": "011",
@@ -256,20 +200,6 @@
     "fullAuthorJp": "服部嵐雪",
     "source": "575筆まか勢 (saijiki examples)",
     "sourceUrl": "https://fudemaka57.exblog.jp/32219948/"
-  },
-  {
-    "id": "019",
-    "author": "Konishi Raizan",
-    "authorJp": "来山",
-    "shortAuthorJp": "来山",
-    "lifespan": "1654–1716",
-    "year": "",
-    "jp": "両方に髭がある也猫の妻",
-    "romaji": "Ryōhō ni / hige ga aru nari / neko no tsuma",
-    "en": "Both of them have whiskers: cats in love.",
-    "fullAuthorJp": "小西来山",
-    "source": "575筆まか勢: 猫の恋",
-    "sourceUrl": "https://fudemaka57.exblog.jp/25332775/"
   },
   {
     "id": "020",
@@ -566,34 +496,6 @@
     "sourceUrl": "https://fudemaka57.exblog.jp/32219948/"
   },
   {
-    "id": "041",
-    "author": "Shida Yaba",
-    "authorJp": "野坡",
-    "shortAuthorJp": "野坡",
-    "lifespan": "1662–1740",
-    "year": "",
-    "jp": "猫の恋初手から鳴て哀也",
-    "romaji": "Neko no koi / shote kara naite / aware nari",
-    "en": "A cat in love: crying from the very start, how sad.",
-    "fullAuthorJp": "志太野坡",
-    "source": "575筆まか勢: 猫の恋",
-    "sourceUrl": "https://fudemaka57.exblog.jp/25332775/"
-  },
-  {
-    "id": "042",
-    "author": "Shiba Sonome",
-    "authorJp": "園女",
-    "shortAuthorJp": "園女",
-    "lifespan": "1664–1726",
-    "year": "",
-    "jp": "契おく燕と遊ばん庭の猫",
-    "romaji": "Chigiri oku / tsubame to asoban / niwa no neko",
-    "en": "Play with the swallows that keep their promise to come back, garden cat.",
-    "fullAuthorJp": "斯波園女",
-    "source": "575筆まか勢 (saijiki examples)",
-    "sourceUrl": "https://fudemaka57.exblog.jp/32219948/"
-  },
-  {
     "id": "043",
     "author": "Kagami Shikō",
     "authorJp": "支考",
@@ -674,34 +576,6 @@
     "romaji": "Me no hikari / aoi no mae ka / neko no koi",
     "en": "The glint in her eyes: is she Lady Aoi? A cat in love.",
     "fullAuthorJp": "直江木導",
-    "source": "575筆まか勢: 猫の恋",
-    "sourceUrl": "https://fudemaka57.exblog.jp/25332775/"
-  },
-  {
-    "id": "049",
-    "author": "Rōka",
-    "authorJp": "浪化",
-    "shortAuthorJp": "浪化",
-    "lifespan": "1672–1703",
-    "year": "",
-    "jp": "のら猫の声もつきなや寒の内",
-    "romaji": "Nora neko no / koe mo tsukina ya / kan no uchi",
-    "en": "A stray’s cry, out of season: the coldest days of winter.",
-    "fullAuthorJp": "浪化",
-    "source": "575筆まか勢 (saijiki examples)",
-    "sourceUrl": "https://fudemaka57.exblog.jp/32219948/"
-  },
-  {
-    "id": "050",
-    "author": "Nakagawa Otsuyū",
-    "authorJp": "乙由",
-    "shortAuthorJp": "乙由",
-    "lifespan": "1675–1739",
-    "year": "",
-    "jp": "ぬすみして見かぎられけり猫の恋",
-    "romaji": "Nusumi shite / mikagirare keri / neko no koi",
-    "en": "He stole, and now he has been given up on: a cat in love.",
-    "fullAuthorJp": "中川乙由",
     "source": "575筆まか勢: 猫の恋",
     "sourceUrl": "https://fudemaka57.exblog.jp/25332775/"
   },
@@ -1000,48 +874,6 @@
     "sourceUrl": "https://fudemaka57.exblog.jp/32219948/"
   },
   {
-    "id": "072",
-    "author": "Takakuwa Rankō",
-    "authorJp": "闌更",
-    "shortAuthorJp": "闌更",
-    "lifespan": "1726–1798",
-    "year": "",
-    "jp": "けふははや忘れにけりな猫の妻",
-    "romaji": "Kyō wa haya / wasure ni keri na / neko no tsuma",
-    "en": "Today already forgotten: the cat’s lover.",
-    "fullAuthorJp": "高桑闌更",
-    "source": "575筆まか勢: 猫の恋",
-    "sourceUrl": "https://fudemaka57.exblog.jp/25332775/"
-  },
-  {
-    "id": "073",
-    "author": "Kuroyanagi Shōha",
-    "authorJp": "召波",
-    "shortAuthorJp": "召波",
-    "lifespan": "1727–1772",
-    "year": "",
-    "jp": "木づたひにいどみより来ぬ猫の夫",
-    "romaji": "Kozutai ni / idomi yori kinu / neko no tsuma",
-    "en": "Along the branches he comes, spoiling for a fight: the tomcat in love.",
-    "fullAuthorJp": "黒柳召波",
-    "source": "575筆まか勢: 猫の恋",
-    "sourceUrl": "https://fudemaka57.exblog.jp/25332775/"
-  },
-  {
-    "id": "074",
-    "author": "Hamada Shadō",
-    "authorJp": "洒堂",
-    "shortAuthorJp": "洒堂",
-    "lifespan": "?–1737",
-    "year": "",
-    "jp": "たんざくの数にやさしや猫の恋",
-    "romaji": "Tanzaku no / kazu ni yasashi ya / neko no koi",
-    "en": "Tender enough to fill a stack of poem cards: cats in love.",
-    "fullAuthorJp": "濱田洒堂",
-    "source": "575筆まか勢: 猫の恋",
-    "sourceUrl": "https://fudemaka57.exblog.jp/25332775/"
-  },
-  {
     "id": "075",
     "author": "Kaya Shirao",
     "authorJp": "白雄",
@@ -1206,20 +1038,6 @@
     "romaji": "Neko no koi / bara-gakure ni / nozoki keri",
     "en": "A cat in love, peering out from behind the wild asters.",
     "fullAuthorJp": "成田蒼虬",
-    "source": "575筆まか勢: 猫の恋",
-    "sourceUrl": "https://fudemaka57.exblog.jp/25332775/"
-  },
-  {
-    "id": "087",
-    "author": "Tagawa Hōrō",
-    "authorJp": "鳳朗",
-    "shortAuthorJp": "鳳朗",
-    "lifespan": "1762–1845",
-    "year": "",
-    "jp": "京の夜にしてはさわがし猫の恋",
-    "romaji": "Kyō no yo ni / shite wa sawagashi / neko no koi",
-    "en": "Noisy, for a night in Kyoto: cats in love.",
-    "fullAuthorJp": "田川鳳朗",
     "source": "575筆まか勢: 猫の恋",
     "sourceUrl": "https://fudemaka57.exblog.jp/25332775/"
   },
@@ -4788,20 +4606,6 @@
     "sourceUrl": "https://fudemaka57.exblog.jp/32219948/"
   },
   {
-    "id": "326",
-    "author": "Sakurai Baishitsu",
-    "authorJp": "梅室",
-    "shortAuthorJp": "梅室",
-    "lifespan": "1769–1852",
-    "year": "",
-    "jp": "耳うとき婆々はしらずや猫の恋",
-    "romaji": "Mimi utoki / baba wa shirazu ya / neko no koi",
-    "en": "Granny, hard of hearing, has no idea: cats in love.",
-    "fullAuthorJp": "桜井梅室",
-    "source": "575筆まか勢: 猫の恋",
-    "sourceUrl": "https://fudemaka57.exblog.jp/25332775/"
-  },
-  {
     "id": "327",
     "author": "Inoue Seigetsu",
     "authorJp": "井月",
@@ -6216,20 +6020,6 @@
     "sourceUrl": "https://fudemaka57.exblog.jp/25332775/"
   },
   {
-    "id": "428",
-    "author": "Iwaya Sazanami",
-    "authorJp": "小波",
-    "shortAuthorJp": "小波",
-    "lifespan": "1870–1933",
-    "year": "",
-    "jp": "露霜の籬に猫の捨られし",
-    "romaji": "Tsuyujimo no / magaki ni neko no / suterareshi",
-    "en": "A cat abandoned by the frosty fence.",
-    "fullAuthorJp": "巖谷小波",
-    "source": "575筆まか勢 (saijiki examples)",
-    "sourceUrl": "https://fudemaka57.exblog.jp/32219948/"
-  },
-  {
     "id": "429",
     "author": "Terada Torahiko",
     "authorJp": "寅日子",
@@ -6774,20 +6564,6 @@
     "fullAuthorJp": "種田山頭火",
     "source": "Aozora Bunko: 旅日記",
     "sourceUrl": "https://www.aozora.gr.jp/cards/000146/card49784.html"
-  },
-  {
-    "id": "468",
-    "author": "Ozaki Hōsai",
-    "authorJp": "放哉",
-    "shortAuthorJp": "放哉",
-    "lifespan": "1885–1926",
-    "year": "",
-    "jp": "八ツ手の月夜もある恋猫",
-    "romaji": "Yatsude no tsukiyo mo aru / koi neko",
-    "en": "A moonlit night by the fatsia, and a cat in love.",
-    "fullAuthorJp": "尾崎放哉",
-    "source": "575筆まか勢: 猫の恋",
-    "sourceUrl": "https://fudemaka57.exblog.jp/25332775/"
   },
   {
     "id": "469",
