@@ -4893,7 +4893,10 @@ header.site-header,
 
 .poet-plate { margin: 0; border: 1px solid var(--border-hairline); padding: 12px; background: var(--bg-surface); }
 /* The frame never grows past the column: images shrink to fit (min-width: 0 lets a flex item go below its natural width) */
-.poet-plate-frame { display: flex; justify-content: center; max-width: 100%; overflow: hidden; background: var(--bg-neutral); }
+.poet-plate-frame { display: flex; justify-content: center; width: 100%; max-width: 100%; overflow: hidden; background: var(--bg-neutral); padding: 0; border: 0; font: inherit; color: inherit; cursor: zoom-in; }
+.poet-plate-frame:focus-visible { outline: 2px solid var(--accent-stamp); outline-offset: 2px; }
+.pswp-image-caption { position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%); max-width: min(720px, calc(100% - 32px)); padding: 6px 12px; font-size: 13px; line-height: 1.45; text-align: center; color: #eee; background: rgba(0, 0, 0, .55); pointer-events: none; }
+.pswp-image-caption:empty { display: none; }
 .poet-plate-img { display: block; width: 100%; min-width: 0; max-width: 100%; height: auto; max-height: 560px; object-fit: contain; }
 .poet-plate-img.is-small { width: auto; max-width: calc(100% - 48px); margin: 24px auto; box-shadow: 0 0 0 1px var(--border-hairline); }
 .poet-plate-cap { margin-top: 12px; font-size: 11px; line-height: 1.55; color: var(--text-muted); }
