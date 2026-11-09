@@ -5866,7 +5866,11 @@ try { (function() {
         const v0 = audioEl.volume, t0 = performance.now();
         const tick = now => {
           const t = Math.min(1, (now - t0) / ms);
-          audioEl.volume = v0 * (1 - t);
+          // Diminuendo: ears hear loudness logarithmically, so a linear ramp lingers then
+          // drops off a cliff. Eased cosine, squared, eases out of full level and
+          // settles into silence with no click.
+          const c = 0.5 + 0.5 * Math.cos(Math.PI * t);
+          audioEl.volume = Math.max(0, Math.min(1, v0 * c * c));
           if (t < 1) requestAnimationFrame(tick);
           else { audioEl.pause(); audioEl.currentTime = 0; audioEl.volume = v0; }
         };
@@ -5895,7 +5899,7 @@ try { (function() {
         anims = [];
 
         const k = 1;
-        fadeAudio(900 * k);
+        fadeAudio(1700 * k); // outlasts the 1170ms title glide so the music dissolves as the site lands
 
         [rule, meta, indexRow].forEach(el => play(el,
           [{ opacity: getComputedStyle(el).opacity }, { opacity: 0 }],
