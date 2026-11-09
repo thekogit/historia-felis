@@ -5375,11 +5375,7 @@ try { (function() {
             ${imgs.length > 1 ? `<div class="poet-thumbs" role="group" aria-label="More images">${imgs.map((img, i) => `
               <button type="button" class="poet-thumb ${i === 0 ? 'active' : ''}" data-i="${i}" aria-label="Show image ${i + 1} of ${imgs.length}" aria-pressed="${i === 0}">
                 <img src="${esc(poetImgSrc(img, 160))}" alt="" loading="lazy" decoding="async"></button>`).join('')}</div>` : ''}
-          </figure>` : `
-          <figure class="poet-plate poet-plate-empty">
-            <div class="poet-nameplate" lang="ja">${esc(poet.jp)}</div>
-            <figcaption class="poet-plate-cap">No portrait of ${esc(poet.name)} with a clear public licence is available, so the name stands in for the face.</figcaption>
-          </figure>`;
+          </figure>` : '';
 
         // Timeline: one even row per event; the active years drawn as a rust bar on the line
         const yearNum = y => parseInt(String(y).replace(/[^0-9]/g, ''), 10);
