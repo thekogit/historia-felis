@@ -5082,6 +5082,49 @@ try { (function() {
         openNativeLightbox(initialWork.large_url || initialWork.image_url, `${initialWork.inv_number} — ${initialWork.title_eng || initialWork.title} (${initialWork.artist})`);
       }
 
+      // Plain full-screen viewer for images that aren't catalogue artworks (poet portraits):
+      // the artwork viewer's PhotoSwipe look and zoom, without the archival HUD.
+      // items: [{ src, msrc, width, height, alt, caption }]
+      function openImageViewer(items, index = 0, onChange = null) {
+        if (!items.length) return;
+        if (typeof PhotoSwipe === 'undefined') {
+          const it = items[index] || items[0];
+          openNativeLightbox(it.src, it.caption || it.alt || '');
+          return;
+        }
+        const pswp = new PhotoSwipe({
+          dataSource: items,
+          index,
+          bgOpacity: 0.97,
+          showHideAnimationType: 'fade',
+          wheelToZoom: true,
+          initialZoomLevel: 'fit',
+          secondaryZoomLevel: zl => Math.max(1, (zl.fit || 0.5) * 2),
+          maxZoomLevel: zl => Math.max(1, (zl.fit || 0.5) * 4),
+          arrowPrevTitle: 'Previous image [Left Arrow]',
+          arrowNextTitle: 'Next image [Right Arrow]',
+          closeTitle: 'Close [Esc]',
+          zoomTitle: 'Zoom in/out [Click / Mouse Wheel]'
+        });
+        pswp.on('uiRegister', () => {
+          pswp.ui.registerElement({
+            name: 'image-caption', order: 9, isButton: false, appendTo: 'root',
+            onInit: (el, p) => {
+              el.className = 'pswp-image-caption';
+              const set = () => { el.textContent = (p.currSlide && p.currSlide.data.caption) || ''; };
+              p.on('change', set);
+              set();
+            }
+          });
+        });
+        if (onChange) pswp.on('change', () => onChange(pswp.currIndex));
+        window.activePhotoSwipe = pswp;
+        pswp.on('destroy', () => {
+          if (window.activePhotoSwipe === pswp) window.activePhotoSwipe = null;
+        });
+        pswp.init();
+      }
+
       // Fallback Lightbox Logic
       const lightboxModal = document.getElementById('lightbox-modal');
       const lightboxImg = document.getElementById('lightbox-img');
@@ -5370,7 +5413,7 @@ try { (function() {
         };
         const plateHtml = imgs.length ? `
           <figure class="poet-plate">
-            <a class="poet-plate-frame" href="${esc(imgs[0].page)}" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size image on Wikimedia Commons">${imgHtml(imgs[0], 0)}</a>
+            <button type="button" class="poet-plate-frame" aria-label="View the image full screen" title="View full screen">${imgHtml(imgs[0], 0)}</button>
             <figcaption class="poet-plate-cap">${capHtml(imgs[0])}</figcaption>
             ${imgs.length > 1 ? `<div class="poet-thumbs" role="group" aria-label="More images">${imgs.map((img, i) => `
               <button type="button" class="poet-thumb ${i === 0 ? 'active' : ''}" data-i="${i}" aria-label="Show image ${i + 1} of ${imgs.length}" aria-pressed="${i === 0}">
@@ -5460,17 +5503,34 @@ try { (function() {
 
         // Thumbnails swap the plate image and its caption
         const plate = page.querySelector('.poet-plate');
-        page.querySelectorAll('.poet-thumb').forEach(btn => on(btn, 'click', () => {
-          const img = imgs[Number(btn.dataset.i)];
-          plate.querySelector('.poet-plate-frame').href = img.page;
+        let plateIdx = 0;
+        const showPlate = i => {
+          const img = imgs[i];
+          if (!img || !plate) return;
+          plateIdx = i;
           plate.querySelector('.poet-plate-frame').innerHTML = imgHtml(img, 0);
           plate.querySelector('.poet-plate-cap').innerHTML = capHtml(img);
           page.querySelectorAll('.poet-thumb').forEach(b => {
-            b.classList.toggle('active', b === btn);
-            b.setAttribute('aria-pressed', String(b === btn));
+            const isCur = Number(b.dataset.i) === i;
+            b.classList.toggle('active', isCur);
+            b.setAttribute('aria-pressed', String(isCur));
           });
           pin();
-        }));
+        };
+        page.querySelectorAll('.poet-thumb').forEach(btn => on(btn, 'click', () => showPlate(Number(btn.dataset.i))));
+
+        // The plate opens the full-screen viewer (all portraits, starting at the one shown);
+        // the caption keeps its link to the source page
+        on(plate && plate.querySelector('.poet-plate-frame'), 'click', () => {
+          openImageViewer(imgs.map(img => ({
+            src: img.url || img.src,
+            msrc: poetImgSrc(img, 960),
+            width: img.w || poetNatW(img),
+            height: img.h || (img.local && img.local.h),
+            alt: img.caption,
+            caption: img.caption
+          })), plateIdx, showPlate);
+        });
 
         // The shorter left column scrolls with the page until its bottom is in view, then holds
         const side = page.querySelector('.poet-side');
