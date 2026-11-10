@@ -13598,5 +13598,18 @@
     "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoGAAgAA4BaJQBOgCPtlPSgAAD9741hOEnYVNnOGPaHW8isJmWIHuD4uUJvoWAA",
     "hash": "a2989c9aa2b0c2ba",
     "hash2": "f2989c9aa2b2ca43"
+  },
+  "https://iiif.micr.io/NKzFf/full/max/0/default.jpg": {
+    "base": "assets/img/a52246e90ba3846f",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 7437,
+    "h": 5242,
+    "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoIAAYAA4BaJYwCdAD0r4cJSADifDPLQeB93/bapUOe/AT0faFD2XvMLTuC+UHB8WatoAAA",
+    "hash": "b0b0b4a4bc988c71",
+    "hash2": "b0b0b4a4bc988c71"
   }
 }
