@@ -13611,5 +13611,2369 @@
     "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoIAAYAA4BaJYwCdAD0r4cJSADifDPLQeB93/bapUOe/AT0faFD2XvMLTuC+UHB8WatoAAA",
     "hash": "b0b0b4a4bc988c71",
     "hash2": "b0b0b4a4bc988c71"
+  },
+  "https://cdn.thenetexperts.info/image/authenticated/s--54oVBlvt--/q%5F80/artworks/JULIUS-ADAM-1852%5FKATZE-MIT-DETAILSTUDIEN-8795%5F227707%5FCC-BY-SA%5FBSTGS.jpg": {
+    "base": "assets/img/da577023340f1641",
+    "widths": [
+      480,
+      960,
+      1200
+    ],
+    "w": 1200,
+    "h": 836,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoIAAYAA4BaJaQAAveB5qH9AAD+4+q6QZuCb0LPBVuggfTnRyLb/+k0QPgAAA==",
+    "hash": "cee2b2b889a880e2",
+    "hash2": "cee2b2b889a880e2"
+  },
+  "https://images.metmuseum.org/CRDImages/an/original/DP-26517-001.jpg": {
+    "base": "assets/img/c07e44652a459862",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 2503,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAAAwAQCdASoIAAUAA4BaJZwAA3AA/vDlpzhI0jr/taPYmf5y20dkbeUgAAA=",
+    "hash": "502c527179690e60",
+    "hash2": "383028246412aa92"
+  },
+  "https://images.metmuseum.org/CRDImages/eg/original/DT10890.jpg": {
+    "base": "assets/img/86bafd61966aa192",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1905,
+    "h": 1241,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACQAQCdASoIAAUAA4BaJQBOgB5P3tAAzc6e638eMgKkWQGOd38ctZjIgRExy0vAAAA=",
+    "hash": "4d4d8d6924a6b198",
+    "hash2": "4d4d8d6924a6b198"
+  },
+  "https://images.metmuseum.org/CRDImages/eg/original/DP349853.jpg": {
+    "base": "assets/img/371695ef99544245",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3921,
+    "h": 2855,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoIAAYAA4BaJZwAAvd8bRNSAAD+72rWJLCVtcdeJ1p9wV//iXYNjQK0S+A4AA==",
+    "hash": "07078d334ecc5803",
+    "hash2": "4f97334eccd81907"
+  },
+  "https://commons.wikimedia.org/wiki/Special:FilePath/Placca_pantera,_da_regione_di_krasnodar,_kurgan_chertomlyk,_oro_a_sbalzo_e_cesellato,_fine_VII_sec_ac.jpg": {
+    "base": "assets/img/a6e5bc93b677dc08",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1555,
+    "h": 744,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAQAA4BaJQBOgB6No3QAzI5lM4Y6LlmwCvjQ8up4g+LQctgAAA==",
+    "hash": "3e4fc5a2b2d2d0f0",
+    "hash2": "3e4fc5a2b2d2d0f0"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6e/Animals_Seated_under_a_Chair%2C_Tomb_of_Anen_MET_chr30.4.93.jpg": {
+    "base": "assets/img/77d15445abcbdd73",
+    "widths": [
+      480,
+      960,
+      1080
+    ],
+    "w": 1080,
+    "h": 1183,
+    "lq": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoHAAgAA4BaJbACdG1/An/aPvagAP3bRKsiR6KaYasEP04ElnQg0UUfPmH52TtApUcnTqNwzjigYQAA",
+    "hash": "86e28a9ce6f2e2ea",
+    "hash2": "86e28a9ce6f2e2ea"
+  },
+  "https://openaccess-cdn.clevelandart.org/1914.806/1914.806_print.jpg": {
+    "base": "assets/img/edbb48fafd6e8db7",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1495,
+    "h": 2048,
+    "lq": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoGAAgAA4BaJZgCdAD0RxYiIAD+5f/wprJ3tkRqfzXJGd41JcbHK/M482T4CFcsGSf0HugAucAAAA==",
+    "hash": "270d171f33726072",
+    "hash2": "0d0d371f33726070"
+  },
+  "https://images.metmuseum.org/CRDImages/an/original/DP-26517-002.jpg": {
+    "base": "assets/img/fbc8e0132239aff2",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 2405,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAABwAQCdASoIAAUAA4BaJZQC7AFAAAD+8MBqs+TLGv+sqVGLX+EMKFotMsZg1ABQ7+AAAA==",
+    "hash": "48967068ec6c0640",
+    "hash2": "e3c8964b6f4cb6b7"
+  },
+  "https://openaccess-cdn.clevelandart.org/1920.1990/1920.1990_print.jpg": {
+    "base": "assets/img/6eb6fffecb795d4e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1991,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACQAQCdASoFAAgAA4BaJZwAAuaaK6AA/vEfNxMyWbhihl+o4AA=",
+    "hash": "080c2d4a32333430",
+    "hash2": "0c2d2a1a32373430"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/24/Egyptian_-_Cat_Mummy_-_Walters_792.jpg": {
+    "base": "assets/img/f257d26ed3b2e318",
+    "widths": [
+      480,
+      960,
+      993
+    ],
+    "w": 993,
+    "h": 1799,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoEAAgAA4BaJZQCdAEO9p5AAP7xIVx+FRGeEz9eTghKE8ysAAA=",
+    "hash": "8c8e8e8e8e8e8e8d",
+    "hash2": "0705014521330707"
+  },
+  "https://images.metmuseum.org/CRDImages/gr/original/DP-17965-001.jpg": {
+    "base": "assets/img/b3a98657b761b03a",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 2886,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoIAAYAA4BaJZwAAqq7U2AA/rI6qPIqUf6M5OuADvtOuKAA",
+    "hash": "020966968c9098d0",
+    "hash2": "56169e8c8098d090"
+  },
+  "https://images.metmuseum.org/CRDImages/gr/original/DP-17965-002.jpg": {
+    "base": "assets/img/fdb1a92f5ed0b08c",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3719,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAgCdASoIAAcAA4BaJYwCdH8AFbvNlCQAAP7qyFzGXsy54mC+cPYe5tHp51Yz/AwVcb7vNDYAAA==",
+    "hash": "131858bcb83366c0",
+    "hash2": "185c1ab8397264c8"
+  },
+  "https://images.metmuseum.org/CRDImages/gr/original/DP254858.jpg": {
+    "base": "assets/img/9c252579d02192f8",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2000,
+    "h": 1538,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACQAQCdASoIAAYAA4BaJaQAApzsZsAA+U2XggtVOkxGZz7RdF/TazZQg2zh8NnlB0QAAA==",
+    "hash": "12496dece46d6917",
+    "hash2": "12496dece46d6917"
+  },
+  "https://images.metmuseum.org/CRDImages/gr/original/DP20849.jpg": {
+    "base": "assets/img/54a1cf79c5969471",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1848,
+    "h": 1960,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoIAAgAA4BaJaQAAp2cYBZBsAD2sXGOr53aJS8YpPrUnvpqXdCTMRAAAAA=",
+    "hash": "48b46061c9e224f0",
+    "hash2": "48a06069c8e2a4d8"
+  },
+  "https://images.metmuseum.org/CRDImages/gr/original/DP20850.jpg": {
+    "base": "assets/img/de41734a774e0e37",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1896,
+    "h": 1960,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAgAA4BaJaQAApzBQLCAAPaxbNXZ7sX+vj7ilvysl+dfDjdpHsl4AAA=",
+    "hash": "002060e9e8f0f4c8",
+    "hash2": "046060e9e0f0f0c8"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e2/Base_di_un_kouros_funerario%2C_dal_keramikos%2C_nel_muro_di_temistocle%2C_510_ac_ca%2C_dx_con_persone_che_fanno_lottare_cane_e_gatto_01%2C_n_3476.jpg": {
+    "base": "assets/img/240ac5f78e26679f",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 1626,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAMAA4BaJQBOgCIBm1tgAP6PPTAzo4wok+kJcUUt3rTGmRN9CwAA",
+    "hash": "5671732333b2b7a6",
+    "hash2": "5671732333b2b7a6"
+  },
+  "https://images.metmuseum.org/CRDImages/gr/original/DP232660.jpg": {
+    "base": "assets/img/da32bfff028675be",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAYAA4BaJZwAApy2wbQAAP2/zRUnarmOv65CYxXoi4/fugCwAA==",
+    "hash": "1b0d9f1b193b3327",
+    "hash2": "0d9f9b1b19333723"
+  },
+  "https://images.metmuseum.org/CRDImages/gr/original/DP232667.jpg": {
+    "base": "assets/img/1e61176899dbc641",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAYAA4BaJZwAApy7BDAAAP5NHdB5VmsfroR+2qw6/ZQ8AHAAAA==",
+    "hash": "831d9b1b391b1317",
+    "hash2": "0b9f9b1b391b1307"
+  },
+  "https://images.metmuseum.org/CRDImages/gr/original/sf98119293.jpg": {
+    "base": "assets/img/6058b928f684e1d3",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2644,
+    "h": 2094,
+    "lq": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAABQAQCdASoIAAYAA4BaJZwABDOAAP7wEdp1cHzwKdhu5zzbI6WYAA==",
+    "hash": "07176dc9d8491f09",
+    "hash2": "07176dc9d8491f09"
+  },
+  "https://openaccess-cdn.clevelandart.org/1992.368/1992.368_print.jpg": {
+    "base": "assets/img/596e1f21e84aeb67",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2376,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoIAAYAA4BaJaQAAueL78KvAAD+vbwINuQlW9KoWvxqGZmEgAAAAA==",
+    "hash": "1f2ff9fc9c73387f",
+    "hash2": "f8fc9c79323c387f"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b4/Base_di_un_kouros_funerario%2C_dal_keramikos%2C_nel_muro_di_temistocle%2C_510_ac_ca%2C_dx_con_persone_che_fanno_lottare_cane_e_gatto_02%2C_n_3476.jpg": {
+    "base": "assets/img/944c03520b0ec975",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2493,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAUAA4BaJQBOgBt9aY4AAP7hXUqIA5qiZwObI7w0XqgTdgYAAA==",
+    "hash": "336e6e1d4ecec6c5",
+    "hash2": "336e6e1d4ecec6c5"
+  },
+  "https://images.metmuseum.org/CRDImages/gr/original/DP-17965-003.jpg": {
+    "base": "assets/img/f0c985d9d7a614cd",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2493,
+    "h": 4000,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACQAQCdASoFAAgAA4BaJZQC7ADzAgAA/rgMmk0+SIogKdqd8j/QCzmAAAA=",
+    "hash": "0d766c78f9f2e08c",
+    "hash2": "366c6c78f1e28018"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/cb/Pebble_mosaic_pavement_from_the_Dionysos_House%2C_God_Dionysos_on_a_panther_and_griffin%2C_325-300_BC%2C_Archaeological_Museum%2C_Pella_%286919182334%29.jpg": {
+    "base": "assets/img/e350ffa12ef9b1c0",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2880,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoIAAYAA4BaJZQCdAD0YtQYoAAA9rfMPg0aV7qzh4MMbmfKBHp8ytp/JSJ1AAAA",
+    "hash": "1d840f1e92cce861",
+    "hash2": "1d840f1e92cce861"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d3/Pebble_mosaic_pavement_from_the_Dionysos_House%2C_God_Dionysos_on_a_panther_and_griffin%2C_325-300_BC%2C_Archaeological_Museum%2C_Pella_%286919150408%29.jpg": {
+    "base": "assets/img/1baaacd59db61fda",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2776,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAYAA4BaJYwAApyhPaQAAP6KWfxldnDTHaAPkBlvo22jGDOqEiAA",
+    "hash": "17b32ba3930f4769",
+    "hash2": "17b32ba3930f4769"
+  },
+  "https://images.metmuseum.org/CRDImages/md/original/DP241504.jpg": {
+    "base": "assets/img/eaf933c5663a4d12",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3925,
+    "h": 2745,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAgCdASoIAAYAA4BaJZQCdH8AFcd/8bQAAMtMCNmhFNmpo/g59Lv5Vljv0T9oCwW7bemzWjQAAA==",
+    "hash": "07090f0723697117",
+    "hash2": "07090f0723697117"
+  },
+  "https://images.metmuseum.org/CRDImages/md/original/sf32-100-474bs1.jpg": {
+    "base": "assets/img/22c9438220f3a0e3",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1752,
+    "h": 2394,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoGAAgAA4BaJZACdAD0LV5YAAD83GG2oRzqtspERn+PnVKv1Vi1kE4JyTHVf354AAA=",
+    "hash": "f2b696b6a6a6bab6",
+    "hash2": "e0b696b6a6a6bab6"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e9/Tomba_dei_leopardi%2C_470_ac_ca._03.jpg": {
+    "base": "assets/img/ddd390cc14958343",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3648,
+    "h": 2432,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoIAAUAA4BaJYgCdAEWUNWMMwAA/mlgJgUaZDlAAsRjTXyz2zWj3LVIDqv75oAA",
+    "hash": "969d0e3f577f6e6e",
+    "hash2": "969d0e3f577f6e6e"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b4/Tomba_dei_leopardi%2C_470_ac_ca._05.jpg": {
+    "base": "assets/img/c77e97877ddb1161",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3648,
+    "h": 2432,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAUAA4BaJYgCdADze7UQAP6twiiAtOA+mt9Qrh01bBy9FE44uMJpJzKHogAA",
+    "hash": "0707038707050d2f",
+    "hash2": "0707038707050d2f"
+  },
+  "https://images.metmuseum.org/CRDImages/md/original/DP241506.jpg": {
+    "base": "assets/img/ed3614c24414ec8b",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3925,
+    "h": 2745,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoIAAYAA4BaJYwCdH8AFc3jT1gAAPZEd45hXiAe9A7hGCFaph+HuyA424/EsPmHgAA=",
+    "hash": "070517173561e913",
+    "hash2": "070517173561e913"
+  },
+  "https://images.metmuseum.org/CRDImages/md/original/DP242199.jpg": {
+    "base": "assets/img/fd4b769e234a38f1",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3925,
+    "h": 2745,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoIAAYAA4BaJZQCdH8AFcd/nKAA+6WO2wHMGz/vO8hzbUu+qwdAj2rf+WBpQRH6AAA=",
+    "hash": "07090e074341e123",
+    "hash2": "07090e074341e123"
+  },
+  "https://openaccess-cdn.clevelandart.org/1949.469/1949.469_print.jpg": {
+    "base": "assets/img/e1b2aa80862a8a00",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2862,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAcAA4BaJZwAAupsevQAAP6EF9zK5rEZorAcGZqKQ6rvtCwsgAAA",
+    "hash": "2f5f171d52f4f463",
+    "hash2": "5f17071a72f46463"
+  },
+  "https://openaccess-cdn.clevelandart.org/1957.494/1957.494_print.jpg": {
+    "base": "assets/img/69961bfb8d4f2194",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2563,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAYAA4BaJZwAAqsA/FGgAP7PfauF5uFHVhOylTdQQQ0EFP+J7xammgKUEBAA",
+    "hash": "0f3f9be360ecec30",
+    "hash2": "0f3f9be360ecec30"
+  },
+  "https://images.metmuseum.org/CRDImages/md/original/DP241505.jpg": {
+    "base": "assets/img/04aa5c2e2c84a477",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3925,
+    "h": 2745,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAgCdASoIAAYAA4BaJZQCdH8AFcsAIa0AAPZEd4sPUvUDAmLrge6PHWVXK5A2Ar5WvqHQFcAAAA==",
+    "hash": "07090e062771f107",
+    "hash2": "07090e062771f107"
+  },
+  "https://openaccess-cdn.clevelandart.org/1949.469/1949.469_alt0_print.jpg": {
+    "base": "assets/img/5eb6a101f140e89b",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2695,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAYAA4BaJZwAApzsaDgAAP4ni/mk3fqyBOazUCHP7Gsm1+AOQBIAAAA=",
+    "hash": "3f0f1f47f1d1591b",
+    "hash2": "2f1f47e5f1d0799e"
+  },
+  "https://media.getty.edu/iiif/image/9188873a-bf0b-4df2-888d-35d9bcc77639/full/full/0/default.jpg": {
+    "base": "assets/img/bab511607b47ba50",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3219,
+    "h": 4340,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoGAAgAA4BaJYgCdAD0uxxogAD+jhmLqU4jsmVvaz3pa4/8tRJKAAAA",
+    "hash": "8988ecc1a1e1910f",
+    "hash2": "8988ecc1a1e1910f"
+  },
+  "https://openaccess-cdn.clevelandart.org/1949.469/1949.469_alt1_print.jpg": {
+    "base": "assets/img/5bd81b8490a2b14b",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3209,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoIAAgAA4BaJZwAAtzhGoAAyv+IneZoDOVhcAj1bM7oAsAA",
+    "hash": "1f073715cc6d6933",
+    "hash2": "4f1737d5cc696933"
+  },
+  "https://openaccess-cdn.clevelandart.org/1949.469/1949.469_alt2_print.jpg": {
+    "base": "assets/img/f0da65b0f87572b0",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2697,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACQAQCdASoIAAYAA4BaJZwAAubOGAAA/iehHylOc8pHdAHTWCyfAJQgQAA=",
+    "hash": "5f1f275799c8e40f",
+    "hash2": "3f2f471bd9c8641b"
+  },
+  "https://openaccess-cdn.clevelandart.org/1969.108/1969.108_print.jpg": {
+    "base": "assets/img/24afd09e91113b8e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1536,
+    "h": 2032,
+    "lq": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoGAAgAA4BaJZQCdAD0p2652KAA/uYIb3C3uwHbM+X+h/kcBnAvodW8omsWC8FNQTETvUPDMgYAAA==",
+    "hash": "0d270667e7e8f84c",
+    "hash2": "2727466760f8f84c"
+  },
+  "https://openaccess-cdn.clevelandart.org/1998.87/1998.87_print.jpg": {
+    "base": "assets/img/d2559a9d79a63182",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 3066,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAcAA4BaJZwC7AD0V/eAAP7c/F7Ywn3u+oF9gsscRKr48aiA0YRAAAA=",
+    "hash": "070d0f3737ccc923",
+    "hash2": "0d0f373568cc6917"
+  },
+  "https://openaccess-cdn.clevelandart.org/1998.87/1998.87_alt0_print.jpg": {
+    "base": "assets/img/9d5399e9a339c59d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2670,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAAAwAgCdASoIAAYAA4BaJZQCdH8AGBxoFmLwAAD+5gQ+Wh3EsTrefIAaJGwnItnegAA=",
+    "hash": "170d2b37354cc9e3",
+    "hash2": "0b2b371568cc69b3"
+  },
+  "https://openaccess-cdn.clevelandart.org/1998.87/1998.87_alt1_print.jpg": {
+    "base": "assets/img/2ecf8374149d4154",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2701,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoIAAYAA4BaJZQCdAELTpyH2AAA/uYEPmVRba7N1+wx8BJrqkfCGCaEeIbgAA==",
+    "hash": "070b231727cce9eb",
+    "hash2": "4b2317376ccc698f"
+  },
+  "https://openaccess-cdn.clevelandart.org/1960.264/1960.264_print.jpg": {
+    "base": "assets/img/ec705017b0d5473e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2674,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACQAQCdASoGAAgAA4BaJZwAAuWr3EAA/uxYg3PpR90bf+j7WH/gXwvxwAA=",
+    "hash": "330f4f3369696973",
+    "hash2": "0f4d337169697973"
+  },
+  "https://openaccess-cdn.clevelandart.org/1998.87/1998.87_alt2_print.jpg": {
+    "base": "assets/img/dd2a4617e1bb0e06",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 3271,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoIAAgAA4BaJZwCxC8AFamiAAD+6gDJtmQpChe1lLMXkIH2auNUvmt6rmGWaUAA",
+    "hash": "070b0f3637cccc63",
+    "hash2": "0f0f363768ccc927"
+  },
+  "https://openaccess-cdn.clevelandart.org/1960.264/1960.264_alt0_print.jpg": {
+    "base": "assets/img/ff5118dd616183ca",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2814,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoHAAgAA4BaJZwAAud6j3L2AAD+7Fo8HwS7NfugoYzYH66XDgAAAA==",
+    "hash": "3b272749535169f9",
+    "hash2": "2727495bd34169f9"
+  },
+  "https://openaccess-cdn.clevelandart.org/1960.264/1960.264_alt1_print.jpg": {
+    "base": "assets/img/cf209420d535fb03",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3101,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoHAAgAA4BaJZwAAuc/Go46wAD+7Fo+M71NcXtVrIug+MEJYu8negAA",
+    "hash": "3b27274bdbd3e1e1",
+    "hash2": "27274b5bd3c361e1"
+  },
+  "https://openaccess-cdn.clevelandart.org/1960.264/1960.264_alt2_print.jpg": {
+    "base": "assets/img/e9e2a01bcfea9098",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2775,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoHAAgAA4BaJZwAAudCxp8IgAD+7FrTc9u/FfRsMWXml3pRuf+mh8NFAAA=",
+    "hash": "371f1b65253c7cf9",
+    "hash2": "1f1b6565343c7cf1"
+  },
+  "https://openaccess-cdn.clevelandart.org/1960.264/1960.264_alt3_print.jpg": {
+    "base": "assets/img/a63630b71d976ff2",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3047,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoHAAgAA4BaJZwAAuWquW4AAP7sWj4q3O/EiwtRPY7+BXNxwAA=",
+    "hash": "271b1f6f363c6cf9",
+    "hash2": "1b3f6f27342c68f1"
+  },
+  "https://openaccess-cdn.clevelandart.org/1955.58/1955.58_print.jpg": {
+    "base": "assets/img/4593b48d2f2d079a",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2801,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoHAAgAA4BaJZwAAp2VTWAAAP7m0LXjZcPDsqaJ3t2joAAA",
+    "hash": "324d4d4c4d4d6a1b",
+    "hash2": "4d4d4d4d4d4b2a1d"
+  },
+  "https://openaccess-cdn.clevelandart.org/2015.11/2015.11_print.jpg": {
+    "base": "assets/img/72bb4b80f34ed521",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2550,
+    "lq": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoIAAYAA4BaJZQCw7DIhJ8AAMxUHDh7XgLNfq9UqAA=",
+    "hash": "01120664f4cce8e0",
+    "hash2": "6306e460ec9ce8e0"
+  },
+  "https://openaccess-cdn.clevelandart.org/1955.58/1955.58_alt2_print.jpg": {
+    "base": "assets/img/bca5c9c08a9b77ec",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2985,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoHAAgAA4BaJZwAApzWYQAA/t4DnqW+cM9W7y1UNkGFX9sYzR2pCAAA",
+    "hash": "304a4e8e9d8f4c88",
+    "hash2": "4ece8e9d9e4c48b4"
+  },
+  "https://openaccess-cdn.clevelandart.org/1955.58/1955.58_alt0_print.jpg": {
+    "base": "assets/img/99c6154d1ea3c4b8",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3018,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAABwAQCdASoHAAgAA4BaJZwAApbwAAD+5tC142nzh2WqfrKMoV/LyAAA",
+    "hash": "304d4d4d8d4d530e",
+    "hash2": "4c4d4d8d4d5b5a0e"
+  },
+  "https://openaccess-cdn.clevelandart.org/1955.58/1955.58_alt1_print.jpg": {
+    "base": "assets/img/6db89eaf22ab9780",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2953,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACQAQCdASoHAAgAA4BaJZwAApt4/8AA/ubQtd5mLyeEeTh+P70K+4AAAAA=",
+    "hash": "324c8d8e0e9d692b",
+    "hash2": "4d8d8e8e9e496916"
+  },
+  "https://openaccess-cdn.clevelandart.org/2015.11/2015.11_alt0_print.jpg": {
+    "base": "assets/img/ad7e3d045a00044d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2550,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAABQAQCdASoIAAYAA4BaJZQABDOAAP7oH1EAnZn1GvJ0ZFDJOUx+h8AA",
+    "hash": "003249caca68e840",
+    "hash2": "a188938bd1c8c8c8"
+  },
+  "https://openaccess-cdn.clevelandart.org/1990.163/1990.163_print.jpg": {
+    "base": "assets/img/1097ee29aa98fea8",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2094,
+    "lq": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAABwAQCdASoIAAUAA4BaJZwAAlJNQAD3p/CvUYjcAAAAAA==",
+    "hash": "1008033a0d79600c",
+    "hash2": "000012290979260c"
+  },
+  "https://openaccess-cdn.clevelandart.org/2015.11/2015.11_alt1_print.jpg": {
+    "base": "assets/img/e8041db06a8c0d54",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2550,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoIAAYAA4BaJZQAAv92lfJKAAD+V31Aze+CYnBAxKcABMGQAAA=",
+    "hash": "0002484c8ce8e814",
+    "hash2": "14ccde6e56ececec"
+  },
+  "https://openaccess-cdn.clevelandart.org/2015.11/2015.11_alt2_print.jpg": {
+    "base": "assets/img/111e6e13ae6ad322",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 3022,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAcAA4BaJZwCsADb0g4AAP6NHjbUz+lwJoTSHGm+v+cVRr9sRCoAAAA=",
+    "hash": "0201126969e8f8e8",
+    "hash2": "22c8c8494ab2b4b4"
+  },
+  "https://openaccess-cdn.clevelandart.org/1990.163/1990.163_alt0_print.jpg": {
+    "base": "assets/img/c109c8520e401f96",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2723,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoGAAgAA4BaJZwAApyW9r6oAP7dvSAxh41vCF87w79QAAAA",
+    "hash": "324d4d4f4da61bd9",
+    "hash2": "4c4d4b4dad2b9bcd"
+  },
+  "https://openaccess-cdn.clevelandart.org/2010.4/2010.4_print.jpg": {
+    "base": "assets/img/4ac17d585639aae4",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 3076,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAcAA4BaJZwAAveCBTbAAP7s4YTyuQiEtqmPs297IPIzO52QgAAA",
+    "hash": "0f2f0f1f51c8e063",
+    "hash2": "2f0f1f13d8c8e267"
+  },
+  "https://openaccess-cdn.clevelandart.org/1990.163/1990.163_alt1_print.jpg": {
+    "base": "assets/img/13a3c6219fb08c90",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2562,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAABwAQCdASoGAAgAA4BaJZwAApkYAAD+7Q7sutAnsRSQ4u4AAAA=",
+    "hash": "100c4c4c0d4c0820",
+    "hash2": "4d4e4c0d4d4a0020"
+  },
+  "https://openaccess-cdn.clevelandart.org/2010.4/2010.4_alt0_print.jpg": {
+    "base": "assets/img/86a67c515d9748ef",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2811,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAcAA4BaJZwAAueMZx8wAP7xhkMoKTE4kgdpsrreVi+3JyvAhAAA",
+    "hash": "07051f357552f44c",
+    "hash2": "050f373548f2f44c"
+  },
+  "https://openaccess-cdn.clevelandart.org/2010.4/2010.4_alt1_print.jpg": {
+    "base": "assets/img/f040f066eb338fe7",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2741,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAYAA4BaJZwAAp2w/4dAAP7tEDUuVukE7uKH0HlU2OuVgkc1K5Z+T75aPwAA",
+    "hash": "1b951e239bc9c0c0",
+    "hash2": "951e23138bc1d044"
+  },
+  "https://openaccess-cdn.clevelandart.org/1973.164/1973.164_print.jpg": {
+    "base": "assets/img/47d3b6c02d302221",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 3016,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoIAAcAA4BaJZwAAud1c+fEAAD+z37qYAxUj7TfP7FZeCjloIH4T8rShAA=",
+    "hash": "1f0f616964787006",
+    "hash2": "1f27716964707107"
+  },
+  "https://openaccess-cdn.clevelandart.org/1973.164/1973.164_alt0_print.jpg": {
+    "base": "assets/img/aa1b6475093639f6",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2856,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoIAAcAA4BaJaQAAp2c0dQTQAD+z3XvSYVCIKtiq/cvk79Ix2y/tKur+igAAA==",
+    "hash": "0907317969383073",
+    "hash2": "0b33716d69383077"
+  },
+  "https://openaccess-cdn.clevelandart.org/2010.4/2010.4_alt2_print.jpg": {
+    "base": "assets/img/15ee7759ad3cea70",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3270,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoIAAgAA4BaJZwAAsfwxq2bAAD+81Ro3sPRpCTYW0YvA2varznysg6rKhjAeBAA",
+    "hash": "074b0e0f4be0f163",
+    "hash2": "4b060f4f69e07363"
+  },
+  "https://openaccess-cdn.clevelandart.org/1973.164/1973.164_alt1_print.jpg": {
+    "base": "assets/img/04331d6a2a1be53f",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2867,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoIAAcAA4BaJaQAAp2Zh6JwAAD+z3GFCFeN9ndhLuUHeQawo60glfRGvDaAAA==",
+    "hash": "0b1b746d69687819",
+    "hash2": "0b13646969607819"
+  },
+  "https://openaccess-cdn.clevelandart.org/1973.164/1973.164_alt2_print.jpg": {
+    "base": "assets/img/f63cbd4486f34a4e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2644,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoIAAYAA4BaJaQAAtzC/8MAAP6msMuxZiQO1Rw8N513Yn1oDbgZhXejRQAAAA==",
+    "hash": "070938f4c9f0e027",
+    "hash2": "071878e4c9f0602f"
+  },
+  "https://openaccess-cdn.clevelandart.org/1953.273/1953.273_print.jpg": {
+    "base": "assets/img/0fc148b21d2e4c60",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 1895,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAQAA4BaJYwCdADx9FgAAP22pyow5Ucg04AVdEicKMw5MzuAAA==",
+    "hash": "028813270f9eb113",
+    "hash2": "c8172f0f0e96f117"
+  },
+  "https://openaccess-cdn.clevelandart.org/1953.273/1953.273_alt0_print.jpg": {
+    "base": "assets/img/3269c737dd449c83",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2154,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACQAQCdASoIAAUAA4BaJZwAAuUoP2AA/qxvQFXd6Pmbz4uSlBr9AA8AQAA=",
+    "hash": "020883070e8ca107",
+    "hash2": "0c83270e0c8c2307"
+  },
+  "https://openaccess-cdn.clevelandart.org/1948.308/1948.308_print.jpg": {
+    "base": "assets/img/fbdfa5f078b65666",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2866,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAQCdASoHAAgAA4BaJaQAAv+5vVqMbQAA/kQqJeWLrLGWBFTkgjot0wuCQAAA",
+    "hash": "0842616068647422",
+    "hash2": "6f61646868647423"
+  },
+  "https://openaccess-cdn.clevelandart.org/1948.308/1948.308_alt0_print.jpg": {
+    "base": "assets/img/0e40e50e081ebee8",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2946,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoHAAgAA4BaJaQAApzsLU6eAAD+7J6MZ7NZc7rEhkjt7DVMDWiiP44czYAAAA==",
+    "hash": "200f6765696d6527",
+    "hash2": "0f53656969656507"
+  },
+  "https://openaccess-cdn.clevelandart.org/1948.308/1948.308_alt1_print.jpg": {
+    "base": "assets/img/88d4326532a56b96",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2935,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoHAAgAA4BaJaQAAuWvEmEAAP7psHJkkoS3Dzdfaw3mN+2kdyC90AAA",
+    "hash": "400b3973e1616317",
+    "hash2": "0b397161e1637317"
+  },
+  "https://openaccess-cdn.clevelandart.org/1948.308/1948.308_alt2_print.jpg": {
+    "base": "assets/img/7af0a1f72b3fd7e6",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2984,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoHAAgAA4BaJaQAAv+4ThkgAAD9pjRFmifM5BieTAgXYa6zxuZQAAAA",
+    "hash": "05193971e1e16130",
+    "hash2": "493971f1e1617130"
+  },
+  "https://openaccess-cdn.clevelandart.org/1948.308/1948.308_alt3_print.jpg": {
+    "base": "assets/img/85ea7217790ac3c3",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2603,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoGAAgAA4BaJaQAAp0jIoAAAP7psHNLNbbQ6IWZ9OIWWRcF9v7ctAAA",
+    "hash": "100733333323332b",
+    "hash2": "233333333323332b"
+  },
+  "https://openaccess-cdn.clevelandart.org/1962.279.200.b/1962.279.200.b_print.jpg": {
+    "base": "assets/img/93ec3d1b03bd7a89",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2250,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoFAAgAA4BaJQBOgCKT1UwkAP5V5A+tNpNjUF74ZkBxfCaBAtEAAA==",
+    "hash": "c891c9b9badcacb1",
+    "hash2": "c891c9b9badcacb1"
+  },
+  "https://openaccess-cdn.clevelandart.org/1962.279.200.b/1962.279.200.b_alt0_print.jpg": {
+    "base": "assets/img/0cf6df19c89665f4",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2293,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoFAAgAA4BaJQBOgCHiD2yDYAD8Z0vmsg8jE7XvYNZpi2WajqHYAAAA",
+    "hash": "c83081b898fe8cb9",
+    "hash2": "c83081b898fe8cb9"
+  },
+  "https://openaccess-cdn.clevelandart.org/1939.66/1939.66_print.jpg": {
+    "base": "assets/img/b076701c8a3ea5de",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2107,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAABwAQCdASoFAAgAA4BaJYgCdAFAAAD+2aKmOeT3RhNJZy7mEAA=",
+    "hash": "32b29ecfe32686d2",
+    "hash2": "32b29ecfe32686d2"
+  },
+  "https://openaccess-cdn.clevelandart.org/1962.279.200.b/1962.279.200.b_alt1_print.jpg": {
+    "base": "assets/img/a8ae281cc80b657e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1500,
+    "h": 2236,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoFAAgAA4BaJYwCdAEOuwSAAMkDcv6cHLzb8T+j6VOwAAAA",
+    "hash": "c89081b8fabc88f8",
+    "hash2": "c89081b8fabc88f8"
+  },
+  "https://openaccess-cdn.clevelandart.org/1939.66/1939.66_alt0_print.jpg": {
+    "base": "assets/img/0d5ae4ed259b1e35",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2301,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACQAQCdASoFAAgAA4BaJQBOgBY6wQAA05VfM9UNthhE3+YaAAA=",
+    "hash": "2d3bdb672f911306",
+    "hash2": "2d3bdb672f911306"
+  },
+  "https://openaccess-cdn.clevelandart.org/1939.38/1939.38_print.jpg": {
+    "base": "assets/img/33ed1b70cf71ecb3",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1868,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRioAAABXRUJQVlA4IB4AAAAwAQCdASoEAAgAA4BaJZQAA3AA/tE5OZMEKTV1gAA=",
+    "hash": "49274f8fa7cb8f0f",
+    "hash2": "49274f8fa7cb8f0f"
+  },
+  "https://openaccess-cdn.clevelandart.org/1939.66/1939.66_alt1_print.jpg": {
+    "base": "assets/img/78f91ecdcf48b7fd",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2583,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAABwAQCdASoIAAYAA4BaJYgCdAIHgAD8dhwd80pVZSPCO6S3YTO96WWA6iifgAAA",
+    "hash": "6371e2e696a6908a",
+    "hash2": "6371e2e696a6908a"
+  },
+  "https://images.metmuseum.org/CRDImages/is/original/DP190.jpg": {
+    "base": "assets/img/14412c1d0be535bf",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2048,
+    "h": 2048,
+    "lq": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAwAgCdASoIAAgAA4BaJQBOj+Ef/Atg5D9eAAD+vJPi0Ak5gxAZKZaoGTajs4IHeqewkbBlrVLKu8BjfNVAAA==",
+    "hash": "4151758e978fcc49",
+    "hash2": "0131b68e978eccc9"
+  },
+  "https://openaccess-cdn.clevelandart.org/1939.66/1939.66_alt2_print.jpg": {
+    "base": "assets/img/61f84294ae230f70",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2317,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoFAAgAA4BaJQBOgCKeTddlAAD80HwTYvUgw5GLDdrUCkQAAAA=",
+    "hash": "1b83a39b49419b13",
+    "hash2": "1b83a39b49419b13"
+  },
+  "https://images.metmuseum.org/CRDImages/is/original/DP12.jpg": {
+    "base": "assets/img/d2f5ec7d48886248",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2048,
+    "h": 2048,
+    "lq": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoIAAgAA4BaJZgCdAYqDkdyeYAA+58wRg/L+SHy+YNu9b8x0AWSNXoOx4xg9etLc3CfAkrHGIAAAA==",
+    "hash": "8d2349154571338f",
+    "hash2": "8c234994c471338f"
+  },
+  "https://images.metmuseum.org/CRDImages/is/original/DP-32118-001.jpg": {
+    "base": "assets/img/99936d86c454979d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3272,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoIAAcAA4BaJYwCdAEPDwr0kIAA/pT5z847uxZfnOZdAuVbXc9R5wNHWDw7obYAAAA=",
+    "hash": "928292cee0bcdcf0",
+    "hash2": "92829acee4bedc70"
+  },
+  "https://images.metmuseum.org/CRDImages/is/original/sf1981-373-51r.jpg": {
+    "base": "assets/img/1c0ed5af2e289b45",
+    "widths": [
+      480,
+      825
+    ],
+    "w": 825,
+    "h": 1211,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoFAAgAA4BaJaACdAEO4XAAAP5hCfzRaZObdeunu//arSaRIAAAAA==",
+    "hash": "9333f273b8aab692",
+    "hash2": "9333f273b8aab692"
+  },
+  "https://images.metmuseum.org/CRDImages/is/original/DP300750.jpg": {
+    "base": "assets/img/ed08636135a71337",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2765,
+    "h": 3792,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoGAAgAA4BaJQBOgBuCMgDAAP6U962GsWcFLZ8jxULCzqoIxYeG1yr1eVwAAA==",
+    "hash": "b2b6e4f2b8a8b692",
+    "hash2": "3276e27238a82612"
+  },
+  "https://images.metmuseum.org/CRDImages/is/original/DP100768.jpg": {
+    "base": "assets/img/77aa5d2a3758c767",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1848,
+    "h": 1864,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAgAA4BaJaQAAxZd5EQAAP7vZ/QoAdvlU4Kxbfcpciod3dbAAAAA",
+    "hash": "edcdcd2e120b6868",
+    "hash2": "cc4c4d36134b6868"
+  },
+  "https://images.metmuseum.org/CRDImages/is/original/DP100769.jpg": {
+    "base": "assets/img/acde3350f8cf3340",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1770,
+    "h": 1785,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACQAQCdASoIAAgAA4BaJaQAAudCtQAA/u9n9CgBfRt1VL8iV6/iaYVARl9zjsslSAAAAA==",
+    "hash": "ef4dcd2e130b6868",
+    "hash2": "ef4dcd2e130b6868"
+  },
+  "https://images.metmuseum.org/CRDImages/as/original/DP-14880-002.jpg": {
+    "base": "assets/img/69fdfa2c6836bd1a",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1973,
+    "h": 4000,
+    "lq": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoEAAgAA4BaJZQCdADA+cAA/o2Pzg1f0A/SZ+JnLqgAAA==",
+    "hash": "6171697151656d59",
+    "hash2": "e1e1ed7151e46c39"
+  },
+  "https://images.metmuseum.org/CRDImages/as/original/DT234041.jpg": {
+    "base": "assets/img/1dc332a36a58e925",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1486,
+    "h": 3779,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADwAQCdASoDAAgAA4BaJZQCdAEPDAty1gAAyj5QzWXqWUd/Qy9wauQAAAA=",
+    "hash": "0ed9b17357a18943",
+    "hash2": "0ed9b17357a18943"
+  },
+  "https://openaccess-cdn.clevelandart.org/2025.60/2025.60_print.jpg": {
+    "base": "assets/img/db5589eff3fa519c",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2090,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAABQAQCdASoFAAgAA4BaJQBOgCgAAP7u+d7MfkI/vVpHAmKUdDPLN8czd7LvlQAA",
+    "hash": "a7e5d7d0a0d2e8c4",
+    "hash2": "a5e4d3d0a4aae0c4"
+  },
+  "https://images.metmuseum.org/CRDImages/as/original/DP153211.jpg": {
+    "base": "assets/img/3453d2bfbfc5a676",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3001,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAYAA4BaJZQCdAD5i3jVRAD946F2S8vUASes5fOZ4seQO/9HAAAA",
+    "hash": "df8f9a1b78f8f1cf",
+    "hash2": "df8f9a1b78f8f1cf"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f9/Animal_tales_cats_thai_or_16797_f003v.jpg": {
+    "base": "assets/img/09f3b828b57b2a0b",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2000,
+    "h": 1322,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAUAA4BaJQBOgB6Rk9GwAP63oSxBy/jEKfUkQZiXGE0ltlk7xAAA",
+    "hash": "716969f359707073",
+    "hash2": "716969f359707073"
+  },
+  "https://images.metmuseum.org/CRDImages/as/original/DP-37207-002.jpg": {
+    "base": "assets/img/eaa2f95e0a4136d1",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1585,
+    "h": 4000,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoDAAgAA4BaJQBOgCHgNkgiAAD+XuD1xWUOJFQRhNJOZRRPwAA=",
+    "hash": "272b1933272b330b",
+    "hash2": "272b1933674b330b"
+  },
+  "https://images.metmuseum.org/CRDImages/as/original/DP-16218-026.jpg": {
+    "base": "assets/img/5d2fac243fd91352",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 2998,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoIAAYAA4BaJQBOgB6RaCY4APkzypETg5bR81x6/WDotHk/bk/WPWTvEAAAAA==",
+    "hash": "414d4d4d59595941",
+    "hash2": "414d4d4d59595941"
+  },
+  "https://images.metmuseum.org/CRDImages/is/original/DP-32118-002.jpg": {
+    "base": "assets/img/0a232578ad948a4c",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3220,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoIAAYAA4BaJQBOgCFp05DeAAD+AWlyaKt3R4faiOl3lRayDf3yjPnKV3vWmNMibsDAAA==",
+    "hash": "c69ccce4e4d8d8d0",
+    "hash2": "c69ccce4a4d8d8d0"
+  },
+  "https://images.metmuseum.org/CRDImages/as/original/DP148097.jpg": {
+    "base": "assets/img/1b5d409b70c82577",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2774,
+    "h": 4000,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoGAAgAA4BaJYwCdAD5djSEAAD7rjpyA4rZ7fYJb3K+DoBOsHk6wFgA",
+    "hash": "a2e2eab6aeaea6a6",
+    "hash2": "a2e2eab6aeaea6a6"
+  },
+  "https://images.metmuseum.org/CRDImages/as/original/DP211876.jpg": {
+    "base": "assets/img/c87141de67e17e86",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3064,
+    "h": 3740,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoHAAgAA4BaJQBOgCLHtnJQ8gAA/plmZg3znKe36XPKRQP2loihjjKDUmO3gRN2BgAAAA==",
+    "hash": "010b776130363519",
+    "hash2": "010b776130363519"
+  },
+  "https://openaccess-cdn.clevelandart.org/2018.224/2018.224_print.jpg": {
+    "base": "assets/img/a3039d4f14b45f3e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2520,
+    "lq": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoIAAYAA4BaJQBOgB6JW7PuQADOMiSH17MhyMYjVaZKzrLc414F9FBzTfJJXbYq/etlojYAAAA=",
+    "hash": "71e0b48e86f0f869",
+    "hash2": "71e0b48e86f0f869"
+  },
+  "https://framemark.vam.ac.uk/collections/2013GL5723/full/full/0/default.jpg": {
+    "base": "assets/img/60a928ff76b4bd27",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2500,
+    "h": 1875,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAYAA4BaJZQCdADdGF1IAPzxAr075IKEI2W5w2OSvLHSclITTQAA",
+    "hash": "45356f232b6b177d",
+    "hash2": "85b42b232b6bb719"
+  },
+  "https://images.metmuseum.org/CRDImages/dp/original/DP835606.jpg": {
+    "base": "assets/img/38654eefd66d9687",
+    "widths": [
+      480,
+      764
+    ],
+    "w": 764,
+    "h": 3923,
+    "lq": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAADQAQCdASoCAAgAA4BaJYwCdAEPBFOAQAD+517SDCfJ+jnrAAA=",
+    "hash": "e0d4e4c4c4e0d0e0",
+    "hash2": "c4e4eee4c4e0d4e2"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c0/Master_of_the_Pala_Sforzesca_-_Madonna_and_Child_-_Walters_37455.jpg": {
+    "base": "assets/img/2b77ad24321a3535",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1408,
+    "h": 1800,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoGAAgAA4BaJYwCdAD0TFroAAAA/rxdePswsnBlFl6u5C/bU+rxEffoPh3rYAAA",
+    "hash": "32734d9636674736",
+    "hash2": "32734d9636674736"
+  },
+  "https://images.metmuseum.org/CRDImages/dp/original/DP809960.jpg": {
+    "base": "assets/img/0ea429a2ffe3467c",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3504,
+    "h": 2372,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAUAA4BaJQBOgB4/DiAA/uHPqIKFqRyha1DuH6GjT7/5DkAAAA==",
+    "hash": "87da1b2762623e4a",
+    "hash2": "87da1b2762623e4a"
+  },
+  "https://www.artic.edu/iiif/2/ff2378ba-c047-27e6-a537-15bf6c631146/full/1686,/0/default.jpg": {
+    "base": "assets/img/53b68357ecef93ac",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2180,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoGAAgAA4BaJYwCdAEWX/Px6AD+0GsThRvcGWoVuoUGQF3GT0RusWrNKtS2AAAA",
+    "hash": "968e9c38baa68c99",
+    "hash2": "968e9c38baa68c99"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/af/Les_P%C3%A8lerins_d%27Emma%C3%BCs_-_Paolo_Veronese_-_Mus%C3%A9e_du_Louvre_Peintures_INV_146_%3B_MR_385.jpg": {
+    "base": "assets/img/10a1736fcc6bbea9",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3840,
+    "h": 2205,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAUAA4BaJQBOgBtkH/lAAP59aXvBGVcYZXAw2njK/bJLFIyRH4iiMUTU94AA",
+    "hash": "7adcccdacd8fcc55",
+    "hash2": "7adcccdacd8fcc55"
+  },
+  "https://images.metmuseum.org/CRDImages/dp/original/DP242799.jpg": {
+    "base": "assets/img/108d043beb0f4e47",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3915,
+    "h": 2780,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoIAAYAA4BaJQBOgCIFeSIAAP7ToE3CuH9nHMPAgZTwZR5DxhNJOZRQ0gAAAA==",
+    "hash": "55cde54948cd4d75",
+    "hash2": "55cde54948cd4d75"
+  },
+  "https://images.metmuseum.org/CRDImages/dp/original/DP809961.jpg": {
+    "base": "assets/img/cbce3d0193371c80",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3515,
+    "h": 2408,
+    "lq": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAUAA4BaJQBOgB6QYIYAAP7wCofQ0aGS2xVxrCkAAA==",
+    "hash": "1f8d0d9c3d5b1f1b",
+    "hash2": "1f8d0d9c3d5b1f1b"
+  },
+  "https://iiif.micr.io/TJGgE/full/max/0/default.jpg": {
+    "base": "assets/img/b1fce2badecd38e7",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2894,
+    "h": 3960,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoGAAgAA4BaJYwCdADzeHUAAP61OCprLwMLsprTVkUMfEJOdXWNeWAA",
+    "hash": "ae999cbcbaa6a4b6",
+    "hash2": "0e191c3c3aa62426"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c0/Vincenzo_campi%2C_cucina%2C_1578-81%2C_da_s._sigismondo_a_cremona_04_cane_e_gatto.jpg": {
+    "base": "assets/img/68caf6968aa7743e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3456,
+    "h": 1905,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAQAA4BaJYwCdAEU95uSoAD+2+BRvr4rnCT3poRz1rb+4dThhAAA",
+    "hash": "ccc8f26460b79799",
+    "hash2": "ccc8f26460b79799"
+  },
+  "https://iiif.micr.io/Grici/full/max/0/default.jpg": {
+    "base": "assets/img/c2943e3f5a53c304",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 7551,
+    "h": 5594,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoIAAYAA4BaJYwCdAEf/8MerAAA/raijPLIphBkZ+hM0S0uuG93tunCAAA=",
+    "hash": "5cb6f0c4d0f8f850",
+    "hash2": "fcb2f0c496b0f8b0"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/02/Vincenzo_campi%2C_cucina%2C_1578-81%2C_da_s._sigismondo_a_cremona_01.jpg": {
+    "base": "assets/img/8b85ac65d447a0fa",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3174,
+    "h": 2235,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoIAAYAA4BaJYgCdAEPCfMXHAAA/kVswBl9S86nDVrVDm7QjJN0x3zeBvnuWirCuHYAAA==",
+    "hash": "bafa96869a92988e",
+    "hash2": "bafa96869a92988e"
+  },
+  "https://iiif.micr.io/ArCRB/full/max/0/default.jpg": {
+    "base": "assets/img/829a8f3ea54bdc5f",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 5274,
+    "h": 4956,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoIAAgAA4BaJZQCdADdJhHYgAD3LBASeBKWUv7d+axXH33qgiTN+4dpMAA=",
+    "hash": "66ccd694bcb0d090",
+    "hash2": "66ccd694bcb0d090"
+  },
+  "https://iiif.micr.io/ifPDT/full/max/0/default.jpg": {
+    "base": "assets/img/a2763be94b0f3882",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4064,
+    "h": 6386,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoFAAgAA4BaJYwCdAEOuwWOAAD+sjCauKYRIv4gSBEQjVX2+s5fVQAA",
+    "hash": "9a9cd0baaacabcd6",
+    "hash2": "8a9c90baeacabae6"
+  },
+  "https://iiif.micr.io/CnVUw/full/max/0/default.jpg": {
+    "base": "assets/img/449494104142e11b",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2644,
+    "h": 3808,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoGAAgAA4BaJaQAAldm87wAAPvEB5gqjMhsgwAwEefUFfA8/QAAAA==",
+    "hash": "6c4c6cb09cb93146",
+    "hash2": "6c4c6cb09cb93146"
+  },
+  "https://iiif.micr.io/KixuW/full/max/0/default.jpg": {
+    "base": "assets/img/bcde17eb5c6f5f71",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3710,
+    "h": 5570,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoFAAgAA4BaJYwCdAD0SCq/QAD4WULLWAJ/E97C2ykliqyfmcSyAAAA",
+    "hash": "6862a2aacae4d09a",
+    "hash2": "6963222a4ae5501e"
+  },
+  "https://iiif.micr.io/xeJiG/full/max/0/default.jpg": {
+    "base": "assets/img/f602e76154f4f939",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4216,
+    "h": 3454,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoIAAcAA4BaJZQCdAEO/YUA7AAA/gCnDHBiAuS2/Md08Ce0Q80eLmx2x2+xOHRLQAA=",
+    "hash": "84d2a6a6b2aea0b2",
+    "hash2": "84d2a6a6b2aea0b2"
+  },
+  "https://iiif.micr.io/BhvPU/full/max/0/default.jpg": {
+    "base": "assets/img/1b7fab183f93a173",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4032,
+    "h": 5488,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoGAAgAA4BaJYwCdAD0Rx3keAAA/rYyt9mWP9sAwX1zjXgLhTXrizvxoAA=",
+    "hash": "aceef494b4b48621",
+    "hash2": "aceef494b4f6a635"
+  },
+  "https://iiif.micr.io/TcISW/full/max/0/default.jpg": {
+    "base": "assets/img/d60dfc75e07e71a0",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3340,
+    "h": 4628,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoGAAgAA4BaJQBOgB6XE3f4AAD+15Qv9mcgPmdRIUlI7MepFvOwwmCcibsDAAAA",
+    "hash": "b2ccc0d0e8e8e0a2",
+    "hash2": "c0c4c0f0ecccc023"
+  },
+  "https://iiif.micr.io/mhBFt/full/max/0/default.jpg": {
+    "base": "assets/img/d0ce6d0bf419322d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 7736,
+    "h": 5128,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoIAAUAA4BaJZQCdADze7UQANtws/68l5duesV/uS5kAAAA",
+    "hash": "284c8a2b6a6ea684",
+    "hash2": "284c8a2b6a6ea684"
+  },
+  "https://iiif.micr.io/pZyog/full/max/0/default.jpg": {
+    "base": "assets/img/6acd4d35314c2a6e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 7258,
+    "h": 5032,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAYAA4BaJQBOgB6GLKQAAP6ZOoZ4r64Sd4RhoqdQhEWIREHxaD184AA=",
+    "hash": "a6a4bca8ecacaaa2",
+    "hash2": "a6edac684c6cea62"
+  },
+  "https://iiif.micr.io/yvSRj/full/max/0/default.jpg": {
+    "base": "assets/img/ac662757837c015e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2236,
+    "h": 2500,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoHAAgAA4BaJYwCdAD0j92BYAD+98c0FaQtfyCLZ14q4gN4UAA=",
+    "hash": "2828580c4c199bc5",
+    "hash2": "2828580c4c199bc5"
+  },
+  "https://iiif.micr.io/AEnUL/full/max/0/default.jpg": {
+    "base": "assets/img/cb67a5082f036c0e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 5732,
+    "h": 4216,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoIAAYAA4BaJZQCdAD0hyHW6AAA+C+/jQ+leDJWVNmvmMfCU77KyAXYAAA=",
+    "hash": "acb4b0d4d4b0f2ca",
+    "hash2": "acb4b0d4d4b0f2ca"
+  },
+  "https://iiif.micr.io/CasDq/full/max/0/default.jpg": {
+    "base": "assets/img/bf77dbceecd1a6b0",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4976,
+    "h": 6202,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoGAAgAA4BaJZACdAD0qfmuAAD+7JeSdJvNp6Z+RLSseKiRnbdHlNGE1YFwWok+UAA=",
+    "hash": "61c4e0b9b2969dcf",
+    "hash2": "61c4e0b9b2969dcf"
+  },
+  "https://iiif.micr.io/Tabto/full/max/0/default.jpg": {
+    "base": "assets/img/b41baf03fce663bb",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4701,
+    "h": 5908,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoGAAgAA4BaJQBOgB6W0vCgAP7xIDXbLD6e+Yi2cRd1ZRashvY8XR/aEGpePCz4AAA=",
+    "hash": "ecea6766a64d8e16",
+    "hash2": "ecea6766a64d8e16"
+  },
+  "https://iiif.micr.io/qYUHU/full/max/0/default.jpg": {
+    "base": "assets/img/f238c2901932736d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 5773,
+    "h": 7318,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACQAQCdASoGAAgAA4BaJYyzAAqQBXAA/vCgX5oY5iurYx3t0Tb2TerBQQTjF79hVL8qgAAA",
+    "hash": "0513964e591e5c1c",
+    "hash2": "0513964e591e5c1c"
+  },
+  "https://iiif.micr.io/iLwAN/full/max/0/default.jpg": {
+    "base": "assets/img/5299245003fc75e2",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 5318,
+    "h": 6696,
+    "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoGAAgAA4BaJYwCdAD0tph4gAD+7MfR7t7f35jThNkQzTua9d4CcPAgcpFQxk/NKtS2AAAA",
+    "hash": "03b0e167676f3c03",
+    "hash2": "03b0e167676f3c03"
+  },
+  "https://iiif.micr.io/KIcYk/full/max/0/default.jpg": {
+    "base": "assets/img/3f4019764681bd86",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 5410,
+    "h": 4242,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAAAwAQCdASoIAAYAA4BaJZwAA3AA/uRn32NyBpMxmpQ5wUq8CSGcxs5GXaz70IAA",
+    "hash": "b2988a889c8cb2b6",
+    "hash2": "b2988a889c8cb2b6"
+  },
+  "https://iiif.micr.io/SaiSb/full/max/0/default.jpg": {
+    "base": "assets/img/5afff45b4d002fb7",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 6234,
+    "h": 4882,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADwAQCdASoIAAYAA4BaJZQCdAD0l+6DUAAA+fe7u6yuAPWrHVroXKwAwAA=",
+    "hash": "aa989898c8d6d0b0",
+    "hash2": "ba989858c8d6d2f0"
+  },
+  "https://iiif.micr.io/nRTbe/full/max/0/default.jpg": {
+    "base": "assets/img/72d41b7f0946fbdd",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 5046,
+    "h": 5034,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoIAAgAA4BaJZQCdAEOzDtdYAAAzFVhaSeccuxOB8WnBh5ZetlYTzyH/o4AAA==",
+    "hash": "f2828e9eae969aac",
+    "hash2": "d28a8a9aae969a9c"
+  },
+  "https://iiif.micr.io/ElKJV/full/max/0/default.jpg": {
+    "base": "assets/img/2df80c46db94e453",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3906,
+    "h": 5396,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoGAAgAA4BaJZQAAp20GsGpAAD+15QmSewWO9wwzAvcecKIF+GnF1k9AUgrqu0bTuwAAA==",
+    "hash": "96aeebd28aacac8c",
+    "hash2": "a62bdb928b6d6ccc"
+  },
+  "https://iiif.micr.io/lcLCL/full/max/0/default.jpg": {
+    "base": "assets/img/46f0145e4b8f2dc6",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 5880,
+    "h": 4422,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAYAA4BaJQBOgCIj+XZWqAD+jf2b19MuFa5VFi+LHe5aKG18AAAA",
+    "hash": "a6a69490b0b6c692",
+    "hash2": "a7a69481b0354293"
+  },
+  "https://iiif.micr.io/YxcQh/full/max/0/default.jpg": {
+    "base": "assets/img/a0ee2e61c5442005",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3662,
+    "h": 2990,
+    "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoIAAcAA4BaJQBOgCHhzOYFAAD+8YU5N96tYY2/IwCEBhQE3zFy3dyGHYPpmx5g+LNW0AAA",
+    "hash": "0c0c8e646ccccc2a",
+    "hash2": "0c0c8e646ccccc2a"
+  },
+  "https://iiif.micr.io/EIRIp/full/max/0/default.jpg": {
+    "base": "assets/img/42c174c51c8ea9cf",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4926,
+    "h": 3852,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoIAAYAA4BaJYwCdAD0ix0XewAA/pTRZPhy12D5J46XhIjKX0x7DPWNd1AAAA==",
+    "hash": "9c9cb0c8d48c8ab6",
+    "hash2": "9c94f0c8d48c8a93"
+  },
+  "https://images.metmuseum.org/CRDImages/ep/original/DP-1149-001.jpg": {
+    "base": "assets/img/7bec274b8fa63959",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3143,
+    "lq": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAABQAQCdASoIAAYAA4BaJZwABDOAAP70Jfia3BIZvFwAAA==",
+    "hash": "0907072623191907",
+    "hash2": "0393022623193822"
+  },
+  "https://images.metmuseum.org/CRDImages/dp/original/DP818288.jpg": {
+    "base": "assets/img/718fcc95d3eb23aa",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2843,
+    "h": 2197,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoIAAYAA4BaJZQCdAD0pYZg6FAA/ayrYWAL0H5fMuTJGVa9jmdhSA2ceI9/BxGgAAA=",
+    "hash": "9e8e8e8eba9a9eca",
+    "hash2": "9e8e8e8eba9a9eca"
+  },
+  "https://images.metmuseum.org/CRDImages/dp/original/DP890743.jpg": {
+    "base": "assets/img/867194470981e432",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2070,
+    "h": 2658,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoGAAgAA4BaJZQCdADzeHUAAP7riwj46iSY588TSx6D2NmOd4Y2CcuAAAA=",
+    "hash": "c4e898d8c8f092a4",
+    "hash2": "c4f898d8d8f492a4"
+  },
+  "https://images.metmuseum.org/CRDImages/dp/original/DP818736.jpg": {
+    "base": "assets/img/b2de783c8b3334cd",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3665,
+    "h": 2876,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoIAAYAA4BaJYwCdAD0ofbmYwAA/nyjEZ4Q0DHt0IUQzpmCGFY5iNp0wtAAAA==",
+    "hash": "a6be3ebe8891b2aa",
+    "hash2": "e63e7ebe8c919322"
+  },
+  "https://openaccess-cdn.clevelandart.org/2008.34.25/2008.34.25_print.jpg": {
+    "base": "assets/img/6137b838794b4a7b",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2418,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoGAAgAA4BaJQBOgB6Rk5VgAP7uOgjRblQFe8IGoQhhRcn6OhaAAA==",
+    "hash": "8eb0f0e0f0c0e29a",
+    "hash2": "9af0f0e8f0d2e29a"
+  },
+  "https://images.metmuseum.org/CRDImages/ep/original/DP131218.jpg": {
+    "base": "assets/img/9ea9b10f81475bed",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3149,
+    "h": 4000,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoGAAgAA4BaJYwCdAEOeXa+AAD+9Jf1NK+++moVeZWv9e0HxaDlsAAA",
+    "hash": "c5146c4b4a4e5b11",
+    "hash2": "c5146c4b4a4e5b11"
+  },
+  "https://images.metmuseum.org/CRDImages/ep/original/DP-20394-001.jpg": {
+    "base": "assets/img/ded9dc4dfb1e20a7",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 2987,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAABwAQCdASoIAAYAA4BaJYwCdAF1AAD+8n/Isu0oftiPiCFjtcvP5174Mm7AwAAA",
+    "hash": "617367755d5f2307",
+    "hash2": "717367757d5f7387"
+  },
+  "https://openaccess-cdn.clevelandart.org/1959.310/1959.310_print.jpg": {
+    "base": "assets/img/999dff7676521561",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2744,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAYAA4BaJZQCdADyf2OgAPuuLUMpaCUpnV9CK45dKaaYkAAAAA==",
+    "hash": "a494d2eeeeceac98",
+    "hash2": "a494d2eeeeceac98"
+  },
+  "https://images.metmuseum.org/CRDImages/ep/original/DP169648.jpg": {
+    "base": "assets/img/1bb6067f2b020c78",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3140,
+    "h": 3860,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAABwAQCdASoHAAgAA4BaJZwC7AIigAD+8VZNgr/7fikYUugjm+FgAAAA",
+    "hash": "e021d91959595b83",
+    "hash2": "e0a199995959db82"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/99/Giuseppe_Maria_Crespi_-_The_Wedding_at_Cana_-_1956.129_-_Art_Institute_of_Chicago.jpg": {
+    "base": "assets/img/845a916fa5ebed88",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2905,
+    "h": 2250,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoIAAYAA4BaJQBOgCPQT4RsIAAA/sB5XpgziEu3Wv2OdXZx01o4jDW6lNz5EAAA",
+    "hash": "a2a2142c765535e4",
+    "hash2": "a2a2142c765535e4"
+  },
+  "https://images.metmuseum.org/CRDImages/dp/original/DP805582.jpg": {
+    "base": "assets/img/38aa6f1139891d3e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3512,
+    "h": 2361,
+    "lq": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAUAA4BaJQBOgCHM/lRwAP7xztCdg9mowmklEtgAAA==",
+    "hash": "2f673b32a61ebad0",
+    "hash2": "2f673b32a61ebad0"
+  },
+  "https://images.metmuseum.org/CRDImages/es/original/ES6387.jpg": {
+    "base": "assets/img/f5ffd3efbea94ecf",
+    "widths": [
+      480,
+      960,
+      1216
+    ],
+    "w": 1216,
+    "h": 1836,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACQAQCdASoFAAgAA4BaJYwAApxXsVAA/sG+FmyKCFqJMjmZMVm9oTLCebQHw2AHRgAvUgAA",
+    "hash": "1f97832d3d1b1b0f",
+    "hash2": "1f97832d3d1b1b0f"
+  },
+  "https://images.metmuseum.org/CRDImages/es/original/ES6412.jpg": {
+    "base": "assets/img/cf59cb22c1833c6e",
+    "widths": [
+      480,
+      960,
+      1244
+    ],
+    "w": 1244,
+    "h": 1224,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoIAAgAA4BaJZwAAlp8DCigAP5mx2XlYKkc+V7cbmx3xNgFN1nJ5xX8gAAAAA==",
+    "hash": "cbccce2e8e8fdffc",
+    "hash2": "c9cc8e6e8e87bffc"
+  },
+  "https://openaccess-cdn.clevelandart.org/2008.396/2008.396_print.jpg": {
+    "base": "assets/img/a352c71682bee051",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2903,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoHAAgAA4BaJZgCdAD0vOu5SgAA/lr5CSG/dWHk+V5hx5ZnCuvoJrOKAAA=",
+    "hash": "1e2f4e4a48e4a2a3",
+    "hash2": "1e2f4e4a48e4a2a3"
+  },
+  "https://images.metmuseum.org/CRDImages/es/original/DP-33450-001.jpg": {
+    "base": "assets/img/98b99c23f6cc40e1",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4000,
+    "h": 3399,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAcAA4BaJaQAAt0LdWoAAP55NBLrpcX8HN3QzmBc9ojvTdodGwAAAAA=",
+    "hash": "0518254369e9f106",
+    "hash2": "1825676969e17106"
+  },
+  "https://images.metmuseum.org/CRDImages/es/original/DP-38899-001.jpg": {
+    "base": "assets/img/ab69f5811303eb79",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3842,
+    "h": 4000,
+    "lq": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAACQAQCdASoIAAgAA4BaJZwAAppfOAAAzeLFAKEgABUscAAA",
+    "hash": "4c169b9d072ac843",
+    "hash2": "979b9d072adcc803"
+  },
+  "https://images.metmuseum.org/CRDImages/es/original/DP-17550-003.jpg": {
+    "base": "assets/img/4c9a38d9ba0867e7",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3200,
+    "h": 4000,
+    "lq": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoGAAgAA4BaJQBOgB6Mx6v0AAD+0Pq7GiI196AP7+UsEq2PMoyewOfwoTdDnRdtCc444AmRgAA=",
+    "hash": "8018380646644c18",
+    "hash2": "58383c4646644c11"
+  },
+  "https://bpldcassets.blob.core.windows.net/derivatives/images/commonwealth:707969691/image_access_800.jpg": {
+    "base": "assets/img/879aa0f3721b7be8",
+    "widths": [
+      480,
+      960,
+      1008
+    ],
+    "w": 1008,
+    "h": 800,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAYAA4BaJYwCdAEOZ/JwAAD+4n1Bu8VvNLSogV+GfST6lT1rewAA",
+    "hash": "4d4dccccdc4d4545",
+    "hash2": "4d4dccccdc4d4545"
+  },
+  "https://bpldcassets.blob.core.windows.net/derivatives/images/commonwealth:70796961t/image_access_800.jpg": {
+    "base": "assets/img/0dc14ee3b41e4343",
+    "widths": [
+      480,
+      960,
+      1009
+    ],
+    "w": 1009,
+    "h": 800,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoIAAYAA4BaJZQCdAEOO7EyAAD+4lfJgvMic+D7nRhHQGqhUm2YloAAAAA=",
+    "hash": "454dccc4c44d2549",
+    "hash2": "454dccc4c44d2549"
+  },
+  "https://openaccess-cdn.clevelandart.org/2016.226/2016.226_print.jpg": {
+    "base": "assets/img/b52b506cd2c79fce",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3294,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoIAAgAA4BaJQBOgB8x6Yb7QAD+W6h9j3Tk5i22QG0EgYPbSTxp8fmsYWygi4ZDC9kOEgAA",
+    "hash": "3434363238784c66",
+    "hash2": "3434363238784c46"
+  },
+  "https://openaccess-cdn.clevelandart.org/1940.1090/1940.1090_print.jpg": {
+    "base": "assets/img/cdf1a56f28f0c54e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2508,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAYAA4BaJZQCdADcEYpAAADyZChSRxOqSJGRa2Z4ykKMXT6fAAAA",
+    "hash": "eee663828a9aaa8e",
+    "hash2": "6e62638a8a9aaa8e"
+  },
+  "https://openaccess-cdn.clevelandart.org/2002.142.2/2002.142.2_print.jpg": {
+    "base": "assets/img/f28d8409a4c6ea60",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2234,
+    "h": 2789,
+    "lq": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAABQAQCdASoGAAgAA4BaJQBOgCgAAP7sZU6hznlE/uDZIk369av0WvR68Hy23DprRcMhhex7XAAAAA==",
+    "hash": "9e96f8f0f4f8f292",
+    "hash2": "9eb6b8f0e4dcf0b2"
+  },
+  "https://iip.smk.dk/iiif/jp2/1c18dj809_pc4-29-10-04b_-_064.tif.reconstructed.tif.jp2/full/!1600,/0/default.jpg": {
+    "base": "assets/img/c50db2b28a383540",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2352,
+    "h": 1458,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAUAA4BaJQBOgB4/DiAA/vCHfZdqO3nLEqwzLywW+T9XHqgAAA==",
+    "hash": "0be3eccccce46019",
+    "hash2": "0be3eccccce46019"
+  },
+  "https://api.smk.dk/api/v1/thumbnail/1653bac2-5751-44dd-aa68-81d974133be3.jpg": {
+    "base": "assets/img/c3d3a3b96b6d4564",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1600,
+    "h": 1214,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoIAAYAA4BaJaQAAveAjaWAAAD+TRd9BLLHYnziD5TxIQ7ourF5HU0ixcIAAA==",
+    "hash": "25464f1337474f26",
+    "hash2": "26470b33374f4727"
+  },
+  "https://iip.smk.dk/iiif/jp2/ff365842h_pc4-29-11-04_-_047.tif.reconstructed.tif.jp2/full/!1600,/0/default.jpg": {
+    "base": "assets/img/226a1cc282404a60",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2871,
+    "h": 2054,
+    "lq": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAABQAQCdASoIAAYAA4BaJQBOgCgAAP7xKy+4ata9y0Vf/jeaIAAAAA==",
+    "hash": "8e930cecee790d2d",
+    "hash2": "8e930cecee790d2d"
+  },
+  "https://iip.smk.dk/iiif/jp2/ht24wn45p_pc4-14-12-04_-_049.tif.reconstructed.tif.jp2/full/!1600,/0/default.jpg": {
+    "base": "assets/img/969a9a1d6bdf55e9",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2471,
+    "h": 3353,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAABwAQCdASoGAAgAA4BaJYgCdAFAAAD+8OWhJwjNNcLZYEtmvmxIAAAA",
+    "hash": "bab2a43178747802",
+    "hash2": "bab2a43178747802"
+  },
+  "https://iiif.micr.io/AAQjA/full/1600,/0/default.jpg": {
+    "base": "assets/img/3b26aec075a5492c",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2388,
+    "h": 1524,
+    "lq": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAABwAQCdASoIAAUAA4BaJZQCdAF1AAD+8JNd5GIX89n18ziAAAA=",
+    "hash": "8ee1d8d83859594d",
+    "hash2": "8ee1d8d83859594d"
+  },
+  "https://iiif.micr.io/KKcni/full/1600,/0/default.jpg": {
+    "base": "assets/img/c129e8a0c919e588",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4926,
+    "h": 6124,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAABwAQCdASoGAAgAA4BaJYgCdAFAAAD+53OC5QokiTvEL1TtfoKUUYsPDa5V6u8gAAA=",
+    "hash": "a2e2e2e2e2e2c2a8",
+    "hash2": "e6f2e2e2e2c2c2a8"
+  },
+  "https://iip.smk.dk/iiif/jp2/cn69m765x_kms3402-cropped.tif.jp2/full/!1600,/0/default.jpg": {
+    "base": "assets/img/9a0dbba52ae8f24c",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3773,
+    "h": 3164,
+    "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoIAAcAA4BaJZACdADbCLbsAP7y4mHQXkVwpEgiYm7M89iqSwEQ/Sq40E4Rjhuh12BXNIAA",
+    "hash": "1070e1cc2c6c4327",
+    "hash2": "1070e1cc2c6c4327"
+  },
+  "https://openaccess-cdn.clevelandart.org/1946.158/1946.158_print.jpg": {
+    "base": "assets/img/499b21a1812af115",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2916,
+    "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoIAAcAA4BaJYgCdADYt8AAAP7g2lO60Y8UbJiDqDfcJ74fT9Y+WUSKmBDUl04b29j3wAAA",
+    "hash": "1a1d5dc6c6c27ccc",
+    "hash2": "1a1d5dc6c6c27ccc"
+  },
+  "https://openaccess-cdn.clevelandart.org/1948.433/1948.433_print.jpg": {
+    "base": "assets/img/ae128d56ee8f816c",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2582,
+    "h": 3400,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACQAQCdASoGAAgAA4BaJaQAApxLsoAA9kPGkxihFvGdqnaS7odJcE+2aRbUaFNYAAA=",
+    "hash": "88bab2b292beaab2",
+    "hash2": "88bab2b292beaab2"
+  },
+  "https://iiif.micr.io/fzmxv/full/1600,/0/default.jpg": {
+    "base": "assets/img/9e0eccc09445483e",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 5676,
+    "h": 4096,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAYAA4BaJYwCdAD0rg+QoAD+6zVZrLnHdI9GYBMLdzg1epl6/tlbGPcSW8cAAAA=",
+    "hash": "1f63e0d085ac9c95",
+    "hash2": "1f63e0d085ac9c95"
+  },
+  "https://www.artic.edu/iiif/2/c0bcac47-b255-5301-a3e9-ceda106d312e/full/1686,/0/default.jpg": {
+    "base": "assets/img/38c96155a5aa9d7d",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2132,
+    "h": 3000,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoGAAgAA4BaJQBOgB5PfIAA/uihsaHVRXelG4s90dARsL+/wfFmraAA",
+    "hash": "6d64696949716549",
+    "hash2": "646464646c723208"
+  },
+  "https://images.metmuseum.org/CRDImages/dp/original/DP884357.jpg": {
+    "base": "assets/img/34fe8859244d60ce",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2984,
+    "h": 3697,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoGAAgAA4BaJYwCdAD0PnlTAAD+bFH/DtCX7hDPelixo9gA0gzEyh+ht9aS8QFgAAA=",
+    "hash": "0a7171616165610d",
+    "hash2": "077170606064611d"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/14/Ernst_Ludwig_Kirchner_-_Self-Portrait_with_Cat_-_BR50.12_-_Busch%E2%80%93Reisinger_Museum.jpg": {
+    "base": "assets/img/59173c95e212e47f",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1592,
+    "h": 2400,
+    "lq": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoFAAgAA4BaJZgCdAD0Ma2oAP66fUsSvIn0MGss6tJ71Xwmo7CMvUAA",
+    "hash": "8e96268eb0fa98d9",
+    "hash2": "8e96268eb0fa98d9"
+  },
+  "https://iip.smk.dk/iiif/jp2/w9505268z_pc4_-_03-11-05_-_001.tif.reconstructed.tif.jp2/full/full/0/native.jpg": {
+    "base": "assets/img/4721849ae9860063",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1639,
+    "h": 2346,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoGAAgAA4BaJQBOgB6H0JAsAAD+8mzVsv4LZTM+Ytdqi8hIwmkXzyqAAAA=",
+    "hash": "b260d89060d8d862",
+    "hash2": "3361d89161d9c963"
+  },
+  "https://ids.si.edu/ids/deliveryService?id=SAAM-1967.59.442_1&max=2000": {
+    "base": "assets/img/18cac5f3a984c947",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2000,
+    "h": 1677,
+    "lq": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAcAA4BaJQBOgCKe80rgAP7x1JzKG9y0UhybpwAAAA==",
+    "hash": "7bc0c0c1c141a880",
+    "hash2": "7bc0c0c1c141a880"
+  },
+  "https://iiif.micr.io/tXuXT/full/max/0/default.jpg": {
+    "base": "assets/img/4f4ceb18e6fa1f2c",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3256,
+    "h": 4656,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoGAAgAA4BaJZwCdAD0XgeqAAD+2FH9emHWfUiy0jB/86r1eYKQOhSp91b6TtmTAAA=",
+    "hash": "92ccd8f8dce8c816",
+    "hash2": "d6ccd8d8dce8c806"
+  },
+  "https://iip.smk.dk/iiif/jp2/zw12z810v_pc4-27-12-04_-_023.tif.reconstructed.tif.jp2/full/!2400,/0/native.jpg": {
+    "base": "assets/img/fcc3d27845074bc8",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3484,
+    "h": 2601,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoIAAYAA4BaJQBOgBufI9agAP7rMnlV9INjW11haW1++kCXOZzIY6C7NaRD6CuUAAA=",
+    "hash": "bcbeb2b2e6c6c6c6",
+    "hash2": "bcbeb2b2e6c6c6c6"
+  },
+  "https://iip.smk.dk/iiif/jp2/5m60qv391_kks6104-2.tif.reconstructed.tif.jp2/full/!2400,/0/native.jpg": {
+    "base": "assets/img/2dcabb52915cd867",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3181,
+    "h": 4357,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoGAAgAA4BaJYwCdAD0X242QAD9AMnY7N9vdL/5BnuheWmSH7/J9CWrSinh4XDAAAA=",
+    "hash": "8668696969698e86",
+    "hash2": "0669f9e9e9690f17"
+  },
+  "https://api.nga.gov/iiif/5857d287-f5ca-4f5e-a396-4fd97b818af7/full/!3000,3000/0/default.jpg": {
+    "base": "assets/img/39f64b386fe1c545",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 4096,
+    "h": 3498,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoIAAcAA4BaJQBOgB6R4+itAAD+8aMo6wftLCSEMpS+Tp/UO+pjKVSEPnAAAA==",
+    "hash": "060616924b0fa70e",
+    "hash2": "060616924b0fa70e"
+  },
+  "https://iiif.micr.io/mCwDy/full/max/0/default.jpg": {
+    "base": "assets/img/446a9d4ff4ab182b",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2690,
+    "h": 1746,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAUAA4BaJYwCdADze7UQAPuGTe4v3+XznMPtwpXX4Ho3VZoBi1rGlAzAQAAA",
+    "hash": "b284969a8a92a6d2",
+    "hash2": "ba86920aca93a6da"
+  },
+  "https://iiif.micr.io/kerGM/full/max/0/default.jpg": {
+    "base": "assets/img/758dfb5b6018db37",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 6128,
+    "h": 4562,
+    "lq": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAABwAQCdASoIAAYAA4BaJZQCdAF1AAD+8PbYVGuGEA65/r+wo+u5y1AA",
+    "hash": "5c5c6463d9c9d672",
+    "hash2": "545c65639989d533"
+  },
+  "https://openaccess-cdn.clevelandart.org/1977.132/1977.132_print.jpg": {
+    "base": "assets/img/49d65deaf3e05964",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2242,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAUAA4BaJaQAAuab25AA/vM5wo92zR+gl0d0cYVK9FH6g4AAAA==",
+    "hash": "07210f0f314ccc07",
+    "hash2": "0f0733114cccce07"
+  },
+  "https://openaccess-cdn.clevelandart.org/1977.132/1977.132_alt0_print.jpg": {
+    "base": "assets/img/e025e0985ddfa593",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2118,
+    "lq": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoIAAUAA4BaJaQAAuab25AA/vGG2mANEFczlyzCXNsAAA==",
+    "hash": "07230f1f7354c407",
+    "hash2": "0f1f536355c4840f"
+  },
+  "https://openaccess-cdn.clevelandart.org/1977.132/1977.132_alt1_print.jpg": {
+    "base": "assets/img/b64fac4dad8abe71",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2851,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAcAA4BaJaQAAxZhtVjugAD+7vPIvLTXLoEw4GVa8WjCRabKAnr/V03Q1AAAAAA=",
+    "hash": "07172f2333617034",
+    "hash2": "0f2f233373603427"
+  },
+  "https://openaccess-cdn.clevelandart.org/1977.132/1977.132_alt2_print.jpg": {
+    "base": "assets/img/662bc53156c6ad2a",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 3287,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAgAA4BaJaQAAuXggFgAAP7xI5uAznOpgUDa/ykSRAuBmUaphjAAAAA=",
+    "hash": "070f0b3b3371f149",
+    "hash2": "0f0b33337171d959"
+  },
+  "https://openaccess-cdn.clevelandart.org/1977.132/1977.132_alt3_print.jpg": {
+    "base": "assets/img/ac60acb60dc34d76",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3400,
+    "h": 2099,
+    "lq": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADwAQCdASoIAAUAA4BaJZwC7AEfhT+3ZcAA/uxbUhFpbv55EIYBDodNJkAAAA==",
+    "hash": "413191d103238503",
+    "hash2": "413191d103238503"
+  },
+  "https://api.smk.dk/api/v1/download/W3siaW1nX3VybCI6Imh0dHBzOi8vaWlwLnNtay5kay9paWlmL2pwMi84dzMycjgxOXRfcGM0LTE5LTA1LTA1Xy1fMDI1LnRpZi5yZWNvbnN0cnVjdGVkLnRpZi5qcDIvZnVsbC9mdWxsLzAvbmF0aXZlLmpwZyIsInB1YmxpY19kb21haW4iOnRydWUsIm9iamVjdF9udW1iZXIiOiJLS1M2OTE1IiwibnVtIjoiIn1d/KKS6915.jpg": {
+    "base": "assets/img/1a930b4b3ac937af",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 2545,
+    "h": 1461,
+    "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAUAA4BaJYwCdAD0eagAAP71He223sqqACQnTUwRbwoAAAA=",
+    "hash": "020aa6e26af2b947",
+    "hash2": "021aa6e36af2b946"
   }
 }
