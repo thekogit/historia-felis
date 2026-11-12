@@ -942,7 +942,7 @@ try { (function() {
           const badge = document.getElementById('stack-count-badge');
           if (badge) {
             const c = this.count();
-            badge.textContent = `[${c}]`;
+            badge.textContent = `${c}`;
           }
         }
       };
@@ -1001,7 +1001,7 @@ try { (function() {
           dossierBtn.classList.toggle('active', inStack);
           if (inStack) pulseEl(dossierBtn);
           dossierBtn.innerHTML = inStack
-            ? `<svg class="icon-swap-in" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span>✓ IN STACK [CLICK TO REMOVE]</span>`
+            ? `<svg class="icon-swap-in" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span>✓ IN STACK · CLICK TO REMOVE</span>`
             : `<svg class="icon-swap-in" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span>+ ADD TO CURATORIAL STACK</span>`;
         }
         document.querySelectorAll(`.card-stack-btn[data-work-id="${workId}"]`).forEach(b => {
@@ -1924,9 +1924,9 @@ try { (function() {
               ` : ''}
             </div>
             <div class="stack-tabs-row">
-              <button class="stack-tab-btn ${activeStackTab === 'all' ? 'active' : ''}" data-tab="all">ALL [${totalCount}]</button>
-              <button class="stack-tab-btn ${activeStackTab === 'works' ? 'active' : ''}" data-tab="works">ARTWORKS [${stackWorks.length}]</button>
-              <button class="stack-tab-btn ${activeStackTab === 'haikus' ? 'active' : ''}" data-tab="haikus">HAIKUS [${stackHaikus.length}]</button>
+              <button class="stack-tab-btn ${activeStackTab === 'all' ? 'active' : ''}" data-tab="all">ALL ${totalCount}</button>
+              <button class="stack-tab-btn ${activeStackTab === 'works' ? 'active' : ''}" data-tab="works">ARTWORKS ${stackWorks.length}</button>
+              <button class="stack-tab-btn ${activeStackTab === 'haikus' ? 'active' : ''}" data-tab="haikus">HAIKUS ${stackHaikus.length}</button>
             </div>
           </div>
         `;
@@ -1934,7 +1934,7 @@ try { (function() {
         if (totalCount === 0) {
           html += `
             <div class="stack-empty-state">
-              <div class="stack-empty-stamp">[ 0 ITEMS SAVED ]</div>
+              <div class="stack-empty-stamp">NOTHING SAVED YET</div>
               <h2>Your curatorial stack is empty</h2>
               <p>As you explore the timeline, categories, living margins, and haiku dossier, click the heart badge on any artwork or haiku to save it to your private collection.</p>
               <div style="display:flex; gap:12px; justify-content:center; margin-top:16px;">
@@ -2042,9 +2042,8 @@ try { (function() {
 
           html += `
             <div class="era-heading-node" id="era-node-${era.id}" data-era-id="${era.id}" data-era-name="${era.name}">
-              <span class="era-node-pill">ERA INVENTORY [${allEraWorks.length} WORKS]</span>
               <h2 class="era-heading-title">${era.name}</h2>
-              <div class="era-heading-range">${era.start_year < 0 ? Math.abs(era.start_year) + ' BCE' : era.start_year + ' CE'} — ${era.end_year < 0 ? Math.abs(era.end_year) + ' BCE' : era.end_year + ' CE'}</div>
+              <div class="era-heading-range">${era.start_year < 0 ? Math.abs(era.start_year) + ' BCE' : era.start_year + ' CE'} — ${era.end_year < 0 ? Math.abs(era.end_year) + ' BCE' : era.end_year + ' CE'} · ${allEraWorks.length} works</div>
             </div>
           `;
 
@@ -2057,9 +2056,8 @@ try { (function() {
             html += `
               <div class="strand-split-section" data-era-id="${era.id}" data-era-name="19th Century" data-mov-name="Parallel Strands" data-color="#000000">
                 <div class="strand-split-intro">
-                  <span class="split-badge">SPINE CONCURRENCY [1860 — 1910]</span>
-                  <h3>The Polyphonic Century: Parallel Strands</h3>
-                  <p>In the late nineteenth century, artistic schools diverged concurrently. The spine branches into four parallel strands before reuniting at the fin-de-siècle.</p>
+                  <h3>Four schools at once, 1860–1910</h3>
+                  <p>Salon painters, Impressionists, Symbolists and Realists all painted cats in the same fifty years. The timeline splits four ways here and rejoins after 1910.</p>
                 </div>
 
                 <div class="parallel-strands-grid">
@@ -2963,7 +2961,7 @@ try { (function() {
                   <div class="typology-status-readout tabular">
                     ${activeFilter === 'all'
                       ? `PRESENT TYPES: <strong>${buttons.length - 1}</strong>`
-                      : `ACTIVE: <strong>${activeTypoObj.label}</strong> [${String(matchingWorks.length).padStart(2, '0')}]`}
+                      : `ACTIVE: <strong>${activeTypoObj.label}</strong> · ${matchingWorks.length}`}
                   </div>
                 </div>
               </div>
@@ -3237,7 +3235,7 @@ try { (function() {
           renderTypes(buttons);
           swapText(ui.readout, activeType === 'all'
             ? `PRESENT TYPES: <strong>${buttons.length - 1}</strong>`
-            : `ACTIVE: <strong>${escapeAttr(typeLabel)}</strong> [${String(works.length).padStart(2, '0')}]`, true);
+            : `ACTIVE: <strong>${escapeAttr(typeLabel)}</strong> · ${works.length}`, true);
 
           ui.note.hidden = !corrected.length;
           if (corrected.length) ui.note.innerHTML = `No exact match. Showing results for ${corrected.map(([, to]) => `<em>${escapeAttr(to)}</em>`).join(', ')}.`;
@@ -3279,7 +3277,7 @@ try { (function() {
               const ghost = tile.querySelector('.cat-tile-ghost-img');
               if (ghost.dataset.src !== img) { ghost.dataset.src = img; ghost.style.backgroundImage = img ? `url('${img}')` : ''; }
               const countEl = tile.querySelector('.cat-tile-count');
-              const countText = `[ ${n} ${n === 1 ? 'WORK' : 'WORKS'} MATCHING ]`;
+              const countText = `${n} MATCHING`;
               if (entering.includes(tile)) countEl.textContent = countText; else swapText(countEl, countText);
               setTileActivePill(tile, typeLabel);
             });
@@ -3702,7 +3700,7 @@ try { (function() {
         // 3. Update Title Dates / Works count
         const datesEl = block.querySelector('.era-cat-dates');
         if (datesEl && era) {
-          swapText(datesEl, `${formatEraOrMovementDates(era)} · [${matchingWorks.length}/${eraWorks.length} WORKS]`);
+          swapText(datesEl, `${formatEraOrMovementDates(era)} · ${matchingWorks.length} of ${eraWorks.length} works`);
         }
 
         // 4. Update Readout
@@ -3711,7 +3709,7 @@ try { (function() {
           const actLabel = key === 'all' ? 'ALL' : key.toUpperCase();
           swapText(readout, key === 'all'
             ? `PRESENT TYPES: <strong>${(strip ? strip.querySelectorAll('.typo-btn').length : 1) - 1}</strong>`
-            : `ACTIVE: <strong>${actLabel}</strong> [${String(matchingWorks.length).padStart(2, '0')}]`, true);
+            : `ACTIVE: <strong>${actLabel}</strong> · ${matchingWorks.length}`, true);
         }
 
         // 5. Update era portal link
@@ -3760,7 +3758,7 @@ try { (function() {
             }
             swapText(
               tile.querySelector('.cat-tile-count'),
-              `[ ${count} ${count === 1 ? 'WORK' : 'WORKS'} ${willBeActive ? 'MATCHING' : 'CATALOGUED'} ]`
+              willBeActive ? `${count} MATCHING` : `${count} ${count === 1 ? 'WORK' : 'WORKS'}`
             );
           });
         };
@@ -3852,7 +3850,7 @@ try { (function() {
             </div>
             <div class="cat-tile-bottom">
               <h3 class="cat-tile-name">${cat.name}</h3>
-              <div class="cat-tile-count">[ ${count} WORKS CATALOGUED ]</div>
+              <div class="cat-tile-count">${count} ${count === 1 ? 'WORK' : 'WORKS'}</div>
             </div>
           </a>
         `;
@@ -4009,7 +4007,7 @@ try { (function() {
             <div class="typology-status-readout tabular">
               ${activeFilter === 'all'
                 ? `PRESENT TYPES: <strong>${buttons.length - 1}</strong>`
-                : `ACTIVE: <strong>${activeTypoObj.label}</strong> [${String(initialFilteredWorks.length).padStart(2, '0')}]`}
+                : `ACTIVE: <strong>${activeTypoObj.label}</strong> · ${initialFilteredWorks.length}`}
             </div>
           </div>
 
@@ -4017,7 +4015,7 @@ try { (function() {
             <button class="mobile-filter-trigger" id="open-filter-sheet">
               <span class="inv-stamp">SEARCH &amp; SORT</span>
             </button>
-            <div class="results-tally" id="mobile-results-tally">[ ${initialFilteredWorks.length} WORKS ]</div>
+            <div class="results-tally" id="mobile-results-tally">${initialFilteredWorks.length} WORKS</div>
           </div>
 
           <div class="archive-toolbar">
@@ -4035,7 +4033,7 @@ try { (function() {
               </select>
             </div>
 
-            <div class="results-tally" id="results-tally">[ ${initialFilteredWorks.length} WORKS CATALOGUED ]</div>
+            <div class="results-tally" id="results-tally">${initialFilteredWorks.length} WORKS</div>
           </div>
 
           <div class="artwork-grid" id="cat-artwork-grid">
@@ -4134,7 +4132,7 @@ try { (function() {
           if (grid) swapArchiveGrid(grid, filtered);
 
           const baseCount = activeType === 'all' ? allWorks.length : (typeCounts[activeType] || 0);
-          const tallyText = `[ ${filtered.length} / ${baseCount} WORKS ]`;
+          const tallyText = `${filtered.length} OF ${baseCount} WORKS`;
           swapText(tally, tallyText);
           swapText(mobileTally, tallyText);
         }
@@ -4167,7 +4165,7 @@ try { (function() {
               if (readout) {
                 swapText(readout, key === 'all'
                   ? `PRESENT TYPES: <strong>${buttons.length - 1}</strong>`
-                  : `ACTIVE: <strong>${key.toUpperCase()}</strong> [${String(typeCounts[key] || 0).padStart(2, '0')}]`, true);
+                  : `ACTIVE: <strong>${key.toUpperCase()}</strong> · ${typeCounts[key] || 0}`, true);
               }
 
               // Update Subcategory Movement Tiles if present (FLIP reorder)
@@ -4192,7 +4190,7 @@ try { (function() {
 
                     swapText(
                       tile.querySelector('.cat-tile-count'),
-                      `[ ${count} ${count === 1 ? 'WORK' : 'WORKS'} ${key === 'all' ? 'CATALOGUED' : 'MATCHING'} ]`
+                      key === 'all' ? `${count} ${count === 1 ? 'WORK' : 'WORKS'}` : `${count} MATCHING`
                     );
                   });
                 });
@@ -4308,7 +4306,7 @@ try { (function() {
               </div>
               <div class="artwork-nav-stepper">
                 <a href="#/work/${prevWork.id}" class="nav-step-btn" title="Previous artwork in category">‹ PREV</a>
-                <span>[ ${currentCatIndex + 1} / ${categoryWorks.length} ]</span>
+                <span>${currentCatIndex + 1} / ${categoryWorks.length}</span>
                 <a href="#/work/${nextWork.id}" class="nav-step-btn" title="Next artwork in category">NEXT ›</a>
               </div>
             </div>
@@ -4330,7 +4328,7 @@ try { (function() {
                 <div style="margin: 22px 0 24px 0;">
                   <button class="add-to-stack-btn ${CuratorialStack.has(work.id) ? 'active' : ''}" id="artwork-stack-btn" onclick="window.toggleWorkStack('${work.id}', this);">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="${CuratorialStack.has(work.id) ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-                    <span>${CuratorialStack.has(work.id) ? '✓ IN YOUR STACK [CLICK TO REMOVE]' : '+ ADD TO STACK'}</span>
+                    <span>${CuratorialStack.has(work.id) ? '✓ IN STACK · CLICK TO REMOVE' : '+ ADD TO STACK'}</span>
                   </button>
                 </div>
 
@@ -4413,7 +4411,7 @@ try { (function() {
                   ${allAngles.length > 1 ? `
                     <button class="nav prev" id="carousel-nav-prev" aria-label="Previous angle view"></button>
                     <button class="nav next" id="carousel-nav-next" aria-label="Next angle view"></button>
-                    <div class="carousel-counter" id="carousel-counter">[ 1 / ${allAngles.length} ]</div>
+                    <div class="carousel-counter" id="carousel-counter">1 / ${allAngles.length}</div>
                     <div class="carousel-thumbs-row">
                       ${allAngles.map((imgUrl, idx) => `
                         <button class="carousel-thumb-btn ${idx === 0 ? 'is-active' : ''}" data-thumb-index="${idx}" type="button" title="View angle ${idx + 1}">
@@ -4442,7 +4440,7 @@ try { (function() {
                     <button class="loupe-ctrl-btn" data-zoom="4" id="btn-zoom-4">×4</button>
                   </div>
                   <div>
-                    <button class="loupe-ctrl-btn" id="open-fullscreen-btn">FULL SCREEN [TAP/CLICK]</button>
+                    <button class="loupe-ctrl-btn" id="open-fullscreen-btn">FULL SCREEN</button>
                   </div>
                 </div>
               </div>
@@ -4476,7 +4474,7 @@ try { (function() {
             slides[index].classList.add('is-active');
             slides[next].classList.add('is-next');
           }
-          if (counter) counter.textContent = `[ ${index + 1} / ${slides.length} ]`;
+          if (counter) counter.textContent = `${index + 1} / ${slides.length}`;
           document.querySelectorAll('.carousel-thumb-btn').forEach((btn, idx) => {
             btn.classList.toggle('is-active', idx === index);
           });
@@ -5303,8 +5301,7 @@ try { (function() {
         appRoot.innerHTML = `
           <div class="dossier-page-container">
             <header class="dossier-mast">
-              <div class="dossier-label dossier-kicker">Archival Dossier · Literature</div>
-              <h1>On the Stray Cat in Haiku<span lang="ja">猫の恋</span></h1>
+                            <h1>On the Stray Cat in Haiku<span lang="ja">猫の恋</span></h1>
               <div class="dossier-rule" aria-hidden="true"></div>
               <p class="dossier-abstract">In classical haikai the spring season word <em lang="ja">猫の恋</em> (<em>neko no koi</em>, “cat’s love”) is rarely about domestic warmth. From Matsuo Bashō to Masaoka Shiki, poets followed the tomcat over the rooftops: slipping in through a crumbled stove, grown thin on barley rice, shaking off the rain he came home in. Later poets kept their cats closer: asleep on a lap at the year’s end, sniffing a snail, abandoned by a fence in the frost. Every poem here is traced to a published source, shown under it, and given in its original vertical setting with our own English reading and a romanisation.</p>
             </header>
