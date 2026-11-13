@@ -1,29 +1,5 @@
 [
   {
-    "id": "gwen-john-cat-cleaning-itself-1905",
-    "title": "Cat Cleaning Itself (Tortoiseshell Washing Paw)",
-    "artist": "Gwen John",
-    "year": 1905,
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Gwen_John_-_Cat_Cleaning_Itself.jpg",
-    "w": 220,
-    "h": 314,
-    "maxEdge": 314,
-    "base": "assets/img/0f2dd4190bd19088",
-    "source_url": "https://commons.wikimedia.org/wiki/File%3AGwen_John_-_Cat_Cleaning_Itself.jpg"
-  },
-  {
-    "id": "kahlo-self-portrait-thorn-necklace-1940",
-    "title": "Self-Portrait with Thorn Necklace and Hummingbird",
-    "artist": "Frida Kahlo",
-    "year": 1940,
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/1/1e/Frida_Kahlo_%28self_portrait%29.jpg",
-    "w": 277,
-    "h": 360,
-    "maxEdge": 360,
-    "base": "assets/img/a8965511d5d6c525",
-    "source_url": "https://en.wikipedia.org/wiki/Self-Portrait_with_Thorn_Necklace_and_Hummingbird"
-  },
-  {
     "id": "yi-am-puppies-and-cat-in-garden-1540",
     "title": "Flowers, Birds, Kittens, and Puppies (花鳥猫狗圖)",
     "artist": "Attributed to Yi Am (이암, 李巖)",
@@ -48,7 +24,7 @@
     "source_url": "https://commons.wikimedia.org/wiki/File:Steinlen_-_pierrot-et-le-chat-xx-private-collection.jpg"
   },
   {
-    "id": "beatrix-potter-six-weeks-old-cat-aka-2005",
+    "id": "beatrix-potter-miss-moppet-jumps-upon-the-mouse-1906",
     "title": "The Story of Miss Moppet: Miss Moppet Jumps upon the Mouse",
     "artist": "Beatrix Potter",
     "year": 1906,
@@ -82,18 +58,6 @@
     "maxEdge": 443,
     "base": "assets/img/0dcde6113bed9db1",
     "source_url": "https://commons.wikimedia.org/wiki/File:Cat_on_rock_scroll_by_Xu_Beihong_(cat_extract).jpg"
-  },
-  {
-    "id": "ex-497-the-sick-kitten-directed-by-george-albert-smith-brighton-uk-",
-    "title": "The Sick Kitten",
-    "artist": "George Albert Smith",
-    "year": 1903,
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/a/a0/TheSickKitten.jpg",
-    "w": 448,
-    "h": 252,
-    "maxEdge": 448,
-    "base": "assets/img/084aff03b514df9f",
-    "source_url": "https://player.bfi.org.uk/free/film/watch-the-sick-kitten-1903-online"
   },
   {
     "id": "ex-277-louis-l-opold-boilly-she-loves-her-cat-the-cat-breaking-into",
@@ -324,7 +288,7 @@
     "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Steen_-_Children_Teaching_a_Cat_to_Read.jpg"
   },
   {
-    "id": "ex-221-sanchi-odisha-pattachitra-scroll-of-the-cat-and-the-churning",
+    "id": "kalighat-shashthi-goddess-standing-on-a-cat-1885",
     "title": "Shashthi, Goddess of Children, Standing on a Cat",
     "artist": "Unknown Kalighat painter",
     "year": 1885,
@@ -802,18 +766,6 @@
     "maxEdge": 800,
     "base": "assets/img/678f09ad6454ce88",
     "source_url": "http://emuseum.campus.fu-berlin.de/eMuseumPlus?service=ExternalInterface&module=collection&objectId=119227&viewType=detailView"
-  },
-  {
-    "id": "ex-469-hodge-fl-1760s-1770s-london",
-    "title": "Monument to Dr. Samuel Johnson's Cat Hodge",
-    "artist": "Jon Bickley",
-    "year": 1997,
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Hodge_in_Gough_Square_-_geograph.org.uk_-_1801662.jpg",
-    "w": 800,
-    "h": 600,
-    "maxEdge": 800,
-    "base": "assets/img/b6c74ee1a67ec91a",
-    "source_url": "https://en.wikipedia.org/wiki/Hodge_(cat)"
   },
   {
     "id": "story-of-a-sick-kitten-1928",
