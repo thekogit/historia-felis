@@ -15975,5 +15975,70 @@
     "lq": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAUAA4BaJYwCdAD0eagAAP71He223sqqACQnTUwRbwoAAAA=",
     "hash": "020aa6e26af2b947",
     "hash2": "021aa6e36af2b946"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c6/Katjesspel%2C_SK-A-3089.jpg": {
+    "base": "assets/img/90f1bce20f430b5b",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3720,
+    "h": 2696,
+    "lq": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAYAA4BaJQBOgB8wXExMAP7qOapAQmY3a/jmZR8CQZj6OLyaeyfEzd7KspAA",
+    "hash": "a32223280e0693ba",
+    "hash2": "a32223280e0693ba"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/12/%22Tige%22_the_White_House_cat_and_pet_of_Mrs._Coolidge_has_been_returned_LCCN2002713128.jpg": {
+    "base": "assets/img/21ce2eff91486bdb",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 3243,
+    "h": 4096,
+    "lq": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoGAAgAA4BaJaQAAxamPPeggAD+m6g4iMhLw0WdjTIMqbkid4kgak58yXzqthgAAAA=",
+    "hash": "6e587968f4d06064",
+    "hash2": "6e587968f4d06064"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c1/Akbar_f%C3%A4ngt_einen_Geparden.jpg": {
+    "base": "assets/img/770e5dbd3ff85230",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1569,
+    "h": 2500,
+    "lq": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAAAQAgCdASoFAAgAA4BaJZACdAEPBYO88JIAAN/7tE+98Sb9bL3lvuDZIpuRKvV5XAAAAA==",
+    "hash": "b696cc88a8ca8484",
+    "hash2": "b696cc88a8ca8484"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2a/17.-Barocci-Madonna-della-gatta.jpg": {
+    "base": "assets/img/32f82c027dbccec7",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1919,
+    "h": 2500,
+    "lq": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoGAAgAA4BaJZACdAEfbpD5UPAA/vEZPW0nArrR4FlVtay8zJp2Nm00q+e5n4HJSnQizyAA",
+    "hash": "9dc76259d9c3c131",
+    "hash2": "9dc76259d9c3c131"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e6/Akbar_Hunting_Black_Buck-Akbarnama.jpg": {
+    "base": "assets/img/f5ab082401cf79bb",
+    "widths": [
+      480,
+      960,
+      1400
+    ],
+    "w": 1625,
+    "h": 2500,
+    "lq": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoFAAgAA4BaJZgCdADzHKwAAN9+mJ5nfAXURs5eNn5ZnCvuXdJ+p/KAAAA=",
+    "hash": "58d8d2c63bd9c673",
+    "hash2": "58d8d2c63bd9c673"
   }
 }

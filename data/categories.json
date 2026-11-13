@@ -404,7 +404,7 @@
     "end_year": 1925,
     "color": "#1b6163",
     "color_name": "Persian Turquoise",
-    "title_artwork_id": "mughal-anwar-i-suhayli-cat-leaping-birdcage-1570",
+    "title_artwork_id": "mughal-kalila-wa-dimna-trapped-cat-and-frightened-mouse-1537",
     "introduction": "By tradition, the Prophet's companion Abu Hurayra owes his name, 'father of the kitten', to a cat he carried in his sleeve, and cats have padded through Islamic art ever since. This era runs from Seljuq bronzes and lustre bowls through illustrated fable books and Mughal hunting pictures, with their trained cheetahs, to the large oil portraits of Zand and Qajar Iran."
   },
   {
@@ -428,7 +428,7 @@
     "end_year": 1650,
     "color": "#3b7779",
     "color_name": "Verditer",
-    "title_artwork_id": "mughal-anwar-i-suhayli-cat-leaping-birdcage-1570",
+    "title_artwork_id": "mughal-kalila-wa-dimna-trapped-cat-and-frightened-mouse-1537",
     "introduction": "Kalila wa Dimna, the Arabic version of the Indian Panchatantra, is full of animals scheming at court, and its Persian retelling, the Anwar-i Suhaili ('Lights of Canopus'), kept painters busy for centuries. Here a trapped cat bargains with a mouse, a leopard carries a lion's orders, and a hunter takes aim at another leopard."
   },
   {
@@ -452,7 +452,7 @@
     "end_year": 1800,
     "color": "#134445",
     "color_name": "Mughal Malachite",
-    "title_artwork_id": "mughal-princess-chasing-cat-with-parrot-1740",
+    "title_artwork_id": "mughal-tuti-nama-woman-meets-leopard-thirtieth-night-1560",
     "introduction": "Akbar's painters showed the emperor hunting blackbuck with trained cheetahs, hooded and carried to the field on carts, and Prince Salim's artists at Allahabad and in later albums kept up the hunting theme. By the eighteenth century the mood had softened: a late Mughal princess chases a cat to save her parrot."
   },
   {
@@ -932,7 +932,7 @@
     "end_year": 1914,
     "color": "#a56161",
     "color_name": "Brown Madder",
-    "title_artwork_id": "beatrix-potter-six-weeks-old-cat-aka-2005",
+    "title_artwork_id": "beatrix-potter-miss-moppet-jumps-upon-the-mouse-1906",
     "introduction": "The golden age of British illustration had plenty of cats. Beatrix Potter gave Miss Moppet and Tom Kitten their own little books in 1906 and 1907, Arthur Rackham sketched a parrot and a cat for a children's poem, and Byam Shaw drew Poe's Black Cat."
   },
   {
@@ -1004,7 +1004,7 @@
     "end_year": 1939,
     "color": "#6a2f2a",
     "color_name": "Copperplate Madder",
-    "title_artwork_id": "john-nash-cat-and-kitten-woodcut-1920",
+    "title_artwork_id": "ex-429-michel-de-montaigne-apology-for-raymond-sebond-essays-book-i",
     "introduction": "Printmaking became a fine art again in Edwardian and interwar Britain, and its artists kept cats. William Strang etched Montaigne with his, C. R. W. Nevinson made one in aquatint, and John Nash and Eileen Mayo cut cats into wood."
   },
   {
@@ -1040,7 +1040,7 @@
     "end_year": 1939,
     "color": "#7d4a3a",
     "color_name": "Sepia Umber",
-    "title_artwork_id": "ex-497-the-sick-kitten-directed-by-george-albert-smith-brighton-uk-",
+    "title_artwork_id": "arnold-genthe-jane-cowl-with-buzzer-cat-ca1915",
     "introduction": "A kitten dosed with a spoon in a 1903 Brighton film, an actress posing with her cat for Arnold Genthe, an airship crew's mascot: the camera learned early that cats will happily star in front of it. Edward Steichen's print of 1902 gave the cat the soft focus of Pictorialism."
   },
   {
@@ -1080,18 +1080,6 @@
     "introduction": "Paris made the cat sleek. Rembrandt Bugatti modelled a walking panther, Lalique wound cats around a choker and later pressed them into frosted glass, George Barbier drew a lady and her panther for the fashion press, and Pompon smoothed his panther into a single polished curve."
   },
   {
-    "id": "mov-modern-chinese-painting",
-    "name": "Modern Chinese Painting",
-    "level": "movement",
-    "parent_id": "era-early-20th-century",
-    "start_year": 1900,
-    "end_year": 1939,
-    "color": "#7a2020",
-    "color_name": "Seal-Paste Vermilion",
-    "title_artwork_id": "two-cats-1934",
-    "introduction": "Early twentieth-century Chinese painting that reformed traditional ink practice through Western academic realism, championed by Xu Beihong and his contemporaries."
-  },
-  {
     "id": "mov-gwen-john",
     "name": "Gwen John's Paris Cats",
     "level": "movement",
@@ -1100,7 +1088,7 @@
     "end_year": 1910,
     "color": "#7d4a40",
     "color_name": "Tortoiseshell Umber",
-    "title_artwork_id": "gwen-john-cat-cleaning-itself-1905",
+    "title_artwork_id": "gwen-john-gwen-john-cat-nmw-a-15630-work",
     "introduction": "Living alone in Paris and modelling for Rodin, Gwen John drew her tortoiseshell cat over and over: washing, sleeping, curled into a ball. The drawings are small, quick and exact, and when the cat went missing she searched the streets for it."
   },
   {
@@ -1152,52 +1140,16 @@
     "introduction": "Stanisław Ignacy Witkiewicz, Witkacy, ran his portraiture as a business, the S. I. Witkiewicz Portrait Painting Firm, with printed rules and price categories, and he noted on his pastels which stimulants he had taken. Cats crept into his grotesques too, sick kittens and all, while Wiktoria Goryńska of the Ryt society cut a cat in wood."
   },
   {
-    "id": "mov-wpa-federal-art",
-    "name": "WPA Federal Art Project",
-    "level": "movement",
-    "parent_id": "era-early-20th-century",
-    "start_year": 1935,
-    "end_year": 1939,
-    "color": "#93503a",
-    "color_name": "WPA Brick",
-    "title_artwork_id": "chuzo-tamotzu-cats-1936",
-    "introduction": "From 1935 the Works Progress Administration paid American artists to make art, and New York printmakers and Chicago painters handed in cats. Chuzo Tamotzu's lithograph, Mabel Wellington Jack's sleeping kitten and Gertrude Abercrombie's dreamlike White Cat all date from those relief years."
-  },
-  {
     "id": "era-mid-20th-century",
     "name": "Mid-Twentieth Century & Modernism",
     "level": "era",
     "parent_id": null,
     "start_year": 1940,
-    "end_year": 1959,
+    "end_year": 1955,
     "color": "#7a3b2e",
     "color_name": "Burnt Sienna",
     "title_artwork_id": "ex-477-unsinkable-sam-oskar-c-1940-1955",
     "introduction": "Surrealists and postwar painters read the cat as a creature of psychic mystery and unease. On the same decades' ships and battlefields, real cats worked as mascots and mouse-hunters, and animators, jewellers and Pop pioneers were already drawing them for the mass market."
-  },
-  {
-    "id": "mov-postwar-figuration",
-    "name": "Wartime & Post-War Figuration",
-    "level": "movement",
-    "parent_id": "era-mid-20th-century",
-    "start_year": 1940,
-    "end_year": 1959,
-    "color": "#663227",
-    "color_name": "Burnt Sienna Deep",
-    "title_artwork_id": "giacometti-le-chat-bronze-1951",
-    "introduction": "Picasso sat Dora Maar in a chair with a small cat at her shoulder in 1941 and modelled a cat in bronze during the Occupation. After the war Balthus painted a cat-headed diner with a rainbow of fish, Lucian Freud painted a young woman holding a kitten by the neck, and Giacometti cast a cat as thin as one of his walking men."
-  },
-  {
-    "id": "mov-surrealism-midcentury",
-    "name": "Late Surrealism: Mexico & New York",
-    "level": "movement",
-    "parent_id": "era-mid-20th-century",
-    "start_year": 1940,
-    "end_year": 1959,
-    "color": "#8f4458",
-    "color_name": "Deep Carmine",
-    "title_artwork_id": "kahlo-self-portrait-thorn-necklace-1940",
-    "introduction": "Surrealism's second life after 1940 happened largely in exile and in the Americas. Frida Kahlo set a black cat at her shoulder in the Self-Portrait with Thorn Necklace and Hummingbird, Remedios Varo let a cat's fury spark through a quiet room, and Philippe Halsman and Salvador Dalí threw cats and a bucket of water through the air for Dalí Atomicus."
   },
   {
     "id": "mov-wartime-mascots",
@@ -1210,137 +1162,5 @@
     "color_name": "Navy Rust",
     "title_artwork_id": "ex-477-unsinkable-sam-oskar-c-1940-1955",
     "introduction": "Navies kept cats for the mice and for morale. Peebles of HMS Western Isles, Oscar, the 'Unsinkable Sam' of naval legend said to have survived the Bismarck, and Simon of HMS Amethyst, awarded the Dickin Medal, served in photographs, pastel portraits and stories."
-  },
-  {
-    "id": "mov-british-midcentury",
-    "name": "British Illustration & Photography",
-    "level": "movement",
-    "parent_id": "era-mid-20th-century",
-    "start_year": 1940,
-    "end_year": 1959,
-    "color": "#8d564b",
-    "color_name": "Picture Post Sepia",
-    "title_artwork_id": "eileen-mayo-cat-in-cherry-tree-1947",
-    "introduction": "Paper rationing did not stop British illustrators. Rolf Brandt drew Poe's Black Cat in Neo-Romantic gloom, Eileen Mayo engraved a cat in a cherry tree, and Kathleen Hale's Orlando the Marmalade Cat went to sea on an ocean liner's menu cards. Thurston Hopkins photographed London for Picture Post, and studio photographers posed cats for the salon."
-  },
-  {
-    "id": "mov-midcentury-design-pop",
-    "name": "Animation, Jewellery & Early Warhol",
-    "level": "movement",
-    "parent_id": "era-mid-20th-century",
-    "start_year": 1940,
-    "end_year": 1959,
-    "color": "#a0506a",
-    "color_name": "Rose Madder",
-    "title_artwork_id": "ex-371-van-cleef-arpels-chat-malicieux-mischievous-cat-brooch-paris",
-    "introduction": "Figaro the kitten stole scenes in Disney's Pinocchio, Van Cleef & Arpels set a mischievous cat in gold for its Paris boutique, and in 1954 the young Andy Warhol printed 25 Cats Name Sam and One Blue Pussy, the missing 'd' courtesy of his mother's hand lettering."
-  },
-  {
-    "id": "era-contemporary",
-    "name": "Late Twentieth Century & Contemporary Art",
-    "level": "era",
-    "parent_id": null,
-    "start_year": 1960,
-    "end_year": 2026,
-    "color": "#6c3483",
-    "color_name": "Imperial Purple",
-    "title_artwork_id": "david-hockney-mr-and-mrs-clark-and-percy-1971",
-    "introduction": "After 1960 the cat goes public: on plinths on Highgate Hill and in Gough Square, scissor-cut in Chinese villages, tongue out on Polish circus posters. Painters and printmakers keep it close too, from Hockney's Percy to Lola Dupré's photocollage portraits."
-  },
-  {
-    "id": "mov-poster-art",
-    "name": "Poster Art: Polish School, OSPAAAL & Psychedelia",
-    "level": "movement",
-    "parent_id": "era-contemporary",
-    "start_year": 1960,
-    "end_year": 1990,
-    "color": "#4c245c",
-    "color_name": "Screenprint Aubergine",
-    "title_artwork_id": "hilscher-cyrk-striped-cat-tongue-out-1975",
-    "introduction": "Posters were where the 1960s and 70s argued in public. Hubert Hilscher's Cyrk posters for the Polish state circus, Alfredo Rostgaard's black panther for Cuba's OSPAAAL, a San Francisco Cheshire Cat in full psychedelic colour and Dewynters' yellow-eyed poster for Cats all use the feline to stop you in the street."
-  },
-  {
-    "id": "mov-industrial-design",
-    "name": "Industrial Design: Tiles, Tableware & Toys",
-    "level": "movement",
-    "parent_id": "era-contemporary",
-    "start_year": 1960,
-    "end_year": 1990,
-    "color": "#9269a3",
-    "color_name": "Manganese Violet",
-    "title_artwork_id": "clappison-cats-beaker-hornsea-1969",
-    "introduction": "Mass production loved a cat motif. Hornsea Pottery ran a line of cats around a beaker, Christina Sheppard scratched a cat in a window through the glaze of a tile, and Chinese factories lithographed tinplate cats that bat a ball when wound up."
-  },
-  {
-    "id": "mov-studio-printmaking",
-    "name": "Studio Printmaking: Woodcut, Lithograph & Etching",
-    "level": "movement",
-    "parent_id": "era-contemporary",
-    "start_year": 1960,
-    "end_year": 2026,
-    "color": "#5b2c6e",
-    "color_name": "Dioxazine Purple",
-    "title_artwork_id": "sekino-cat-and-three-kittens-1960",
-    "introduction": "Artist-printmakers after 1960 cut, drew and bit their own cats. Sekino Jun'ichirō's sōsaku hanga ('creative prints') woodblock, Jacques Hnizdovsky's tabby in black-and-white woodcut, Tatyana Kozmina's village lithograph and Toshihiko Ikeda's etched old cat all keep the artist's own hand in the print."
-  },
-  {
-    "id": "mov-folk-self-taught",
-    "name": "Folk Crafts & Self-Taught Art",
-    "level": "movement",
-    "parent_id": "era-contemporary",
-    "start_year": 1960,
-    "end_year": 2026,
-    "color": "#815094",
-    "color_name": "Cobalt Violet",
-    "title_artwork_id": "lanpang-wang-papercut-cat-with-kitten-luochuan-1985",
-    "introduction": "Some of the liveliest cats after 1960 came from outside the art schools. Chinese papercutters in Henan and Shaanxi snipped cats from paper, a Prague puppet maker gave three can-can cats their feathers, James Lloyd, a farmhand turned painter, built his cat out of tiny dots, and Nellie Mae Rowe drew a big cat in Georgia."
-  },
-  {
-    "id": "mov-british-figurative",
-    "name": "British Figurative Art & Printmaking",
-    "level": "movement",
-    "parent_id": "era-contemporary",
-    "start_year": 1960,
-    "end_year": 2026,
-    "color": "#633079",
-    "color_name": "Perkin's Mauve",
-    "title_artwork_id": "elisabeth-frink-wild-cat-1970",
-    "introduction": "British artists kept faith with the figure after Pop. Hockney's white cat Percy sits on Ossie Clark's knee, Elisabeth Frink and Bryan Organ drew wild cats, lynx and cheetahs for lithographs, Barry Flanagan, better known for hares, etched a cat, and Peter Till drew the boardroom 'fat cats' of the 1990s."
-  },
-  {
-    "id": "mov-danish-late-modernism",
-    "name": "Danish Late Modernism",
-    "level": "movement",
-    "parent_id": "era-contemporary",
-    "start_year": 1960,
-    "end_year": 2026,
-    "color": "#a17db0",
-    "color_name": "Ultramarine Violet",
-    "title_artwork_id": "mortensen-lying-black-cat-1980",
-    "introduction": "Richard Mortensen spent his career on abstraction and still drew cats, a black one lying flat and a cat-mule of his own invention. Arne Haugen Sørensen of the Grønningen group painted birds and stripy cats in bright figurative colour."
-  },
-  {
-    "id": "mov-public-monuments",
-    "name": "Public Monuments",
-    "level": "movement",
-    "parent_id": "era-contemporary",
-    "start_year": 1960,
-    "end_year": 2026,
-    "color": "#7a3f93",
-    "color_name": "Heather Plum",
-    "title_artwork_id": "ex-469-hodge-fl-1760s-1770s-london",
-    "introduction": "Cities like to commemorate a famous cat. Dick Whittington's companion sits on Highgate Hill, Dr Johnson's Hodge has his oyster shells in Gough Square, and the Cat of Kazan, hero of Russian lubok prints, has a statue of its own."
-  },
-  {
-    "id": "mov-contemporary-pop",
-    "name": "Photography & Photocollage",
-    "level": "movement",
-    "parent_id": "era-contemporary",
-    "start_year": 1960,
-    "end_year": 2026,
-    "color": "#884ea0",
-    "color_name": "Amethyst",
-    "title_artwork_id": "lola-dupre-ophelia-2023",
-    "introduction": "Photographers after 1960 took the cat from the salon to the street and back. Charles Wormald put one in a goldfish bowl for the Royal Photographic Society crowd, Roger Ballen staged a cat catcher in his unsettling South African Outland, and Lola Dupré cuts photographs into hand-made collage portraits of cats."
   }
 ]
