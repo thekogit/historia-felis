@@ -390,12 +390,32 @@ try { (function() {
         setTimeout(() => { window.isCardSwiping = false; cardSwipeStartX = 0; cardSwipeStartY = 0; }, 100);
       }, { passive: true });
 
+      // Trackpad swipes: mandatory snap pulls back between each small wheel delta, so the
+      // image judders and can stall between slides. One swipe becomes one animated step instead,
+      // and the swipe's trailing momentum (events < 200ms apart) is swallowed.
+      function onCardWheel(e) {
+        if (Math.abs(e.deltaX) <= Math.abs(e.deltaY)) return; // vertical: let the page scroll
+        e.preventDefault();
+        const track = e.currentTarget;
+        const now = performance.now();
+        const locked = now < (track._wheelUntil || 0);
+        const fresh = now - (track._wheelLast || 0) > 200;
+        track._wheelLast = now;
+        if (locked) { track._wheelUntil = now + 200; return; }
+        track._wheelAcc = (fresh ? 0 : track._wheelAcc || 0) + e.deltaX;
+        if (Math.abs(track._wheelAcc) < 30) return;
+        window.stepCardImage(track, Math.sign(track._wheelAcc));
+        track._wheelAcc = 0;
+        track._wheelUntil = now + 450; // covers the step's smooth scroll
+      }
+
       window.initCardSliders = function(root = document) {
         root.querySelectorAll('.card-multi-slider').forEach(slider => {
           if (slider.dataset.sliderInit) return;
           slider.dataset.sliderInit = '1';
           const track = slider.querySelector('.card-slider-track');
           if (!track) return;
+          track.addEventListener('wheel', onCardWheel, { passive: false });
           const slideWidth = track.clientWidth || (track.firstElementChild && track.firstElementChild.getBoundingClientRect().width) || 0;
           if (slideWidth > 0) {
             track.scrollLeft = slideWidth; // Start at real slide 0 (after cloned last slide)
