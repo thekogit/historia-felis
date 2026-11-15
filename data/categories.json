@@ -1138,29 +1138,5 @@
     "color_name": "Pastel Crimson",
     "title_artwork_id": "gorynska-kot-1930",
     "introduction": "Stanisław Ignacy Witkiewicz, Witkacy, ran his portraiture as a business, the S. I. Witkiewicz Portrait Painting Firm, with printed rules and price categories, and he noted on his pastels which stimulants he had taken. Cats crept into his grotesques too, sick kittens and all, while Wiktoria Goryńska of the Ryt society cut a cat in wood."
-  },
-  {
-    "id": "era-mid-20th-century",
-    "name": "Mid-Twentieth Century & Modernism",
-    "level": "era",
-    "parent_id": null,
-    "start_year": 1940,
-    "end_year": 1955,
-    "color": "#7a3b2e",
-    "color_name": "Burnt Sienna",
-    "title_artwork_id": "ex-477-unsinkable-sam-oskar-c-1940-1955",
-    "introduction": "Surrealists and postwar painters read the cat as a creature of psychic mystery and unease. On the same decades' ships and battlefields, real cats worked as mascots and mouse-hunters, and animators, jewellers and Pop pioneers were already drawing them for the mass market."
-  },
-  {
-    "id": "mov-wartime-mascots",
-    "name": "Ship Cats & Wartime Mascots",
-    "level": "movement",
-    "parent_id": "era-mid-20th-century",
-    "start_year": 1940,
-    "end_year": 1959,
-    "color": "#6f4a3a",
-    "color_name": "Navy Rust",
-    "title_artwork_id": "ex-477-unsinkable-sam-oskar-c-1940-1955",
-    "introduction": "Navies kept cats for the mice and for morale. Peebles of HMS Western Isles, Oscar, the 'Unsinkable Sam' of naval legend said to have survived the Bismarck, and Simon of HMS Amethyst, awarded the Dickin Medal, served in photographs, pastel portraits and stories."
   }
 ]

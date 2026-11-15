@@ -20958,5 +20958,52 @@
       "hotlink": true,
       "license_url": "https://en.wikipedia.org/wiki/25_Cats_Name_Sam_and_One_Blue_Pussy"
     }
+  },
+  {
+    "id": "ex-477-unsinkable-sam-oskar-c-1940-1955",
+    "title": "Oscar, cat from the German battleship 'Bismarck'",
+    "title_original": "Oscar, the Cat from the German Battleship Bismarck (Unsinkable Sam)",
+    "artist": "Georgina Shaw Baker",
+    "year": 1948,
+    "date_display": "c. 1948",
+    "era_id": "era-mid-20th-century",
+    "movement_id": "mov-wartime-mascots",
+    "inv_number": "PAJ2744",
+    "role": "main subject",
+    "featured": false,
+    "license": "Public Domain",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Oscar%2C_cat_from_the_German_ship_%27Bismarck%27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "tags": [
+      "complete-cultural-history",
+      "cats",
+      "example-477"
+    ],
+    "description": "Black-and-white fur sits on a floating plank of wreckage with open sea around it, the cat glancing back over its shoulder with wide green eyes. This is a pastel, so the coat is built from soft dragged strokes of chalk rather than lines, and the white bib, white toes and black body stand out against teal water. Bare buff paper shows at the edges, and a curling wave rises in the foreground. The framed sheet measures 785 by 610 mm. The plank carries the story: it restages the moment the cat was supposedly fished out of the sea after the Bismarck went down.",
+    "context": "Three sinkings are credited to this cat in the legend: the Bismarck in May 1941, then HMS Cossack in October and Ark Royal in November, hence the nickname Unsinkable Sam. Royal Museums Greenwich describes the sheet as a framed pastel of a black-and-white cat on floating wreckage, one of the survivors of a ship that lost all but 114 of about 2,200 crew, and credits it to the animal painter Georgina Shaw Baker (1860–1951). The Bismarck survivor story rests on thin evidence, and Wikipedia reports that historians doubt it, so the pastel is best read as a picture of a legend.",
+    "inventory_id": "PAJ2744",
+    "title_eng": "Oscar, cat from the German battleship 'Bismarck'",
+    "type": "Drawing & Watercolor",
+    "medium": "Pastel on paper",
+    "collection": "National Maritime Museum, Greenwich, London",
+    "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-203480",
+    "artist_dates": "1860–1951",
+    "dimensions": "Frame: 78.5 × 61 cm",
+    "submovement": "British animal portraiture in pastel",
+    "feline_symbolism": "",
+    "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Oscar%2C_cat_from_the_German_ship_%27Bismarck%27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "large_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Oscar%2C_cat_from_the_German_ship_%27Bismarck%27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "accession_number": "PAJ2744",
+    "prose_reviewed": true,
+    "text_sources": [
+      "https://www.rmg.co.uk/collections/objects/rmgc-object-203480",
+      "https://en.wikipedia.org/wiki/Unsinkable_Sam",
+      "https://prints.rmg.co.uk/products/oscar-cat-from-the-german-ship-bismarck-t0772"
+    ],
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "rights_status": "public-domain",
+    "image_credit": "Georgina Shaw Baker · https://prints.rmg.co.uk/cdn/shop/products/T0772.jpg",
+    "visually_checked": true,
+    "purged_at": "2026-11-15T21:46:56.929Z",
+    "reason": "Mid-Twentieth Century era and Wartime Mascots movement removed at the curator's request."
   }
 ]
